@@ -23,11 +23,11 @@ class CfgVehicles
 {
     class ThingX;
     class CAManBase;
-    class SoldierWB : CAManBase
+    class SoldierWB: CAManBase
     {
         class HeadLimits;
     };
-    class TIOWSpaceMarine_Base : SoldierWB
+    class TIOWSpaceMarine_Base: SoldierWB
     {
         class HitPoints
         {
@@ -237,20 +237,20 @@ class CfgWeapons
     class UniformItem;
     
     /* // Space Marines
-    class SM_Gear : ItemCore
+    class SM_Gear: ItemCore
     {
         scope = 0;
         allowedSlots[] = {"BACKPACK_SLOT"};
         hiddenSelections[] = {"camo"};
-        class ItemInfo : VestItem
+        class ItemInfo: VestItem
         {
             hiddenSelections[] = {"camo"};
             LOAD[] = {"(0","0)"};
         };
     };
-    class TIOW_Mk7Vest : SM_Gear
+    class TIOW_Mk7Vest: SM_Gear
     {
-        class ItemInfo : ItemInfo
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
             {
