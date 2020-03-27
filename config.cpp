@@ -17,8 +17,27 @@ class CfgPatches
 
 class CfgVehicles
 {
-    class B_Soldier_base_f;
-    class B_Soldier_f;
+    class Man;
+    class CAManBase: Man{
+        class HitPoints {
+            class HitFace;
+            class HitNeck;
+            class HitHead;
+            class HitPelvis;
+            class HitAbdomen;
+            class HitDiaphragm;
+            class HitChest;
+            class HitBody;
+            class HitArms;
+            class HitHands;
+            class HitLegs;
+        };
+    };
+
+    class SoldierWB: CAManBase {};
+    class B_Soldier_base_F: SoldierWB{};
+    class B_Soldier_F: B_Soldier_base_F {};
+ 
 /*
 
 Uniforms: Note that uniforms are being adjusted in TIOW by adjusting the health values of their base soldier classes.
@@ -26,10 +45,13 @@ Uniforms: Note that uniforms are being adjusted in TIOW by adjusting the health 
 */
 
 // Cadian
-    class CadTroopBase: B_Soldier_F
-    {
-		class HitPoints
-		{
+    class CadTroopBase: B_Soldier_F {
+        armor=2;
+        armorStructural=3;
+        explosionShielding=0.30000001;
+        
+        class Hitpoints: Hitpoints 
+        {
 			class HitFace
 			{
 				armor=1;
@@ -142,7 +164,7 @@ Uniforms: Note that uniforms are being adjusted in TIOW by adjusting the health 
 				minimalHit=0.0099999998;
 				depends="HitArms";
 			};
-			class HitLegs: HitHands
+			class HitLegs
 			{
 				armor=3;
 				material=-1;
@@ -154,28 +176,17 @@ Uniforms: Note that uniforms are being adjusted in TIOW by adjusting the health 
 				minimalHit=0.0099999998;
 				depends="0";
 			};
-			class Incapacitated: HitLegs
-			{
-				armor=1000;
-				material=-1;
-				name="body";
-				passThrough=1;
-				radius=0;
-				explosionShielding=1;
-				visual="";
-				minimalHit=0;
-				depends="(((Total - 0.25) max 0) + ((HitHead - 0.25) max 0) + ((HitBody - 0.25) max 0)) * 2";
-			};
 		};
-		armor=2;
-		armorStructural=3;
-		explosionShielding=0.30000001;
     };
+    
 // TIOW IG HQ
-    class TIOW_IG_Captain_667: B_Soldier_base_f
-    {
-		class HitPoints
-		{
+    class TIOW_IG_Captain_667: B_Soldier_base_f {
+        armor=2;
+        armorStructural=3;
+        explosionShielding=0.30000001;
+        
+        class Hitpoints: Hitpoints 
+        {
 			class HitFace
 			{
 				armor=1;
@@ -288,7 +299,7 @@ Uniforms: Note that uniforms are being adjusted in TIOW by adjusting the health 
 				minimalHit=0.0099999998;
 				depends="HitArms";
 			};
-			class HitLegs: HitHands
+			class HitLegs
 			{
 				armor=3;
 				material=-1;
@@ -300,27 +311,15 @@ Uniforms: Note that uniforms are being adjusted in TIOW by adjusting the health 
 				minimalHit=0.0099999998;
 				depends="0";
 			};
-			class Incapacitated: HitLegs
-			{
-				armor=1000;
-				material=-1;
-				name="body";
-				passThrough=1;
-				radius=0;
-				explosionShielding=1;
-				visual="";
-				minimalHit=0;
-				depends="(((Total - 0.25) max 0) + ((HitHead - 0.25) max 0) + ((HitBody - 0.25) max 0)) * 2";
-			};
 		};
-		armor=2;
-		armorStructural=3;
-		explosionShielding=0.30000001;
     };
-    class TIOW_Comissar: B_Soldier_base_f
-    {
-		class HitPoints
-		{
+    class TIOW_Comissar: B_Soldier_base_f {
+        armor=2;
+        armorStructural=3;
+        explosionShielding=0.30000001;
+        
+        class Hitpoints: Hitpoints 
+        {
 			class HitFace
 			{
 				armor=1;
@@ -433,7 +432,7 @@ Uniforms: Note that uniforms are being adjusted in TIOW by adjusting the health 
 				minimalHit=0.0099999998;
 				depends="HitArms";
 			};
-			class HitLegs: HitHands
+			class HitLegs
 			{
 				armor=3;
 				material=-1;
@@ -445,27 +444,15 @@ Uniforms: Note that uniforms are being adjusted in TIOW by adjusting the health 
 				minimalHit=0.0099999998;
 				depends="0";
 			};
-			class Incapacitated: HitLegs
-			{
-				armor=1000;
-				material=-1;
-				name="body";
-				passThrough=1;
-				radius=0;
-				explosionShielding=1;
-				visual="";
-				minimalHit=0;
-				depends="(((Total - 0.25) max 0) + ((HitHead - 0.25) max 0) + ((HitBody - 0.25) max 0)) * 2";
-			};
 		};
-		armor=2;
-		armorStructural=3;
-		explosionShielding=0.30000001;
     };
-    class TIOW_Priest: B_Soldier_base_f
-    {
-		class HitPoints
-		{
+    class TIOW_Priest: B_Soldier_base_f {
+        armor=2;
+        armorStructural=3;
+        explosionShielding=0.30000001;
+        
+        class Hitpoints: Hitpoints 
+        {
 			class HitFace
 			{
 				armor=1;
@@ -578,7 +565,7 @@ Uniforms: Note that uniforms are being adjusted in TIOW by adjusting the health 
 				minimalHit=0.0099999998;
 				depends="HitArms";
 			};
-			class HitLegs: HitHands
+			class HitLegs
 			{
 				armor=3;
 				material=-1;
@@ -590,28 +577,17 @@ Uniforms: Note that uniforms are being adjusted in TIOW by adjusting the health 
 				minimalHit=0.0099999998;
 				depends="0";
 			};
-			class Incapacitated: HitLegs
-			{
-				armor=1000;
-				material=-1;
-				name="body";
-				passThrough=1;
-				radius=0;
-				explosionShielding=1;
-				visual="";
-				minimalHit=0;
-				depends="(((Total - 0.25) max 0) + ((HitHead - 0.25) max 0) + ((HitBody - 0.25) max 0)) * 2";
-			};
 		};
-		armor=2;
-		armorStructural=3;
-		explosionShielding=0.30000001;
     };
+
 // DKoK
-    class DKoK_GM_1: B_Soldier_f
-    {
-		class HitPoints
-		{
+    class DKoK_GM_1: B_Soldier_f {
+        armor=2;
+        armorStructural=3;
+        explosionShielding=0.30000001;
+        
+        class Hitpoints: Hitpoints 
+        {
 			class HitFace
 			{
 				armor=1;
@@ -724,7 +700,7 @@ Uniforms: Note that uniforms are being adjusted in TIOW by adjusting the health 
 				minimalHit=0.0099999998;
 				depends="HitArms";
 			};
-			class HitLegs: HitHands
+			class HitLegs
 			{
 				armor=3;
 				material=-1;
@@ -736,28 +712,17 @@ Uniforms: Note that uniforms are being adjusted in TIOW by adjusting the health 
 				minimalHit=0.0099999998;
 				depends="0";
 			};
-			class Incapacitated: HitLegs
-			{
-				armor=1000;
-				material=-1;
-				name="body";
-				passThrough=1;
-				radius=0;
-				explosionShielding=1;
-				visual="";
-				minimalHit=0;
-				depends="(((Total - 0.25) max 0) + ((HitHead - 0.25) max 0) + ((HitBody - 0.25) max 0)) * 2";
-			};
 		};
-		armor=2;
-		armorStructural=3;
-		explosionShielding=0.30000001;
     };
+
 // Mordian
-    class TIOW_Mordian_Trooper_1_Blu: B_Soldier_base_f
-    {
-		class HitPoints
-		{
+    class TIOW_Mordian_Trooper_1_Blu: B_Soldier_base_f {
+        armor=2;
+        armorStructural=3;
+        explosionShielding=0.30000001;
+        
+        class Hitpoints: Hitpoints 
+        {
 			class HitFace
 			{
 				armor=1;
@@ -870,7 +835,7 @@ Uniforms: Note that uniforms are being adjusted in TIOW by adjusting the health 
 				minimalHit=0.0099999998;
 				depends="HitArms";
 			};
-			class HitLegs: HitHands
+			class HitLegs
 			{
 				armor=3;
 				material=-1;
@@ -882,29 +847,17 @@ Uniforms: Note that uniforms are being adjusted in TIOW by adjusting the health 
 				minimalHit=0.0099999998;
 				depends="0";
 			};
-			class Incapacitated: HitLegs
-			{
-				armor=1000;
-				material=-1;
-				name="body";
-				passThrough=1;
-				radius=0;
-				explosionShielding=1;
-				visual="";
-				minimalHit=0;
-				depends="(((Total - 0.25) max 0) + ((HitHead - 0.25) max 0) + ((HitBody - 0.25) max 0)) * 2";
-			};
 		};
-		armor=2;
-		armorStructural=3;
-		explosionShielding=0.30000001;
     };
 
 // Valhallans
-    class TIOW_Valhallan_Trooper_1_Blue: B_Soldier_base_f
-    {
-		class HitPoints
-		{
+    class TIOW_Valhallan_Trooper_1_Blu: B_Soldier_base_f {
+        armor=2;
+        armorStructural=3;
+        explosionShielding=0.30000001;
+        
+        class Hitpoints: Hitpoints 
+        {
 			class HitFace
 			{
 				armor=1;
@@ -1017,7 +970,7 @@ Uniforms: Note that uniforms are being adjusted in TIOW by adjusting the health 
 				minimalHit=0.0099999998;
 				depends="HitArms";
 			};
-			class HitLegs: HitHands
+			class HitLegs
 			{
 				armor=3;
 				material=-1;
@@ -1029,29 +982,17 @@ Uniforms: Note that uniforms are being adjusted in TIOW by adjusting the health 
 				minimalHit=0.0099999998;
 				depends="0";
 			};
-			class Incapacitated: HitLegs
-			{
-				armor=1000;
-				material=-1;
-				name="body";
-				passThrough=1;
-				radius=0;
-				explosionShielding=1;
-				visual="";
-				minimalHit=0;
-				depends="(((Total - 0.25) max 0) + ((HitHead - 0.25) max 0) + ((HitBody - 0.25) max 0)) * 2";
-			};
 		};
-		armor=2;
-		armorStructural=3;
-		explosionShielding=0.30000001;
     };
 
 // Tau
-    class TIOW_Fire_Warrior: B_Soldier_base_f
-    {
-		class HitPoints
-		{
+    class TIOW_Fire_Warrior: B_Soldier_base_f {
+        armor=2;
+        armorStructural=3;
+        explosionShielding=0.30000001;
+        
+        class Hitpoints: Hitpoints 
+        {
 			class HitFace
 			{
 				armor=1;
@@ -1164,7 +1105,7 @@ Uniforms: Note that uniforms are being adjusted in TIOW by adjusting the health 
 				minimalHit=0.0099999998;
 				depends="HitArms";
 			};
-			class HitLegs: HitHands
+			class HitLegs
 			{
 				armor=3;
 				material=-1;
@@ -1176,27 +1117,15 @@ Uniforms: Note that uniforms are being adjusted in TIOW by adjusting the health 
 				minimalHit=0.0099999998;
 				depends="0";
 			};
-			class Incapacitated: HitLegs
-			{
-				armor=1000;
-				material=-1;
-				name="body";
-				passThrough=1;
-				radius=0;
-				explosionShielding=1;
-				visual="";
-				minimalHit=0;
-				depends="(((Total - 0.25) max 0) + ((HitHead - 0.25) max 0) + ((HitBody - 0.25) max 0)) * 2";
-			};
 		};
-		armor=2;
-		armorStructural=3;
-		explosionShielding=0.30000001;
     };
-    class TIOW_Air_Caste_Pilot_B : B_Soldier_base_f
-    {
-		class HitPoints
-		{
+    class TIOW_Air_Caste_Pilot_B : B_Soldier_base_f {
+        armor=2;
+        armorStructural=3;
+        explosionShielding=0.30000001;
+        
+        class Hitpoints: Hitpoints 
+        {
 			class HitFace
 			{
 				armor=1;
@@ -1309,7 +1238,7 @@ Uniforms: Note that uniforms are being adjusted in TIOW by adjusting the health 
 				minimalHit=0.0099999998;
 				depends="HitArms";
 			};
-			class HitLegs: HitHands
+			class HitLegs
 			{
 				armor=3;
 				material=-1;
@@ -1321,27 +1250,15 @@ Uniforms: Note that uniforms are being adjusted in TIOW by adjusting the health 
 				minimalHit=0.0099999998;
 				depends="0";
 			};
-			class Incapacitated: HitLegs
-			{
-				armor=1000;
-				material=-1;
-				name="body";
-				passThrough=1;
-				radius=0;
-				explosionShielding=1;
-				visual="";
-				minimalHit=0;
-				depends="(((Total - 0.25) max 0) + ((HitHead - 0.25) max 0) + ((HitBody - 0.25) max 0)) * 2";
-			};
 		};
-		armor=2;
-		armorStructural=3;
-		explosionShielding=0.30000001;
     };
-    class TIOW_Pathfinder: B_Soldier_base_f
-    {
-		class HitPoints
-		{
+    class TIOW_Pathfinder: B_Soldier_base_f {
+        armor=2;
+        armorStructural=3;
+        explosionShielding=0.30000001;
+        
+        class Hitpoints: Hitpoints 
+        {
 			class HitFace
 			{
 				armor=1;
@@ -1454,7 +1371,7 @@ Uniforms: Note that uniforms are being adjusted in TIOW by adjusting the health 
 				minimalHit=0.0099999998;
 				depends="HitArms";
 			};
-			class HitLegs: HitHands
+			class HitLegs
 			{
 				armor=3;
 				material=-1;
@@ -1466,22 +1383,7 @@ Uniforms: Note that uniforms are being adjusted in TIOW by adjusting the health 
 				minimalHit=0.0099999998;
 				depends="0";
 			};
-			class Incapacitated: HitLegs
-			{
-				armor=1000;
-				material=-1;
-				name="body";
-				passThrough=1;
-				radius=0;
-				explosionShielding=1;
-				visual="";
-				minimalHit=0;
-				depends="(((Total - 0.25) max 0) + ((HitHead - 0.25) max 0) + ((HitBody - 0.25) max 0)) * 2";
-			};
 		};
-		armor=2;
-		armorStructural=3;
-		explosionShielding=0.30000001;
     };
 };
 
@@ -1491,10 +1393,8 @@ class CfgWeapons
     class VestItem;
     class UniformItem;
     class ItemCore;
-    class H_HelmetB: ItemCore
-	{
-		class ItemInfo;
-	};
+    class H_HelmetB;
+
 /*
 
 Helmets
@@ -2507,10 +2407,7 @@ Helmets
 */
 
 // Cad. Flak Armors (Base, Medicae, and Sergeant), Medium.
-    class Cad_Gear_Vest2: ItemCore
-    {
-        class ItemInfo;
-    };
+    class Cad_Gear_Vest2: ItemCore {};
     class Cad_Gear2: Cad_Gear_Vest2
     {
         class ItemInfo: VestItem
@@ -2721,9 +2618,37 @@ Helmets
         };
     };
 // Cad. Officer Flak Armor, Light.
-    class TIOW_IG_Sergeant_Armour_836
+    class TIOW_IG_Sergeant_Armour_836: Cad_Gear_Vest2
     {
-        class ItemInfo;
+        class ItemInfo: VestItem
+        {
+            class HitpointsProtectionInfo
+			{
+				class Chest
+				{
+					HitpointName="HitChest";
+					armor=16;
+					PassThrough=0.30000001;
+				};
+				class Diaphragm
+				{
+					HitpointName="HitDiaphragm";
+					armor=16;
+					PassThrough=0.30000001;
+				};
+				class Abdomen
+				{
+					hitpointName="HitAbdomen";
+					armor=16;
+					passThrough=0.30000001;
+				};
+				class Body
+				{
+					hitpointName="HitBody";
+					passThrough=0.30000001;
+				};
+			};
+        };
     };
     class TIOW_IG_Officer_Armour_836: TIOW_IG_Sergeant_Armour_836
     {
@@ -2757,9 +2682,37 @@ Helmets
 			};
         };
     };
-    class TIOW_IG_Sergeant_Armour_776
+    class TIOW_IG_Sergeant_Armour_776: Cad_Gear_Vest2
     {
-        class ItemInfo;
+        class ItemInfo: VestItem
+        {
+            class HitpointsProtectionInfo
+			{
+				class Chest
+				{
+					HitpointName="HitChest";
+					armor=16;
+					PassThrough=0.30000001;
+				};
+				class Diaphragm
+				{
+					HitpointName="HitDiaphragm";
+					armor=16;
+					PassThrough=0.30000001;
+				};
+				class Abdomen
+				{
+					hitpointName="HitAbdomen";
+					armor=16;
+					passThrough=0.30000001;
+				};
+				class Body
+				{
+					hitpointName="HitBody";
+					passThrough=0.30000001;
+				};
+			};
+        };
     };
     class TIOW_IG_Officer_Armour_776: TIOW_IG_Sergeant_Armour_776
     {
@@ -2793,9 +2746,37 @@ Helmets
 			};
         };
     };
-    class TIOW_IG_Sergeant_Armour_700
+    class TIOW_IG_Sergeant_Armour_700: Cad_Gear_Vest2
     {
-        class ItemInfo;
+        class ItemInfo: VestItem
+        {
+            class HitpointsProtectionInfo
+			{
+				class Chest
+				{
+					HitpointName="HitChest";
+					armor=16;
+					PassThrough=0.30000001;
+				};
+				class Diaphragm
+				{
+					HitpointName="HitDiaphragm";
+					armor=16;
+					PassThrough=0.30000001;
+				};
+				class Abdomen
+				{
+					hitpointName="HitAbdomen";
+					armor=16;
+					passThrough=0.30000001;
+				};
+				class Body
+				{
+					hitpointName="HitBody";
+					passThrough=0.30000001;
+				};
+			};
+        };
     };
     class TIOW_IG_Officer_Armour_700: TIOW_IG_Sergeant_Armour_700
     {
@@ -2829,9 +2810,37 @@ Helmets
 			};
         };
     };
-    class TIOW_IG_Sergeant_Armour_667
+    class TIOW_IG_Sergeant_Armour_667: Cad_Gear_Vest2
     {
-        class ItemInfo;
+        class ItemInfo: VestItem
+        {
+            class HitpointsProtectionInfo
+			{
+				class Chest
+				{
+					HitpointName="HitChest";
+					armor=16;
+					PassThrough=0.30000001;
+				};
+				class Diaphragm
+				{
+					HitpointName="HitDiaphragm";
+					armor=16;
+					PassThrough=0.30000001;
+				};
+				class Abdomen
+				{
+					hitpointName="HitAbdomen";
+					armor=16;
+					passThrough=0.30000001;
+				};
+				class Body
+				{
+					hitpointName="HitBody";
+					passThrough=0.30000001;
+				};
+			};
+        };
     };
     class TIOW_IG_Officer_Armour_667: TIOW_IG_Sergeant_Armour_667
     {
@@ -2867,7 +2876,9 @@ Helmets
     };
 // Cad. Officer Golden Shoulderpads, Unarmored.
 // Cad. Sergeant Flak Armor, Medium.
-    class TIOW_IG_Seargeant_Armour_667: Cad_Gear_Vest2
+
+/* Redundant.
+    class TIOW_IG_Sergeant_Armour_667: Cad_Gear_Vest2
     {
         class ItemInfo: VestItem
         {
@@ -2995,6 +3006,8 @@ Helmets
 			};
         };
     };    
+    */
+
 // Cad. Tanker Webbing, Light.
     class Cad_TnkGear836th: Cad_Gear2
     {
@@ -3125,10 +3138,8 @@ Helmets
         };
     };
 // DK Engineer Armor, Explosive resistant.
-    class DKoK_Gear: ItemCore
-    {
-        class ItemInfo;
-    };
+    class DKoK_Gear: ItemCore {};
+
     class DKoK_Eng_Armor: DKoK_Gear
     {
         class ItemInfo: VestItem
@@ -3258,10 +3269,7 @@ Helmets
         };
     };
 //Ren. Flak Chest, Medium.
-    class Ren_Gear: ItemCore
-    {
-        class ItemInfo;
-    };
+    class Ren_Gear: ItemCore {};
     class Ren_ArmorSet_00: Ren_Gear
     {
         class ItemInfo: VestItem
@@ -3507,4 +3515,12 @@ Helmets
 			};            
         };
     };
+
+/*
+
+Weapons
+
+*/
+
+
 };
