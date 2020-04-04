@@ -7,11 +7,65 @@ class CfgPatches
 		author = "Siggyfreed";
 		name = "DK143 TIOW ACE Compat";
 		requiredAddons[] = 
-        {"ace_common","CadFoot","TIOW_AutoWeapons","Cadian_Weapons","DKoK_Weapons","A40k_WepBase","TIOW_Comissar","TIOW_Mordians","TIOW_Tau_FireWarior_Uniforms"};
+        {"A3_Weapons_F","A3_Data_F","ace_common","CadFoot","TIOW_AutoWeapons","Cadian_Weapons","DKoK_Weapons","A40k_WepBase","TIOW_Comissar","TIOW_Mordians","TIOW_Tau_FireWarior_Uniforms"};
 		requiredVersion = 0.1;
 		units[] = {};
 		weapons[] = {};
 		worlds[] = {};
+	};
+};
+
+class CfgAmmo
+{
+	class BulletBase;
+	class ShotgunBase;
+	class Lucius98_LasBolt: BulletBase
+	{
+		hit = 10;
+	};
+	class TIOW_Antioc43_LasBolt: Lucius98_LasBolt
+	{
+		hit = 9;
+	};
+	class TIOW_Antioc43_LasBoltHeavy: Lucius98_LasBolt
+	{
+		hit = 13;
+	};
+	class Type14_LasBolt: BulletBase
+	{
+		hit = 11.6;
+	};
+	class Lucius22c_Pellets: ShotgunBase
+	{
+		hit = 2;
+	};
+	class M36KantRifle_LasBolt: Bulletbase
+	{
+		hit = 9;
+	};
+	class TIOW_IGBoltRound: BulletBase
+	{
+		hit = 5;
+	};
+	class Long825: BulletBase
+	{
+		hit = 9;
+	};
+	class TIOW_Long825HS: TIOW_Long825
+	{
+		hit = 10;
+	};
+	class TIOW_Long825HSA: Long825
+	{
+		hit = 7;
+	};
+	class TIOW_Long825HSER: Long825
+	{
+		hit = 12;
+	};
+	class TIOW_Long825HSMS: Long825
+	{
+		hit = 11.6;
 	};
 };
 
