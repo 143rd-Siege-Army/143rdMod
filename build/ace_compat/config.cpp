@@ -7,7 +7,7 @@ class CfgPatches
 		author = "Siggyfreed";
 		name = "DK143 TIOW ACE Compat";
 		requiredAddons[] = 
-        {"A3_Weapons_F","A3_Data_F","ace_common","CadFoot","TIOW_AutoWeapons","Cadian_Weapons","DKoK_Weapons","A40k_WepBase","TIOW_Comissar","TIOW_Mordians","TIOW_Tau_FireWarior_Uniforms","TIOW_SM"};
+        {"ace_common","A40k_WepBase","40K_tau","CadFoot","Cadian_Weapons","DKoK_Weapons","OrkBoyz","OrkDakka","OrkShoota","Renegades_Foot","TIOW_AutoWeapons","TIOW_IG_Cosmetics","TIOW_IG_HQ","TIOW_Mordian","TIOW_OrkBoyz","TIOW_OrkDakka","TIOW_SM","TIOW_SMWep","TIOW_Valhallans"};
 		requiredVersion = 0.1;
 		units[] = {};
 		weapons[] = {};
@@ -19,6 +19,16 @@ class CfgAmmo
 {
 	class BulletBase;
 	class ShotgunBase;
+	class B_127x99_Ball;
+	class B_12Gauge_Pellets;
+	class TIOW_LongLas_LasBolt: BulletBase
+	{
+		hit = 16;
+	};
+    class Shoota1Round: BulletBase 
+	{
+		hit = 9;
+    };
 	class Lucius98_LasBolt: BulletBase
 	{
 		hit = 10;
@@ -67,6 +77,18 @@ class CfgAmmo
 	{
 		hit = 11.6;
 	};
+	    class TIOW_blaster_pulseshot: B_12Gauge_Pellets 
+	{
+		hit = 2;
+    };
+	class TIOW_rifle_pulseshot: B_127x99_Ball 
+	{
+		hit = 11.6;
+	};
+	class TIOW_pulse_pistol_shot: TIOW_rifle_pulseshot 
+	{
+		hit = 5;
+	};
 };
 
 class CfgVehicles
@@ -92,13 +114,13 @@ class CfgVehicles
     class B_Soldier_base_F: SoldierWB{};
     class B_Soldier_F: B_Soldier_base_F {};
  
-/*
+	/*
 
-Uniforms: Note that uniforms are being adjusted in TIOW by adjusting the health values of their base soldier classes.
+	Uniforms: Note that uniforms are being adjusted in TIOW by adjusting the health values of their base soldier classes.
 
-*/
+	*/
 
-// Space Marine
+	// Space Marine
 
 	class TIOWSpaceMarine_Base: SoldierWB
 	{
@@ -235,7 +257,537 @@ Uniforms: Note that uniforms are being adjusted in TIOW by adjusting the health 
 		};
 	};
 
-// Cadian
+	// Orks
+	class I_Soldier_base_F;
+	class Naked1: I_Soldier_base_F 
+	{
+        armor=2;
+        armorStructural=3;
+        explosionShielding=0.30000001;
+        
+        class Hitpoints: Hitpoints 
+		{
+			class HitFace 
+			{
+				armor = 1;
+				material = -1;
+				name = "face_hub";
+				passThrough = 0.100000;
+				radius = 0.080000;
+				explosionShielding = 0.100000;
+				minimalHit = 0.010000;
+			};
+			class HitNeck: HitFace 
+			{
+				armor = 1;
+				material = -1;
+				name = "neck";
+				passThrough = 0.100000;
+				radius = 0.100000;
+				explosionShielding = 0.500000;
+				minimalHit = 0.010000;
+			};
+			class HitHead: HitNeck 
+			{
+				armor = 1;
+				material = -1;
+				name = "head";
+				passThrough = 0.100000;
+				radius = 0.200000;
+				explosionShielding = 0.500000;
+				minimalHit = 0.010000;
+				depends = "HitFace max HitNeck";
+			};
+			class HitPelvis 
+			{
+				armor = 1;
+				material = -1;
+				name = "pelvis";
+				passThrough = 0.100000;
+				radius = 0.200000;
+				explosionShielding = 1;
+				visual = "injury_body";
+				minimalHit = 0.010000;
+			};
+			class HitAbdomen: HitPelvis 
+			{
+				armor = 1;
+				material = -1;
+				name = "spine1";
+				passThrough = 0.100000;
+				radius = 0.150000;
+				explosionShielding = 1;
+				visual = "injury_body";
+				minimalHit = 0.010000;
+			};
+			class HitDiaphragm: HitAbdomen 
+			{
+				armor = 1;
+				material = -1;
+				name = "spine2";
+				passThrough = 0.100000;
+				radius = 0.150000;
+				explosionShielding = 6;
+				visual = "injury_body";
+				minimalHit = 0.010000;
+			};
+			class HitChest: HitDiaphragm 
+			{
+				armor = 1;
+				material = -1;
+				name = "spine3";
+				passThrough = 0.100000;
+				radius = 0.150000;
+				explosionShielding = 6;
+				visual = "injury_body";
+				minimalHit = 0.010000;
+			};
+			class HitBody: HitChest 
+			{
+				armor = 1000;
+				material = -1;
+				name = "body";
+				passThrough = 0.100000;
+				radius = 0.160000;
+				explosionShielding = 6;
+				visual = "injury_body";
+				minimalHit = 0.010000;
+				depends = "HitPelvis max HitAbdomen max HitDiaphragm max HitChest";
+			};
+			class HitArms 
+			{
+				armor = 1;
+				material = -1;
+				name = "arms";
+				passThrough = 1;
+				radius = 0.100000;
+				explosionShielding = 1;
+				visual = "injury_hands";
+				minimalHit = 0.010000;
+			};
+			class HitHands: HitArms 
+			{
+				armor = 1;
+				material = -1;
+				name = "hands";
+				passThrough = 1;
+				radius = 0.100000;
+				explosionShielding = 1;
+				visual = "injury_hands";
+				minimalHit = 0.010000;
+				depends = "HitArms";
+			};
+			class HitLegs 
+			{
+				armor = 1;
+				material = -1;
+				name = "legs";
+				passThrough = 1;
+				radius = 0.120000;
+				explosionShielding = 1;
+				visual = "injury_legs";
+				minimalHit = 0.010000;
+			};
+		};
+	};
+	class Naked1_OP: Naked1 
+	{
+
+		armor=2;
+		armorStructural=3;
+		explosionShielding=0.30000001;
+
+		class Hitpoints: Hitpoints 
+		{
+			class HitFace 
+			{
+				armor = 1;
+				material = -1;
+				name = "face_hub";
+				passThrough = 0.100000;
+				radius = 0.080000;
+				explosionShielding = 0.100000;
+				minimalHit = 0.010000;
+			};
+			class HitNeck: HitFace 
+			{
+				armor = 1;
+				material = -1;
+				name = "neck";
+				passThrough = 0.100000;
+				radius = 0.100000;
+				explosionShielding = 0.500000;
+				minimalHit = 0.010000;
+			};
+			class HitHead: HitNeck 
+			{
+				armor = 1;
+				material = -1;
+				name = "head";
+				passThrough = 0.100000;
+				radius = 0.200000;
+				explosionShielding = 0.500000;
+				minimalHit = 0.010000;
+				depends = "HitFace max HitNeck";
+			};
+			class HitPelvis 
+			{
+				armor = 1;
+				material = -1;
+				name = "pelvis";
+				passThrough = 0.100000;
+				radius = 0.200000;
+				explosionShielding = 1;
+				visual = "injury_body";
+				minimalHit = 0.010000;
+			};
+			class HitAbdomen: HitPelvis 
+			{
+				armor = 1;
+				material = -1;
+				name = "spine1";
+				passThrough = 0.100000;
+				radius = 0.150000;
+				explosionShielding = 1;
+				visual = "injury_body";
+				minimalHit = 0.010000;
+			};
+			class HitDiaphragm: HitAbdomen 
+			{
+				armor = 1;
+				material = -1;
+				name = "spine2";
+				passThrough = 0.100000;
+				radius = 0.150000;
+				explosionShielding = 6;
+				visual = "injury_body";
+				minimalHit = 0.010000;
+			};
+			class HitChest: HitDiaphragm 
+			{
+				armor = 1;
+				material = -1;
+				name = "spine3";
+				passThrough = 0.100000;
+				radius = 0.150000;
+				explosionShielding = 6;
+				visual = "injury_body";
+				minimalHit = 0.010000;
+			};
+			class HitBody: HitChest 
+			{
+				armor = 1000;
+				material = -1;
+				name = "body";
+				passThrough = 0.100000;
+				radius = 0.160000;
+				explosionShielding = 6;
+				visual = "injury_body";
+				minimalHit = 0.010000;
+				depends = "HitPelvis max HitAbdomen max HitDiaphragm max HitChest";
+			};
+			class HitArms 
+			{
+				armor = 1;
+				material = -1;
+				name = "arms";
+				passThrough = 1;
+				radius = 0.100000;
+				explosionShielding = 1;
+				visual = "injury_hands";
+				minimalHit = 0.010000;
+			};
+			class HitHands: HitArms 
+			{
+				armor = 1;
+				material = -1;
+				name = "hands";
+				passThrough = 1;
+				radius = 0.100000;
+				explosionShielding = 1;
+				visual = "injury_hands";
+				minimalHit = 0.010000;
+				depends = "HitArms";
+			};
+			class HitLegs 
+			{
+				armor = 1;
+				material = -1;
+				name = "legs";
+				passThrough = 1;
+				radius = 0.120000;
+				explosionShielding = 1;
+				visual = "injury_legs";
+				minimalHit = 0.010000;
+			};
+		};
+	};
+	class Naked1_Blu: Naked1 
+	{
+		
+		armor=2;
+		armorStructural=3;
+		explosionShielding=0.30000001;
+
+		class Hitpoints: Hitpoints 
+		{
+			class HitFace 
+			{
+				armor = 1;
+				material = -1;
+				name = "face_hub";
+				passThrough = 0.100000;
+				radius = 0.080000;
+				explosionShielding = 0.100000;
+				minimalHit = 0.010000;
+			};
+			class HitNeck: HitFace 
+			{
+				armor = 1;
+				material = -1;
+				name = "neck";
+				passThrough = 0.100000;
+				radius = 0.100000;
+				explosionShielding = 0.500000;
+				minimalHit = 0.010000;
+			};
+			class HitHead: HitNeck 
+			{
+				armor = 1;
+				material = -1;
+				name = "head";
+				passThrough = 0.100000;
+				radius = 0.200000;
+				explosionShielding = 0.500000;
+				minimalHit = 0.010000;
+				depends = "HitFace max HitNeck";
+			};
+			class HitPelvis 
+			{
+				armor = 1;
+				material = -1;
+				name = "pelvis";
+				passThrough = 0.100000;
+				radius = 0.200000;
+				explosionShielding = 1;
+				visual = "injury_body";
+				minimalHit = 0.010000;
+			};
+			class HitAbdomen: HitPelvis 
+			{
+				armor = 1;
+				material = -1;
+				name = "spine1";
+				passThrough = 0.100000;
+				radius = 0.150000;
+				explosionShielding = 1;
+				visual = "injury_body";
+				minimalHit = 0.010000;
+			};
+			class HitDiaphragm: HitAbdomen 
+			{
+				armor = 1;
+				material = -1;
+				name = "spine2";
+				passThrough = 0.100000;
+				radius = 0.150000;
+				explosionShielding = 6;
+				visual = "injury_body";
+				minimalHit = 0.010000;
+			};
+			class HitChest: HitDiaphragm 
+			{
+				armor = 1;
+				material = -1;
+				name = "spine3";
+				passThrough = 0.100000;
+				radius = 0.150000;
+				explosionShielding = 6;
+				visual = "injury_body";
+				minimalHit = 0.010000;
+			};
+			class HitBody: HitChest 
+			{
+				armor = 1000;
+				material = -1;
+				name = "body";
+				passThrough = 0.100000;
+				radius = 0.160000;
+				explosionShielding = 6;
+				visual = "injury_body";
+				minimalHit = 0.010000;
+				depends = "HitPelvis max HitAbdomen max HitDiaphragm max HitChest";
+			};
+			class HitArms 
+			{
+				armor = 1;
+				material = -1;
+				name = "arms";
+				passThrough = 1;
+				radius = 0.100000;
+				explosionShielding = 1;
+				visual = "injury_hands";
+				minimalHit = 0.010000;
+			};
+			class HitHands: HitArms 
+			{
+				armor = 1;
+				material = -1;
+				name = "hands";
+				passThrough = 1;
+				radius = 0.100000;
+				explosionShielding = 1;
+				visual = "injury_hands";
+				minimalHit = 0.010000;
+				depends = "HitArms";
+			};
+			class HitLegs 
+			{
+				armor = 1;
+				material = -1;
+				name = "legs";
+				passThrough = 1;
+				radius = 0.120000;
+				explosionShielding = 1;
+				visual = "injury_legs";
+				minimalHit = 0.010000;
+			};
+		};
+	};
+
+	// Orks - SM Variant
+	class TIOWOrkTest1: TIOWSpaceMarine_Base 
+	{
+        armor=2;
+        armorStructural=3;
+        explosionShielding=0.30000001;
+        
+        class Hitpoints: Hitpoints 
+		{
+			class HitFace 
+			{
+				armor = 1;
+				material = -1;
+				name = "face_hub";
+				passThrough = 0.100000;
+				radius = 0.080000;
+				explosionShielding = 0.100000;
+				minimalHit = 0.010000;
+			};
+			class HitNeck: HitFace 
+			{
+				armor = 1;
+				material = -1;
+				name = "neck";
+				passThrough = 0.100000;
+				radius = 0.100000;
+				explosionShielding = 0.500000;
+				minimalHit = 0.010000;
+			};
+			class HitHead: HitNeck 
+			{
+				armor = 1;
+				material = -1;
+				name = "head";
+				passThrough = 0.100000;
+				radius = 0.200000;
+				explosionShielding = 0.500000;
+				minimalHit = 0.010000;
+				depends = "HitFace max HitNeck";
+			};
+			class HitPelvis 
+			{
+				armor = 1;
+				material = -1;
+				name = "pelvis";
+				passThrough = 0.100000;
+				radius = 0.200000;
+				explosionShielding = 1;
+				visual = "injury_body";
+				minimalHit = 0.010000;
+			};
+			class HitAbdomen: HitPelvis 
+			{
+				armor = 1;
+				material = -1;
+				name = "spine1";
+				passThrough = 0.100000;
+				radius = 0.150000;
+				explosionShielding = 1;
+				visual = "injury_body";
+				minimalHit = 0.010000;
+			};
+			class HitDiaphragm: HitAbdomen 
+			{
+				armor = 1;
+				material = -1;
+				name = "spine2";
+				passThrough = 0.100000;
+				radius = 0.150000;
+				explosionShielding = 6;
+				visual = "injury_body";
+				minimalHit = 0.010000;
+			};
+			class HitChest: HitDiaphragm 
+			{
+				armor = 1;
+				material = -1;
+				name = "spine3";
+				passThrough = 0.100000;
+				radius = 0.150000;
+				explosionShielding = 6;
+				visual = "injury_body";
+				minimalHit = 0.010000;
+			};
+			class HitBody: HitChest 
+			{
+				armor = 1000;
+				material = -1;
+				name = "body";
+				passThrough = 0.100000;
+				radius = 0.160000;
+				explosionShielding = 6;
+				visual = "injury_body";
+				minimalHit = 0.010000;
+				depends = "HitPelvis max HitAbdomen max HitDiaphragm max HitChest";
+			};
+			class HitArms 
+			{
+				armor = 1;
+				material = -1;
+				name = "arms";
+				passThrough = 1;
+				radius = 0.100000;
+				explosionShielding = 1;
+				visual = "injury_hands";
+				minimalHit = 0.010000;
+			};
+			class HitHands: HitArms 
+			{
+				armor = 1;
+				material = -1;
+				name = "hands";
+				passThrough = 1;
+				radius = 0.100000;
+				explosionShielding = 1;
+				visual = "injury_hands";
+				minimalHit = 0.010000;
+				depends = "HitArms";
+			};
+			class HitLegs 
+			{
+				armor = 1;
+				material = -1;
+				name = "legs";
+				passThrough = 1;
+				radius = 0.120000;
+				explosionShielding = 1;
+				visual = "injury_legs";
+				minimalHit = 0.010000;
+			};
+		};
+	};	
+	// Cadian
     class CadTroopBase: B_Soldier_F {
         armor=2;
         armorStructural=3;
@@ -370,7 +922,7 @@ Uniforms: Note that uniforms are being adjusted in TIOW by adjusting the health 
 		};
     };
     
-// TIOW IG HQ
+	// TIOW IG HQ
     class TIOW_IG_Captain_667: B_Soldier_base_f {
         armor=2;
         armorStructural=3;
@@ -771,7 +1323,7 @@ Uniforms: Note that uniforms are being adjusted in TIOW by adjusting the health 
 		};
     };
 
-// DKoK
+	// DKoK
     class DKoK_GM_1: B_Soldier_f {
         armor=2;
         armorStructural=3;
@@ -906,7 +1458,7 @@ Uniforms: Note that uniforms are being adjusted in TIOW by adjusting the health 
 		};
     };
 
-// Mordian
+	// Mordian
     class TIOW_Mordian_Trooper_1_Blu: B_Soldier_base_f {
         armor=2;
         armorStructural=3;
@@ -1041,7 +1593,7 @@ Uniforms: Note that uniforms are being adjusted in TIOW by adjusting the health 
 		};
     };
 
-// Valhallans
+	// Valhallans
     class TIOW_Valhallan_Trooper_1_Blu: B_Soldier_base_f {
         armor=2;
         armorStructural=3;
@@ -1176,7 +1728,7 @@ Uniforms: Note that uniforms are being adjusted in TIOW by adjusting the health 
 		};
     };
 
-// Tau
+	// Tau
     class TIOW_Fire_Warrior: B_Soldier_base_f {
         armor=2;
         armorStructural=3;
@@ -1592,7 +2144,129 @@ Helmets
 
 */
 
-// All Cadian helmets, medium armor.
+	// Orks
+	class ArdBoyHelm1: ItemCore
+    {
+        class ItemInfo: HeadgearItem
+        {
+            class HitpointsProtectionInfo
+            {
+                class Head
+                {
+                    hitpointName = "HitHead";
+                    armor = 25;
+                    passThrough = 0.300001;
+                };
+            };
+        };
+    };
+	class ArdBoyHelm2: ArdBoyHelm1
+    {
+        class ItemInfo: HeadgearItem
+        {
+            class HitpointsProtectionInfo
+            {
+                class Head
+                {
+                    hitpointName = "HitHead";
+                    armor = 25;
+                    passThrough = 0.300001;
+                };
+            };
+        };
+    };
+	class BossHelm1: ItemCore
+    {
+        class ItemInfo: HeadgearItem
+        {
+            class HitpointsProtectionInfo
+            {
+                class Head
+                {
+                    hitpointName = "HitHead";
+                    armor = 25;
+                    passThrough = 0.300001;
+                };
+            };
+        };
+    };
+	class BossHelm2: BossHelm1
+    {
+        class ItemInfo: HeadgearItem
+        {
+            class HitpointsProtectionInfo
+            {
+                class Head
+                {
+                    hitpointName = "HitHead";
+                    armor = 25;
+                    passThrough = 0.300001;
+                };
+            };
+        };
+    };
+	class TankBustaHelm1: ItemCore
+    {
+        class ItemInfo: HeadgearItem
+        {
+            class HitpointsProtectionInfo
+            {
+                class Head
+                {
+                    hitpointName = "HitHead";
+                    armor = 25;
+                    passThrough = 0.300001;
+                };
+            };
+        };
+    };
+	class TankBustaHelm2: TankBustaHelm1
+    {
+        class ItemInfo: HeadgearItem
+        {
+            class HitpointsProtectionInfo
+            {
+                class Head
+                {
+                    hitpointName = "HitHead";
+                    armor = 25;
+                    passThrough = 0.300001;
+                };
+            };
+        };
+    };
+	class ShootaBoyHelm1: ItemCore
+    {
+        class ItemInfo: HeadgearItem
+        {
+            class HitpointsProtectionInfo
+            {
+                class Head
+                {
+                    hitpointName = "HitHead";
+                    armor = 25;
+                    passThrough = 0.300001;
+                };
+            };
+        };
+    };
+	class ShootaBoyHelm2: ShootaBoyHelm1
+    {
+        class ItemInfo: HeadgearItem
+        {
+            class HitpointsProtectionInfo
+            {
+                class Head
+                {
+                    hitpointName = "HitHead";
+                    armor = 25;
+                    passThrough = 0.300001;
+                };
+            };
+        };
+    };
+ 
+	// All Cadian helmets, medium armor.
     class Cad_Inf_Helm2: ItemCore 
     {
         class ItemInfo: HeadgearItem
@@ -1608,7 +2282,7 @@ Helmets
             };
         };
     };
-// IG patrol caps, no armor.
+	// IG patrol caps, no armor.
     class TIOW_IG_PatrolCap_836: H_HelmetB
     {
         class ItemInfo: HeadgearItem
@@ -2029,7 +2703,7 @@ Helmets
             };
         };
     };
-// IG Priest hoods, no armor.
+	// IG Priest hoods, no armor.
     class TIOW_Priest_Hood: H_HelmetB
     {
         class ItemInfo: HeadgearItem
@@ -2075,7 +2749,7 @@ Helmets
             };
         };
     };
-// IG Comissar caps, no armor. Krieg cap inherits.
+	// IG Comissar caps, no armor. Krieg cap inherits.
     class TIOW_Comissar_Cap: H_HelmetB
     {
         class ItemInfo: HeadgearItem
@@ -2091,7 +2765,7 @@ Helmets
             };
         };
     };
-// IG Mordian caps, no armor.
+	// IG Mordian caps, no armor.
     class TIOW_Mordian_Cap: H_HelmetB
     {
         class ItemInfo: HeadgearItem
@@ -2167,7 +2841,7 @@ Helmets
             };
         };
     };
-// Renegade enforcer mask, heavy armor and face protection.
+	// Renegade enforcer mask, heavy armor and face protection.
     class Ren_Helm_00: ItemCore
     {
         class ItemInfo: HeadgearItem
@@ -2189,7 +2863,7 @@ Helmets
             };
         };
     };
-// Renegade cultist hoods, no armor.
+	// Renegade cultist hoods, no armor.
     class TIOW_Cultist_Hood: H_HelmetB
     {
         class ItemInfo: HeadgearItem
@@ -2235,7 +2909,7 @@ Helmets
             };
         };
     };
-// IG Valhallan caps, light armor.
+	// IG Valhallan caps, light armor.
     class TIOW_Valhallan_Cap: H_HelmetB
     {
         class ItemInfo: HeadgearItem
@@ -2416,7 +3090,7 @@ Helmets
             };
         };
     };
-// Valhallan helmet, medium armor.
+	// Valhallan helmet, medium armor.
     class TIOW_Valhallan_Helmet: H_HelmetB
     {
         class ItemInfo: HeadgearItem
@@ -2432,7 +3106,7 @@ Helmets
             };
         };
     };
-// All DK inf. helmets, medium armor.
+	// All DK inf. helmets, medium armor.
     class DKoK_GM_Helm: ItemCore
     {
         class ItemInfo: HeadgearItem
@@ -2448,7 +3122,7 @@ Helmets
             };
         };
     };
-// Tau F. Warrior Breacher Helms, heavy armor with face protection.
+	// Tau F. Warrior Breacher Helms, heavy armor with face protection.
     class TIOW_Tau_HelmetB2: H_HelmetB
     {
         class ItemInfo: HeadgearItem
@@ -2470,7 +3144,7 @@ Helmets
             };
         };
     };
-// Tau F. Warrior striker helms, medium armor with face protection.
+	// Tau F. Warrior striker helms, medium armor with face protection.
     class TIOW_Tau_HelmetS: H_HelmetB
     {
         class ItemInfo: HeadgearItem
@@ -2492,7 +3166,7 @@ Helmets
             };
         };
     };
-// Tau headsets, no armor.
+	// Tau headsets, no armor.
     class TIOW_Tau_Hset1: H_HelmetB
     {
         class ItemInfo: HeadgearItem
@@ -2568,7 +3242,7 @@ Helmets
             };
         };
     };
-// Tau pathfinder helmet, medium armor with face protection.
+	// Tau pathfinder helmet, medium armor with face protection.
     class TIOW_Tau_HelmetP: H_HelmetB
     {
         class ItemInfo: HeadgearItem
@@ -2597,9 +3271,47 @@ Helmets
 
 */
 
-// Space Marine
+	// Invisible Flak Weave, medium 
+	class DK143_Flak_Weave: ItemCore
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		allowedSlots[] = {901};
+		model = "\A3\Weapons_F\empty.p3d";
+		displayName = "[DK143] Flak Weave";
+		descriptionShort = "Armor for the sake of dressup.";	
+		class HitpointsProtectionInfo
+		{
+			class Chest
+			{
+				HitpointName="HitChest";
+				armor=20;
+				PassThrough=0.2;
+			};
+			class Diaphragm
+			{
+				HitpointName="HitDiaphragm";
+				armor=20;
+				PassThrough=0.2;
+			};
+			class Abdomen
+			{
+				hitpointName="HitAbdomen";
+				armor=20;
+				passThrough=0.2;
+			};
+			class Body
+			{
+				hitpointName="HitBody";
+				passThrough=0.2;
+			};
+		};
+	};
 
-	class TIOW_Mk7Vest: SM_Gear {};
+	// Space Marine
+
+	class SM_Gear: ItemCore{};
 	class TIOW_Mk7Vest: SM_Gear
 	{
 		class ItemInfo: ItemInfo
@@ -2703,414 +3415,6 @@ Helmets
 		};
 	};
 	class TIOW_Mk7Limbs_IF: TIOW_Mk7Vest
-	{
-		class ItemInfo: ItemInfo
-		{
-			class HitpointsProtectionInfo
-			{
-				class Neck
-				{
-					hitpointName = "HitNeck";
-					armor = 150;
-					passThrough = 0.1;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 100;
-					passThrough = 0.1;
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor = 150;
-					passThrough = 0.1;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor = 150;
-					passThrough = 0.1;
-				};
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor = 100;
-					passThrough = 0.1;
-				};
-				class Pelvis
-				{
-					hitpointName = "HitPelvis";
-					armor = 100;
-					passThrough = 0.1;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					armor = 100;
-					passThrough = 0.1;
-				};
-			};
-		};
-	};
-	class TIOW_Mk7Limbs_BA: TIOW_Mk7Vest
-	{
-		class ItemInfo: ItemInfo
-		{
-			class HitpointsProtectionInfo
-			{
-				class Neck
-				{
-					hitpointName = "HitNeck";
-					armor = 150;
-					passThrough = 0.1;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 100;
-					passThrough = 0.1;
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor = 150;
-					passThrough = 0.1;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor = 150;
-					passThrough = 0.1;
-				};
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor = 100;
-					passThrough = 0.1;
-				};
-				class Pelvis
-				{
-					hitpointName = "HitPelvis";
-					armor = 100;
-					passThrough = 0.1;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					armor = 100;
-					passThrough = 0.1;
-				};
-			};
-		};
-	};
-	class TIOW_Mk7Limbs_BR: TIOW_Mk7Vest
-	{
-		class ItemInfo: ItemInfo
-		{
-			class HitpointsProtectionInfo
-			{
-				class Neck
-				{
-					hitpointName = "HitNeck";
-					armor = 150;
-					passThrough = 0.1;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 100;
-					passThrough = 0.1;
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor = 150;
-					passThrough = 0.1;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor = 150;
-					passThrough = 0.1;
-				};
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor = 100;
-					passThrough = 0.1;
-				};
-				class Pelvis
-				{
-					hitpointName = "HitPelvis";
-					armor = 100;
-					passThrough = 0.1;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					armor = 100;
-					passThrough = 0.1;
-				};
-			};
-		};
-	};
-	class TIOW_Mk7Limbs_SL: TIOW_Mk7Vest
-	{
-		class ItemInfo: ItemInfo
-		{
-			class HitpointsProtectionInfo
-			{
-				class Neck
-				{
-					hitpointName = "HitNeck";
-					armor = 150;
-					passThrough = 0.1;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 100;
-					passThrough = 0.1;
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor = 150;
-					passThrough = 0.1;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor = 150;
-					passThrough = 0.1;
-				};
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor = 100;
-					passThrough = 0.1;
-				};
-				class Pelvis
-				{
-					hitpointName = "HitPelvis";
-					armor = 100;
-					passThrough = 0.1;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					armor = 100;
-					passThrough = 0.1;
-				};
-			};
-		};
-	};
-	class TIOW_Mk7Limbs_RG: TIOW_Mk7Vest
-	{
-		class ItemInfo: ItemInfo
-		{
-			class HitpointsProtectionInfo
-			{
-				class Neck
-				{
-					hitpointName = "HitNeck";
-					armor = 150;
-					passThrough = 0.1;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 100;
-					passThrough = 0.1;
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor = 150;
-					passThrough = 0.1;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor = 150;
-					passThrough = 0.1;
-				};
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor = 100;
-					passThrough = 0.1;
-				};
-				class Pelvis
-				{
-					hitpointName = "HitPelvis";
-					armor = 100;
-					passThrough = 0.1;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					armor = 100;
-					passThrough = 0.1;
-				};
-			};
-		};
-	};
-	class TIOW_Mk7Limbs_IH: TIOW_Mk7Vest
-	{
-		class ItemInfo: ItemInfo
-		{
-			class HitpointsProtectionInfo
-			{
-				class Neck
-				{
-					hitpointName = "HitNeck";
-					armor = 150;
-					passThrough = 0.1;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 100;
-					passThrough = 0.1;
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor = 150;
-					passThrough = 0.1;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor = 150;
-					passThrough = 0.1;
-				};
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor = 100;
-					passThrough = 0.1;
-				};
-				class Pelvis
-				{
-					hitpointName = "HitPelvis";
-					armor = 100;
-					passThrough = 0.1;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					armor = 100;
-					passThrough = 0.1;
-				};
-			};
-		};
-	};
-	class TIOW_Mk7Limbs_WS: TIOW_Mk7Vest
-	{
-		class ItemInfo: ItemInfo
-		{
-			class HitpointsProtectionInfo
-			{
-				class Neck
-				{
-					hitpointName = "HitNeck";
-					armor = 150;
-					passThrough = 0.1;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 100;
-					passThrough = 0.1;
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor = 150;
-					passThrough = 0.1;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor = 150;
-					passThrough = 0.1;
-				};
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor = 100;
-					passThrough = 0.1;
-				};
-				class Pelvis
-				{
-					hitpointName = "HitPelvis";
-					armor = 100;
-					passThrough = 0.1;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					armor = 100;
-					passThrough = 0.1;
-				};
-			};
-		};
-	};
-	class TIOW_Mk7Limbs_DA: TIOW_Mk7Vest
-	{
-		class ItemInfo: ItemInfo
-		{
-			class HitpointsProtectionInfo
-			{
-				class Neck
-				{
-					hitpointName = "HitNeck";
-					armor = 150;
-					passThrough = 0.1;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 100;
-					passThrough = 0.1;
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor = 150;
-					passThrough = 0.1;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor = 150;
-					passThrough = 0.1;
-				};
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor = 100;
-					passThrough = 0.1;
-				};
-				class Pelvis
-				{
-					hitpointName = "HitPelvis";
-					armor = 100;
-					passThrough = 0.1;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					armor = 100;
-					passThrough = 0.1;
-				};
-			};
-		};
-	};
-	class TIOW_Mk7Limbs_SW: TIOW_Mk7Vest
 	{
 		class ItemInfo: ItemInfo
 		{
@@ -3620,7 +3924,563 @@ Helmets
 			};
 		};
 	};
-// Cad. Flak Armors (Base, Medicae, and Sergeant), Medium.
+	
+	// Orks
+	class ShootaBoyGear1: OrkBaseGear
+	{
+		class ItemInfo: ItemInfo
+		{
+			class HitpointsProtectionInfo
+			{
+				class Neck
+				{
+					hitpointName = "HitNeck";
+					armor = 14;
+					passThrough = 0.25;
+				};
+				class Arms
+				{
+					hitpointName = "HitArms";
+					armor = 16;
+					passThrough = 0.25;
+				};
+				class Chest
+				{
+					hitpointName = "HitChest";
+					armor = 100;
+					passThrough = 0.5;
+				};
+				class Diaphragm
+				{
+					hitpointName = "HitDiaphragm";
+					armor = 100;
+					passThrough = 0.5;
+				};
+				class Abdomen
+				{
+					hitpointName = "HitAbdomen";
+					armor = 32;
+					passThrough = 0.3;
+				};
+				class Pelvis
+				{
+					hitpointName = "HitPelvis";
+					armor = 20;
+					passThrough = 0.3;
+				};
+				class Body
+				{
+					hitpointName = "HitBody";
+					passThrough = 0.2;
+				};
+			};
+		};
+	};
+	class ShootaBoyGear2: ShootaBoyGear1
+	{
+		class ItemInfo: ItemInfo
+		{
+			class HitpointsProtectionInfo
+			{
+				class Neck
+				{
+					hitpointName = "HitNeck";
+					armor = 14;
+					passThrough = 0.25;
+				};
+				class Arms
+				{
+					hitpointName = "HitArms";
+					armor = 16;
+					passThrough = 0.25;
+				};
+				class Chest
+				{
+					hitpointName = "HitChest";
+					armor = 100;
+					passThrough = 0.5;
+				};
+				class Diaphragm
+				{
+					hitpointName = "HitDiaphragm";
+					armor = 100;
+					passThrough = 0.5;
+				};
+				class Abdomen
+				{
+					hitpointName = "HitAbdomen";
+					armor = 32;
+					passThrough = 0.3;
+				};
+				class Pelvis
+				{
+					hitpointName = "HitPelvis";
+					armor = 20;
+					passThrough = 0.3;
+				};
+				class Body
+				{
+					hitpointName = "HitBody";
+					passThrough = 0.2;
+				};
+			};
+		};
+	};
+	class TankBustaGear1: OrkBaseGear
+	{
+		class ItemInfo: ItemInfo
+		{
+			class HitpointsProtectionInfo
+			{
+				class Neck
+				{
+					hitpointName = "HitNeck";
+					armor = 14;
+					passThrough = 0.25;
+				};
+				class Arms
+				{
+					hitpointName = "HitArms";
+					armor = 16;
+					passThrough = 0.25;
+				};
+				class Chest
+				{
+					hitpointName = "HitChest";
+					armor = 100;
+					passThrough = 0.5;
+				};
+				class Diaphragm
+				{
+					hitpointName = "HitDiaphragm";
+					armor = 100;
+					passThrough = 0.5;
+				};
+				class Abdomen
+				{
+					hitpointName = "HitAbdomen";
+					armor = 32;
+					passThrough = 0.3;
+				};
+				class Pelvis
+				{
+					hitpointName = "HitPelvis";
+					armor = 20;
+					passThrough = 0.3;
+				};
+				class Body
+				{
+					hitpointName = "HitBody";
+					passThrough = 0.2;
+				};
+			};
+		};
+	};
+	class TankBustaGear2: TankBustaGear1
+	{
+		class ItemInfo: ItemInfo
+		{
+			class HitpointsProtectionInfo
+			{
+				class Neck
+				{
+					hitpointName = "HitNeck";
+					armor = 14;
+					passThrough = 0.25;
+				};
+				class Arms
+				{
+					hitpointName = "HitArms";
+					armor = 16;
+					passThrough = 0.25;
+				};
+				class Chest
+				{
+					hitpointName = "HitChest";
+					armor = 100;
+					passThrough = 0.5;
+				};
+				class Diaphragm
+				{
+					hitpointName = "HitDiaphragm";
+					armor = 100;
+					passThrough = 0.5;
+				};
+				class Abdomen
+				{
+					hitpointName = "HitAbdomen";
+					armor = 32;
+					passThrough = 0.3;
+				};
+				class Pelvis
+				{
+					hitpointName = "HitPelvis";
+					armor = 20;
+					passThrough = 0.3;
+				};
+				class Body
+				{
+					hitpointName = "HitBody";
+					passThrough = 0.2;
+				};
+			};
+		};
+	};
+	class BossGear1: OrkBaseGear
+	{
+		class ItemInfo: ItemInfo
+		{
+			class HitpointsProtectionInfo
+			{
+				class Neck
+				{
+					hitpointName = "HitNeck";
+					armor = 14;
+					passThrough = 0.25;
+				};
+				class Arms
+				{
+					hitpointName = "HitArms";
+					armor = 16;
+					passThrough = 0.25;
+				};
+				class Chest
+				{
+					hitpointName = "HitChest";
+					armor = 100;
+					passThrough = 0.5;
+				};
+				class Diaphragm
+				{
+					hitpointName = "HitDiaphragm";
+					armor = 100;
+					passThrough = 0.5;
+				};
+				class Abdomen
+				{
+					hitpointName = "HitAbdomen";
+					armor = 32;
+					passThrough = 0.3;
+				};
+				class Pelvis
+				{
+					hitpointName = "HitPelvis";
+					armor = 20;
+					passThrough = 0.3;
+				};
+				class Body
+				{
+					hitpointName = "HitBody";
+					passThrough = 0.2;
+				};
+			};
+		};
+	};
+	class BossGear2: OrkBaseGear
+	{
+		class ItemInfo: ItemInfo
+		{
+			class HitpointsProtectionInfo
+			{
+				class Neck
+				{
+					hitpointName = "HitNeck";
+					armor = 14;
+					passThrough = 0.25;
+				};
+				class Arms
+				{
+					hitpointName = "HitArms";
+					armor = 16;
+					passThrough = 0.25;
+				};
+				class Chest
+				{
+					hitpointName = "HitChest";
+					armor = 100;
+					passThrough = 0.5;
+				};
+				class Diaphragm
+				{
+					hitpointName = "HitDiaphragm";
+					armor = 100;
+					passThrough = 0.5;
+				};
+				class Abdomen
+				{
+					hitpointName = "HitAbdomen";
+					armor = 32;
+					passThrough = 0.3;
+				};
+				class Pelvis
+				{
+					hitpointName = "HitPelvis";
+					armor = 20;
+					passThrough = 0.3;
+				};
+				class Body
+				{
+					hitpointName = "HitBody";
+					passThrough = 0.2;
+				};
+			};
+		};
+	};
+	class ArdBoyGear1: OrkBaseGear
+	{
+		class ItemInfo: ItemInfo
+		{
+			class HitpointsProtectionInfo
+			{
+				class Neck
+				{
+					hitpointName = "HitNeck";
+					armor = 14;
+					passThrough = 0.25;
+				};
+				class Arms
+				{
+					hitpointName = "HitArms";
+					armor = 16;
+					passThrough = 0.25;
+				};
+				class Chest
+				{
+					hitpointName = "HitChest";
+					armor = 100;
+					passThrough = 0.5;
+				};
+				class Diaphragm
+				{
+					hitpointName = "HitDiaphragm";
+					armor = 100;
+					passThrough = 0.5;
+				};
+				class Abdomen
+				{
+					hitpointName = "HitAbdomen";
+					armor = 32;
+					passThrough = 0.3;
+				};
+				class Pelvis
+				{
+					hitpointName = "HitPelvis";
+					armor = 20;
+					passThrough = 0.3;
+				};
+				class Body
+				{
+					hitpointName = "HitBody";
+					passThrough = 0.2;
+				};
+			};
+		};
+	};
+	class ArdBoyGear2: OrkBaseGear
+	{
+		class ItemInfo: ItemInfo
+		{
+			class HitpointsProtectionInfo
+			{
+				class Neck
+				{
+					hitpointName = "HitNeck";
+					armor = 14;
+					passThrough = 0.25;
+				};
+				class Arms
+				{
+					hitpointName = "HitArms";
+					armor = 16;
+					passThrough = 0.25;
+				};
+				class Chest
+				{
+					hitpointName = "HitChest";
+					armor = 100;
+					passThrough = 0.5;
+				};
+				class Diaphragm
+				{
+					hitpointName = "HitDiaphragm";
+					armor = 100;
+					passThrough = 0.5;
+				};
+				class Abdomen
+				{
+					hitpointName = "HitAbdomen";
+					armor = 32;
+					passThrough = 0.3;
+				};
+				class Pelvis
+				{
+					hitpointName = "HitPelvis";
+					armor = 20;
+					passThrough = 0.3;
+				};
+				class Body
+				{
+					hitpointName = "HitBody";
+					passThrough = 0.2;
+				};
+			};
+		};
+	};
+	// Orks - SM Variant
+	class TIOW_Ork_Gear: ItemCore{};
+	class TIOW_Ork_Gear_Base: TIOW_Ork_Gear{};
+	class TIOW_OrkVest_SinglePauldron001: TIOW_Ork_Gear_Base
+	{
+		class ItemInfo: ItemInfo
+		{
+			class HitpointsProtectionInfo
+			{
+				class Neck
+				{
+					hitpointName = "HitNeck";
+					armor = 14;
+					passThrough = 0.25;
+				};
+				class Arms
+				{
+					hitpointName = "HitArms";
+					armor = 16;
+					passThrough = 0.25;
+				};
+				class Chest
+				{
+					hitpointName = "HitChest";
+					armor = 100;
+					passThrough = 0.5;
+				};
+				class Diaphragm
+				{
+					hitpointName = "HitDiaphragm";
+					armor = 100;
+					passThrough = 0.5;
+				};
+				class Abdomen
+				{
+					hitpointName = "HitAbdomen";
+					armor = 32;
+					passThrough = 0.3;
+				};
+				class Pelvis
+				{
+					hitpointName = "HitPelvis";
+					armor = 20;
+					passThrough = 0.3;
+				};
+				class Body
+				{
+					hitpointName = "HitBody";
+					passThrough = 0.2;
+				};
+			};
+	  	};
+	};
+	class TIOW_OrkVest_SinglePauldron002: TIOW_Ork_Gear_Base
+	{
+		class ItemInfo: ItemInfo
+		{
+			class HitpointsProtectionInfo
+			{
+				class Neck
+				{
+					hitpointName = "HitNeck";
+					armor = 14;
+					passThrough = 0.25;
+				};
+				class Arms
+				{
+					hitpointName = "HitArms";
+					armor = 16;
+					passThrough = 0.25;
+				};
+				class Chest
+				{
+					hitpointName = "HitChest";
+					armor = 100;
+					passThrough = 0.5;
+				};
+				class Diaphragm
+				{
+					hitpointName = "HitDiaphragm";
+					armor = 100;
+					passThrough = 0.5;
+				};
+				class Abdomen
+				{
+					hitpointName = "HitAbdomen";
+					armor = 32;
+					passThrough = 0.3;
+				};
+				class Pelvis
+				{
+					hitpointName = "HitPelvis";
+					armor = 20;
+					passThrough = 0.3;
+				};
+				class Body
+				{
+					hitpointName = "HitBody";
+					passThrough = 0.2;
+				};
+			};	
+	  	};
+	};
+	class TIOW_OrkVest_SinglePauldron003: TIOW_Ork_Gear_Base
+	{
+	  	class ItemInfo: ItemInfo
+	  	{
+			class HitpointsProtectionInfo
+			{
+				class Neck
+				{
+					hitpointName = "HitNeck";
+					armor = 14;
+					passThrough = 0.25;
+				};
+				class Arms
+				{
+					hitpointName = "HitArms";
+					armor = 16;
+					passThrough = 0.25;
+				};
+				class Chest
+				{
+					hitpointName = "HitChest";
+					armor = 100;
+					passThrough = 0.5;
+				};
+				class Diaphragm
+				{
+					hitpointName = "HitDiaphragm";
+					armor = 100;
+					passThrough = 0.5;
+				};
+				class Abdomen
+				{
+					hitpointName = "HitAbdomen";
+					armor = 32;
+					passThrough = 0.3;
+				};
+				class Pelvis
+				{
+					hitpointName = "HitPelvis";
+					armor = 20;
+					passThrough = 0.3;
+				};
+				class Body
+				{
+					hitpointName = "HitBody";
+					passThrough = 0.2;
+				};
+			};
+	  	};
+	};
+
+	// Cad. Flak Armors (Base, Medicae, and Sergeant), Medium.
     class Cad_Gear_Vest2: ItemCore {};
     class Cad_Gear2: Cad_Gear_Vest2
     {
@@ -3654,7 +4514,7 @@ Helmets
 			};
         };
     };
-// Cad. Kasrkin Armor, Heavy.
+	// Cad. Kasrkin Armor, Heavy.
     class Cad_KasrGear667th: Cad_Gear2
     {
         class ItemInfo: VestItem
@@ -3831,7 +4691,7 @@ Helmets
 			};
         };
     };
-// Cad. Officer Flak Armor, Light.
+	// Cad. Officer Flak Armor, Light.
     class TIOW_IG_Sergeant_Armour_836: Cad_Gear_Vest2
     {
         class ItemInfo: VestItem
@@ -4088,10 +4948,10 @@ Helmets
 			};
         };
     };
-// Cad. Officer Golden Shoulderpads, Unarmored.
-// Cad. Sergeant Flak Armor, Medium.
+	// Cad. Officer Golden Shoulderpads, Unarmored.
+	// Cad. Sergeant Flak Armor, Medium.
 
-/* Redundant.
+	/* Redundant.
     class TIOW_IG_Sergeant_Armour_667: Cad_Gear_Vest2
     {
         class ItemInfo: VestItem
@@ -4222,7 +5082,7 @@ Helmets
     };    
     */
 
-// Cad. Tanker Webbing, Light.
+	// Cad. Tanker Webbing, Light.
     class Cad_TnkGear836th: Cad_Gear2
     {
         class ItemInfo: VestItem
@@ -4351,7 +5211,7 @@ Helmets
 			};
         };
     };
-// DK Engineer Armor, Explosive resistant.
+	// DK Engineer Armor, Explosive resistant.
     class DKoK_Gear: ItemCore {};
 
     class DKoK_Eng_Armor: DKoK_Gear
@@ -4404,7 +5264,7 @@ Helmets
 			};
         };
     };
-// DK Grenadier Armor, Heavy.
+	// DK Grenadier Armor, Heavy.
     class DKoK_Gren_Armor: DKoK_Gear
     {
         class ItemInfo: VestItem
@@ -4449,7 +5309,7 @@ Helmets
 			};
         };
     };
-// Mordian Belt, Unarmored.
+	// Mordian Belt, Unarmored.
     class TIOW_Mordian_Belt: ItemCore
     {
         class ItemInfo: VestItem
@@ -4482,7 +5342,7 @@ Helmets
 			};
         };
     };
-//Ren. Flak Chest, Medium.
+	//Ren. Flak Chest, Medium.
     class Ren_Gear: ItemCore {};
     class Ren_ArmorSet_00: Ren_Gear
     {
@@ -4516,7 +5376,7 @@ Helmets
 			};
         };
     };
-// Ren. Armored Chestplate, Heavy.
+	// Ren. Armored Chestplate, Heavy.
     class Ren_ArmorSet_02_black: Ren_ArmorSet_00
     {
         class ItemInfo: VestItem
@@ -4561,7 +5421,7 @@ Helmets
 			};
         };
     };
-// Valhallan Belt, Unarmored.
+	// Valhallan Belt, Unarmored.
     class Valhallan_Belt: ItemCore
     {
         class ItemInfo: VestItem
@@ -4594,7 +5454,7 @@ Helmets
 			};            
         };
     };
-// Cultist Belt, Unarmored.
+	// Cultist Belt, Unarmored.
     class TIOW_Cultist_Gear: ItemCore
     {
         class ItemInfo: VestItem
@@ -4659,7 +5519,7 @@ Helmets
 			};            
         };
     };
-// Priest Belt, Unarmored.
+	// Priest Belt, Unarmored.
     class TIOW_Priest_Gear: ItemCore
     {
         class ItemInfo: VestItem
@@ -4692,7 +5552,7 @@ Helmets
 			};            
         };
     };
-// All Tau Belts, Medium.
+	// All Tau Belts, Medium.
     class TIOW_Tau_Gear_Base: ItemCore
     {
         class ItemInfo;
@@ -4730,11 +5590,7 @@ Helmets
         };
     };
 
-/*
 
-Weapons
-
-*/
 
 
 };
