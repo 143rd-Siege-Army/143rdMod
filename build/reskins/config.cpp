@@ -2,7 +2,7 @@
 
 class CfgPatches
 {
-	class 143_ACE_Config
+	class DK143_ACE_Config
 	{
 		author = "Konigstiger";
 		name = "DK143 TIOW/Grimdark Reskins";
