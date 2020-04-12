@@ -1,0 +1,9 @@
+Patch Notes
+
+ACE Compat
+
+Beta 1.0 Release:
+- reconfigured TIOW assets to be compatible with ACE Framework: Space Marine, Ork, Tau, and Human factions all configured.
+- adjusted damage and armor values on TIOW infantry ballistics, las weapons, vest, and helmets to be more in line with vanilla values
+- added invisible "Imperial Guard Flak Weave" vest armor 
+- adjusted vox backpacks to have actual storage space

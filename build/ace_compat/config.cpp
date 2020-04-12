@@ -113,7 +113,15 @@ class CfgVehicles
     class SoldierWB: CAManBase {};
     class B_Soldier_base_F: SoldierWB{};
     class B_Soldier_F: B_Soldier_base_F {};
- 
+
+	// Vox Caster Storage
+
+	class Bag_Base;
+	class TIOW_IG_Vox_Caster: Bag_Base
+	{
+		maximumLoad = 40;
+	};
+	
 	/*
 
 	Uniforms: Note that uniforms are being adjusted in TIOW by adjusting the health values of their base soldier classes.
@@ -258,7 +266,7 @@ class CfgVehicles
 	};
 
 	// Orks
-	class I_Soldier_base_F;
+	class I_Soldier_base_F: SoldierWB{};
 	class Naked1: I_Soldier_base_F 
 	{
         armor=2;
@@ -2137,7 +2145,17 @@ class CfgWeapons
     class UniformItem;
     class ItemCore;
     class H_HelmetB;
-	class SM_Gear;
+	class SM_Gear: ItemCore
+	{
+		scope = 0;
+		allowedSlots[] = {"BACKPACK_SLOT"};
+		hiddenSelections[] = {"camo"};
+		class ItemInfo: VestItem
+		{
+			hiddenSelections[] = {"camo"};
+			LOAD[] = {"(0","0)"};
+		};
+	};
 /*
 
 Helmets
@@ -3311,7 +3329,6 @@ Helmets
 
 	// Space Marine
 
-	class SM_Gear: ItemCore{};
 	class TIOW_Mk7Vest: SM_Gear
 	{
 		class ItemInfo: ItemInfo
@@ -3926,6 +3943,18 @@ Helmets
 	};
 	
 	// Orks
+	class OrkBaseGear: ItemCore
+	{
+		scope = 0;
+		allowedSlots[] = {901};
+		hiddenSelections[] = {"Camo1","Camo2"};
+		class ItemInfo: VestItem
+		{
+			hiddenSelections[] = {"Camo1","Camo2"};
+			maximumLoad = 0;
+			mass = 0;
+		};
+	};
 	class ShootaBoyGear1: OrkBaseGear
 	{
 		class ItemInfo: ItemInfo
@@ -4327,7 +4356,17 @@ Helmets
 		};
 	};
 	// Orks - SM Variant
-	class TIOW_Ork_Gear: ItemCore{};
+	class TIOW_Ork_Gear: ItemCore
+	{
+		scope = 0;
+		allowedSlots[] = {"BACKPACK_SLOT"};
+		hiddenSelections[] = {"camo"};
+		class ItemInfo: VestItem
+		{
+			hiddenSelections[] = {"camo"};
+			LOAD[] = {"(0,0)"};
+		};
+	};
 	class TIOW_Ork_Gear_Base: TIOW_Ork_Gear{};
 	class TIOW_OrkVest_SinglePauldron001: TIOW_Ork_Gear_Base
 	{
