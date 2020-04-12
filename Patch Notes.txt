@@ -1,7 +1,6 @@
 Patch Notes
 
 ACE Compat
-
 Beta 1.0 Release:
 	Weapon adjustments:
 	- buffed Max Melee damage values and range
@@ -14,6 +13,15 @@ Beta 1.0 Release:
 	- Space Marine and Ork armors nerfed to be closer to vanilla
 	- IG, Tau, Renegade armor values nerfed to be in line with vanilla armor
 	- added invisible "Flak Weave" vest armor
+
+ALiVE Compat
+Beta 1.0 Release:
+	- add IG, Tau, Renegade compats for ALiVE use
+
+Reskins
+Beta 1.0 Release:
+	- Add Grimdark Medical Chimera reskin
+
 
 Required Mods: 
 - There is Only War
