@@ -3,7 +3,19 @@ Patch Notes
 ACE Compat
 
 Beta 1.0 Release:
-- reconfigured TIOW assets to be compatible with ACE Framework: Space Marine, Ork, Tau, and Human factions all configured.
-- adjusted damage and armor values on TIOW infantry ballistics, las weapons, vest, and helmets to be more in line with vanilla values
-- added invisible "Imperial Guard Flak Weave" vest armor 
-- adjusted vox backpacks to have actual storage space
+	Weapon adjustments:
+	- buffed Max Melee damage values and range
+	- nerfed TIOW bullet damage values to be in line with vanilla weaponry (only las and ballistic weapons, no heavy or special)
+	Uniform adjustments:
+	- vox caster carrying capacity added
+	- Space Marine and Ork uniform values nerfed to be closer to vanilla values, added ACE compatability
+	- IG, Tau, Renegade uniform values nerfed to in line with vanilla armor, added ACE compatability.
+	Weapon adjustments:
+	- Space Marine and Ork armors nerfed to be closer to vanilla
+	- IG, Tau, Renegade armor values nerfed to be in line with vanilla armor
+	- added invisible "Flak Weave" vest armor
+
+Required Mods: 
+- There is Only War
+- There is Only War - Blood Pact Expansion
+- Max_Melee_Weapons

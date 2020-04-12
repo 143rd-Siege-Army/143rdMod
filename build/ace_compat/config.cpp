@@ -2,12 +2,12 @@
 
 class CfgPatches
 {
-	class 143_ACE_Config
+	class DK143_ACE_Compat
 	{
 		author = "Siggyfreed";
 		name = "DK143 TIOW ACE Compat";
 		requiredAddons[] = 
-        {"ace_common","A40k_WepBase","TIOW_40K_tau","CadFoot","Cadian_Weapons","DKoK_Weapons","OrkBoyz","OrkDakka","OrkShoota","Renegades_Foot","TIOW_AutoWeapons","TIOW_IG_Cosmetics","TIOW_IG_HQ","TIOW_Mordian","TIOW_OrkBoyz","TIOW_OrkDakka","TIOW_SM","TIOW_SMWep","TIOW_Valhallans"};
+        {"ace_common","A40k_WepBase","TIOW_40K_tau","CadFoot","Cadian_Weapons","DKoK_Weapons","OrkBoyz","OrkDakka","OrkShoota","Renegades_Foot","TIOW_AutoWeapons","TIOW_IG_Cosmetics","TIOW_IG_HQ","TIOW_Mordian","TIOW_OrkBoyz","TIOW_OrkDakka","TIOW_SM","TIOW_SMWep","TIOW_Valhallans","max_melee_weapons"};
 		requiredVersion = 0.1;
 		units[] = {};
 		weapons[] = {};
@@ -21,6 +21,19 @@ class CfgAmmo
 	class ShotgunBase;
 	class B_127x99_Ball;
 	class B_12Gauge_Pellets;
+	class medium_hit: BUlletBase
+	{
+		hit = 9;
+		timeToLive = 0.045;
+	};
+	class light_hit: medium_hit
+	{
+		hit = 5;
+	};
+	class hard_hit: medium_hit
+	{
+		hit = 12;
+	};
 	class TIOW_LongLas_LasBolt: BulletBase
 	{
 		hit = 16;
