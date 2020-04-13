@@ -13,6 +13,8 @@ Beta 1.0 Release:
 	- Space Marine and Ork armors nerfed to be closer to vanilla
 	- IG, Tau, Renegade armor values nerfed to be in line with vanilla armor
 	- added invisible "Flak Weave" vest armor
+	Object adjustments:
+	- TIOW mini storage crates configured to work with ACE load system
 
 ALiVE Compat
 Beta 1.0 Release:
