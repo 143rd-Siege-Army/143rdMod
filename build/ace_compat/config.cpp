@@ -810,8 +810,11 @@ class CfgVehicles
 	};
 
 	//Renegade
-	class O_Soldier_F;
-    class TIOW_O_Ren_B_Base: O_Soldier_F {
+	class SoldierEB: CAManBase {};
+	class O_Soldier_base_F: SoldierEB {};
+	class O_Soldier_F: O_Soldier_base_F {};
+    class TIOW_O_Ren_B_Base: O_Soldier_F 
+	{
         armor=2;
         armorStructural=3;
         explosionShielding=0.30000001;
@@ -2286,6 +2289,54 @@ class CfgVehicles
 			};
 		};
     };
+	// Storage adjustments
+	class ThingX;
+	class land_simple_muni_blue1b: ThingX {};
+	class TIOW_IG_Ammobox1_836: ThingX
+	{
+		ace_cargo_size = 2;
+		ace_cargo_canLoad = 1;
+	};
+	class TIOW_IG_WeaponBox1_836: ThingX
+	{
+		ace_cargo_size = 2;
+		ace_cargo_canLoad = 1;
+	};
+	class TIOW_IG_WeaponBox2_836: ThingX
+	{
+		ace_cargo_size = 2;
+		ace_cargo_canLoad = 1;
+	};
+	class TIOW_IG_GrenadierBox1_DKOK: ThingX
+	{
+		ace_cargo_size = 2;
+		ace_cargo_canLoad = 1;
+	};
+	class TIOW_IG_WeaponBox1_DKOK: ThingX
+	{
+		ace_cargo_size = 2;
+		ace_cargo_canLoad = 1;
+	};
+	class TIOW_IG_WeaponBox2_DKOK: ThingX	
+	{
+		ace_cargo_size = 2;
+		ace_cargo_canLoad = 1;
+	};
+	class TIOW_IG_Ammobox1_DKOK: ThingX	
+	{
+		ace_cargo_size = 2;
+		ace_cargo_canLoad = 1;
+	};
+	class land_mini_muni_204: land_simple_muni_blue1b	
+	{
+		ace_cargo_size = 2;
+		ace_cargo_canLoad = 1;
+	};
+	class land_Mini_Muni2_tech: land_mini_muni_204	
+	{
+		ace_cargo_size = 2;
+		ace_cargo_canLoad = 1;
+	};
 };
 
 class CfgWeapons
