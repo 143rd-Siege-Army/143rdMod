@@ -1,21 +1,21 @@
 class CfgPatches {
-    class I_1491stDKOK {
+    class B_143DKOK {
         units[] = {
-            "I_1491stDKOK_Death_Korps_Quarter_Master_01",
-            "I_1491stDKOK_Death_Korps_Watchmaster_01",
-            "I_1491stDKOK_AT_Guardsman_01",
-            "I_1491stDKOK_Death_Korps_Guardsman_01",
-            "I_1491stDKOK_Death_Korps_Officer_01",
-            "I_1491stDKOK_AT_Grenadier_01",
-            "I_1491stDKOK_Death_Korps_Engineer_01",
-            "I_1491stDKOK_Death_Korps_Grenadier_01",
-            "I_1491stDKOK_Death_Korps_Grenadier_Plasmagunner_01",
-            "I_1491stDKOK_Death_Korps_Guardsman_Plasmagunner_01",
-            "I_1491stDKOK_Death_Korps_Guardsman_Heavy_Stubber_01"
+            "B_143DKOK_Death_Korps_Quarter_Master_01",
+            "B_143DKOK_Death_Korps_Watchmaster_01",
+            "B_143DKOK_AT_Guardsman_01",
+            "B_143DKOK_Death_Korps_Guardsman_01",
+            "B_143DKOK_Death_Korps_Officer_01",
+            "B_143DKOK_AT_Grenadier_01",
+            "B_143DKOK_Death_Korps_Engineer_01",
+            "B_143DKOK_Death_Korps_Grenadier_01",
+            "B_143DKOK_Death_Korps_Grenadier_Plasmagunner_01",
+            "B_143DKOK_Death_Korps_Guardsman_Plasmagunner_01",
+            "B_143DKOK_Death_Korps_Guardsman_Heavy_Stubber_01"
         };
         weapons[] = {};
         requiredVersion = 1.62;
-        requiredAddons[] = {};
+        requiredAddons[] = {"ace_common"};
         author = "VGm. Venture";
         authors[] = {"VGm. Venture"};
     };
@@ -27,243 +27,243 @@ class CfgPatches {
 //////////////////////////////////////////////////////////////////////////////////
 
 class CfgFactionClasses {
-    class I_1491stDKOK {
-        displayName = "143rd DKOK - 1491st";
-        side = 2;
-        flag = "\A3\uI_f\data\map\markers\flags\Germany_ca.paa";
-        icon = "\A3\uI_f\data\map\markers\flags\Germany_ca.paa";
+    class B_143DKOK {
+        displayName = "143rd DKOK Siege Regiment";
+        side = 1;
+        flag = "\A3\ui_f\data\map\markers\flags\Germany_ca.paa";
+        icon = "\A3\ui_f\data\map\markers\flags\Germany_ca.paa";
         priority = 1;
     };
 };
 
 class CfgGroups {
-    class Indep {
+    class WEST {
 
-        class I_1491stDKOK {
-            name = "143rd DKOK - 1491st";
+        class B_143DKOK {
+            name = "143rd DKOK Siege Regiment";
 
             class Infantry {
                 name = "Infantry";
 
-                class I_1491stDKOK_infantry_sentry {
+                class b_143dkok_infantry_sentry {
                     name = "Sentry";
-                    side = 2;
-                    faction = "I_1491stDKOK";
-                    icon = "\A3\uI_f\data\map\markers\nato\b_inf.paa";
+                    side = 1;
+                    faction = "B_143DKOK";
+                    icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
                     rarityGroup = 0.5;
 
                     class Unit0 {
                         position[] = {0,0,0};
                         rank = "SERGEANT";
-                        side = 2;
-                        vehicle = "I_1491stDKOK_Death_Korps_Guardsman_01";
+                        side = 1;
+                        vehicle = "B_143DKOK_Death_Korps_Guardsman_01";
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
                         rank = "PRIVATE";
-                        side = 2;
-                        vehicle = "I_1491stDKOK_Death_Korps_Guardsman_01";
+                        side = 1;
+                        vehicle = "B_143DKOK_Death_Korps_Guardsman_01";
                     };
                 };
 
-                class I_1491stDKOK_infantry_fireteam {
+                class b_143dkok_infantry_fireteam {
                     name = "Fireteam";
-                    side = 2;
-                    faction = "I_1491stDKOK";
-                    icon = "\A3\uI_f\data\map\markers\nato\b_inf.paa";
+                    side = 1;
+                    faction = "B_143DKOK";
+                    icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
                     rarityGroup = 0.5;
 
                     class Unit0 {
                         position[] = {0,0,0};
                         rank = "SERGEANT";
-                        side = 2;
-                        vehicle = "I_1491stDKOK_Death_Korps_Watchmaster_01";
+                        side = 1;
+                        vehicle = "B_143DKOK_Death_Korps_Watchmaster_01";
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
                         rank = "PRIVATE";
-                        side = 2;
-                        vehicle = "I_1491stDKOK_Death_Korps_Guardsman_01";
+                        side = 1;
+                        vehicle = "B_143DKOK_Death_Korps_Guardsman_01";
                     };
                     class Unit2 {
                         position[] = {-5,-5,0};
                         rank = "PRIVATE";
-                        side = 2;
-                        vehicle = "I_1491stDKOK_Death_Korps_Guardsman_01";
+                        side = 1;
+                        vehicle = "B_143DKOK_Death_Korps_Guardsman_01";
                     };
                     class Unit3 {
                         position[] = {10,-10,0};
                         rank = "PRIVATE";
-                        side = 2;
-                        vehicle = "I_1491stDKOK_Death_Korps_Guardsman_01";
+                        side = 1;
+                        vehicle = "B_143DKOK_Death_Korps_Guardsman_01";
                     };
                 };
 
-                class I_1491stDKOK_infantry_fireteam_at {
+                class b_143dkok_infantry_fireteam_at {
                     name = "Fireteam AT";
-                    side = 2;
-                    faction = "I_1491stDKOK";
-                    icon = "\A3\uI_f\data\map\markers\nato\b_inf.paa";
+                    side = 1;
+                    faction = "B_143DKOK";
+                    icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
                     rarityGroup = 0.5;
 
                     class Unit0 {
                         position[] = {0,0,0};
                         rank = "SERGEANT";
-                        side = 2;
-                        vehicle = "I_1491stDKOK_Death_Korps_Watchmaster_01";
+                        side = 1;
+                        vehicle = "B_143DKOK_Death_Korps_Watchmaster_01";
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
                         rank = "PRIVATE";
-                        side = 2;
-                        vehicle = "I_1491stDKOK_AT_Guardsman_01";
+                        side = 1;
+                        vehicle = "B_143DKOK_AT_Guardsman_01";
                     };
                     class Unit2 {
                         position[] = {-5,-5,0};
                         rank = "PRIVATE";
-                        side = 2;
-                        vehicle = "I_1491stDKOK_Death_Korps_Guardsman_01";
+                        side = 1;
+                        vehicle = "B_143DKOK_Death_Korps_Guardsman_01";
                     };
                     class Unit3 {
                         position[] = {10,-10,0};
                         rank = "PRIVATE";
-                        side = 2;
-                        vehicle = "I_1491stDKOK_Death_Korps_Guardsman_01";
+                        side = 1;
+                        vehicle = "B_143DKOK_Death_Korps_Guardsman_01";
                     };
                 };
 
-                class I_1491stDKOK_infantry_fireteam_plasma {
+                class b_143dkok_infantry_fireteam_plasma {
                     name = "Fireteam Plasma";
-                    side = 2;
-                    faction = "I_1491stDKOK";
-                    icon = "\A3\uI_f\data\map\markers\nato\b_inf.paa";
+                    side = 1;
+                    faction = "B_143DKOK";
+                    icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
                     rarityGroup = 0.5;
 
                     class Unit0 {
                         position[] = {0,0,0};
                         rank = "SERGEANT";
-                        side = 2;
-                        vehicle = "I_1491stDKOK_Death_Korps_Watchmaster_01";
+                        side = 1;
+                        vehicle = "B_143DKOK_Death_Korps_Watchmaster_01";
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
                         rank = "PRIVATE";
-                        side = 2;
-                        vehicle = "I_1491stDKOK_Death_Korps_Guardsman_Plasmagunner_01";
+                        side = 1;
+                        vehicle = "B_143DKOK_Death_Korps_Guardsman_Plasmagunner_01";
                     };
                     class Unit2 {
                         position[] = {-5,-5,0};
                         rank = "PRIVATE";
-                        side = 2;
-                        vehicle = "I_1491stDKOK_Death_Korps_Guardsman_01";
+                        side = 1;
+                        vehicle = "B_143DKOK_Death_Korps_Guardsman_01";
                     };
                     class Unit3 {
                         position[] = {10,-10,0};
                         rank = "PRIVATE";
-                        side = 2;
-                        vehicle = "I_1491stDKOK_Death_Korps_Guardsman_01";
+                        side = 1;
+                        vehicle = "B_143DKOK_Death_Korps_Guardsman_01";
                     };
                 };
 
-                class I_1491stDKOK_infantry_fireteam_stubber {
+                class b_143dkok_infantry_fireteam_stubber {
                     name = "Fireteam Stubber";
-                    side = 2;
-                    faction = "I_1491stDKOK";
-                    icon = "\A3\uI_f\data\map\markers\nato\b_inf.paa";
+                    side = 1;
+                    faction = "B_143DKOK";
+                    icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
                     rarityGroup = 0.5;
 
                     class Unit0 {
                         position[] = {0,0,0};
                         rank = "SERGEANT";
-                        side = 2;
-                        vehicle = "I_1491stDKOK_Death_Korps_Watchmaster_01";
+                        side = 1;
+                        vehicle = "B_143DKOK_Death_Korps_Watchmaster_01";
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
                         rank = "PRIVATE";
-                        side = 2;
-                        vehicle = "I_1491stDKOK_Death_Korps_Guardsman_Heavy_Stubber_01";
+                        side = 1;
+                        vehicle = "B_143DKOK_Death_Korps_Guardsman_Heavy_Stubber_01";
                     };
                     class Unit2 {
                         position[] = {-5,-5,0};
                         rank = "PRIVATE";
-                        side = 2;
-                        vehicle = "I_1491stDKOK_Death_Korps_Guardsman_01";
+                        side = 1;
+                        vehicle = "B_143DKOK_Death_Korps_Guardsman_01";
                     };
                     class Unit3 {
                         position[] = {10,-10,0};
                         rank = "PRIVATE";
-                        side = 2;
-                        vehicle = "I_1491stDKOK_Death_Korps_Guardsman_01";
+                        side = 1;
+                        vehicle = "B_143DKOK_Death_Korps_Guardsman_01";
                     };
                 };
 
-                class I_1491stDKOK_infantry_squad {
+                class b_143dkok_infantry_squad {
                     name = "Squad";
-                    side = 2;
-                    faction = "I_1491stDKOK";
-                    icon = "\A3\uI_f\data\map\markers\nato\b_inf.paa";
+                    side = 1;
+                    faction = "B_143DKOK";
+                    icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
                     rarityGroup = 0.5;
 
                     class Unit0 {
                         position[] = {0,0,0};
                         rank = "SERGEANT";
-                        side = 2;
-                        vehicle = "I_1491stDKOK_Death_Korps_Watchmaster_01";
+                        side = 1;
+                        vehicle = "B_143DKOK_Death_Korps_Watchmaster_01";
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
                         rank = "PRIVATE";
-                        side = 2;
-                        vehicle = "I_1491stDKOK_Death_Korps_Guardsman_Plasmagunner_01";
+                        side = 1;
+                        vehicle = "B_143DKOK_Death_Korps_Guardsman_Plasmagunner_01";
                     };
                     class Unit2 {
                         position[] = {-5,-5,0};
                         rank = "PRIVATE";
-                        side = 2;
-                        vehicle = "I_1491stDKOK_Death_Korps_Guardsman_Heavy_Stubber_01";
+                        side = 1;
+                        vehicle = "B_143DKOK_Death_Korps_Guardsman_Heavy_Stubber_01";
                     };
                     class Unit3 {
                         position[] = {10,-10,0};
                         rank = "PRIVATE";
-                        side = 2;
-                        vehicle = "I_1491stDKOK_AT_Guardsman_01";
+                        side = 1;
+                        vehicle = "B_143DKOK_AT_Guardsman_01";
                     };
                     class Unit4 {
                         position[] = {-10,-10,0};
                         rank = "CORPORAL";
-                        side = 2;
-                        vehicle = "I_1491stDKOK_Death_Korps_Guardsman_01";
+                        side = 1;
+                        vehicle = "B_143DKOK_Death_Korps_Guardsman_01";
                     };
                     class Unit5 {
                         position[] = {15,-15,0};
                         rank = "CORPORAL";
-                        side = 2;
-                        vehicle = "I_1491stDKOK_Death_Korps_Guardsman_01";
+                        side = 1;
+                        vehicle = "B_143DKOK_Death_Korps_Guardsman_01";
                     };
                     class Unit6 {
                         position[] = {-15,-15,0};
                         rank = "PRIVATE";
-                        side = 2;
-                        vehicle = "I_1491stDKOK_Death_Korps_Guardsman_01";
+                        side = 1;
+                        vehicle = "B_143DKOK_Death_Korps_Guardsman_01";
                     };
                     class Unit7 {
                         position[] = {20,-20,0};
                         rank = "PRIVATE";
-                        side = 2;
-                        vehicle = "I_1491stDKOK_Death_Korps_Guardsman_01";
+                        side = 1;
+                        vehicle = "B_143DKOK_Death_Korps_Guardsman_01";
                     };
                     class Unit8 {
                         position[] = {-20,-20,0};
                         rank = "PRIVATE";
-                        side = 2;
-                        vehicle = "I_1491stDKOK_Death_Korps_Guardsman_01";
+                        side = 1;
+                        vehicle = "B_143DKOK_Death_Korps_Guardsman_01";
                     };
                     class Unit9 {
                         position[] = {25,-25,0};
                         rank = "PRIVATE";
-                        side = 2;
-                        vehicle = "I_1491stDKOK_Death_Korps_Guardsman_01";
+                        side = 1;
+                        vehicle = "B_143DKOK_Death_Korps_Guardsman_01";
                     };
                 };
 
@@ -272,42 +272,42 @@ class CfgGroups {
             class SpecOps {
                 name = "Special Forces";
 
-                class I_1491stDKOK_specops_grenadier_team {
+                class b_143dkok_specops_grenadier_team {
                     name = "Grenadier Team";
-                    side = 2;
-                    faction = "I_1491stDKOK";
-                    icon = "\A3\uI_f\data\map\markers\nato\b_recon.paa";
+                    side = 1;
+                    faction = "B_143DKOK";
+                    icon = "\A3\ui_f\data\map\markers\nato\b_recon.paa";
                     rarityGroup = 0.5;
 
                     class Unit0 {
                         position[] = {0,0,0};
                         rank = "SERGEANT";
-                        side = 2;
-                        vehicle = "I_1491stDKOK_Death_Korps_Grenadier_01";
+                        side = 1;
+                        vehicle = "B_143DKOK_Death_Korps_Grenadier_01";
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
                         rank = "PRIVATE";
-                        side = 2;
-                        vehicle = "I_1491stDKOK_Death_Korps_Grenadier_Plasmagunner_01";
+                        side = 1;
+                        vehicle = "B_143DKOK_Death_Korps_Grenadier_Plasmagunner_01";
                     };
                     class Unit2 {
                         position[] = {-5,-5,0};
                         rank = "PRIVATE";
-                        side = 2;
-                        vehicle = "I_1491stDKOK_AT_Grenadier_01";
+                        side = 1;
+                        vehicle = "B_143DKOK_AT_Grenadier_01";
                     };
                     class Unit3 {
                         position[] = {10,-10,0};
                         rank = "PRIVATE";
-                        side = 2;
-                        vehicle = "I_1491stDKOK_Death_Korps_Grenadier_01";
+                        side = 1;
+                        vehicle = "B_143DKOK_Death_Korps_Grenadier_01";
                     };
                     class Unit4 {
                         position[] = {-10,-10,0};
                         rank = "PRIVATE";
-                        side = 2;
-                        vehicle = "I_1491stDKOK_Death_Korps_Grenadier_01";
+                        side = 1;
+                        vehicle = "B_143DKOK_Death_Korps_Grenadier_01";
                     };
                 };
 
@@ -326,81 +326,81 @@ class CfgGroups {
             class Support {
                 name = "Support Infantry";
 
-                class I_1491stDKOK_support_platoon_command_squad {
+                class b_143dkok_support_platoon_command_squad {
                     name = "Platoon Command Squad";
-                    side = 2;
-                    faction = "I_1491stDKOK";
-                    icon = "\A3\uI_f\data\map\markers\nato\b_support.paa";
+                    side = 1;
+                    faction = "B_143DKOK";
+                    icon = "\A3\ui_f\data\map\markers\nato\b_support.paa";
                     rarityGroup = 0.5;
 
                     class Unit0 {
                         position[] = {0,0,0};
                         rank = "LIEUTENANT";
-                        side = 2;
-                        vehicle = "I_1491stDKOK_Death_Korps_Watchmaster_01";
+                        side = 1;
+                        vehicle = "B_143DKOK_Death_Korps_Watchmaster_01";
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
                         rank = "SERGEANT";
-                        side = 2;
-                        vehicle = "I_1491stDKOK_Death_Korps_Guardsman_Heavy_Stubber_01";
+                        side = 1;
+                        vehicle = "B_143DKOK_Death_Korps_Guardsman_Heavy_Stubber_01";
                     };
                     class Unit2 {
                         position[] = {-5,-5,0};
                         rank = "SERGEANT";
-                        side = 2;
-                        vehicle = "I_1491stDKOK_Death_Korps_Guardsman_Plasmagunner_01";
+                        side = 1;
+                        vehicle = "B_143DKOK_Death_Korps_Guardsman_Plasmagunner_01";
                     };
                     class Unit3 {
                         position[] = {10,-10,0};
                         rank = "SERGEANT";
-                        side = 2;
-                        vehicle = "I_1491stDKOK_AT_Guardsman_01";
+                        side = 1;
+                        vehicle = "B_143DKOK_AT_Guardsman_01";
                     };
                     class Unit4 {
                         position[] = {-10,-10,0};
                         rank = "SERGEANT";
-                        side = 2;
-                        vehicle = "I_1491stDKOK_Death_Korps_Guardsman_01";
+                        side = 1;
+                        vehicle = "B_143DKOK_Death_Korps_Guardsman_01";
                     };
                 };
 
-                class I_1491stDKOK_support_company_command_squad {
+                class b_143dkok_support_company_command_squad {
                     name = "Company Command Squad";
-                    side = 2;
-                    faction = "I_1491stDKOK";
-                    icon = "\A3\uI_f\data\map\markers\nato\b_support.paa";
+                    side = 1;
+                    faction = "B_143DKOK";
+                    icon = "\A3\ui_f\data\map\markers\nato\b_support.paa";
                     rarityGroup = 0.5;
 
                     class Unit0 {
                         position[] = {0,0,0};
                         rank = "CAPTAIN";
-                        side = 2;
-                        vehicle = "I_1491stDKOK_Death_Korps_Quarter_Master_01";
+                        side = 1;
+                        vehicle = "B_143DKOK_Death_Korps_Quarter_Master_01";
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
                         rank = "SERGEANT";
-                        side = 2;
-                        vehicle = "I_1491stDKOK_AT_Grenadier_01";
+                        side = 1;
+                        vehicle = "B_143DKOK_AT_Grenadier_01";
                     };
                     class Unit2 {
                         position[] = {-5,-5,0};
                         rank = "SERGEANT";
-                        side = 2;
-                        vehicle = "I_1491stDKOK_Death_Korps_Grenadier_Plasmagunner_01";
+                        side = 1;
+                        vehicle = "B_143DKOK_Death_Korps_Grenadier_Plasmagunner_01";
                     };
                     class Unit3 {
                         position[] = {10,-10,0};
                         rank = "SERGEANT";
-                        side = 2;
-                        vehicle = "I_1491stDKOK_Death_Korps_Grenadier_01";
+                        side = 1;
+                        vehicle = "B_143DKOK_Death_Korps_Grenadier_01";
                     };
                     class Unit4 {
                         position[] = {-10,-10,0};
                         rank = "LIEUTENANT";
-                        side = 2;
-                        vehicle = "I_1491stDKOK_Death_Korps_Officer_01";
+                        side = 1;
+                        vehicle = "B_143DKOK_Death_Korps_Officer_01";
                     };
                 };
 
@@ -408,105 +408,11 @@ class CfgGroups {
 
             class Mechanized {
                 name = "Mechanized Infantry";
-                class I_1491stDKOK_infantry_squad {
-                    name = "Squad";
-                    side = 2;
-                    faction = "I_1491stDKOK";
-                    icon = "\A3\uI_f\data\map\markers\nato\b_inf.paa";
-                    rarityGroup = 0.5;
-
-                    class Unit0 {
-                        position[] = {0,0,0};
-                        rank = "SERGEANT";
-                        side = 2;
-                        vehicle = "I_1491stDKOK_Death_Korps_Watchmaster_01";
-                    };
-                    class Unit1 {
-                        position[] = {5,-5,0};
-                        rank = "PRIVATE";
-                        side = 2;
-                        vehicle = "I_1491stDKOK_Death_Korps_Guardsman_Plasmagunner_01";
-                    };
-                    class Unit2 {
-                        position[] = {-5,-5,0};
-                        rank = "PRIVATE";
-                        side = 2;
-                        vehicle = "I_1491stDKOK_Death_Korps_Guardsman_Heavy_Stubber_01";
-                    };
-                    class Unit3 {
-                        position[] = {10,-10,0};
-                        rank = "PRIVATE";
-                        side = 2;
-                        vehicle = "I_1491stDKOK_AT_Guardsman_01";
-                    };
-                    class Unit4 {
-                        position[] = {-10,-10,0};
-                        rank = "CORPORAL";
-                        side = 2;
-                        vehicle = "I_1491stDKOK_Death_Korps_Guardsman_01";
-                    };
-                    class Unit5 {
-                        position[] = {15,-15,0};
-                        rank = "CORPORAL";
-                        side = 2;
-                        vehicle = "I_1491stDKOK_Death_Korps_Guardsman_01";
-                    };
-                    class Unit6 {
-                        position[] = {-15,-15,0};
-                        rank = "PRIVATE";
-                        side = 2;
-                        vehicle = "I_1491stDKOK_Death_Korps_Guardsman_01";
-                    };
-                    class Unit7 {
-                        position[] = {20,-20,0};
-                        rank = "PRIVATE";
-                        side = 2;
-                        vehicle = "I_1491stDKOK_Death_Korps_Guardsman_01";
-                    };
-                    class Unit8 {
-                        position[] = {-20,-20,0};
-                        rank = "PRIVATE";
-                        side = 2;
-                        vehicle = "I_1491stDKOK_Death_Korps_Guardsman_01";
-                    };
-                    class Unit9 {
-                        position[] = {25,-25,0};
-                        rank = "PRIVATE";
-                        side = 2;
-                        vehicle = "I_1491stDKOK_Death_Korps_Guardsman_01";
-                    };
-					class Unit10 {
-						position[] = {0,-25,0};
-                        rank = "SERGEANT";
-                        side = 2;
-                        vehicle = "_1491stChimAuto_Indep";
-					};
-                };
 
             };
 
             class Armored {
                 name = "Armor";
-                class I_1491stDKOK_armored_Tank_Squadron {
-                    name = "Tank Squadron";
-                    side = 2;
-                    faction = "I_1491stDKOK";
-                    icon = "\A3\uI_f\data\map\markers\nato\b_inf.paa";
-                    rarityGroup = 0.5;
-
-                    class Unit0 {
-                        position[] = {0,0,0};
-                        rank = "LIEUTENANT";
-                        side = 2;
-                        vehicle = "TIOW_Krieg_LR_Vanquisher_1491st_Indep";
-                    };
-                    class Unit1 {
-                        position[] = {5,-5,0};
-                        rank = "SERGEANT";
-                        side = 2;
-                        vehicle = "TIOW_Krieg_LR_Vanquisher_1491st_Indep";
-                    };
-                };
 
             };
 
@@ -536,60 +442,60 @@ class CBA_Extended_EventHandlers_base;
 
 class CfgVehicles {
 
-    class DKoK_QM_1491st_Indep;
-    class DKoK_QM_1491st_OCimport_01 : DKoK_QM_1491st_Indep { scope = 0; class EventHandlers; };
+    class DKoK_QM_1491st;
+    class DKoK_QM_1491st_OCimport_01 : DKoK_QM_1491st { scope = 0; class EventHandlers; };
     class DKoK_QM_1491st_OCimport_02 : DKoK_QM_1491st_OCimport_01 { class EventHandlers; };
 
-    class DKoK_GM_WM_1491st_Indep;
-    class DKoK_GM_WM_1491st_OCimport_01 : DKoK_GM_WM_1491st_Indep { scope = 0; class EventHandlers; };
+    class DKoK_GM_WM_1491st;
+    class DKoK_GM_WM_1491st_OCimport_01 : DKoK_GM_WM_1491st { scope = 0; class EventHandlers; };
     class DKoK_GM_WM_1491st_OCimport_02 : DKoK_GM_WM_1491st_OCimport_01 { class EventHandlers; };
 
-    class DKoK_GM_1491st_AT_Indep;
-    class DKoK_GM_1491st_AT_OCimport_01 : DKoK_GM_1491st_AT_Indep { scope = 0; class EventHandlers; };
+    class DKoK_GM_1491st_AT;
+    class DKoK_GM_1491st_AT_OCimport_01 : DKoK_GM_1491st_AT { scope = 0; class EventHandlers; };
     class DKoK_GM_1491st_AT_OCimport_02 : DKoK_GM_1491st_AT_OCimport_01 { class EventHandlers; };
 
-    class DKoK_GM_1491st_Indep;
-    class DKoK_GM_1491st_OCimport_01 : DKoK_GM_1491st_Indep { scope = 0; class EventHandlers; };
+    class DKoK_GM_1491st;
+    class DKoK_GM_1491st_OCimport_01 : DKoK_GM_1491st { scope = 0; class EventHandlers; };
     class DKoK_GM_1491st_OCimport_02 : DKoK_GM_1491st_OCimport_01 { class EventHandlers; };
 
-    class DKoK_Off_1491st_Indep;
-    class DKoK_Off_1491st_OCimport_01 : DKoK_Off_1491st_Indep { scope = 0; class EventHandlers; };
+    class DKoK_Off_1491st;
+    class DKoK_Off_1491st_OCimport_01 : DKoK_Off_1491st { scope = 0; class EventHandlers; };
     class DKoK_Off_1491st_OCimport_02 : DKoK_Off_1491st_OCimport_01 { class EventHandlers; };
 
-    class DKoK_Gren_1491st_AT_Indep;
-    class DKoK_Gren_1491st_AT_OCimport_01 : DKoK_Gren_1491st_AT_Indep { scope = 0; class EventHandlers; };
+    class DKoK_Gren_1491st_AT;
+    class DKoK_Gren_1491st_AT_OCimport_01 : DKoK_Gren_1491st_AT { scope = 0; class EventHandlers; };
     class DKoK_Gren_1491st_AT_OCimport_02 : DKoK_Gren_1491st_AT_OCimport_01 { class EventHandlers; };
 
-    class DKoK_Eng_1491st_Indep;
-    class DKoK_Eng_1491st_OCimport_01 : DKoK_Eng_1491st_Indep { scope = 0; class EventHandlers; };
+    class DKoK_Eng_1491st;
+    class DKoK_Eng_1491st_OCimport_01 : DKoK_Eng_1491st { scope = 0; class EventHandlers; };
     class DKoK_Eng_1491st_OCimport_02 : DKoK_Eng_1491st_OCimport_01 { class EventHandlers; };
 
-    class DKoK_Gren_1491st_Indep;
-    class DKoK_Gren_1491st_OCimport_01 : DKoK_Gren_1491st_Indep { scope = 0; class EventHandlers; };
+    class DKoK_Gren_1491st;
+    class DKoK_Gren_1491st_OCimport_01 : DKoK_Gren_1491st { scope = 0; class EventHandlers; };
     class DKoK_Gren_1491st_OCimport_02 : DKoK_Gren_1491st_OCimport_01 { class EventHandlers; };
 
-    class DKoK_Gren_1491st_Plasma_Indep;
-    class DKoK_Gren_1491st_Plasma_OCimport_01 : DKoK_Gren_1491st_Plasma_Indep { scope = 0; class EventHandlers; };
+    class DKoK_Gren_1491st_Plasma;
+    class DKoK_Gren_1491st_Plasma_OCimport_01 : DKoK_Gren_1491st_Plasma { scope = 0; class EventHandlers; };
     class DKoK_Gren_1491st_Plasma_OCimport_02 : DKoK_Gren_1491st_Plasma_OCimport_01 { class EventHandlers; };
 
-    class DKoK_GM_1491st_Plasma_Indep;
-    class DKoK_GM_1491st_Plasma_OCimport_01 : DKoK_GM_1491st_Plasma_Indep { scope = 0; class EventHandlers; };
+    class DKoK_GM_1491st_Plasma;
+    class DKoK_GM_1491st_Plasma_OCimport_01 : DKoK_GM_1491st_Plasma { scope = 0; class EventHandlers; };
     class DKoK_GM_1491st_Plasma_OCimport_02 : DKoK_GM_1491st_Plasma_OCimport_01 { class EventHandlers; };
 
-    class DKoK_GM_1491st_HStubber_Indep;
-    class DKoK_GM_1491st_HStubber_OCimport_01 : DKoK_GM_1491st_HStubber_Indep { scope = 0; class EventHandlers; };
+    class DKoK_GM_1491st_HStubber;
+    class DKoK_GM_1491st_HStubber_OCimport_01 : DKoK_GM_1491st_HStubber { scope = 0; class EventHandlers; };
     class DKoK_GM_1491st_HStubber_OCimport_02 : DKoK_GM_1491st_HStubber_OCimport_01 { class EventHandlers; };
 
 
-    class I_1491stDKOK_Death_Korps_Quarter_Master_01 : DKoK_QM_1491st_OCimport_02 {
+    class B_143DKOK_Death_Korps_Quarter_Master_01 : DKoK_QM_1491st_OCimport_02 {
         author = "VGm. Venture";
         scope = 2;
         scopeCurator = 2;
         displayName = "Death Korps Quarter Master";
-        side = 2;
-        faction = "I_1491stDKOK";
+        side = 1;
+        faction = "B_143DKOK";
 
-        identityTypes[] = {"Head_Dkok","LanguageENGI_F","Male01DKoK"};
+        identityTypes[] = {"Head_Dkok","LanguageENGB_F","Male01DKoK"};
 
         uniformClass = "DKoK_QM_Uniform_1491st";
 
@@ -619,15 +525,15 @@ class CfgVehicles {
 
     };
 
-    class I_1491stDKOK_Death_Korps_Watchmaster_01 : DKoK_GM_WM_1491st_OCimport_02 {
+    class B_143DKOK_Death_Korps_Watchmaster_01 : DKoK_GM_WM_1491st_OCimport_02 {
         author = "VGm. Venture";
         scope = 2;
         scopeCurator = 2;
         displayName = "Death Korps Watchmaster";
-        side = 2;
-        faction = "I_1491stDKOK";
+        side = 1;
+        faction = "B_143DKOK";
 
-        identityTypes[] = {"Head_Dkok","LanguageENGI_F","Male01DKoK"};
+        identityTypes[] = {"Head_Dkok","LanguageENGB_F","Male01DKoK"};
 
         uniformClass = "DKoK_GM_Uniform_1491st";
 
@@ -659,15 +565,15 @@ class CfgVehicles {
 
     };
 
-    class I_1491stDKOK_AT_Guardsman_01 : DKoK_GM_1491st_AT_OCimport_02 {
+    class B_143DKOK_AT_Guardsman_01 : DKoK_GM_1491st_AT_OCimport_02 {
         author = "VGm. Venture";
         scope = 2;
         scopeCurator = 2;
         displayName = "AT Guardsman";
-        side = 2;
-        faction = "I_1491stDKOK";
+        side = 1;
+        faction = "B_143DKOK";
 
-        identityTypes[] = {"Head_Dkok","LanguageENGI_F","Male01DKoK"};
+        identityTypes[] = {"Head_Dkok","LanguageENGB_F","Male01DKoK"};
 
         uniformClass = "DKoK_GM_Uniform_1491st";
 
@@ -699,15 +605,15 @@ class CfgVehicles {
 
     };
 
-    class I_1491stDKOK_Death_Korps_Guardsman_01 : DKoK_GM_1491st_OCimport_02 {
+    class B_143DKOK_Death_Korps_Guardsman_01 : DKoK_GM_1491st_OCimport_02 {
         author = "VGm. Venture";
         scope = 2;
         scopeCurator = 2;
         displayName = "Death Korps Guardsman";
-        side = 2;
-        faction = "I_1491stDKOK";
+        side = 1;
+        faction = "B_143DKOK";
 
-        identityTypes[] = {"Head_Dkok","LanguageENGI_F","Male01DKoK"};
+        identityTypes[] = {"Head_Dkok","LanguageENGB_F","Male01DKoK"};
 
         uniformClass = "DKoK_GM_Uniform_1491st";
 
@@ -739,15 +645,15 @@ class CfgVehicles {
 
     };
 
-    class I_1491stDKOK_Death_Korps_Officer_01 : DKoK_Off_1491st_OCimport_02 {
+    class B_143DKOK_Death_Korps_Officer_01 : DKoK_Off_1491st_OCimport_02 {
         author = "VGm. Venture";
         scope = 2;
         scopeCurator = 2;
         displayName = "Death Korps Officer";
-        side = 2;
-        faction = "I_1491stDKOK";
+        side = 1;
+        faction = "B_143DKOK";
 
-        identityTypes[] = {"Head_Dkok","LanguageENGI_F","Male01DKoK"};
+        identityTypes[] = {"Head_Dkok","LanguageENGB_F","Male01DKoK"};
 
         uniformClass = "DKoK_Off_Uniform_1491st";
 
@@ -777,15 +683,15 @@ class CfgVehicles {
 
     };
 
-    class I_1491stDKOK_AT_Grenadier_01 : DKoK_Gren_1491st_AT_OCimport_02 {
+    class B_143DKOK_AT_Grenadier_01 : DKoK_Gren_1491st_AT_OCimport_02 {
         author = "VGm. Venture";
         scope = 2;
         scopeCurator = 2;
         displayName = "AT Grenadier";
-        side = 2;
-        faction = "I_1491stDKOK";
+        side = 1;
+        faction = "B_143DKOK";
 
-        identityTypes[] = {"Head_Dkok","LanguageENGI_F","Male01DKoK"};
+        identityTypes[] = {"Head_Dkok","LanguageENGB_F","Male01DKoK"};
 
         uniformClass = "DKoK_Gren_Uniform_1491st";
 
@@ -817,15 +723,15 @@ class CfgVehicles {
 
     };
 
-    class I_1491stDKOK_Death_Korps_Engineer_01 : DKoK_Eng_1491st_OCimport_02 {
+    class B_143DKOK_Death_Korps_Engineer_01 : DKoK_Eng_1491st_OCimport_02 {
         author = "VGm. Venture";
         scope = 2;
         scopeCurator = 2;
         displayName = "Death Korps Engineer";
-        side = 2;
-        faction = "I_1491stDKOK";
+        side = 1;
+        faction = "B_143DKOK";
 
-        identityTypes[] = {"Head_Dkok","LanguageENGI_F","Male01DKoK"};
+        identityTypes[] = {"Head_Dkok","LanguageENGB_F","Male01DKoK"};
 
         uniformClass = "DKoK_Eng_Uniform_1491st";
 
@@ -857,15 +763,15 @@ class CfgVehicles {
 
     };
 
-    class I_1491stDKOK_Death_Korps_Grenadier_01 : DKoK_Gren_1491st_OCimport_02 {
+    class B_143DKOK_Death_Korps_Grenadier_01 : DKoK_Gren_1491st_OCimport_02 {
         author = "VGm. Venture";
         scope = 2;
         scopeCurator = 2;
         displayName = "Death Korps Grenadier";
-        side = 2;
-        faction = "I_1491stDKOK";
+        side = 1;
+        faction = "B_143DKOK";
 
-        identityTypes[] = {"Head_Dkok","LanguageENGI_F","Male01DKoK"};
+        identityTypes[] = {"Head_Dkok","LanguageENGB_F","Male01DKoK"};
 
         uniformClass = "DKoK_Gren_Uniform_1491st";
 
@@ -897,15 +803,15 @@ class CfgVehicles {
 
     };
 
-    class I_1491stDKOK_Death_Korps_Grenadier_Plasmagunner_01 : DKoK_Gren_1491st_Plasma_OCimport_02 {
+    class B_143DKOK_Death_Korps_Grenadier_Plasmagunner_01 : DKoK_Gren_1491st_Plasma_OCimport_02 {
         author = "VGm. Venture";
         scope = 2;
         scopeCurator = 2;
         displayName = "Death Korps Grenadier Plasmagunner";
-        side = 2;
-        faction = "I_1491stDKOK";
+        side = 1;
+        faction = "B_143DKOK";
 
-        identityTypes[] = {"Head_Dkok","LanguageENGI_F","Male01DKoK"};
+        identityTypes[] = {"Head_Dkok","LanguageENGB_F","Male01DKoK"};
 
         uniformClass = "DKoK_Gren_Uniform_1491st";
 
@@ -937,15 +843,15 @@ class CfgVehicles {
 
     };
 
-    class I_1491stDKOK_Death_Korps_Guardsman_Plasmagunner_01 : DKoK_GM_1491st_Plasma_OCimport_02 {
+    class B_143DKOK_Death_Korps_Guardsman_Plasmagunner_01 : DKoK_GM_1491st_Plasma_OCimport_02 {
         author = "VGm. Venture";
         scope = 2;
         scopeCurator = 2;
         displayName = "Death Korps Guardsman Plasmagunner";
-        side = 2;
-        faction = "I_1491stDKOK";
+        side = 1;
+        faction = "B_143DKOK";
 
-        identityTypes[] = {"Head_Dkok","LanguageENGI_F","Male01DKoK"};
+        identityTypes[] = {"Head_Dkok","LanguageENGB_F","Male01DKoK"};
 
         uniformClass = "DKoK_GM_Uniform_1491st";
 
@@ -977,15 +883,15 @@ class CfgVehicles {
 
     };
 
-    class I_1491stDKOK_Death_Korps_Guardsman_Heavy_Stubber_01 : DKoK_GM_1491st_HStubber_OCimport_02 {
+    class B_143DKOK_Death_Korps_Guardsman_Heavy_Stubber_01 : DKoK_GM_1491st_HStubber_OCimport_02 {
         author = "VGm. Venture";
         scope = 2;
         scopeCurator = 2;
         displayName = "Death Korps Guardsman Heavy Stubber";
-        side = 2;
-        faction = "I_1491stDKOK";
+        side = 1;
+        faction = "B_143DKOK";
 
-        identityTypes[] = {"Head_Dkok","LanguageENGI_F","Male01DKoK"};
+        identityTypes[] = {"Head_Dkok","LanguageENGB_F","Male01DKoK"};
 
         uniformClass = "DKoK_GM_Uniform_1491st";
 

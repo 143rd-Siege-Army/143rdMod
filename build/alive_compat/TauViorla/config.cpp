@@ -1,25 +1,24 @@
 class CfgPatches {
-    class O_143TauSept {
+    class O_143TauViorla{
         units[] = {
-            "O_Tau_Sept_Tau_Vehicle_Crew_Dal_Yth_01",
-            "O_Tau_Sept_Tau_Air_Caste_Pilot_01",
-            "O_Tau_Sept_Tau_Pathfinder_Ion_Rifle_01",
-            "O_Tau_Sept_Tau_Fire_Warrior_01",
-            "O_Tau_Sept_Tau_Fire_Warrior_Explosives_01",
-            "O_Tau_Sept_Tau_Fire_Warrior_Shasui_01",
-            "O_Tau_Sept_Tau_FireBlade_01",
-            "O_Tau_Sept_Tau_Breacher_Explosives_01",
-            "O_Tau_Sept_Tau_Breacher_01",
-            "O_Tau_Sept_Tau_Breacher_Shasui_01",
-            "O_Tau_Sept_Tau_Pathfinder_01",
-            "O_Tau_Sept_Tau_Pathfinder_Explosives_01",
-            "O_Tau_Sept_Tau_Pathfinder_Shasui_01",
-            "O_Tau_Sept_Tau_Pathfinder_Rail_Rifle_01"
+            "O_Tau_Viorla_Tau_Vehicle_Crew_Dal_Yth_01",
+            "O_Tau_Viorla_Tau_Air_Caste_Pilot_01",
+            "O_Tau_Viorla_Tau_Pathfinder_Ion_Rifle_01",
+            "O_Tau_Viorla_Tau_Fire_Warrior_01",
+            "O_Tau_Viorla_Tau_Fire_Warrior_Explosives_01",
+            "O_Tau_Viorla_Tau_Fire_Warrior_Shasui_01",
+            "O_Tau_Viorla_Tau_FireBlade_01",
+            "O_Tau_Viorla_Tau_Breacher_Explosives_021",
+            "O_Tau_Viorla_Tau_Breacher_01",
+            "O_Tau_Viorla_Tau_Breacher_Shasui_01",
+            "O_Tau_Viorla_Tau_Pathfinder_01",
+            "O_Tau_Viorla_Tau_Pathfinder_Explosives_01",
+            "O_Tau_Viorla_Tau_Pathfinder_Shasui_01",
+            "O_Tau_Viorla_Tau_Pathfinder_Rail_Rifle_01"
         };
         weapons[] = {};
         requiredVersion = 1.62;
-        requiredAddons[] = {
-        };
+        requiredAddons[] = {"ace_common"};
         author = "VGm. Venture";
         authors[] = {"VGm. Venture"};
     };
@@ -31,8 +30,8 @@ class CfgPatches {
 //////////////////////////////////////////////////////////////////////////////////
 
 class CfgFactionClasses {
-    class O_143TauSept {
-        displayName = "143rd T'au - T'au Sept";
+    class O_143TauViorla{
+        displayName = "143rd T'au - Vior'la Sept";
         side = 0;
         flag = "\A3\ui_f\data\map\markers\flags\EU_ca.paa";
         icon = "\A3\ui_f\data\map\markers\flags\EU_ca.paa";
@@ -43,16 +42,16 @@ class CfgFactionClasses {
 class CfgGroups {
     class EAST {
 
-        class O_143TauSept {
-            name = "143rd T'au - T'au Sept";
+        class O_143TauViorla{
+            name = "143rd T'au - Vior'la Sept";
 
             class Infantry {
                 name = "Infantry";
 
-                class O_143TauSeptinfantry_tau_firewarrior_fireteam {
+                class o_otautau_infantry_tau_firewarrior_fireteam {
                     name = "Tau Firewarrior Fireteam";
                     side = 0;
-                    faction = "O_143TauSept";
+                    faction = "O_143TauViorla";
                     icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
                     rarityGroup = 0.5;
 
@@ -60,32 +59,32 @@ class CfgGroups {
                         position[] = {0,0,0};
                         rank = "SERGEANT";
                         side = 0;
-                        vehicle = "O_Tau_Sept_Tau_Fire_Warrior_Shasui_01";
+                        vehicle = "O_Tau_Viorla_Tau_Fire_Warrior_Shasui_01";
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
                         rank = "CORPORAL";
                         side = 0;
-                        vehicle = "O_Tau_Sept_Tau_Fire_Warrior_Explosives_01";
+                        vehicle = "O_Tau_Viorla_Tau_Fire_Warrior_Explosives_01";
                     };
                     class Unit2 {
                         position[] = {20,-20,0};
                         rank = "PRIVATE";
                         side = 0;
-                        vehicle = "O_Tau_Sept_Tau_Fire_Warrior_01";
+                        vehicle = "O_Tau_Viorla_Tau_Fire_Warrior_01";
                     };
                     class Unit3 {
                         position[] = {-20,-20,0};
                         rank = "PRIVATE";
                         side = 0;
-                        vehicle = "O_Tau_Sept_Tau_Fire_Warrior_01";
+                        vehicle = "O_Tau_Viorla_Tau_Fire_Warrior_01";
                     };
                 };
 
-                class O_143TauSeptinfantry_tau_firewarrior_squad {
+                class o_otautau_infantry_tau_firewarrior_squad {
                     name = "Tau Firewarrior Squad";
                     side = 0;
-                    faction = "O_143TauSept";
+                    faction = "O_143TauViorla";
                     icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
                     rarityGroup = 0.3;
 
@@ -93,68 +92,68 @@ class CfgGroups {
                         position[] = {0,0,0};
                         rank = "SERGEANT";
                         side = 0;
-                        vehicle = "O_Tau_Sept_Tau_Fire_Warrior_Shasui_01";
+                        vehicle = "O_Tau_Viorla_Tau_Fire_Warrior_Shasui_01";
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
                         rank = "CORPORAL";
                         side = 0;
-                        vehicle = "O_Tau_Sept_Tau_Fire_Warrior_Explosives_01";
+                        vehicle = "O_Tau_Viorla_Tau_Fire_Warrior_Explosives_01";
                     };
                     class Unit2 {
                         position[] = {-5,-5,0};
                         rank = "CORPORAL";
                         side = 0;
-                        vehicle = "O_Tau_Sept_Tau_Fire_Warrior_Explosives_01";
+                        vehicle = "O_Tau_Viorla_Tau_Fire_Warrior_Explosives_01";
                     };
                     class Unit3 {
                         position[] = {10,-10,0};
                         rank = "PRIVATE";
                         side = 0;
-                        vehicle = "O_Tau_Sept_Tau_Fire_Warrior_01";
+                        vehicle = "O_Tau_Viorla_Tau_Fire_Warrior_01";
                     };
                     class Unit4 {
                         position[] = {-10,-10,0};
                         rank = "PRIVATE";
                         side = 0;
-                        vehicle = "O_Tau_Sept_Tau_Fire_Warrior_01";
+                        vehicle = "O_Tau_Viorla_Tau_Fire_Warrior_01";
                     };
                     class Unit5 {
                         position[] = {15,-15,0};
                         rank = "PRIVATE";
                         side = 0;
-                        vehicle = "O_Tau_Sept_Tau_Fire_Warrior_01";
+                        vehicle = "O_Tau_Viorla_Tau_Fire_Warrior_01";
                     };
                     class Unit6 {
                         position[] = {-15,-15,0};
                         rank = "PRIVATE";
                         side = 0;
-                        vehicle = "O_Tau_Sept_Tau_Fire_Warrior_01";
+                        vehicle = "O_Tau_Viorla_Tau_Fire_Warrior_01";
                     };
                     class Unit7 {
                         position[] = {20,-20,0};
                         rank = "PRIVATE";
                         side = 0;
-                        vehicle = "O_Tau_Sept_Tau_Fire_Warrior_01";
+                        vehicle = "O_Tau_Viorla_Tau_Fire_Warrior_01";
                     };
                     class Unit8 {
                         position[] = {-20,-20,0};
                         rank = "PRIVATE";
                         side = 0;
-                        vehicle = "O_Tau_Sept_Tau_Fire_Warrior_01";
+                        vehicle = "O_Tau_Viorla_Tau_Fire_Warrior_01";
                     };
                     class Unit9 {
                         position[] = {25,-25,0};
                         rank = "PRIVATE";
                         side = 0;
-                        vehicle = "O_Tau_Sept_Tau_Fire_Warrior_01";
+                        vehicle = "O_Tau_Viorla_Tau_Fire_Warrior_01";
                     };
                 };
 
-                class O_143TauSeptinfantry_tau_breacher_fireteam {
+                class o_otautau_infantry_tau_breacher_fireteam {
                     name = "Tau Breacher Fireteam";
                     side = 0;
-                    faction = "O_143TauSept";
+                    faction = "O_143TauViorla";
                     icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
                     rarityGroup = 0.4;
 
@@ -162,32 +161,32 @@ class CfgGroups {
                         position[] = {0,0,0};
                         rank = "SERGEANT";
                         side = 0;
-                        vehicle = "O_Tau_Sept_Tau_Breacher_Shasui_01";
+                        vehicle = "O_Tau_Viorla_Tau_Breacher_Shasui_01";
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
                         rank = "PRIVATE";
                         side = 0;
-                        vehicle = "O_Tau_Sept_Tau_Breacher_Explosives_01";
+                        vehicle = "O_Tau_Viorla_Tau_Breacher_Explosives_01";
                     };
                     class Unit2 {
                         position[] = {-5,-5,0};
                         rank = "PRIVATE";
                         side = 0;
-                        vehicle = "O_Tau_Sept_Tau_Breacher_01";
+                        vehicle = "O_Tau_Viorla_Tau_Breacher_01";
                     };
                     class Unit3 {
                         position[] = {10,-10,0};
                         rank = "PRIVATE";
                         side = 0;
-                        vehicle = "O_Tau_Sept_Tau_Breacher_01";
+                        vehicle = "O_Tau_Viorla_Tau_Breacher_01";
                     };
                 };
 
-                class O_143TauSeptinfantry_tau_firewarrior_sentries {
+                class o_otautau_infantry_tau_firewarrior_sentries {
                     name = "Tau Firewarrior Sentries";
                     side = 0;
-                    faction = "O_143TauSept";
+                    faction = "O_143TauViorla";
                     icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
                     rarityGroup = 0.5;
 
@@ -195,20 +194,20 @@ class CfgGroups {
                         position[] = {0,0,0};
                         rank = "SERGEANT";
                         side = 0;
-                        vehicle = "O_Tau_Sept_Tau_Fire_Warrior_Explosives_01";
+                        vehicle = "O_Tau_Viorla_Tau_Fire_Warrior_Explosives_01";
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
                         rank = "PRIVATE";
                         side = 0;
-                        vehicle = "O_Tau_Sept_Tau_Fire_Warrior_01";
+                        vehicle = "O_Tau_Viorla_Tau_Fire_Warrior_01";
                     };
                 };
 
-                class O_143TauSeptinfantry_tau_breacher_squad {
+                class o_otautau_infantry_tau_breacher_squad {
                     name = "Tau Breacher Squad";
                     side = 0;
-                    faction = "O_143TauSept";
+                    faction = "O_143TauViorla";
                     icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
                     rarityGroup = 0.2;
 
@@ -216,61 +215,61 @@ class CfgGroups {
                         position[] = {0,0,0};
                         rank = "SERGEANT";
                         side = 0;
-                        vehicle = "O_Tau_Sept_Tau_Breacher_Shasui_01";
+                        vehicle = "O_Tau_Viorla_Tau_Breacher_Shasui_01";
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
                         rank = "CORPORAL";
                         side = 0;
-                        vehicle = "O_Tau_Sept_Tau_Breacher_Explosives_01";
+                        vehicle = "O_Tau_Viorla_Tau_Breacher_Explosives_01";
                     };
                     class Unit2 {
                         position[] = {-5,-5,0};
                         rank = "CORPORAL";
                         side = 0;
-                        vehicle = "O_Tau_Sept_Tau_Breacher_Explosives_01";
+                        vehicle = "O_Tau_Viorla_Tau_Breacher_Explosives_01";
                     };
                     class Unit3 {
                         position[] = {10,-10,0};
                         rank = "PRIVATE";
                         side = 0;
-                        vehicle = "O_Tau_Sept_Tau_Breacher_01";
+                        vehicle = "O_Tau_Viorla_Tau_Breacher_01";
                     };
                     class Unit4 {
                         position[] = {-10,-10,0};
                         rank = "PRIVATE";
                         side = 0;
-                        vehicle = "O_Tau_Sept_Tau_Breacher_01";
+                        vehicle = "O_Tau_Viorla_Tau_Breacher_01";
                     };
                     class Unit5 {
                         position[] = {15,-15,0};
                         rank = "PRIVATE";
                         side = 0;
-                        vehicle = "O_Tau_Sept_Tau_Breacher_01";
+                        vehicle = "O_Tau_Viorla_Tau_Breacher_01";
                     };
                     class Unit6 {
                         position[] = {-15,-15,0};
                         rank = "PRIVATE";
                         side = 0;
-                        vehicle = "O_Tau_Sept_Tau_Breacher_01";
+                        vehicle = "O_Tau_Viorla_Tau_Breacher_01";
                     };
                     class Unit7 {
                         position[] = {20,-20,0};
                         rank = "PRIVATE";
                         side = 0;
-                        vehicle = "O_Tau_Sept_Tau_Breacher_01";
+                        vehicle = "O_Tau_Viorla_Tau_Breacher_01";
                     };
                     class Unit8 {
                         position[] = {-20,-20,0};
                         rank = "PRIVATE";
                         side = 0;
-                        vehicle = "O_Tau_Sept_Tau_Breacher_01";
+                        vehicle = "O_Tau_Viorla_Tau_Breacher_01";
                     };
                     class Unit9 {
                         position[] = {25,-25,0};
                         rank = "PRIVATE";
                         side = 0;
-                        vehicle = "O_Tau_Sept_Tau_Breacher_01";
+                        vehicle = "O_Tau_Viorla_Tau_Breacher_01";
                     };
                 };
 
@@ -279,10 +278,10 @@ class CfgGroups {
             class SpecOps {
                 name = "Special Forces";
 
-                class O_143TauSeptspecops_tau_pathfinder_fireteam {
+                class o_otautau_specops_tau_pathfinder_fireteam {
                     name = "Tau Pathfinder Fireteam";
                     side = 0;
-                    faction = "O_143TauSept";
+                    faction = "O_143TauViorla";
                     icon = "\A3\ui_f\data\map\markers\nato\o_recon.paa";
                     rarityGroup = 0.5;
 
@@ -290,32 +289,32 @@ class CfgGroups {
                         position[] = {0,0,0};
                         rank = "SERGEANT";
                         side = 0;
-                        vehicle = "O_Tau_Sept_Tau_Pathfinder_Shasui_01";
+                        vehicle = "O_Tau_Viorla_Tau_Pathfinder_Shasui_01";
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
                         rank = "PRIVATE";
                         side = 0;
-                        vehicle = "O_Tau_Sept_Tau_Pathfinder_Explosives_01";
+                        vehicle = "O_Tau_Viorla_Tau_Pathfinder_Explosives_01";
                     };
                     class Unit2 {
                         position[] = {-5,-5,0};
                         rank = "PRIVATE";
                         side = 0;
-                        vehicle = "O_Tau_Sept_Tau_Pathfinder_Rail_Rifle_01";
+                        vehicle = "O_Tau_Viorla_Tau_Pathfinder_Rail_Rifle_01";
                     };
                     class Unit3 {
                         position[] = {10,-10,0};
                         rank = "PRIVATE";
                         side = 0;
-                        vehicle = "O_Tau_Sept_Tau_Pathfinder_01";
+                        vehicle = "O_Tau_Viorla_Tau_Pathfinder_01";
                     };
                 };
 
-                class O_143TauSeptspecops_tau_pathfinder_squad {
+                class o_otautau_specops_tau_pathfinder_squad {
                     name = "Tau Pathfinder Squad";
                     side = 0;
-                    faction = "O_143TauSept";
+                    faction = "O_143TauViorla";
                     icon = "\A3\ui_f\data\map\markers\nato\o_recon.paa";
                     rarityGroup = 0.2;
 
@@ -323,61 +322,61 @@ class CfgGroups {
                         position[] = {0,0,0};
                         rank = "SERGEANT";
                         side = 0;
-                        vehicle = "O_Tau_Sept_Tau_Pathfinder_Shasui_01";
+                        vehicle = "O_Tau_Viorla_Tau_Pathfinder_Shasui_01";
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
                         rank = "CORPORAL";
                         side = 0;
-                        vehicle = "O_Tau_Sept_Tau_Pathfinder_Explosives_01";
+                        vehicle = "O_Tau_Viorla_Tau_Pathfinder_Explosives_01";
                     };
                     class Unit2 {
                         position[] = {-5,-5,0};
                         rank = "PRIVATE";
                         side = 0;
-                        vehicle = "O_Tau_Sept_Tau_Pathfinder_Ion_Rifle_01";
+                        vehicle = "O_Tau_Viorla_Tau_Pathfinder_Ion_Rifle_01";
                     };
                     class Unit3 {
                         position[] = {10,-10,0};
                         rank = "PRIVATE";
                         side = 0;
-                        vehicle = "O_Tau_Sept_Tau_Pathfinder_Rail_Rifle_01";
+                        vehicle = "O_Tau_Viorla_Tau_Pathfinder_Rail_Rifle_01";
                     };
                     class Unit4 {
                         position[] = {-10,-10,0};
                         rank = "CORPORAL";
                         side = 0;
-                        vehicle = "O_Tau_Sept_Tau_Pathfinder_Explosives_01";
+                        vehicle = "O_Tau_Viorla_Tau_Pathfinder_Explosives_01";
                     };
                     class Unit5 {
                         position[] = {15,-15,0};
                         rank = "PRIVATE";
                         side = 0;
-                        vehicle = "O_Tau_Sept_Tau_Pathfinder_01";
+                        vehicle = "O_Tau_Viorla_Tau_Pathfinder_01";
                     };
                     class Unit6 {
                         position[] = {-15,-15,0};
                         rank = "PRIVATE";
                         side = 0;
-                        vehicle = "O_Tau_Sept_Tau_Pathfinder_01";
+                        vehicle = "O_Tau_Viorla_Tau_Pathfinder_01";
                     };
                     class Unit7 {
                         position[] = {20,-20,0};
                         rank = "PRIVATE";
                         side = 0;
-                        vehicle = "O_Tau_Sept_Tau_Pathfinder_01";
+                        vehicle = "O_Tau_Viorla_Tau_Pathfinder_01";
                     };
                     class Unit8 {
                         position[] = {-20,-20,0};
                         rank = "PRIVATE";
                         side = 0;
-                        vehicle = "O_Tau_Sept_Tau_Pathfinder_01";
+                        vehicle = "O_Tau_Viorla_Tau_Pathfinder_01";
                     };
                     class Unit9 {
                         position[] = {25,-25,0};
                         rank = "PRIVATE";
                         side = 0;
-                        vehicle = "O_Tau_Sept_Tau_Pathfinder_01";
+                        vehicle = "O_Tau_Viorla_Tau_Pathfinder_01";
                     };
                 };
 
@@ -400,10 +399,10 @@ class CfgGroups {
 
             class Mechanized {
                 name = "Mechanized Infantry";
-			        class O_143TauSept_mechanized_devilfish_firewarrior_squad {
+			        class O_143TauViorla_mechanized_devilfish_firewarrior_squad {
                     name = "Devilfish Firewarrior Squad";
                     side = 2;
-                    faction = "O_143TauSept";
+                    faction = "O_143TauViorla";
                     icon = "\A3\ui_f\data\map\markers\nato\n_mech_inf.paa";
                     rarityGroup = 0.5;
 
@@ -411,55 +410,55 @@ class CfgGroups {
                         position[] = {0,0,0};
                         rank = "SERGEANT";
                         side = 2;
-                        vehicle = "TIOW_Tau_Devilfish_O";
+                        vehicle = "TIOW_Tau_Devilfish_VL_O";
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
                         rank = "SERGEANT";
                         side = 2;
-                        vehicle = "O_Tau_Sept_Tau_Fire_Warrior_Shasui_01";
+                        vehicle = "O_Tau_Viorla_Tau_Fire_Warrior_Shasui_01";
                     };
                     class Unit2 {
                         position[] = {10,-10,0};
                         rank = "CORPORAL";
                         side = 2;
-                        vehicle = "O_Tau_Sept_Tau_Fire_Warrior_Explosives_01";
+                        vehicle = "O_Tau_Viorla_Tau_Fire_Warrior_Explosives_01";
                     };
                     class Unit3 {
                         position[] = {-5,-15,0};
                         rank = "CORPORAL";
                         side = 2;
-                        vehicle = "O_Tau_Sept_Tau_Fire_Warrior_Explosives_01";
+                        vehicle = "O_Tau_Viorla_Tau_Fire_Warrior_Explosives_01";
                     };
                     class Unit4 {
                         position[] = {5,-15,0};
                         rank = "PRIVATE";
                         side = 2;
-                        vehicle = "O_Tau_Sept_Tau_Fire_Warrior_01";
+                        vehicle = "O_Tau_Viorla_Tau_Fire_Warrior_01";
                     };
                     class Unit5 {
                         position[] = {-0,-20,0};
                         rank = "PRIVATE";
                         side = 2;
-                        vehicle = "O_Tau_Sept_Tau_Fire_Warrior_01";
+                        vehicle = "O_Tau_Viorla_Tau_Fire_Warrior_01";
                     };
                     class Unit6 {
                         position[] = {0,-20,0};
                         rank = "PRIVATE";
                         side = 2;
-                        vehicle = "O_Tau_Sept_Tau_Fire_Warrior_01";
+                        vehicle = "O_Tau_Viorla_Tau_Fire_Warrior_01";
                     };
                     class Unit7 {
                         position[] = {5,-25,0};
                         rank = "PRIVATE";
                         side = 2;
-                        vehicle = "O_Tau_Sept_Tau_Fire_Warrior_01";
+                        vehicle = "O_Tau_Viorla_Tau_Fire_Warrior_01";
                     };
                     class Unit8 {
                         position[] = {-5,-25,0};
                         rank = "PRIVATE";
                         side = 2;
-                        vehicle = "O_Tau_Sept_Tau_Fire_Warrior_01";
+                        vehicle = "O_Tau_Viorla_Tau_Fire_Warrior_01";
                     };
                 };
 
@@ -467,10 +466,10 @@ class CfgGroups {
 
             class Armored {
                 name = "Armor";
-				class O_143TauSept_armored_hammerhead_squadron {
+				class O_143TauViorla_armored_hammerhead_squadron {
                     name = "Hammerhead Squadron";
                     side = 2;
-                    faction = "O_143TauSept";
+                    faction = "O_143TauViorla";
                     icon = "\A3\ui_f\data\map\markers\nato\n_mech_inf.paa";
                     rarityGroup = 0.5;
 
@@ -478,13 +477,13 @@ class CfgGroups {
                         position[] = {0,0,0};
                         rank = "LIEUTENANT";
                         side = 2;
-                        vehicle = "TIOW_Tau_Hammerhead_O";
+                        vehicle = "TIOW_Tau_Hammerhead_VL_O";
                     };
                     class Unit1 {
                         position[] = {10,-10,0};
                         rank = "SERGEANT";
                         side = 2;
-                        vehicle = "TIOW_Tau_Hammerhead_O";
+                        vehicle = "TIOW_Tau_Hammerhead_VL_O";
                     };
 				};
 
@@ -516,83 +515,89 @@ class CBA_Extended_EventHandlers_base;
 
 class CfgVehicles {
 	//Infantry
-		class TIOW_Pathfinder_TA_Rail_O;
-		class TIOW_Pathfinder_TA_Rail_O_OCimport_01 : TIOW_Pathfinder_TA_Rail_O { scope = 1; class EventHandlers; };
-		class TIOW_Pathfinder_TA_Rail_O_OCimport_02 : TIOW_Pathfinder_TA_Rail_O_OCimport_01 { class EventHandlers; };
+		class TIOW_Pathfinder_VL_Rail_O;
+		class TIOW_Pathfinder_VL_Rail_O_OCimport_01 : TIOW_Pathfinder_VL_Rail_O { scope = 1; class EventHandlers; };
+		class TIOW_Pathfinder_VL_Rail_O_OCimport_02 : TIOW_Pathfinder_VL_Rail_O_OCimport_01 { class EventHandlers; };
+
+
+		class TIOW_Tau_Crew_VL_O;
+		class TIOW_Tau_Crew_VL_O_OCimport_01 : TIOW_Tau_Crew_VL_O { scope = 1; class EventHandlers; };
+		class TIOW_Tau_Crew_VL_O_OCimport_02 : TIOW_Tau_Crew_VL_O_OCimport_01 { class EventHandlers; };
 
 		class TIOW_Air_Caste_Pilot_O;
 		class TIOW_Air_Caste_Pilot_O_OCimport_01 : TIOW_Air_Caste_Pilot_O { scope = 1; class EventHandlers; };
 		class TIOW_Air_Caste_Pilot_O_OCimport_02 : TIOW_Air_Caste_Pilot_O_OCimport_01 { class EventHandlers; };
 
-		class TIOW_Pathfinder_TA_Ion_O;
-		class TIOW_Pathfinder_TA_Ion_O_OCimport_01 : TIOW_Pathfinder_TA_Ion_O { scope = 1; class EventHandlers; };
-		class TIOW_Pathfinder_TA_Ion_O_OCimport_02 : TIOW_Pathfinder_TA_Ion_O_OCimport_01 { class EventHandlers; };
 
-		class TIOW_Strike_TA_O;
-		class TIOW_Strike_TA_O_OCimport_01 : TIOW_Strike_TA_O { scope = 1; class EventHandlers; };
-		class TIOW_Strike_TA_O_OCimport_02 : TIOW_Strike_TA_O_OCimport_01 { class EventHandlers; };
+		class TIOW_Pathfinder_VL_Ion_O;
+		class TIOW_Pathfinder_VL_Ion_O_OCimport_01 : TIOW_Pathfinder_VL_Ion_O { scope = 1; class EventHandlers; };
+		class TIOW_Pathfinder_VL_Ion_O_OCimport_02 : TIOW_Pathfinder_VL_Ion_O_OCimport_01 { class EventHandlers; };
 
-		class TIOW_Strike_TA_Exp_O;
-		class TIOW_Strike_TA_Exp_O_OCimport_01 : TIOW_Strike_TA_Exp_O { scope = 1; class EventHandlers; };
-		class TIOW_Strike_TA_Exp_O_OCimport_02 : TIOW_Strike_TA_Exp_O_OCimport_01 { class EventHandlers; };
+		class TIOW_Strike_VL_O;
+		class TIOW_Strike_VL_O_OCimport_01 : TIOW_Strike_VL_O { scope = 1; class EventHandlers; };
+		class TIOW_Strike_VL_O_OCimport_02 : TIOW_Strike_VL_O_OCimport_01 { class EventHandlers; };
 
-		class TIOW_Strike_TA_Lead_O;
-		class TIOW_Strike_TA_Lead_O_OCimport_01 : TIOW_Strike_TA_Lead_O { scope = 1; class EventHandlers; };
-		class TIOW_Strike_TA_Lead_O_OCimport_02 : TIOW_Strike_TA_Lead_O_OCimport_01 { class EventHandlers; };
+		class TIOW_Strike_VL_Exp_O;
+		class TIOW_Strike_VL_Exp_O_OCimport_01 : TIOW_Strike_VL_Exp_O { scope = 1; class EventHandlers; };
+		class TIOW_Strike_VL_Exp_O_OCimport_02 : TIOW_Strike_VL_Exp_O_OCimport_01 { class EventHandlers; };
 
-		class TIOW_Strike_TA_Officer_O;
-		class TIOW_Strike_TA_Officer_O_OCimport_01 : TIOW_Strike_TA_Officer_O { scope = 1; class EventHandlers; };
-		class TIOW_Strike_TA_Officer_O_OCimport_02 : TIOW_Strike_TA_Officer_O_OCimport_01 { class EventHandlers; };
+		class TIOW_Strike_VL_Lead_O;
+		class TIOW_Strike_VL_Lead_O_OCimport_01 : TIOW_Strike_VL_Lead_O { scope = 1; class EventHandlers; };
+		class TIOW_Strike_VL_Lead_O_OCimport_02 : TIOW_Strike_VL_Lead_O_OCimport_01 { class EventHandlers; };
 
-		class TIOW_Breacher_TA_Exp_O;
-		class TIOW_Breacher_TA_Exp_O_OCimport_01 : TIOW_Breacher_TA_Exp_O { scope = 1; class EventHandlers; };
-		class TIOW_Breacher_TA_Exp_O_OCimport_02 : TIOW_Breacher_TA_Exp_O_OCimport_01 { class EventHandlers; };
+		class TIOW_Strike_VL_Officer_O;
+		class TIOW_Strike_VL_Officer_O_OCimport_01 : TIOW_Strike_VL_Officer_O { scope = 1; class EventHandlers; };
+		class TIOW_Strike_VL_Officer_O_OCimport_02 : TIOW_Strike_VL_Officer_O_OCimport_01 { class EventHandlers; };
 
-		class TIOW_Breacher_TA_O;
-		class TIOW_Breacher_TA_O_OCimport_01 : TIOW_Breacher_TA_O { scope = 1; class EventHandlers; };
-		class TIOW_Breacher_TA_O_OCimport_02 : TIOW_Breacher_TA_O_OCimport_01 { class EventHandlers; };
+		class TIOW_Breacher_VL_Exp_O;
+		class TIOW_Breacher_VL_Exp_O_OCimport_01 : TIOW_Breacher_VL_Exp_O { scope = 1; class EventHandlers; };
+		class TIOW_Breacher_VL_Exp_O_OCimport_02 : TIOW_Breacher_VL_Exp_O_OCimport_01 { class EventHandlers; };
 
-		class TIOW_Breacher_TA_Lead_O;
-		class TIOW_Breacher_TA_Lead_O_OCimport_01 : TIOW_Breacher_TA_Lead_O { scope = 1; class EventHandlers; };
-		class TIOW_Breacher_TA_Lead_O_OCimport_02 : TIOW_Breacher_TA_Lead_O_OCimport_01 { class EventHandlers; };
+		class TIOW_Breacher_VL_O;
+		class TIOW_Breacher_VL_O_OCimport_01 : TIOW_Breacher_VL_O { scope = 1; class EventHandlers; };
+		class TIOW_Breacher_VL_O_OCimport_02 : TIOW_Breacher_VL_O_OCimport_01 { class EventHandlers; };
 
-		class TIOW_Pathfinder_TA_O;
-		class TIOW_Pathfinder_TA_O_OCimport_01 : TIOW_Pathfinder_TA_O { scope = 1; class EventHandlers; };
-		class TIOW_Pathfinder_TA_O_OCimport_02 : TIOW_Pathfinder_TA_O_OCimport_01 { class EventHandlers; };
+		class TIOW_Breacher_VL_Lead_O;
+		class TIOW_Breacher_VL_Lead_O_OCimport_01 : TIOW_Breacher_VL_Lead_O { scope = 1; class EventHandlers; };
+		class TIOW_Breacher_VL_Lead_O_OCimport_02 : TIOW_Breacher_VL_Lead_O_OCimport_01 { class EventHandlers; };
 
-		class TIOW_Pathfinder_TA_Exp_O;
-		class TIOW_Pathfinder_TA_Exp_O_OCimport_01 : TIOW_Pathfinder_TA_Exp_O { scope = 1; class EventHandlers; };
-		class TIOW_Pathfinder_TA_Exp_O_OCimport_02 : TIOW_Pathfinder_TA_Exp_O_OCimport_01 { class EventHandlers; };
+		class TIOW_Pathfinder_VL_O;
+		class TIOW_Pathfinder_VL_O_OCimport_01 : TIOW_Pathfinder_VL_O { scope = 1; class EventHandlers; };
+		class TIOW_Pathfinder_VL_O_OCimport_02 : TIOW_Pathfinder_VL_O_OCimport_01 { class EventHandlers; };
 
-		class TIOW_Pathfinder_TA_Lead_O;
-		class TIOW_Pathfinder_TA_Lead_O_OCimport_01 : TIOW_Pathfinder_TA_Lead_O { scope = 1; class EventHandlers; };
-		class TIOW_Pathfinder_TA_Lead_O_OCimport_02 : TIOW_Pathfinder_TA_Lead_O_OCimport_01 { class EventHandlers; };
+		class TIOW_Pathfinder_VL_Exp_O;
+		class TIOW_Pathfinder_VL_Exp_O_OCimport_01 : TIOW_Pathfinder_VL_Exp_O { scope = 1; class EventHandlers; };
+		class TIOW_Pathfinder_VL_Exp_O_OCimport_02 : TIOW_Pathfinder_VL_Exp_O_OCimport_01 { class EventHandlers; };
+
+		class TIOW_Pathfinder_VL_Lead_O;
+		class TIOW_Pathfinder_VL_Lead_O_OCimport_01 : TIOW_Pathfinder_VL_Lead_O { scope = 1; class EventHandlers; };
+		class TIOW_Pathfinder_VL_Lead_O_OCimport_02 : TIOW_Pathfinder_VL_Lead_O_OCimport_01 { class EventHandlers; };
 
 
-		class O_Tau_Sept_Tau_Pathfinder_Rail_Rifle_01 : TIOW_Pathfinder_TA_Rail_O_OCimport_02 {
+		class O_Tau_Viorla_Tau_Pathfinder_Rail_Rifle_01 : TIOW_Pathfinder_VL_Rail_O_OCimport_02 {
 			author = "VGm. Venture";
 			scope = 2;
 			scopeCurator = 2;
 			displayName = "Tau Pathfinder (Rail Rifle)";
 			side = 0;
-			faction = "O_143TauSept";
+			faction = "O_143TauViorla";
 
 			identityTypes[] = {"Tau"};
 
-			uniformClass = "TIOW_U_Pathfinder_TA_O";
+			uniformClass = "TIOW_U_Pathfinder_VL_O";
 
-			linkedItems[] = {"TIOW_Tau_BeltP_TA","TIOW_Tau_HelmetB2_TA","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
-			respawnlinkedItems[] = {"TIOW_Tau_BeltP_TA","TIOW_Tau_HelmetB2_TA","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+			linkedItems[] = {"TIOW_Tau_BeltP_VL","TIOW_Tau_HelmetB2_VL","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+			respawnlinkedItems[] = {"TIOW_Tau_BeltP_VL","TIOW_Tau_HelmetB2_VL","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
 
-			weapons[] = {"TIOW_rail_rifle"};
-			respawnWeapons[] = {"TIOW_rail_rifle"};
+			weapons[] = {"TIOW_rail_rifle_VL"};
+			respawnWeapons[] = {"TIOW_rail_rifle_VL"};
 
 			magazines[] = {"TIOW_railrifle_mag","TIOW_railrifle_mag"};
 			respawnMagazines[] = {"TIOW_railrifle_mag","TIOW_railrifle_mag"};
 
-			backpack = "TIOW_Tau_Bck_Phndr_Rail";
+			backpack = "TIOW_Tau_Bck_Phndr_Rail_VL";
 
-			ALiVE_orbatCreator_loadout[] = {{"TIOW_rail_rifle","","","TIOW_Tau_optics_Mk_zoom",{"TIOW_railrifle_mag",12},{},""},{},{},{"TIOW_U_Pathfinder_TA_O",{{"FirstAidKit",1},{"TIOW_railrifle_mag",2,12},{"TIOW_tau_photon_grenade_mag",2,1},{"SmokeShellYellow",2,1}}},{"TIOW_Tau_BeltP",{}},{"TIOW_Tau_Bck_Phndr_Rail",{}},"TIOW_Tau_HelmetB2","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
+			ALiVE_orbatCreator_loadout[] = {{"TIOW_rail_rifle_VL","","","TIOW_Tau_optics_Mk_zoom",{"TIOW_railrifle_mag",12},{},""},{},{},{"TIOW_U_Pathfinder_VL_O",{{"FirstAidKit",1},{"TIOW_railrifle_mag",2,12},{"TIOW_tau_photon_grenade_mag",2,1},{"SmokeShellYellow",2,1}}},{"TIOW_Tau_BeltP_VL",{}},{"TIOW_Tau_Bck_Phndr_Rail_VL",{}},"TIOW_Tau_HelmetB2_VL","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
 
 
 			class EventHandlers : EventHandlers {
@@ -609,13 +614,13 @@ class CfgVehicles {
 
 		};
 
-		class O_Tau_Sept_Tau_Air_Caste_Pilot_01 : TIOW_Air_Caste_Pilot_O_OCimport_02 {
+		class O_Tau_Viorla_Tau_Air_Caste_Pilot_01 : TIOW_Air_Caste_Pilot_O_OCimport_02 {
 			author = "VGm. Venture";
 			scope = 2;
 			scopeCurator = 2;
 			displayName = "Tau Air Caste Pilot";
 			side = 0;
-			faction = "O_143TauSept";
+			faction = "O_143TauViorla";
 
 			identityTypes[] = {"Tau","LanguageENGB_F"};
 
@@ -647,30 +652,30 @@ class CfgVehicles {
 
 		};
 
-		class O_Tau_Sept_Tau_Pathfinder_Ion_Rifle_01 : TIOW_Pathfinder_TA_Ion_O_OCimport_02 {
+		class O_Tau_Viorla_Tau_Pathfinder_Ion_Rifle_01 : TIOW_Pathfinder_VL_Ion_O_OCimport_02 {
 			author = "VGm. Venture";
 			scope = 2;
 			scopeCurator = 2;
 			displayName = "Tau Pathfinder (Ion Rifle)";
 			side = 0;
-			faction = "O_143TauSept";
+			faction = "O_143TauViorla";
 
 			identityTypes[] = {"Tau"};
 
-			uniformClass = "TIOW_U_Pathfinder_TA_O";
+			uniformClass = "TIOW_U_Pathfinder_VL_O";
 
-			linkedItems[] = {"TIOW_Tau_BeltP_Photon","TIOW_Tau_HelmetB2","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
-			respawnlinkedItems[] = {"TIOW_Tau_BeltP_Photon","TIOW_Tau_HelmetB2","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+			linkedItems[] = {"TIOW_Tau_BeltP_Photon_VL","TIOW_Tau_HelmetB2_VL","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+			respawnlinkedItems[] = {"TIOW_Tau_BeltP_Photon_VL","TIOW_Tau_HelmetB2_VL","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
 
-			weapons[] = {"TIOW_ion_rifle"};
-			respawnWeapons[] = {"TIOW_ion_rifle"};
+			weapons[] = {"TIOW_ion_rifle_VL"};
+			respawnWeapons[] = {"TIOW_ion_rifle_VL"};
 
 			magazines[] = {"TIOW_ionrifle_shot_mag","TIOW_ionrifle_shot_mag"};
 			respawnMagazines[] = {"TIOW_ionrifle_shot_mag","TIOW_ionrifle_shot_mag"};
 
-			backpack = "TIOW_Tau_Bck_Phndr_Ion";
+			backpack = "TIOW_Tau_Bck_Phndr_Ion_VL";
 
-			ALiVE_orbatCreator_loadout[] = {{"TIOW_ion_rifle","","","TIOW_Tau_optics_ColiB",{"TIOW_ionrifle_shot_mag",12},{},""},{},{},{"TIOW_U_Pathfinder_TA_O",{{"FirstAidKit",1},{"TIOW_ionrifle_shot_mag",2,12},{"TIOW_tau_photon_grenade_mag",2,1},{"SmokeShellYellow",2,1}}},{"TIOW_Tau_BeltP_Photon",{}},{"TIOW_Tau_Bck_Phndr_Ion",{}},"TIOW_Tau_HelmetB2","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
+			ALiVE_orbatCreator_loadout[] = {{"TIOW_ion_rifle_VL","","","TIOW_Tau_optics_ColiB",{"TIOW_ionrifle_shot_mag",12},{},""},{},{},{"TIOW_U_Pathfinder_VL_O",{{"FirstAidKit",1},{"TIOW_ionrifle_shot_mag",2,12},{"TIOW_tau_photon_grenade_mag",2,1},{"SmokeShellYellow",2,1}}},{"TIOW_Tau_BeltP_Photon_VL",{}},{"TIOW_Tau_Bck_Phndr_Ion_VL",{}},"TIOW_Tau_HelmetB2_VL","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
 
 
 			class EventHandlers : EventHandlers {
@@ -687,30 +692,30 @@ class CfgVehicles {
 
 		};
 
-		class O_Tau_Sept_Tau_Fire_Warrior_01 : TIOW_Strike_TA_O_OCimport_02 {
+		class O_Tau_Viorla_Tau_Fire_Warrior_01 : TIOW_Strike_VL_O_OCimport_02 {
 			author = "VGm. Venture";
 			scope = 2;
 			scopeCurator = 2;
 			displayName = "Tau Fire Warrior";
 			side = 0;
-			faction = "O_143TauSept";
+			faction = "O_143TauViorla";
 
 			identityTypes[] = {"Tau","LanguageCHI_F"};
 
-			uniformClass = "TIOW_U_Pathfinder_TA_O";
+			uniformClass = "TIOW_U_Pathfinder_VL_O";
 
-			linkedItems[] = {"TIOW_Tau_Belt","TIOW_Tau_HelmetS","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
-			respawnlinkedItems[] = {"TIOW_Tau_Belt","TIOW_Tau_HelmetS","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+			linkedItems[] = {"TIOW_Tau_Belt_VL","TIOW_Tau_HelmetS_VL","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+			respawnlinkedItems[] = {"TIOW_Tau_Belt_VL","TIOW_Tau_HelmetS_VL","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
 
-			weapons[] = {"TIOW_pulse_rifle"};
-			respawnWeapons[] = {"TIOW_pulse_rifle"};
+			weapons[] = {"TIOW_pulse_rifle_VL"};
+			respawnWeapons[] = {"TIOW_pulse_rifle_VL"};
 
 			magazines[] = {"TIOW_pulse_mag","TIOW_pulse_mag"};
 			respawnMagazines[] = {"TIOW_pulse_mag","TIOW_pulse_mag"};
 
-			backpack = "TIOW_Tau_Bck_Strike";
+			backpack = "TIOW_Tau_Bck_Strike_VL";
 
-			ALiVE_orbatCreator_loadout[] = {{"TIOW_pulse_rifle","","","TIOW_Tau_optics_ColiB_zoom",{"TIOW_pulse_mag",24},{},""},{},{},{"TIOW_U_Pathfinder_TA_O",{{"FirstAidKit",2},{"TIOW_pulse_mag",4,24},{"TIOW_tau_photon_grenade_mag",2,1}}},{"TIOW_Tau_Belt",{}},{"TIOW_Tau_Bck_Strike",{}},"TIOW_Tau_HelmetS","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
+			ALiVE_orbatCreator_loadout[] = {{"TIOW_pulse_rifle_VL","","","TIOW_Tau_optics_ColiB_zoom",{"TIOW_pulse_mag",24},{},""},{},{},{"TIOW_U_Pathfinder_VL_O",{{"FirstAidKit",2},{"TIOW_pulse_mag",4,24},{"TIOW_tau_photon_grenade_mag",2,1}}},{"TIOW_Tau_Belt_VL",{}},{"TIOW_Tau_Bck_Strike_VL",{}},"TIOW_Tau_HelmetS_VL","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
 
 
 			class EventHandlers : EventHandlers {
@@ -727,30 +732,30 @@ class CfgVehicles {
 
 		};
 
-		class O_Tau_Sept_Tau_Fire_Warrior_Explosives_01 : TIOW_Strike_TA_Exp_O_OCimport_02 {
+		class O_Tau_Viorla_Tau_Fire_Warrior_Explosives_01 : TIOW_Strike_VL_Exp_O_OCimport_02 {
 			author = "VGm. Venture";
 			scope = 2;
 			scopeCurator = 2;
 			displayName = "Tau Fire Warrior(Explosives)";
 			side = 0;
-			faction = "O_143TauSept";
+			faction = "O_143TauViorla";
 
 			identityTypes[] = {"Tau","LanguageCHI_F"};
 
-			uniformClass = "TIOW_U_Pathfinder_TA_O";
+			uniformClass = "TIOW_U_Pathfinder_VL_O";
 
-			linkedItems[] = {"TIOW_Tau_Belt_Photon","TIOW_Tau_HelmetS","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
-			respawnlinkedItems[] = {"TIOW_Tau_Belt_Photon","TIOW_Tau_HelmetS","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+			linkedItems[] = {"TIOW_Tau_Belt_Photon_VL","TIOW_Tau_HelmetS_VL","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+			respawnlinkedItems[] = {"TIOW_Tau_Belt_Photon_VL","TIOW_Tau_HelmetS_VL","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
 
-			weapons[] = {"TIOW_pulse_rifle"};
-			respawnWeapons[] = {"TIOW_pulse_rifle"};
+			weapons[] = {"TIOW_pulse_rifle_VL"};
+			respawnWeapons[] = {"TIOW_pulse_rifle_VL"};
 
 			magazines[] = {"TIOW_pulse_mag","TIOW_pulse_mag"};
 			respawnMagazines[] = {"TIOW_pulse_mag","TIOW_pulse_mag"};
 
-			backpack = "TIOW_Tau_Exp_Pack";
+			backpack = "TIOW_Tau_VL_Exp_Pack";
 
-			ALiVE_orbatCreator_loadout[] = {{"TIOW_pulse_rifle","","","TIOW_Tau_optics_ColiB_zoom",{"TIOW_pulse_mag",24},{},""},{},{},{"TIOW_U_Pathfinder_TA_O",{{"FirstAidKit",2},{"TIOW_pulse_mag",4,24},{"TIOW_tau_photon_grenade_mag",2,1}}},{"TIOW_Tau_Belt_Photon",{}},{"TIOW_Tau_Exp_Pack",{{"MineDetector",1},{"ToolKit",1},{"TIOW_Tau_ExpBig_Remote_Mag",1,1}}},"TIOW_Tau_HelmetS","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
+			ALiVE_orbatCreator_loadout[] = {{"TIOW_pulse_rifle_VL","","","TIOW_Tau_optics_ColiB_zoom",{"TIOW_pulse_mag",24},{},""},{},{},{"TIOW_U_Pathfinder_VL_O",{{"FirstAidKit",2},{"TIOW_pulse_mag",4,24},{"TIOW_tau_photon_grenade_mag",2,1}}},{"TIOW_Tau_Belt_Photon_VL",{}},{"TIOW_Tau_VL_Exp_Pack",{{"MineDetector",1},{"ToolKit",1},{"TIOW_Tau_ExpBig_Remote_Mag",1,1}}},"TIOW_Tau_HelmetS_VL","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
 
 
 			class EventHandlers : EventHandlers {
@@ -767,30 +772,30 @@ class CfgVehicles {
 
 		};
 
-		class O_Tau_Sept_Tau_Fire_Warrior_Shasui_01 : TIOW_Strike_TA_Lead_O_OCimport_02 {
+		class O_Tau_Viorla_Tau_Fire_Warrior_Shasui_01 : TIOW_Strike_VL_Lead_O_OCimport_02 {
 			author = "VGm. Venture";
 			scope = 2;
 			scopeCurator = 2;
 			displayName = "Tau Fire Warrior Shasui";
 			side = 0;
-			faction = "O_143TauSept";
+			faction = "O_143TauViorla";
 
 			identityTypes[] = {"Tau","LanguageCHI_F"};
 
-			uniformClass = "TIOW_U_Pathfinder_TA_O";
+			uniformClass = "TIOW_U_Pathfinder_VL_O";
 
-			linkedItems[] = {"TIOW_Tau_Belt_Shasui","TIOW_Tau_HelmetS_sui","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
-			respawnlinkedItems[] = {"TIOW_Tau_Belt_Shasui","TIOW_Tau_HelmetS_sui","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+			linkedItems[] = {"TIOW_Tau_Belt_Shasui_VL","TIOW_Tau_HelmetS_VL_sui","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+			respawnlinkedItems[] = {"TIOW_Tau_Belt_Shasui_VL","TIOW_Tau_HelmetS_VL_sui","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
 
-			weapons[] = {"TIOW_pulse_rifle","TIOW_pulse_pistol"};
-			respawnWeapons[] = {"TIOW_pulse_rifle","TIOW_pulse_pistol"};
+			weapons[] = {"TIOW_pulse_rifle_VL","TIOW_pulse_pistol_VL"};
+			respawnWeapons[] = {"TIOW_pulse_rifle_VL","TIOW_pulse_pistol_VL"};
 
 			magazines[] = {"TIOW_pulse_mag","TIOW_pulse_pistol_mag","TIOW_pulse_mag","TIOW_pulse_pistol_mag"};
 			respawnMagazines[] = {"TIOW_pulse_mag","TIOW_pulse_pistol_mag","TIOW_pulse_mag","TIOW_pulse_pistol_mag"};
 
-			backpack = "TIOW_Tau_Bck_Strike_Shasui";
+			backpack = "TIOW_Tau_Bck_Strike_Shasui_VL";
 
-			ALiVE_orbatCreator_loadout[] = {{"TIOW_pulse_rifle","","","TIOW_Tau_optics_ColiB_zoom",{"TIOW_pulse_mag",24},{},""},{},{"TIOW_pulse_pistol","","","",{"TIOW_pulse_pistol_mag",12},{},""},{"TIOW_U_Pathfinder_TA_O",{{"FirstAidKit",2},{"TIOW_pulse_mag",4,24},{"TIOW_pulse_pistol_mag",1,12},{"TIOW_tau_photon_grenade_mag",2,1},{"SmokeShellYellow",2,1}}},{"TIOW_Tau_Belt_Shasui",{}},{"TIOW_Tau_Bck_Strike_Shasui",{}},"TIOW_Tau_HelmetS_sui","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
+			ALiVE_orbatCreator_loadout[] = {{"TIOW_pulse_rifle_VL","","","TIOW_Tau_optics_ColiB_zoom",{"TIOW_pulse_mag",24},{},""},{},{"TIOW_pulse_pistol_VL","","","",{"TIOW_pulse_pistol_mag",12},{},""},{"TIOW_U_Pathfinder_VL_O",{{"FirstAidKit",2},{"TIOW_pulse_mag",4,24},{"TIOW_pulse_pistol_mag",1,12},{"TIOW_tau_photon_grenade_mag",2,1},{"SmokeShellYellow",2,1}}},{"TIOW_Tau_Belt_Shasui_VL",{}},{"TIOW_Tau_Bck_Strike_Shasui_VL",{}},"TIOW_Tau_HelmetS_VL_sui","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
 
 
 			class EventHandlers : EventHandlers {
@@ -807,30 +812,30 @@ class CfgVehicles {
 
 		};
 
-		class O_Tau_Sept_Tau_FireBlade_01 : TIOW_Strike_TA_Officer_O_OCimport_02 {
+		class O_Tau_Viorla_Tau_FireBlade_01 : TIOW_Strike_VL_Officer_O_OCimport_02 {
 			author = "VGm. Venture";
 			scope = 2;
 			scopeCurator = 2;
 			displayName = "Tau FireBlade";
 			side = 0;
-			faction = "O_143TauSept";
+			faction = "O_143TauViorla";
 
 			identityTypes[] = {"Tau","LanguageCHI_F"};
 
-			uniformClass = "TIOW_U_Pathfinder_TA_O";
+			uniformClass = "TIOW_U_Pathfinder_VL_O";
 
-			linkedItems[] = {"TIOW_Tau_Belt_Shasui","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
-			respawnlinkedItems[] = {"TIOW_Tau_Belt_Shasui","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+			linkedItems[] = {"TIOW_Tau_Belt_Shasui_VL","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+			respawnlinkedItems[] = {"TIOW_Tau_Belt_Shasui_VL","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
 
-			weapons[] = {"TIOW_pulse_rifle"};
-			respawnWeapons[] = {"TIOW_pulse_rifle"};
+			weapons[] = {"TIOW_pulse_rifle_VL"};
+			respawnWeapons[] = {"TIOW_pulse_rifle_VL"};
 
 			magazines[] = {"TIOW_pulse_mag","TIOW_pulse_mag"};
 			respawnMagazines[] = {"TIOW_pulse_mag","TIOW_pulse_mag"};
 
-			backpack = "TIOW_Tau_Bck_Strike_Shasui";
+			backpack = "TIOW_Tau_Bck_Strike_Shasui_VL";
 
-			ALiVE_orbatCreator_loadout[] = {{"TIOW_pulse_rifle","","","TIOW_Tau_optics_ColiB_zoom",{"TIOW_pulse_mag",24},{},""},{},{},{"TIOW_U_Pathfinder_TA_O",{{"FirstAidKit",2},{"TIOW_pulse_mag",4,24},{"TIOW_tau_photon_grenade_mag",2,1}}},{"TIOW_Tau_Belt_Shasui",{}},{"TIOW_Tau_Bck_Strike_Shasui",{}},"","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
+			ALiVE_orbatCreator_loadout[] = {{"TIOW_pulse_rifle_VL","","","TIOW_Tau_optics_ColiB_zoom",{"TIOW_pulse_mag",24},{},""},{},{},{"TIOW_U_Pathfinder_VL_O",{{"FirstAidKit",2},{"TIOW_pulse_mag",4,24},{"TIOW_tau_photon_grenade_mag",2,1}}},{"TIOW_Tau_Belt_Shasui_VL",{}},{"TIOW_Tau_Bck_Strike_Shasui_VL",{}},"","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
 
 
 			class EventHandlers : EventHandlers {
@@ -847,30 +852,30 @@ class CfgVehicles {
 
 		};
 
-		class O_Tau_Sept_Tau_Breacher_Explosives_01 : TIOW_Breacher_TA_Exp_O_OCimport_02 {
+		class O_Tau_Viorla_Tau_Breacher_Explosives_01 : TIOW_Breacher_VL_Exp_O_OCimport_02 {
 			author = "VGm. Venture";
 			scope = 2;
 			scopeCurator = 2;
 			displayName = "Tau Breacher (Explosives)";
 			side = 0;
-			faction = "O_143TauSept";
+			faction = "O_143TauViorla";
 
 			identityTypes[] = {"Tau","LanguageCHI_F"};
 
-			uniformClass = "TIOW_U_Pathfinder_TA_O";
+			uniformClass = "TIOW_U_Pathfinder_VL_O";
 
-			linkedItems[] = {"TIOW_Tau_BeltB_Photon","TIOW_Tau_HelmetB2","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
-			respawnlinkedItems[] = {"TIOW_Tau_BeltB_Photon","TIOW_Tau_HelmetB2","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+			linkedItems[] = {"TIOW_Tau_BeltB_Photon_VL","TIOW_Tau_HelmetB2_VL","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+			respawnlinkedItems[] = {"TIOW_Tau_BeltB_Photon_VL","TIOW_Tau_HelmetB2_VL","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
 
-			weapons[] = {"TIOW_pulse_blaster"};
-			respawnWeapons[] = {"TIOW_pulse_blaster"};
+			weapons[] = {"TIOW_pulse_blaster_VL"};
+			respawnWeapons[] = {"TIOW_pulse_blaster_VL"};
 
 			magazines[] = {"TIOW_pulse_blaster_mag","TIOW_pulse_blaster_mag"};
 			respawnMagazines[] = {"TIOW_pulse_blaster_mag","TIOW_pulse_blaster_mag"};
 
-			backpack = "TIOW_Tau_Exp_Pack";
+			backpack = "TIOW_Tau_VL_Exp_Pack";
 
-			ALiVE_orbatCreator_loadout[] = {{"TIOW_pulse_blaster","","","",{"TIOW_pulse_blaster_mag",8},{},""},{},{},{"TIOW_U_Pathfinder_TA_O",{{"FirstAidKit",2},{"TIOW_pulse_blaster_mag",3,8},{"TIOW_tau_photon_grenade_mag",2,1},{"Chemlight_red",4,1}}},{"TIOW_Tau_BeltB_Photon",{}},{"TIOW_Tau_Exp_Pack",{{"MineDetector",1},{"ToolKit",1},{"TIOW_Tau_ExpBig_Remote_Mag",1,1}}},"TIOW_Tau_HelmetB2","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
+			ALiVE_orbatCreator_loadout[] = {{"TIOW_pulse_blaster_VL","","","",{"TIOW_pulse_blaster_mag",8},{},""},{},{},{"TIOW_U_Pathfinder_VL_O",{{"FirstAidKit",2},{"TIOW_pulse_blaster_mag",3,8},{"TIOW_tau_photon_grenade_mag",2,1},{"Chemlight_red",4,1}}},{"TIOW_Tau_BeltB_Photon_VL",{}},{"TIOW_Tau_VL_Exp_Pack",{{"MineDetector",1},{"ToolKit",1},{"TIOW_Tau_ExpBig_Remote_Mag",1,1}}},"TIOW_Tau_HelmetB2_VL","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
 
 
 			class EventHandlers : EventHandlers {
@@ -887,30 +892,30 @@ class CfgVehicles {
 
 		};
 
-		class O_Tau_Sept_Tau_Breacher_01 : TIOW_Breacher_TA_O_OCimport_02 {
+		class O_Tau_Viorla_Tau_Breacher_01 : TIOW_Breacher_VL_O_OCimport_02 {
 			author = "VGm. Venture";
 			scope = 2;
 			scopeCurator = 2;
 			displayName = "Tau Breacher";
 			side = 0;
-			faction = "O_143TauSept";
+			faction = "O_143TauViorla";
 
 			identityTypes[] = {"Tau","LanguageCHI_F"};
 
-			uniformClass = "TIOW_U_Pathfinder_TA_O";
+			uniformClass = "TIOW_U_Pathfinder_VL_O";
 
-			linkedItems[] = {"TIOW_Tau_HelmetB2","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
-			respawnlinkedItems[] = {"TIOW_Tau_HelmetB2","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+			linkedItems[] = {"TIOW_Tau_HelmetB2_VL","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+			respawnlinkedItems[] = {"TIOW_Tau_HelmetB2_VL","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
 
-			weapons[] = {"TIOW_pulse_blaster"};
-			respawnWeapons[] = {"TIOW_pulse_blaster"};
+			weapons[] = {"TIOW_pulse_blaster_VL"};
+			respawnWeapons[] = {"TIOW_pulse_blaster_VL"};
 
 			magazines[] = {"TIOW_pulse_blaster_mag","TIOW_pulse_blaster_mag"};
 			respawnMagazines[] = {"TIOW_pulse_blaster_mag","TIOW_pulse_blaster_mag"};
 
-			backpack = "TIOW_Tau_Bck_Breacher";
+			backpack = "TIOW_Tau_Bck_Breacher_VL";
 
-			ALiVE_orbatCreator_loadout[] = {{"TIOW_pulse_blaster","","","",{"TIOW_pulse_blaster_mag",8},{},""},{},{},{"TIOW_U_Pathfinder_TA_O",{{"FirstAidKit",2},{"TIOW_pulse_blaster_mag",3,8},{"TIOW_tau_photon_grenade_mag",2,1},{"Chemlight_red",4,1}}},{},{"TIOW_Tau_Bck_Breacher",{}},"TIOW_Tau_HelmetB2","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
+			ALiVE_orbatCreator_loadout[] = {{"TIOW_pulse_blaster_VL","","","",{"TIOW_pulse_blaster_mag",8},{},""},{},{},{"TIOW_U_Pathfinder_VL_O",{{"FirstAidKit",2},{"TIOW_pulse_blaster_mag",3,8},{"TIOW_tau_photon_grenade_mag",2,1},{"Chemlight_red",4,1}}},{},{"TIOW_Tau_Bck_Breacher_VL",{}},"TIOW_Tau_HelmetB2_VL","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
 
 
 			class EventHandlers : EventHandlers {
@@ -927,30 +932,30 @@ class CfgVehicles {
 
 		};
 
-		class O_Tau_Sept_Tau_Breacher_Shasui_01 : TIOW_Breacher_TA_Lead_O_OCimport_02 {
+		class O_Tau_Viorla_Tau_Breacher_Shasui_01 : TIOW_Breacher_VL_Lead_O_OCimport_02 {
 			author = "VGm. Venture";
 			scope = 2;
 			scopeCurator = 2;
 			displayName = "Tau Breacher Shasui";
 			side = 0;
-			faction = "O_143TauSept";
+			faction = "O_143TauViorla";
 
 			identityTypes[] = {"Tau","LanguageCHI_F"};
 
-			uniformClass = "TIOW_U_Pathfinder_TA_O";
+			uniformClass = "TIOW_U_Pathfinder_VL_O";
 
-			linkedItems[] = {"TIOW_Tau_BeltB_Shasui","TIOW_Tau_HelmetB2_sui","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
-			respawnlinkedItems[] = {"TIOW_Tau_BeltB_Shasui","TIOW_Tau_HelmetB2_sui","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+			linkedItems[] = {"TIOW_Tau_BeltB_Shasui_VL","TIOW_Tau_HelmetB2_VL_sui","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+			respawnlinkedItems[] = {"TIOW_Tau_BeltB_Shasui_VL","TIOW_Tau_HelmetB2_VL_sui","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
 
-			weapons[] = {"TIOW_pulse_blaster","TIOW_pulse_pistol"};
-			respawnWeapons[] = {"TIOW_pulse_blaster","TIOW_pulse_pistol"};
+			weapons[] = {"TIOW_pulse_blaster_VL","TIOW_pulse_pistol_VL"};
+			respawnWeapons[] = {"TIOW_pulse_blaster_VL","TIOW_pulse_pistol_VL"};
 
 			magazines[] = {"TIOW_pulse_blaster_mag","TIOW_pulse_pistol_mag","TIOW_pulse_blaster_mag","TIOW_pulse_pistol_mag"};
 			respawnMagazines[] = {"TIOW_pulse_blaster_mag","TIOW_pulse_pistol_mag","TIOW_pulse_blaster_mag","TIOW_pulse_pistol_mag"};
 
 			backpack = "TIOW_Tau_Bck_Breacher_Shasui";
 
-			ALiVE_orbatCreator_loadout[] = {{"TIOW_pulse_blaster","","","",{"TIOW_pulse_blaster_mag",8},{},""},{},{"TIOW_pulse_pistol","","","",{"TIOW_pulse_pistol_mag",12},{},""},{"TIOW_U_Pathfinder_TA_O",{{"FirstAidKit",2},{"TIOW_pulse_blaster_mag",3,8},{"TIOW_pulse_pistol_mag",1,12},{"TIOW_tau_photon_grenade_mag",2,1},{"Chemlight_red",4,1}}},{"TIOW_Tau_BeltB_Shasui",{}},{"TIOW_Tau_Bck_Breacher_Shasui",{}},"TIOW_Tau_HelmetB2_sui","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
+			ALiVE_orbatCreator_loadout[] = {{"TIOW_pulse_blaster_VL","","","",{"TIOW_pulse_blaster_mag",8},{},""},{},{"TIOW_pulse_pistol_VL","","","",{"TIOW_pulse_pistol_mag",12},{},""},{"TIOW_U_Pathfinder_VL_O",{{"FirstAidKit",2},{"TIOW_pulse_blaster_mag",3,8},{"TIOW_pulse_pistol_mag",1,12},{"TIOW_tau_photon_grenade_mag",2,1},{"Chemlight_red",4,1}}},{"TIOW_Tau_BeltB_Shasui_VL",{}},{"TIOW_Tau_Bck_Breacher_Shasui",{}},"TIOW_Tau_HelmetB2_VL_sui","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
 
 
 			class EventHandlers : EventHandlers {
@@ -967,30 +972,30 @@ class CfgVehicles {
 
 		};
 
-		class O_Tau_Sept_Tau_Pathfinder_01 : TIOW_Pathfinder_TA_O_OCimport_02 {
+		class O_Tau_Viorla_Tau_Pathfinder_01 : TIOW_Pathfinder_VL_O_OCimport_02 {
 			author = "VGm. Venture";
 			scope = 2;
 			scopeCurator = 2;
 			displayName = "Tau Pathfinder";
 			side = 0;
-			faction = "O_143TauSept";
+			faction = "O_143TauViorla";
 
 			identityTypes[] = {"Tau"};
 
-			uniformClass = "TIOW_U_Pathfinder_TA_O";
+			uniformClass = "TIOW_U_Pathfinder_VL_O";
 
-			linkedItems[] = {"TIOW_Tau_BeltP","TIOW_Tau_HelmetB2","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
-			respawnlinkedItems[] = {"TIOW_Tau_BeltP","TIOW_Tau_HelmetB2","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+			linkedItems[] = {"TIOW_Tau_BeltP_VL","TIOW_Tau_HelmetB2_VL","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+			respawnlinkedItems[] = {"TIOW_Tau_BeltP_VL","TIOW_Tau_HelmetB2_VL","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
 
-			weapons[] = {"TIOW_pulse_carbine"};
-			respawnWeapons[] = {"TIOW_pulse_carbine"};
+			weapons[] = {"TIOW_pulse_carbine_VL"};
+			respawnWeapons[] = {"TIOW_pulse_carbine_VL"};
 
 			magazines[] = {"TIOW_pulse_mag","TIOW_pulse_mag"};
 			respawnMagazines[] = {"TIOW_pulse_mag","TIOW_pulse_mag"};
 
-			backpack = "TIOW_Tau_Bck_Phndr";
+			backpack = "TIOW_Tau_Bck_Phndr_VL";
 
-			ALiVE_orbatCreator_loadout[] = {{"TIOW_pulse_carbine","","","TIOW_Tau_optics_ColiB",{"TIOW_pulse_mag",24},{},""},{},{},{"TIOW_U_Pathfinder_TA_O",{{"FirstAidKit",1},{"TIOW_pulse_mag",3,24},{"TIOW_tau_photon_grenade_mag",2,1},{"SmokeShellYellow",2,1}}},{"TIOW_Tau_BeltP",{}},{"TIOW_Tau_Bck_Phndr",{}},"TIOW_Tau_HelmetB2","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
+			ALiVE_orbatCreator_loadout[] = {{"TIOW_pulse_carbine_VL","","","TIOW_Tau_optics_ColiB",{"TIOW_pulse_mag",24},{},""},{},{},{"TIOW_U_Pathfinder_VL_O",{{"FirstAidKit",1},{"TIOW_pulse_mag",3,24},{"TIOW_tau_photon_grenade_mag",2,1},{"SmokeShellYellow",2,1}}},{"TIOW_Tau_BeltP_VL",{}},{"TIOW_Tau_Bck_Phndr_VL",{}},"TIOW_Tau_HelmetB2_VL","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
 
 
 			class EventHandlers : EventHandlers {
@@ -1007,30 +1012,30 @@ class CfgVehicles {
 
 		};
 
-		class O_Tau_Sept_Tau_Pathfinder_Explosives_01 : TIOW_Pathfinder_TA_Exp_O_OCimport_02 {
+		class O_Tau_Viorla_Tau_Pathfinder_Explosives_01 : TIOW_Pathfinder_VL_Exp_O_OCimport_02 {
 			author = "VGm. Venture";
 			scope = 2;
 			scopeCurator = 2;
 			displayName = "Tau Pathfinder (Explosives)";
 			side = 0;
-			faction = "O_143TauSept";
+			faction = "O_143TauViorla";
 
 			identityTypes[] = {"Tau"};
 
-			uniformClass = "TIOW_U_Pathfinder_TA_O";
+			uniformClass = "TIOW_U_Pathfinder_VL_O";
 
-			linkedItems[] = {"TIOW_Tau_BeltP","TIOW_Tau_HelmetB2","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
-			respawnlinkedItems[] = {"TIOW_Tau_BeltP","TIOW_Tau_HelmetB2","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+			linkedItems[] = {"TIOW_Tau_BeltP_VL","TIOW_Tau_HelmetB2_VL","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+			respawnlinkedItems[] = {"TIOW_Tau_BeltP_VL","TIOW_Tau_HelmetB2_VL","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
 
-			weapons[] = {"TIOW_pulse_carbine"};
-			respawnWeapons[] = {"TIOW_pulse_carbine"};
+			weapons[] = {"TIOW_pulse_carbine_VL"};
+			respawnWeapons[] = {"TIOW_pulse_carbine_VL"};
 
 			magazines[] = {"TIOW_pulse_mag","TIOW_pulse_mag"};
 			respawnMagazines[] = {"TIOW_pulse_mag","TIOW_pulse_mag"};
 
-			backpack = "TIOW_Tau_Exp_P_Pack";
+			backpack = "TIOW_Tau_VL_Exp_P_Pack";
 
-			ALiVE_orbatCreator_loadout[] = {{"TIOW_pulse_carbine","","","TIOW_Tau_optics_ColiB",{"TIOW_pulse_mag",24},{},""},{},{},{"TIOW_U_Pathfinder_TA_O",{{"FirstAidKit",1},{"TIOW_pulse_mag",3,24},{"TIOW_tau_photon_grenade_mag",2,1},{"SmokeShellYellow",2,1}}},{"TIOW_Tau_BeltP",{}},{"TIOW_Tau_Exp_P_Pack",{{"MineDetector",1},{"ToolKit",1},{"TIOW_Tau_ExpSmall_Remote_Mag",2,1}}},"TIOW_Tau_HelmetB2","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
+			ALiVE_orbatCreator_loadout[] = {{"TIOW_pulse_carbine_VL","","","TIOW_Tau_optics_ColiB",{"TIOW_pulse_mag",24},{},""},{},{},{"TIOW_U_Pathfinder_VL_O",{{"FirstAidKit",1},{"TIOW_pulse_mag",3,24},{"TIOW_tau_photon_grenade_mag",2,1},{"SmokeShellYellow",2,1}}},{"TIOW_Tau_BeltP_VL",{}},{"TIOW_Tau_VL_Exp_P_Pack",{{"MineDetector",1},{"ToolKit",1},{"TIOW_Tau_ExpSmall_Remote_Mag",2,1}}},"TIOW_Tau_HelmetB2_VL","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
 
 
 			class EventHandlers : EventHandlers {
@@ -1047,30 +1052,30 @@ class CfgVehicles {
 
 		};
 
-		class O_Tau_Sept_Tau_Pathfinder_Shasui_01 : TIOW_Pathfinder_TA_Lead_O_OCimport_02 {
+		class O_Tau_Viorla_Tau_Pathfinder_Shasui_01 : TIOW_Pathfinder_VL_Lead_O_OCimport_02 {
         author = "VGm. Venture";
         scope = 2;
         scopeCurator = 2;
         displayName = "Tau Pathfinder Shasui";
         side = 0;
-        faction = "O_143TauSept";
+        faction = "O_143TauViorla";
 
         identityTypes[] = {"Tau"};
 
-        uniformClass = "TIOW_U_Pathfinder_TA_O";
+        uniformClass = "TIOW_U_Pathfinder_VL_O";
 
-        linkedItems[] = {"TIOW_Tau_BeltP_Shasui","TIOW_Tau_HelmetS_sui","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
-        respawnlinkedItems[] = {"TIOW_Tau_BeltP_Shasui","TIOW_Tau_HelmetS_sui","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        linkedItems[] = {"TIOW_Tau_BeltP_Shasui_VL","TIOW_Tau_HelmetS_VL_sui","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        respawnlinkedItems[] = {"TIOW_Tau_BeltP_Shasui_VL","TIOW_Tau_HelmetS_VL_sui","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
 
-        weapons[] = {"TIOW_pulse_carbine","TIOW_pulse_pistol"};
-        respawnWeapons[] = {"TIOW_pulse_carbine","TIOW_pulse_pistol"};
+        weapons[] = {"TIOW_pulse_carbine_VL","TIOW_pulse_pistol_VL"};
+        respawnWeapons[] = {"TIOW_pulse_carbine_VL","TIOW_pulse_pistol_VL"};
 
         magazines[] = {"TIOW_pulse_mag","TIOW_pulse_pistol_mag","TIOW_pulse_mag","TIOW_pulse_pistol_mag"};
         respawnMagazines[] = {"TIOW_pulse_mag","TIOW_pulse_pistol_mag","TIOW_pulse_mag","TIOW_pulse_pistol_mag"};
 
-        backpack = "TIOW_Tau_Bck_Phndr_Shasui";
+        backpack = "TIOW_Tau_Bck_Phndr_Shasui_VL";
 
-        ALiVE_orbatCreator_loadout[] = {{"TIOW_pulse_carbine","","","TIOW_Tau_optics_ColiB",{"TIOW_pulse_mag",24},{},""},{},{"TIOW_pulse_pistol","","","",{"TIOW_pulse_pistol_mag",12},{},""},{"TIOW_U_Pathfinder_TA_O",{{"FirstAidKit",1},{"TIOW_pulse_mag",3,24},{"TIOW_tau_photon_grenade_mag",2,1},{"TIOW_pulse_pistol_mag",1,12},{"SmokeShellYellow",2,1}}},{"TIOW_Tau_BeltP_Shasui",{}},{"TIOW_Tau_Bck_Phndr_Shasui",{}},"TIOW_Tau_HelmetS_sui","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
+        ALiVE_orbatCreator_loadout[] = {{"TIOW_pulse_carbine_VL","","","TIOW_Tau_optics_ColiB",{"TIOW_pulse_mag",24},{},""},{},{"TIOW_pulse_pistol_VL","","","",{"TIOW_pulse_pistol_mag",12},{},""},{"TIOW_U_Pathfinder_VL_O",{{"FirstAidKit",1},{"TIOW_pulse_mag",3,24},{"TIOW_tau_photon_grenade_mag",2,1},{"TIOW_pulse_pistol_mag",1,12},{"SmokeShellYellow",2,1}}},{"TIOW_Tau_BeltP_Shasui_VL",{}},{"TIOW_Tau_Bck_Phndr_Shasui_VL",{}},"TIOW_Tau_HelmetS_VL_sui","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -1089,10 +1094,10 @@ class CfgVehicles {
 	
 	
 	//APCs
-		// TIOW_Tau_Devilfish_TA_O
+		// TIOW_Tau_Devilfish_VL_O
 		
 	//Tanks
-		// TIOW_Tau_Hammerhead_TA_O
-		// TIOW_Tau_Hammerhead_Twinburst_TA_O
-		// TIOW_Tau_Hammerhead_Ioncannon_TA_O
+		// TIOW_Tau_Hammerhead_VL_O
+		// TIOW_Tau_Hammerhead_Twinburst_VL_O
+		// TIOW_Tau_Hammerhead_Ioncannon_VL_O
 };

@@ -1,21 +1,21 @@
 class CfgPatches {
-    class B_143DKOK {
+    class I_82ndDKOK {
         units[] = {
-            "B_143DKOK_Death_Korps_Quarter_Master_01",
-            "B_143DKOK_Death_Korps_Watchmaster_01",
-            "B_143DKOK_AT_Guardsman_01",
-            "B_143DKOK_Death_Korps_Guardsman_01",
-            "B_143DKOK_Death_Korps_Officer_01",
-            "B_143DKOK_AT_Grenadier_01",
-            "B_143DKOK_Death_Korps_Engineer_01",
-            "B_143DKOK_Death_Korps_Grenadier_01",
-            "B_143DKOK_Death_Korps_Grenadier_Plasmagunner_01",
-            "B_143DKOK_Death_Korps_Guardsman_Plasmagunner_01",
-            "B_143DKOK_Death_Korps_Guardsman_Heavy_Stubber_01"
+            "I_82ndDKOK_Death_Korps_Quarter_Master_01",
+            "I_82ndDKOK_Death_Korps_Watchmaster_01",
+            "I_82ndDKOK_AT_Guardsman_01",
+            "I_82ndDKOK_Death_Korps_Guardsman_01",
+            "I_82ndDKOK_Death_Korps_Officer_01",
+            "I_82ndDKOK_AT_Grenadier_01",
+            "I_82ndDKOK_Death_Korps_Engineer_01",
+            "I_82ndDKOK_Death_Korps_Grenadier_01",
+            "I_82ndDKOK_Death_Korps_Grenadier_Plasmagunner_01",
+            "I_82ndDKOK_Death_Korps_Guardsman_Plasmagunner_01",
+            "I_82ndDKOK_Death_Korps_Guardsman_Heavy_Stubber_01"
         };
         weapons[] = {};
         requiredVersion = 1.62;
-        requiredAddons[] = {};
+        requiredAddons[] = {"ace_common"};
         author = "VGm. Venture";
         authors[] = {"VGm. Venture"};
     };
@@ -27,9 +27,9 @@ class CfgPatches {
 //////////////////////////////////////////////////////////////////////////////////
 
 class CfgFactionClasses {
-    class B_143DKOK {
-        displayName = "143rd DKOK Siege Regiment";
-        side = 1;
+    class I_82ndDKOK {
+        displayName = "143rd DKOK - 82nd";
+        side = 2;
         flag = "\A3\ui_f\data\map\markers\flags\Germany_ca.paa";
         icon = "\A3\ui_f\data\map\markers\flags\Germany_ca.paa";
         priority = 1;
@@ -37,233 +37,233 @@ class CfgFactionClasses {
 };
 
 class CfgGroups {
-    class WEST {
+    class Indep {
 
-        class B_143DKOK {
-            name = "143rd DKOK Siege Regiment";
+        class I_82ndDKOK {
+            name = "143rd DKOK - 82nd";
 
             class Infantry {
                 name = "Infantry";
 
-                class b_143dkok_infantry_sentry {
+                class i_82ndDKOK_infantry_sentry {
                     name = "Sentry";
-                    side = 1;
-                    faction = "B_143DKOK";
+                    side = 2;
+                    faction = "I_82ndDKOK";
                     icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
                     rarityGroup = 0.5;
 
                     class Unit0 {
                         position[] = {0,0,0};
                         rank = "SERGEANT";
-                        side = 1;
-                        vehicle = "B_143DKOK_Death_Korps_Guardsman_01";
+                        side = 2;
+                        vehicle = "I_82ndDKOK_Death_Korps_Guardsman_01";
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
                         rank = "PRIVATE";
-                        side = 1;
-                        vehicle = "B_143DKOK_Death_Korps_Guardsman_01";
+                        side = 2;
+                        vehicle = "I_82ndDKOK_Death_Korps_Guardsman_01";
                     };
                 };
 
-                class b_143dkok_infantry_fireteam {
+                class i_82ndDKOK_infantry_fireteam {
                     name = "Fireteam";
-                    side = 1;
-                    faction = "B_143DKOK";
+                    side = 2;
+                    faction = "I_82ndDKOK";
                     icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
                     rarityGroup = 0.5;
 
                     class Unit0 {
                         position[] = {0,0,0};
                         rank = "SERGEANT";
-                        side = 1;
-                        vehicle = "B_143DKOK_Death_Korps_Watchmaster_01";
+                        side = 2;
+                        vehicle = "I_82ndDKOK_Death_Korps_Watchmaster_01";
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
                         rank = "PRIVATE";
-                        side = 1;
-                        vehicle = "B_143DKOK_Death_Korps_Guardsman_01";
+                        side = 2;
+                        vehicle = "I_82ndDKOK_Death_Korps_Guardsman_01";
                     };
                     class Unit2 {
                         position[] = {-5,-5,0};
                         rank = "PRIVATE";
-                        side = 1;
-                        vehicle = "B_143DKOK_Death_Korps_Guardsman_01";
+                        side = 2;
+                        vehicle = "I_82ndDKOK_Death_Korps_Guardsman_01";
                     };
                     class Unit3 {
                         position[] = {10,-10,0};
                         rank = "PRIVATE";
-                        side = 1;
-                        vehicle = "B_143DKOK_Death_Korps_Guardsman_01";
+                        side = 2;
+                        vehicle = "I_82ndDKOK_Death_Korps_Guardsman_01";
                     };
                 };
 
-                class b_143dkok_infantry_fireteam_at {
+                class i_82ndDKOK_infantry_fireteam_at {
                     name = "Fireteam AT";
-                    side = 1;
-                    faction = "B_143DKOK";
+                    side = 2;
+                    faction = "I_82ndDKOK";
                     icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
                     rarityGroup = 0.5;
 
                     class Unit0 {
                         position[] = {0,0,0};
                         rank = "SERGEANT";
-                        side = 1;
-                        vehicle = "B_143DKOK_Death_Korps_Watchmaster_01";
+                        side = 2;
+                        vehicle = "I_82ndDKOK_Death_Korps_Watchmaster_01";
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
                         rank = "PRIVATE";
-                        side = 1;
-                        vehicle = "B_143DKOK_AT_Guardsman_01";
+                        side = 2;
+                        vehicle = "I_82ndDKOK_AT_Guardsman_01";
                     };
                     class Unit2 {
                         position[] = {-5,-5,0};
                         rank = "PRIVATE";
-                        side = 1;
-                        vehicle = "B_143DKOK_Death_Korps_Guardsman_01";
+                        side = 2;
+                        vehicle = "I_82ndDKOK_Death_Korps_Guardsman_01";
                     };
                     class Unit3 {
                         position[] = {10,-10,0};
                         rank = "PRIVATE";
-                        side = 1;
-                        vehicle = "B_143DKOK_Death_Korps_Guardsman_01";
+                        side = 2;
+                        vehicle = "I_82ndDKOK_Death_Korps_Guardsman_01";
                     };
                 };
 
-                class b_143dkok_infantry_fireteam_plasma {
+                class i_82ndDKOK_infantry_fireteam_plasma {
                     name = "Fireteam Plasma";
-                    side = 1;
-                    faction = "B_143DKOK";
+                    side = 2;
+                    faction = "I_82ndDKOK";
                     icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
                     rarityGroup = 0.5;
 
                     class Unit0 {
                         position[] = {0,0,0};
                         rank = "SERGEANT";
-                        side = 1;
-                        vehicle = "B_143DKOK_Death_Korps_Watchmaster_01";
+                        side = 2;
+                        vehicle = "I_82ndDKOK_Death_Korps_Watchmaster_01";
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
                         rank = "PRIVATE";
-                        side = 1;
-                        vehicle = "B_143DKOK_Death_Korps_Guardsman_Plasmagunner_01";
+                        side = 2;
+                        vehicle = "I_82ndDKOK_Death_Korps_Guardsman_Plasmagunner_01";
                     };
                     class Unit2 {
                         position[] = {-5,-5,0};
                         rank = "PRIVATE";
-                        side = 1;
-                        vehicle = "B_143DKOK_Death_Korps_Guardsman_01";
+                        side = 2;
+                        vehicle = "I_82ndDKOK_Death_Korps_Guardsman_01";
                     };
                     class Unit3 {
                         position[] = {10,-10,0};
                         rank = "PRIVATE";
-                        side = 1;
-                        vehicle = "B_143DKOK_Death_Korps_Guardsman_01";
+                        side = 2;
+                        vehicle = "I_82ndDKOK_Death_Korps_Guardsman_01";
                     };
                 };
 
-                class b_143dkok_infantry_fireteam_stubber {
+                class i_82ndDKOK_infantry_fireteam_stubber {
                     name = "Fireteam Stubber";
-                    side = 1;
-                    faction = "B_143DKOK";
+                    side = 2;
+                    faction = "I_82ndDKOK";
                     icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
                     rarityGroup = 0.5;
 
                     class Unit0 {
                         position[] = {0,0,0};
                         rank = "SERGEANT";
-                        side = 1;
-                        vehicle = "B_143DKOK_Death_Korps_Watchmaster_01";
+                        side = 2;
+                        vehicle = "I_82ndDKOK_Death_Korps_Watchmaster_01";
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
                         rank = "PRIVATE";
-                        side = 1;
-                        vehicle = "B_143DKOK_Death_Korps_Guardsman_Heavy_Stubber_01";
+                        side = 2;
+                        vehicle = "I_82ndDKOK_Death_Korps_Guardsman_Heavy_Stubber_01";
                     };
                     class Unit2 {
                         position[] = {-5,-5,0};
                         rank = "PRIVATE";
-                        side = 1;
-                        vehicle = "B_143DKOK_Death_Korps_Guardsman_01";
+                        side = 2;
+                        vehicle = "I_82ndDKOK_Death_Korps_Guardsman_01";
                     };
                     class Unit3 {
                         position[] = {10,-10,0};
                         rank = "PRIVATE";
-                        side = 1;
-                        vehicle = "B_143DKOK_Death_Korps_Guardsman_01";
+                        side = 2;
+                        vehicle = "I_82ndDKOK_Death_Korps_Guardsman_01";
                     };
                 };
 
-                class b_143dkok_infantry_squad {
+                class i_82ndDKOK_infantry_squad {
                     name = "Squad";
-                    side = 1;
-                    faction = "B_143DKOK";
+                    side = 2;
+                    faction = "I_82ndDKOK";
                     icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
                     rarityGroup = 0.5;
 
                     class Unit0 {
                         position[] = {0,0,0};
                         rank = "SERGEANT";
-                        side = 1;
-                        vehicle = "B_143DKOK_Death_Korps_Watchmaster_01";
+                        side = 2;
+                        vehicle = "I_82ndDKOK_Death_Korps_Watchmaster_01";
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
                         rank = "PRIVATE";
-                        side = 1;
-                        vehicle = "B_143DKOK_Death_Korps_Guardsman_Plasmagunner_01";
+                        side = 2;
+                        vehicle = "I_82ndDKOK_Death_Korps_Guardsman_Plasmagunner_01";
                     };
                     class Unit2 {
                         position[] = {-5,-5,0};
                         rank = "PRIVATE";
-                        side = 1;
-                        vehicle = "B_143DKOK_Death_Korps_Guardsman_Heavy_Stubber_01";
+                        side = 2;
+                        vehicle = "I_82ndDKOK_Death_Korps_Guardsman_Heavy_Stubber_01";
                     };
                     class Unit3 {
                         position[] = {10,-10,0};
                         rank = "PRIVATE";
-                        side = 1;
-                        vehicle = "B_143DKOK_AT_Guardsman_01";
+                        side = 2;
+                        vehicle = "I_82ndDKOK_AT_Guardsman_01";
                     };
                     class Unit4 {
                         position[] = {-10,-10,0};
                         rank = "CORPORAL";
-                        side = 1;
-                        vehicle = "B_143DKOK_Death_Korps_Guardsman_01";
+                        side = 2;
+                        vehicle = "I_82ndDKOK_Death_Korps_Guardsman_01";
                     };
                     class Unit5 {
                         position[] = {15,-15,0};
                         rank = "CORPORAL";
-                        side = 1;
-                        vehicle = "B_143DKOK_Death_Korps_Guardsman_01";
+                        side = 2;
+                        vehicle = "I_82ndDKOK_Death_Korps_Guardsman_01";
                     };
                     class Unit6 {
                         position[] = {-15,-15,0};
                         rank = "PRIVATE";
-                        side = 1;
-                        vehicle = "B_143DKOK_Death_Korps_Guardsman_01";
+                        side = 2;
+                        vehicle = "I_82ndDKOK_Death_Korps_Guardsman_01";
                     };
                     class Unit7 {
                         position[] = {20,-20,0};
                         rank = "PRIVATE";
-                        side = 1;
-                        vehicle = "B_143DKOK_Death_Korps_Guardsman_01";
+                        side = 2;
+                        vehicle = "I_82ndDKOK_Death_Korps_Guardsman_01";
                     };
                     class Unit8 {
                         position[] = {-20,-20,0};
                         rank = "PRIVATE";
-                        side = 1;
-                        vehicle = "B_143DKOK_Death_Korps_Guardsman_01";
+                        side = 2;
+                        vehicle = "I_82ndDKOK_Death_Korps_Guardsman_01";
                     };
                     class Unit9 {
                         position[] = {25,-25,0};
                         rank = "PRIVATE";
-                        side = 1;
-                        vehicle = "B_143DKOK_Death_Korps_Guardsman_01";
+                        side = 2;
+                        vehicle = "I_82ndDKOK_Death_Korps_Guardsman_01";
                     };
                 };
 
@@ -272,42 +272,42 @@ class CfgGroups {
             class SpecOps {
                 name = "Special Forces";
 
-                class b_143dkok_specops_grenadier_team {
+                class i_82ndDKOK_specops_grenadier_team {
                     name = "Grenadier Team";
-                    side = 1;
-                    faction = "B_143DKOK";
+                    side = 2;
+                    faction = "I_82ndDKOK";
                     icon = "\A3\ui_f\data\map\markers\nato\b_recon.paa";
                     rarityGroup = 0.5;
 
                     class Unit0 {
                         position[] = {0,0,0};
                         rank = "SERGEANT";
-                        side = 1;
-                        vehicle = "B_143DKOK_Death_Korps_Grenadier_01";
+                        side = 2;
+                        vehicle = "I_82ndDKOK_Death_Korps_Grenadier_01";
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
                         rank = "PRIVATE";
-                        side = 1;
-                        vehicle = "B_143DKOK_Death_Korps_Grenadier_Plasmagunner_01";
+                        side = 2;
+                        vehicle = "I_82ndDKOK_Death_Korps_Grenadier_Plasmagunner_01";
                     };
                     class Unit2 {
                         position[] = {-5,-5,0};
                         rank = "PRIVATE";
-                        side = 1;
-                        vehicle = "B_143DKOK_AT_Grenadier_01";
+                        side = 2;
+                        vehicle = "I_82ndDKOK_AT_Grenadier_01";
                     };
                     class Unit3 {
                         position[] = {10,-10,0};
                         rank = "PRIVATE";
-                        side = 1;
-                        vehicle = "B_143DKOK_Death_Korps_Grenadier_01";
+                        side = 2;
+                        vehicle = "I_82ndDKOK_Death_Korps_Grenadier_01";
                     };
                     class Unit4 {
                         position[] = {-10,-10,0};
                         rank = "PRIVATE";
-                        side = 1;
-                        vehicle = "B_143DKOK_Death_Korps_Grenadier_01";
+                        side = 2;
+                        vehicle = "I_82ndDKOK_Death_Korps_Grenadier_01";
                     };
                 };
 
@@ -326,81 +326,81 @@ class CfgGroups {
             class Support {
                 name = "Support Infantry";
 
-                class b_143dkok_support_platoon_command_squad {
+                class i_82ndDKOK_support_platoon_command_squad {
                     name = "Platoon Command Squad";
-                    side = 1;
-                    faction = "B_143DKOK";
+                    side = 2;
+                    faction = "I_82ndDKOK";
                     icon = "\A3\ui_f\data\map\markers\nato\b_support.paa";
                     rarityGroup = 0.5;
 
                     class Unit0 {
                         position[] = {0,0,0};
                         rank = "LIEUTENANT";
-                        side = 1;
-                        vehicle = "B_143DKOK_Death_Korps_Watchmaster_01";
+                        side = 2;
+                        vehicle = "I_82ndDKOK_Death_Korps_Watchmaster_01";
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
                         rank = "SERGEANT";
-                        side = 1;
-                        vehicle = "B_143DKOK_Death_Korps_Guardsman_Heavy_Stubber_01";
+                        side = 2;
+                        vehicle = "I_82ndDKOK_Death_Korps_Guardsman_Heavy_Stubber_01";
                     };
                     class Unit2 {
                         position[] = {-5,-5,0};
                         rank = "SERGEANT";
-                        side = 1;
-                        vehicle = "B_143DKOK_Death_Korps_Guardsman_Plasmagunner_01";
+                        side = 2;
+                        vehicle = "I_82ndDKOK_Death_Korps_Guardsman_Plasmagunner_01";
                     };
                     class Unit3 {
                         position[] = {10,-10,0};
                         rank = "SERGEANT";
-                        side = 1;
-                        vehicle = "B_143DKOK_AT_Guardsman_01";
+                        side = 2;
+                        vehicle = "I_82ndDKOK_AT_Guardsman_01";
                     };
                     class Unit4 {
                         position[] = {-10,-10,0};
                         rank = "SERGEANT";
-                        side = 1;
-                        vehicle = "B_143DKOK_Death_Korps_Guardsman_01";
+                        side = 2;
+                        vehicle = "I_82ndDKOK_Death_Korps_Guardsman_01";
                     };
                 };
 
-                class b_143dkok_support_company_command_squad {
+                class i_82ndDKOK_support_company_command_squad {
                     name = "Company Command Squad";
-                    side = 1;
-                    faction = "B_143DKOK";
+                    side = 2;
+                    faction = "I_82ndDKOK";
                     icon = "\A3\ui_f\data\map\markers\nato\b_support.paa";
                     rarityGroup = 0.5;
 
                     class Unit0 {
                         position[] = {0,0,0};
                         rank = "CAPTAIN";
-                        side = 1;
-                        vehicle = "B_143DKOK_Death_Korps_Quarter_Master_01";
+                        side = 2;
+                        vehicle = "I_82ndDKOK_Death_Korps_Quarter_Master_01";
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
                         rank = "SERGEANT";
-                        side = 1;
-                        vehicle = "B_143DKOK_AT_Grenadier_01";
+                        side = 2;
+                        vehicle = "I_82ndDKOK_AT_Grenadier_01";
                     };
                     class Unit2 {
                         position[] = {-5,-5,0};
                         rank = "SERGEANT";
-                        side = 1;
-                        vehicle = "B_143DKOK_Death_Korps_Grenadier_Plasmagunner_01";
+                        side = 2;
+                        vehicle = "I_82ndDKOK_Death_Korps_Grenadier_Plasmagunner_01";
                     };
                     class Unit3 {
                         position[] = {10,-10,0};
                         rank = "SERGEANT";
-                        side = 1;
-                        vehicle = "B_143DKOK_Death_Korps_Grenadier_01";
+                        side = 2;
+                        vehicle = "I_82ndDKOK_Death_Korps_Grenadier_01";
                     };
                     class Unit4 {
                         position[] = {-10,-10,0};
                         rank = "LIEUTENANT";
-                        side = 1;
-                        vehicle = "B_143DKOK_Death_Korps_Officer_01";
+                        side = 2;
+                        vehicle = "I_82ndDKOK_Death_Korps_Officer_01";
                     };
                 };
 
@@ -408,11 +408,105 @@ class CfgGroups {
 
             class Mechanized {
                 name = "Mechanized Infantry";
+                class i_82ndDKOK_infantry_squad {
+                    name = "Squad";
+                    side = 2;
+                    faction = "I_82ndDKOK";
+                    icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 2;
+                        vehicle = "I_82ndDKOK_Death_Korps_Watchmaster_01";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "PRIVATE";
+                        side = 2;
+                        vehicle = "I_82ndDKOK_Death_Korps_Guardsman_Plasmagunner_01";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "PRIVATE";
+                        side = 2;
+                        vehicle = "I_82ndDKOK_Death_Korps_Guardsman_Heavy_Stubber_01";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 2;
+                        vehicle = "I_82ndDKOK_AT_Guardsman_01";
+                    };
+                    class Unit4 {
+                        position[] = {-10,-10,0};
+                        rank = "CORPORAL";
+                        side = 2;
+                        vehicle = "I_82ndDKOK_Death_Korps_Guardsman_01";
+                    };
+                    class Unit5 {
+                        position[] = {15,-15,0};
+                        rank = "CORPORAL";
+                        side = 2;
+                        vehicle = "I_82ndDKOK_Death_Korps_Guardsman_01";
+                    };
+                    class Unit6 {
+                        position[] = {-15,-15,0};
+                        rank = "PRIVATE";
+                        side = 2;
+                        vehicle = "I_82ndDKOK_Death_Korps_Guardsman_01";
+                    };
+                    class Unit7 {
+                        position[] = {20,-20,0};
+                        rank = "PRIVATE";
+                        side = 2;
+                        vehicle = "I_82ndDKOK_Death_Korps_Guardsman_01";
+                    };
+                    class Unit8 {
+                        position[] = {-20,-20,0};
+                        rank = "PRIVATE";
+                        side = 2;
+                        vehicle = "I_82ndDKOK_Death_Korps_Guardsman_01";
+                    };
+                    class Unit9 {
+                        position[] = {25,-25,0};
+                        rank = "PRIVATE";
+                        side = 2;
+                        vehicle = "I_82ndDKOK_Death_Korps_Guardsman_01";
+                    };
+					class Unit10 {
+						position[] = {0,-25,0};
+                        rank = "SERGEANT";
+                        side = 2;
+                        vehicle = "_82ndChimAuto_Indep";
+					};
+                };
 
             };
 
             class Armored {
                 name = "Armor";
+                class i_82ndDKOK_armored_Tank_Squadron {
+                    name = "Tank Squadron";
+                    side = 2;
+                    faction = "I_82ndDKOK";
+                    icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "LIEUTENANT";
+                        side = 2;
+                        vehicle = "TIOW_Krieg_LR_Vanquisher_82nd_Indep";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "SERGEANT";
+                        side = 2;
+                        vehicle = "TIOW_Krieg_LR_Vanquisher_82nd_Indep";
+                    };
+                };
 
             };
 
@@ -442,65 +536,65 @@ class CBA_Extended_EventHandlers_base;
 
 class CfgVehicles {
 
-    class DKoK_QM_1491st;
-    class DKoK_QM_1491st_OCimport_01 : DKoK_QM_1491st { scope = 0; class EventHandlers; };
-    class DKoK_QM_1491st_OCimport_02 : DKoK_QM_1491st_OCimport_01 { class EventHandlers; };
+    class DKoK_QM_82nd_Indep;
+    class DKoK_QM_82nd_OCimport_01 : DKoK_QM_82nd_Indep { scope = 0; class EventHandlers; };
+    class DKoK_QM_82nd_OCimport_02 : DKoK_QM_82nd_OCimport_01 { class EventHandlers; };
 
-    class DKoK_GM_WM_1491st;
-    class DKoK_GM_WM_1491st_OCimport_01 : DKoK_GM_WM_1491st { scope = 0; class EventHandlers; };
-    class DKoK_GM_WM_1491st_OCimport_02 : DKoK_GM_WM_1491st_OCimport_01 { class EventHandlers; };
+    class DKoK_GM_WM_82nd_Indep;
+    class DKoK_GM_WM_82nd_OCimport_01 : DKoK_GM_WM_82nd_Indep { scope = 0; class EventHandlers; };
+    class DKoK_GM_WM_82nd_OCimport_02 : DKoK_GM_WM_82nd_OCimport_01 { class EventHandlers; };
 
-    class DKoK_GM_1491st_AT;
-    class DKoK_GM_1491st_AT_OCimport_01 : DKoK_GM_1491st_AT { scope = 0; class EventHandlers; };
-    class DKoK_GM_1491st_AT_OCimport_02 : DKoK_GM_1491st_AT_OCimport_01 { class EventHandlers; };
+    class DKoK_GM_82nd_AT_Indep;
+    class DKoK_GM_82nd_AT_OCimport_01 : DKoK_GM_82nd_AT_Indep { scope = 0; class EventHandlers; };
+    class DKoK_GM_82nd_AT_OCimport_02 : DKoK_GM_82nd_AT_OCimport_01 { class EventHandlers; };
 
-    class DKoK_GM_1491st;
-    class DKoK_GM_1491st_OCimport_01 : DKoK_GM_1491st { scope = 0; class EventHandlers; };
-    class DKoK_GM_1491st_OCimport_02 : DKoK_GM_1491st_OCimport_01 { class EventHandlers; };
+    class DKoK_GM_82nd_Indep;
+    class DKoK_GM_82nd_OCimport_01 : DKoK_GM_82nd_Indep { scope = 0; class EventHandlers; };
+    class DKoK_GM_82nd_OCimport_02 : DKoK_GM_82nd_OCimport_01 { class EventHandlers; };
 
-    class DKoK_Off_1491st;
-    class DKoK_Off_1491st_OCimport_01 : DKoK_Off_1491st { scope = 0; class EventHandlers; };
-    class DKoK_Off_1491st_OCimport_02 : DKoK_Off_1491st_OCimport_01 { class EventHandlers; };
+    class DKoK_Off_82nd_Indep;
+    class DKoK_Off_82nd_OCimport_01 : DKoK_Off_82nd_Indep { scope = 0; class EventHandlers; };
+    class DKoK_Off_82nd_OCimport_02 : DKoK_Off_82nd_OCimport_01 { class EventHandlers; };
 
-    class DKoK_Gren_1491st_AT;
-    class DKoK_Gren_1491st_AT_OCimport_01 : DKoK_Gren_1491st_AT { scope = 0; class EventHandlers; };
-    class DKoK_Gren_1491st_AT_OCimport_02 : DKoK_Gren_1491st_AT_OCimport_01 { class EventHandlers; };
+    class DKoK_Gren_82nd_AT_Indep;
+    class DKoK_Gren_82nd_AT_OCimport_01 : DKoK_Gren_82nd_AT_Indep { scope = 0; class EventHandlers; };
+    class DKoK_Gren_82nd_AT_OCimport_02 : DKoK_Gren_82nd_AT_OCimport_01 { class EventHandlers; };
 
-    class DKoK_Eng_1491st;
-    class DKoK_Eng_1491st_OCimport_01 : DKoK_Eng_1491st { scope = 0; class EventHandlers; };
-    class DKoK_Eng_1491st_OCimport_02 : DKoK_Eng_1491st_OCimport_01 { class EventHandlers; };
+    class DKoK_Eng_82nd_Indep;
+    class DKoK_Eng_82nd_OCimport_01 : DKoK_Eng_82nd_Indep { scope = 0; class EventHandlers; };
+    class DKoK_Eng_82nd_OCimport_02 : DKoK_Eng_82nd_OCimport_01 { class EventHandlers; };
 
-    class DKoK_Gren_1491st;
-    class DKoK_Gren_1491st_OCimport_01 : DKoK_Gren_1491st { scope = 0; class EventHandlers; };
-    class DKoK_Gren_1491st_OCimport_02 : DKoK_Gren_1491st_OCimport_01 { class EventHandlers; };
+    class DKoK_Gren_82nd_Indep;
+    class DKoK_Gren_82nd_OCimport_01 : DKoK_Gren_82nd_Indep { scope = 0; class EventHandlers; };
+    class DKoK_Gren_82nd_OCimport_02 : DKoK_Gren_82nd_OCimport_01 { class EventHandlers; };
 
-    class DKoK_Gren_1491st_Plasma;
-    class DKoK_Gren_1491st_Plasma_OCimport_01 : DKoK_Gren_1491st_Plasma { scope = 0; class EventHandlers; };
-    class DKoK_Gren_1491st_Plasma_OCimport_02 : DKoK_Gren_1491st_Plasma_OCimport_01 { class EventHandlers; };
+    class DKoK_Gren_82nd_Plasma_Indep;
+    class DKoK_Gren_82nd_Plasma_OCimport_01 : DKoK_Gren_82nd_Plasma_Indep { scope = 0; class EventHandlers; };
+    class DKoK_Gren_82nd_Plasma_OCimport_02 : DKoK_Gren_82nd_Plasma_OCimport_01 { class EventHandlers; };
 
-    class DKoK_GM_1491st_Plasma;
-    class DKoK_GM_1491st_Plasma_OCimport_01 : DKoK_GM_1491st_Plasma { scope = 0; class EventHandlers; };
-    class DKoK_GM_1491st_Plasma_OCimport_02 : DKoK_GM_1491st_Plasma_OCimport_01 { class EventHandlers; };
+    class DKoK_GM_82nd_Plasma_Indep;
+    class DKoK_GM_82nd_Plasma_OCimport_01 : DKoK_GM_82nd_Plasma_Indep { scope = 0; class EventHandlers; };
+    class DKoK_GM_82nd_Plasma_OCimport_02 : DKoK_GM_82nd_Plasma_OCimport_01 { class EventHandlers; };
 
-    class DKoK_GM_1491st_HStubber;
-    class DKoK_GM_1491st_HStubber_OCimport_01 : DKoK_GM_1491st_HStubber { scope = 0; class EventHandlers; };
-    class DKoK_GM_1491st_HStubber_OCimport_02 : DKoK_GM_1491st_HStubber_OCimport_01 { class EventHandlers; };
+    class DKoK_GM_82nd_HStubber_Indep;
+    class DKoK_GM_82nd_HStubber_OCimport_01 : DKoK_GM_82nd_HStubber_Indep { scope = 0; class EventHandlers; };
+    class DKoK_GM_82nd_HStubber_OCimport_02 : DKoK_GM_82nd_HStubber_OCimport_01 { class EventHandlers; };
 
 
-    class B_143DKOK_Death_Korps_Quarter_Master_01 : DKoK_QM_1491st_OCimport_02 {
+    class I_82ndDKOK_Death_Korps_Quarter_Master_01 : DKoK_QM_82nd_OCimport_02 {
         author = "VGm. Venture";
         scope = 2;
         scopeCurator = 2;
         displayName = "Death Korps Quarter Master";
-        side = 1;
-        faction = "B_143DKOK";
+        side = 2;
+        faction = "I_82ndDKOK";
 
-        identityTypes[] = {"Head_Dkok","LanguageENGB_F","Male01DKoK"};
+        identityTypes[] = {"Head_Dkok","LanguageENGI_F","Male01DKoK"};
 
-        uniformClass = "DKoK_QM_Uniform_1491st";
+        uniformClass = "DKoK_QM_Uniform_82nd";
 
-        linkedItems[] = {"DKoK_GM_Helm_1491st","ItemMap","ItemCompass","ItemWatch"};
-        respawnlinkedItems[] = {"DKoK_GM_Helm_1491st","ItemMap","ItemCompass","ItemWatch"};
+        linkedItems[] = {"DKoK_GM_Helm_82nd","ItemMap","ItemCompass","ItemWatch"};
+        respawnlinkedItems[] = {"DKoK_GM_Helm_82nd","ItemMap","ItemCompass","ItemWatch"};
 
         weapons[] = {"LuciusLaspistolBlack","Rangefinder"};
         respawnWeapons[] = {"LuciusLaspistolBlack","Rangefinder"};
@@ -508,7 +602,7 @@ class CfgVehicles {
         magazines[] = {"LuciusLaspistol_mag","LuciusLaspistol_mag"};
         respawnMagazines[] = {"LuciusLaspistol_mag","LuciusLaspistol_mag"};
 
-        ALiVE_orbatCreator_loadout[] = {{},{},{"LuciusLaspistolBlack","","","",{"LuciusLaspistol_mag",50},{},""},{"DKoK_QM_Uniform_1491st",{{"FirstAidKit",3},{"LuciusLaspistol_mag",3,50}}},{},{},"DKoK_GM_Helm_1491st","DKOKQMMask",{"Rangefinder","","","",{},{},""},{"ItemMap","","","ItemCompass","ItemWatch",""}};
+        ALiVE_orbatCreator_loadout[] = {{},{},{"LuciusLaspistolBlack","","","",{"LuciusLaspistol_mag",50},{},""},{"DKoK_QM_Uniform_82nd",{{"FirstAidKit",3},{"LuciusLaspistol_mag",3,50}}},{},{},"DKoK_GM_Helm_82nd","DKOKQMMask",{"Rangefinder","","","",{},{},""},{"ItemMap","","","ItemCompass","ItemWatch",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -525,20 +619,20 @@ class CfgVehicles {
 
     };
 
-    class B_143DKOK_Death_Korps_Watchmaster_01 : DKoK_GM_WM_1491st_OCimport_02 {
+    class I_82ndDKOK_Death_Korps_Watchmaster_01 : DKoK_GM_WM_82nd_OCimport_02 {
         author = "VGm. Venture";
         scope = 2;
         scopeCurator = 2;
         displayName = "Death Korps Watchmaster";
-        side = 1;
-        faction = "B_143DKOK";
+        side = 2;
+        faction = "I_82ndDKOK";
 
-        identityTypes[] = {"Head_Dkok","LanguageENGB_F","Male01DKoK"};
+        identityTypes[] = {"Head_Dkok","LanguageENGI_F","Male01DKoK"};
 
-        uniformClass = "DKoK_GM_Uniform_1491st";
+        uniformClass = "DKoK_GM_Uniform_82nd";
 
-        linkedItems[] = {"DKoK_GM_Helm_1491st","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
-        respawnlinkedItems[] = {"DKoK_GM_Helm_1491st","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        linkedItems[] = {"DKoK_GM_Helm_82nd","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        respawnlinkedItems[] = {"DKoK_GM_Helm_82nd","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
 
         weapons[] = {"Lucius98LasgunBlackG","Binocular"};
         respawnWeapons[] = {"Lucius98LasgunBlackG","Binocular"};
@@ -548,7 +642,7 @@ class CfgVehicles {
 
         backpack = "DKoK_BackPack";
 
-        ALiVE_orbatCreator_loadout[] = {{"Lucius98LasgunBlackG","","","",{"Lucius98_mag",25},{},""},{},{},{"DKoK_GM_Uniform_1491st",{{"FirstAidKit",3},{"Lucius98_mag",3,25},{"TIOW_ig_frag_grenade_mag",2,1}}},{},{"DKoK_BackPack",{{"FirstAidKit",5},{"Lucius98_mag",8,25},{"HandGrenade",4,1}}},"DKoK_GM_Helm_1491st","DKOKTroopMask",{"Binocular","","","",{},{},""},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
+        ALiVE_orbatCreator_loadout[] = {{"Lucius98LasgunBlackG","","","",{"Lucius98_mag",25},{},""},{},{},{"DKoK_GM_Uniform_82nd",{{"FirstAidKit",3},{"Lucius98_mag",3,25},{"TIOW_ig_frag_grenade_mag",2,1}}},{},{"DKoK_BackPack",{{"FirstAidKit",5},{"Lucius98_mag",8,25},{"HandGrenade",4,1}}},"DKoK_GM_Helm_82nd","DKOKTroopMask",{"Binocular","","","",{},{},""},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -565,20 +659,20 @@ class CfgVehicles {
 
     };
 
-    class B_143DKOK_AT_Guardsman_01 : DKoK_GM_1491st_AT_OCimport_02 {
+    class I_82ndDKOK_AT_Guardsman_01 : DKoK_GM_82nd_AT_OCimport_02 {
         author = "VGm. Venture";
         scope = 2;
         scopeCurator = 2;
         displayName = "AT Guardsman";
-        side = 1;
-        faction = "B_143DKOK";
+        side = 2;
+        faction = "I_82ndDKOK";
 
-        identityTypes[] = {"Head_Dkok","LanguageENGB_F","Male01DKoK"};
+        identityTypes[] = {"Head_Dkok","LanguageENGI_F","Male01DKoK"};
 
-        uniformClass = "DKoK_GM_Uniform_1491st";
+        uniformClass = "DKoK_GM_Uniform_82nd";
 
-        linkedItems[] = {"DKoK_GM_Helm_1491st","ItemMap","ItemCompass","ItemWatch"};
-        respawnlinkedItems[] = {"DKoK_GM_Helm_1491st","ItemMap","ItemCompass","ItemWatch"};
+        linkedItems[] = {"DKoK_GM_Helm_82nd","ItemMap","ItemCompass","ItemWatch"};
+        respawnlinkedItems[] = {"DKoK_GM_Helm_82nd","ItemMap","ItemCompass","ItemWatch"};
 
         weapons[] = {"Lucius98LasgunBlackS","MissileLauncherDKOKBlack"};
         respawnWeapons[] = {"Lucius98LasgunBlackS","MissileLauncherDKOKBlack"};
@@ -588,7 +682,7 @@ class CfgVehicles {
 
         backpack = "DKoK_AT_BackPack";
 
-        ALiVE_orbatCreator_loadout[] = {{"Lucius98LasgunBlackS","","","",{"Lucius98_mag",25},{},""},{"MissileLauncherDKOKBlack","","","",{"MLAT_Mag",1},{},""},{},{"DKoK_GM_Uniform_1491st",{{"FirstAidKit",3},{"Lucius98_mag",2,25},{"TIOW_ig_frag_grenade_mag",2,1}}},{},{"DKoK_AT_BackPack",{{"MLAT_Mag",5,1},{"MLHE_Mag",5,1},{"HandGrenade",4,1}}},"DKoK_GM_Helm_1491st","DKOKTroopMask",{},{"ItemMap","","","ItemCompass","ItemWatch",""}};
+        ALiVE_orbatCreator_loadout[] = {{"Lucius98LasgunBlackS","","","",{"Lucius98_mag",25},{},""},{"MissileLauncherDKOKBlack","","","",{"MLAT_Mag",1},{},""},{},{"DKoK_GM_Uniform_82nd",{{"FirstAidKit",3},{"Lucius98_mag",2,25},{"TIOW_ig_frag_grenade_mag",2,1}}},{},{"DKoK_AT_BackPack",{{"MLAT_Mag",5,1},{"MLHE_Mag",5,1},{"HandGrenade",4,1}}},"DKoK_GM_Helm_82nd","DKOKTroopMask",{},{"ItemMap","","","ItemCompass","ItemWatch",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -605,20 +699,20 @@ class CfgVehicles {
 
     };
 
-    class B_143DKOK_Death_Korps_Guardsman_01 : DKoK_GM_1491st_OCimport_02 {
+    class I_82ndDKOK_Death_Korps_Guardsman_01 : DKoK_GM_82nd_OCimport_02 {
         author = "VGm. Venture";
         scope = 2;
         scopeCurator = 2;
         displayName = "Death Korps Guardsman";
-        side = 1;
-        faction = "B_143DKOK";
+        side = 2;
+        faction = "I_82ndDKOK";
 
-        identityTypes[] = {"Head_Dkok","LanguageENGB_F","Male01DKoK"};
+        identityTypes[] = {"Head_Dkok","LanguageENGI_F","Male01DKoK"};
 
-        uniformClass = "DKoK_GM_Uniform_1491st";
+        uniformClass = "DKoK_GM_Uniform_82nd";
 
-        linkedItems[] = {"DKoK_GM_Helm_1491st","ItemMap","ItemCompass","ItemWatch"};
-        respawnlinkedItems[] = {"DKoK_GM_Helm_1491st","ItemMap","ItemCompass","ItemWatch"};
+        linkedItems[] = {"DKoK_GM_Helm_82nd","ItemMap","ItemCompass","ItemWatch"};
+        respawnlinkedItems[] = {"DKoK_GM_Helm_82nd","ItemMap","ItemCompass","ItemWatch"};
 
         weapons[] = {"Lucius98LasgunBlackS"};
         respawnWeapons[] = {"Lucius98LasgunBlackS"};
@@ -628,7 +722,7 @@ class CfgVehicles {
 
         backpack = "DKoK_BackPack";
 
-        ALiVE_orbatCreator_loadout[] = {{"Lucius98LasgunBlackS","","","",{"Lucius98_mag",25},{},""},{},{},{"DKoK_GM_Uniform_1491st",{{"FirstAidKit",3},{"Lucius98_mag",3,25},{"HandGrenade",2,1}}},{},{"DKoK_BackPack",{{"FirstAidKit",5},{"Lucius98_mag",8,25},{"HandGrenade",4,1}}},"DKoK_GM_Helm_1491st","DKOKTroopMask",{},{"ItemMap","","","ItemCompass","ItemWatch",""}};
+        ALiVE_orbatCreator_loadout[] = {{"Lucius98LasgunBlackS","","","",{"Lucius98_mag",25},{},""},{},{},{"DKoK_GM_Uniform_82nd",{{"FirstAidKit",3},{"Lucius98_mag",3,25},{"HandGrenade",2,1}}},{},{"DKoK_BackPack",{{"FirstAidKit",5},{"Lucius98_mag",8,25},{"HandGrenade",4,1}}},"DKoK_GM_Helm_82nd","DKOKTroopMask",{},{"ItemMap","","","ItemCompass","ItemWatch",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -645,20 +739,20 @@ class CfgVehicles {
 
     };
 
-    class B_143DKOK_Death_Korps_Officer_01 : DKoK_Off_1491st_OCimport_02 {
+    class I_82ndDKOK_Death_Korps_Officer_01 : DKoK_Off_82nd_OCimport_02 {
         author = "VGm. Venture";
         scope = 2;
         scopeCurator = 2;
         displayName = "Death Korps Officer";
-        side = 1;
-        faction = "B_143DKOK";
+        side = 2;
+        faction = "I_82ndDKOK";
 
-        identityTypes[] = {"Head_Dkok","LanguageENGB_F","Male01DKoK"};
+        identityTypes[] = {"Head_Dkok","LanguageENGI_F","Male01DKoK"};
 
-        uniformClass = "DKoK_Off_Uniform_1491st";
+        uniformClass = "DKoK_Off_Uniform_82nd";
 
-        linkedItems[] = {"DKoK_GM_Helm_1491st","ItemMap","ItemCompass","ItemWatch"};
-        respawnlinkedItems[] = {"DKoK_GM_Helm_1491st","ItemMap","ItemCompass","ItemWatch"};
+        linkedItems[] = {"DKoK_GM_Helm_82nd","ItemMap","ItemCompass","ItemWatch"};
+        respawnlinkedItems[] = {"DKoK_GM_Helm_82nd","ItemMap","ItemCompass","ItemWatch"};
 
         weapons[] = {"LuciusLaspistolBlack","Rangefinder"};
         respawnWeapons[] = {"LuciusLaspistolBlack","Rangefinder"};
@@ -666,7 +760,7 @@ class CfgVehicles {
         magazines[] = {"LuciusLaspistol_mag","LuciusLaspistol_mag"};
         respawnMagazines[] = {"LuciusLaspistol_mag","LuciusLaspistol_mag"};
 
-        ALiVE_orbatCreator_loadout[] = {{},{},{"LuciusLaspistolBlack","","","",{"LuciusLaspistol_mag",50},{},""},{"DKoK_Off_Uniform_1491st",{{"FirstAidKit",3},{"LuciusLaspistol_mag",3,50}}},{},{},"DKoK_GM_Helm_1491st","DKOKOffMask",{"Rangefinder","","","",{},{},""},{"ItemMap","","","ItemCompass","ItemWatch",""}};
+        ALiVE_orbatCreator_loadout[] = {{},{},{"LuciusLaspistolBlack","","","",{"LuciusLaspistol_mag",50},{},""},{"DKoK_Off_Uniform_82nd",{{"FirstAidKit",3},{"LuciusLaspistol_mag",3,50}}},{},{},"DKoK_GM_Helm_82nd","DKOKOffMask",{"Rangefinder","","","",{},{},""},{"ItemMap","","","ItemCompass","ItemWatch",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -683,20 +777,20 @@ class CfgVehicles {
 
     };
 
-    class B_143DKOK_AT_Grenadier_01 : DKoK_Gren_1491st_AT_OCimport_02 {
+    class I_82ndDKOK_AT_Grenadier_01 : DKoK_Gren_82nd_AT_OCimport_02 {
         author = "VGm. Venture";
         scope = 2;
         scopeCurator = 2;
         displayName = "AT Grenadier";
-        side = 1;
-        faction = "B_143DKOK";
+        side = 2;
+        faction = "I_82ndDKOK";
 
-        identityTypes[] = {"Head_Dkok","LanguageENGB_F","Male01DKoK"};
+        identityTypes[] = {"Head_Dkok","LanguageENGI_F","Male01DKoK"};
 
-        uniformClass = "DKoK_Gren_Uniform_1491st";
+        uniformClass = "DKoK_Gren_Uniform_82nd";
 
-        linkedItems[] = {"DKoK_Gren_Armor_1491st","DKoK_GM_Helm_1491st","ItemMap","ItemCompass","ItemWatch"};
-        respawnlinkedItems[] = {"DKoK_Gren_Armor_1491st","DKoK_GM_Helm_1491st","ItemMap","ItemCompass","ItemWatch"};
+        linkedItems[] = {"DKoK_Gren_Armor_82nd","DKoK_GM_Helm_82nd","ItemMap","ItemCompass","ItemWatch"};
+        respawnlinkedItems[] = {"DKoK_Gren_Armor_82nd","DKoK_GM_Helm_82nd","ItemMap","ItemCompass","ItemWatch"};
 
         weapons[] = {"MissileLauncherDKOKBlack"};
         respawnWeapons[] = {"MissileLauncherDKOKBlack"};
@@ -706,7 +800,7 @@ class CfgVehicles {
 
         backpack = "DKoK_AT_BackPack";
 
-        ALiVE_orbatCreator_loadout[] = {{},{"MissileLauncherDKOKBlack","","","",{"MLAT_Mag",1},{},""},{},{"DKoK_Gren_Uniform_1491st",{{"FirstAidKit",3},{"TIOW_ig_frag_grenade_mag",2,1}}},{"DKoK_Gren_Armor_1491st",{}},{"DKoK_AT_BackPack",{{"MLAT_Mag",5,1},{"MLHE_Mag",5,1},{"HandGrenade",4,1}}},"DKoK_GM_Helm_1491st","DKOKGrenMask1491st",{},{"ItemMap","","","ItemCompass","ItemWatch",""}};
+        ALiVE_orbatCreator_loadout[] = {{},{"MissileLauncherDKOKBlack","","","",{"MLAT_Mag",1},{},""},{},{"DKoK_Gren_Uniform_82nd",{{"FirstAidKit",3},{"TIOW_ig_frag_grenade_mag",2,1}}},{"DKoK_Gren_Armor_82nd",{}},{"DKoK_AT_BackPack",{{"MLAT_Mag",5,1},{"MLHE_Mag",5,1},{"HandGrenade",4,1}}},"DKoK_GM_Helm_82nd","DKOKGrenMask82nd",{},{"ItemMap","","","ItemCompass","ItemWatch",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -723,20 +817,20 @@ class CfgVehicles {
 
     };
 
-    class B_143DKOK_Death_Korps_Engineer_01 : DKoK_Eng_1491st_OCimport_02 {
+    class I_82ndDKOK_Death_Korps_Engineer_01 : DKoK_Eng_82nd_OCimport_02 {
         author = "VGm. Venture";
         scope = 2;
         scopeCurator = 2;
         displayName = "Death Korps Engineer";
-        side = 1;
-        faction = "B_143DKOK";
+        side = 2;
+        faction = "I_82ndDKOK";
 
-        identityTypes[] = {"Head_Dkok","LanguageENGB_F","Male01DKoK"};
+        identityTypes[] = {"Head_Dkok","LanguageENGI_F","Male01DKoK"};
 
-        uniformClass = "DKoK_Eng_Uniform_1491st";
+        uniformClass = "DKoK_Eng_Uniform_82nd";
 
-        linkedItems[] = {"DKoK_Eng_Armor_1491st","DKoK_GM_Helm_1491st","ItemMap","ItemCompass","ItemWatch"};
-        respawnlinkedItems[] = {"DKoK_Eng_Armor_1491st","DKoK_GM_Helm_1491st","ItemMap","ItemCompass","ItemWatch"};
+        linkedItems[] = {"DKoK_Eng_Armor_82nd","DKoK_GM_Helm_82nd","ItemMap","ItemCompass","ItemWatch"};
+        respawnlinkedItems[] = {"DKoK_Eng_Armor_82nd","DKoK_GM_Helm_82nd","ItemMap","ItemCompass","ItemWatch"};
 
         weapons[] = {"Lucius22c"};
         respawnWeapons[] = {"Lucius22c"};
@@ -746,7 +840,7 @@ class CfgVehicles {
 
         backpack = "DKoK_Eng_BackPack";
 
-        ALiVE_orbatCreator_loadout[] = {{"Lucius22c","","","",{"Lucius22c_Solid",8},{},""},{},{},{"DKoK_Eng_Uniform_1491st",{{"FirstAidKit",3},{"Lucius22c_Solid",1,8},{"Lucius22c_Pellet",2,8},{"TIOW_ig_frag_grenade_mag",2,1}}},{"DKoK_Eng_Armor_1491st",{}},{"DKoK_Eng_BackPack",{{"FirstAidKit",2},{"ToolKit",1},{"Lucius22c_Solid",5,8},{"Lucius22c_Pellet",5,8},{"HandGrenade",2,1}}},"DKoK_GM_Helm_1491st","DKOKEngMask",{},{"ItemMap","","","ItemCompass","ItemWatch",""}};
+        ALiVE_orbatCreator_loadout[] = {{"Lucius22c","","","",{"Lucius22c_Solid",8},{},""},{},{},{"DKoK_Eng_Uniform_82nd",{{"FirstAidKit",3},{"Lucius22c_Solid",1,8},{"Lucius22c_Pellet",2,8},{"TIOW_ig_frag_grenade_mag",2,1}}},{"DKoK_Eng_Armor_82nd",{}},{"DKoK_Eng_BackPack",{{"FirstAidKit",2},{"ToolKit",1},{"Lucius22c_Solid",5,8},{"Lucius22c_Pellet",5,8},{"HandGrenade",2,1}}},"DKoK_GM_Helm_82nd","DKOKEngMask",{},{"ItemMap","","","ItemCompass","ItemWatch",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -763,20 +857,20 @@ class CfgVehicles {
 
     };
 
-    class B_143DKOK_Death_Korps_Grenadier_01 : DKoK_Gren_1491st_OCimport_02 {
+    class I_82ndDKOK_Death_Korps_Grenadier_01 : DKoK_Gren_82nd_OCimport_02 {
         author = "VGm. Venture";
         scope = 2;
         scopeCurator = 2;
         displayName = "Death Korps Grenadier";
-        side = 1;
-        faction = "B_143DKOK";
+        side = 2;
+        faction = "I_82ndDKOK";
 
-        identityTypes[] = {"Head_Dkok","LanguageENGB_F","Male01DKoK"};
+        identityTypes[] = {"Head_Dkok","LanguageENGI_F","Male01DKoK"};
 
-        uniformClass = "DKoK_Gren_Uniform_1491st";
+        uniformClass = "DKoK_Gren_Uniform_82nd";
 
-        linkedItems[] = {"DKoK_Gren_Armor_1491st","DKoK_GM_Helm_1491st","ItemMap","ItemCompass","ItemWatch"};
-        respawnlinkedItems[] = {"DKoK_Gren_Armor_1491st","DKoK_GM_Helm_1491st","ItemMap","ItemCompass","ItemWatch"};
+        linkedItems[] = {"DKoK_Gren_Armor_82nd","DKoK_GM_Helm_82nd","ItemMap","ItemCompass","ItemWatch"};
+        respawnlinkedItems[] = {"DKoK_Gren_Armor_82nd","DKoK_GM_Helm_82nd","ItemMap","ItemCompass","ItemWatch"};
 
         weapons[] = {"Type14HeavyBlack"};
         respawnWeapons[] = {"Type14HeavyBlack"};
@@ -786,7 +880,7 @@ class CfgVehicles {
 
         backpack = "DKoK_Gren_BackPack";
 
-        ALiVE_orbatCreator_loadout[] = {{"Type14HeavyBlack","","","",{},{},""},{},{},{"DKoK_Gren_Uniform_1491st",{{"FirstAidKit",3},{"TIOW_ig_frag_grenade_mag",2,1}}},{"DKoK_Gren_Armor_1491st",{}},{"DKoK_Gren_BackPack",{{"Type14_mag",1,200}}},"DKoK_GM_Helm_1491st","DKOKGrenMask1491st",{},{"ItemMap","","","ItemCompass","ItemWatch",""}};
+        ALiVE_orbatCreator_loadout[] = {{"Type14HeavyBlack","","","",{},{},""},{},{},{"DKoK_Gren_Uniform_82nd",{{"FirstAidKit",3},{"TIOW_ig_frag_grenade_mag",2,1}}},{"DKoK_Gren_Armor_82nd",{}},{"DKoK_Gren_BackPack",{{"Type14_mag",1,200}}},"DKoK_GM_Helm_82nd","DKOKGrenMask82nd",{},{"ItemMap","","","ItemCompass","ItemWatch",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -803,20 +897,20 @@ class CfgVehicles {
 
     };
 
-    class B_143DKOK_Death_Korps_Grenadier_Plasmagunner_01 : DKoK_Gren_1491st_Plasma_OCimport_02 {
+    class I_82ndDKOK_Death_Korps_Grenadier_Plasmagunner_01 : DKoK_Gren_82nd_Plasma_OCimport_02 {
         author = "VGm. Venture";
         scope = 2;
         scopeCurator = 2;
         displayName = "Death Korps Grenadier Plasmagunner";
-        side = 1;
-        faction = "B_143DKOK";
+        side = 2;
+        faction = "I_82ndDKOK";
 
-        identityTypes[] = {"Head_Dkok","LanguageENGB_F","Male01DKoK"};
+        identityTypes[] = {"Head_Dkok","LanguageENGI_F","Male01DKoK"};
 
-        uniformClass = "DKoK_Gren_Uniform_1491st";
+        uniformClass = "DKoK_Gren_Uniform_82nd";
 
-        linkedItems[] = {"DKoK_Gren_Armor_1491st","DKoK_GM_Helm_1491st","ItemMap","ItemCompass","ItemWatch"};
-        respawnlinkedItems[] = {"DKoK_Gren_Armor_1491st","DKoK_GM_Helm_1491st","ItemMap","ItemCompass","ItemWatch"};
+        linkedItems[] = {"DKoK_Gren_Armor_82nd","DKoK_GM_Helm_82nd","ItemMap","ItemCompass","ItemWatch"};
+        respawnlinkedItems[] = {"DKoK_Gren_Armor_82nd","DKoK_GM_Helm_82nd","ItemMap","ItemCompass","ItemWatch"};
 
         weapons[] = {"DK_PlasmaGun"};
         respawnWeapons[] = {"DK_PlasmaGun"};
@@ -826,7 +920,7 @@ class CfgVehicles {
 
         backpack = "DKoK_PlasmaBackPack";
 
-        ALiVE_orbatCreator_loadout[] = {{"DK_PlasmaGun","","","",{"DK_PlasmaGun_Flask",10},{},""},{},{},{"DKoK_Gren_Uniform_1491st",{{"FirstAidKit",3},{"DK_PlasmaGun_Flask",1,10},{"TIOW_ig_frag_grenade_mag",1,1}}},{"DKoK_Gren_Armor_1491st",{{"TIOW_ig_frag_grenade_mag",1,1}}},{"DKoK_PlasmaBackPack",{{"FirstAidKit",2},{"DK_PlasmaGun_Flask",3,10},{"HandGrenade",2,1}}},"DKoK_GM_Helm_1491st","DKOKGrenMask1491st",{},{"ItemMap","","","ItemCompass","ItemWatch",""}};
+        ALiVE_orbatCreator_loadout[] = {{"DK_PlasmaGun","","","",{"DK_PlasmaGun_Flask",10},{},""},{},{},{"DKoK_Gren_Uniform_82nd",{{"FirstAidKit",3},{"DK_PlasmaGun_Flask",1,10},{"TIOW_ig_frag_grenade_mag",1,1}}},{"DKoK_Gren_Armor_82nd",{{"TIOW_ig_frag_grenade_mag",1,1}}},{"DKoK_PlasmaBackPack",{{"FirstAidKit",2},{"DK_PlasmaGun_Flask",3,10},{"HandGrenade",2,1}}},"DKoK_GM_Helm_82nd","DKOKGrenMask82nd",{},{"ItemMap","","","ItemCompass","ItemWatch",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -843,20 +937,20 @@ class CfgVehicles {
 
     };
 
-    class B_143DKOK_Death_Korps_Guardsman_Plasmagunner_01 : DKoK_GM_1491st_Plasma_OCimport_02 {
+    class I_82ndDKOK_Death_Korps_Guardsman_Plasmagunner_01 : DKoK_GM_82nd_Plasma_OCimport_02 {
         author = "VGm. Venture";
         scope = 2;
         scopeCurator = 2;
         displayName = "Death Korps Guardsman Plasmagunner";
-        side = 1;
-        faction = "B_143DKOK";
+        side = 2;
+        faction = "I_82ndDKOK";
 
-        identityTypes[] = {"Head_Dkok","LanguageENGB_F","Male01DKoK"};
+        identityTypes[] = {"Head_Dkok","LanguageENGI_F","Male01DKoK"};
 
-        uniformClass = "DKoK_GM_Uniform_1491st";
+        uniformClass = "DKoK_GM_Uniform_82nd";
 
-        linkedItems[] = {"DKoK_GM_Helm_1491st","ItemMap","ItemCompass","ItemWatch"};
-        respawnlinkedItems[] = {"DKoK_GM_Helm_1491st","ItemMap","ItemCompass","ItemWatch"};
+        linkedItems[] = {"DKoK_GM_Helm_82nd","ItemMap","ItemCompass","ItemWatch"};
+        respawnlinkedItems[] = {"DKoK_GM_Helm_82nd","ItemMap","ItemCompass","ItemWatch"};
 
         weapons[] = {"DK_PlasmaGun"};
         respawnWeapons[] = {"DK_PlasmaGun"};
@@ -866,7 +960,7 @@ class CfgVehicles {
 
         backpack = "DKoK_PlasmaBackPack";
 
-        ALiVE_orbatCreator_loadout[] = {{"DK_PlasmaGun","","","",{"DK_PlasmaGun_Flask",10},{},""},{},{},{"DKoK_GM_Uniform_1491st",{{"FirstAidKit",3},{"DK_PlasmaGun_Flask",1,10},{"TIOW_ig_frag_grenade_mag",2,1}}},{},{"DKoK_PlasmaBackPack",{{"FirstAidKit",2},{"DK_PlasmaGun_Flask",3,10},{"HandGrenade",2,1}}},"DKoK_GM_Helm_1491st","DKOKTroopMask",{},{"ItemMap","","","ItemCompass","ItemWatch",""}};
+        ALiVE_orbatCreator_loadout[] = {{"DK_PlasmaGun","","","",{"DK_PlasmaGun_Flask",10},{},""},{},{},{"DKoK_GM_Uniform_82nd",{{"FirstAidKit",3},{"DK_PlasmaGun_Flask",1,10},{"TIOW_ig_frag_grenade_mag",2,1}}},{},{"DKoK_PlasmaBackPack",{{"FirstAidKit",2},{"DK_PlasmaGun_Flask",3,10},{"HandGrenade",2,1}}},"DKoK_GM_Helm_82nd","DKOKTroopMask",{},{"ItemMap","","","ItemCompass","ItemWatch",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -883,20 +977,20 @@ class CfgVehicles {
 
     };
 
-    class B_143DKOK_Death_Korps_Guardsman_Heavy_Stubber_01 : DKoK_GM_1491st_HStubber_OCimport_02 {
+    class I_82ndDKOK_Death_Korps_Guardsman_Heavy_Stubber_01 : DKoK_GM_82nd_HStubber_OCimport_02 {
         author = "VGm. Venture";
         scope = 2;
         scopeCurator = 2;
         displayName = "Death Korps Guardsman Heavy Stubber";
-        side = 1;
-        faction = "B_143DKOK";
+        side = 2;
+        faction = "I_82ndDKOK";
 
-        identityTypes[] = {"Head_Dkok","LanguageENGB_F","Male01DKoK"};
+        identityTypes[] = {"Head_Dkok","LanguageENGI_F","Male01DKoK"};
 
-        uniformClass = "DKoK_GM_Uniform_1491st";
+        uniformClass = "DKoK_GM_Uniform_82nd";
 
-        linkedItems[] = {"DKoK_GM_Helm_1491st","ItemMap","ItemCompass","ItemWatch"};
-        respawnlinkedItems[] = {"DKoK_GM_Helm_1491st","ItemMap","ItemCompass","ItemWatch"};
+        linkedItems[] = {"DKoK_GM_Helm_82nd","ItemMap","ItemCompass","ItemWatch"};
+        respawnlinkedItems[] = {"DKoK_GM_Helm_82nd","ItemMap","ItemCompass","ItemWatch"};
 
         weapons[] = {"KriegHeavyStubberDK"};
         respawnWeapons[] = {"KriegHeavyStubberDK"};
@@ -906,7 +1000,7 @@ class CfgVehicles {
 
         backpack = "DKoK_HeavyStubberBackPack";
 
-        ALiVE_orbatCreator_loadout[] = {{"KriegHeavyStubberDK","","","",{"TIOW_50Rnd_Stubber_mag",50},{},"KriegHeavyStubberDK_Bipod"},{},{},{"DKoK_GM_Uniform_1491st",{{"FirstAidKit",3},{"TIOW_50Rnd_Stubber_mag",1,50},{"TIOW_ig_frag_grenade_mag",2,1}}},{},{"DKoK_HeavyStubberBackPack",{{"FirstAidKit",2},{"TIOW_50Rnd_Stubber_mag",4,50},{"HandGrenade",2,1}}},"DKoK_GM_Helm_1491st","DKOKTroopMask",{},{"ItemMap","","","ItemCompass","ItemWatch",""}};
+        ALiVE_orbatCreator_loadout[] = {{"KriegHeavyStubberDK","","","",{"TIOW_50Rnd_Stubber_mag",50},{},"KriegHeavyStubberDK_Bipod"},{},{},{"DKoK_GM_Uniform_82nd",{{"FirstAidKit",3},{"TIOW_50Rnd_Stubber_mag",1,50},{"TIOW_ig_frag_grenade_mag",2,1}}},{},{"DKoK_HeavyStubberBackPack",{{"FirstAidKit",2},{"TIOW_50Rnd_Stubber_mag",4,50},{"HandGrenade",2,1}}},"DKoK_GM_Helm_82nd","DKOKTroopMask",{},{"ItemMap","","","ItemCompass","ItemWatch",""}};
 
 
         class EventHandlers : EventHandlers {
