@@ -3491,39 +3491,56 @@ Helmets
 */
 
 	// Invisible Flak Weave, medium 
-	class DK143_Flak_Weave: ItemCore
+	class DK143_ArmorBase: ItemCore
 	{
+		scope = 0;
+		allowedSlots[] = {901};
+		class ItemInfo: VestItem
+		{
+			maximumLoad = 0;
+			mass = 0;
+		};
+	};
+	class DK143_Flak_Weave: DK143_ArmorBase
+	{
+		author = "Siggyreed";
+		displayName = "[DK143] Flak Weave";
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
-		allowedSlots[] = {901};
 		model = "\A3\Weapons_F\empty.p3d";
-		displayName = "[DK143] Flak Weave";
-		descriptionShort = "Armor for the sake of dressup.";	
-		class HitpointsProtectionInfo
-		{
-			class Chest
+		descriptionShort = "Invisible uniform Flak Weave";
+		class ItemInfo: VestItem
+		{	
+			uniformModel = "\A3\Weapons_F\empty.p3d";
+			containerClass = "Supply140";
+			maximumLoad = 0;
+			mass = 70;
+			class HitpointsProtectionInfo
 			{
-				HitpointName="HitChest";
-				armor=20;
-				PassThrough=0.2;
-			};
-			class Diaphragm
-			{
-				HitpointName="HitDiaphragm";
-				armor=20;
-				PassThrough=0.2;
-			};
-			class Abdomen
-			{
-				hitpointName="HitAbdomen";
-				armor=20;
-				passThrough=0.2;
-			};
-			class Body
-			{
-				hitpointName="HitBody";
-				passThrough=0.2;
+				class Chest
+				{
+					HitpointName="HitChest";
+					armor=20;
+					PassThrough=0.2;
+				};
+				class Diaphragm
+				{
+					HitpointName="HitDiaphragm";
+					armor=20;
+					PassThrough=0.2;
+				};
+				class Abdomen
+				{
+					hitpointName="HitAbdomen";
+					armor=20;
+					passThrough=0.2;
+				};
+				class Body
+				{
+					hitpointName="HitBody";
+					passThrough=0.2;
+				};
 			};
 		};
 	};
