@@ -7,7 +7,7 @@ class CfgPatches
 		author = "Siggyfreed";
 		name = "DK143 TIOW ACE Compat";
 		requiredAddons[] = 
-        {"ace_common","A40k_WepBase","TIOW_40K_tau","CadFoot","Cadian_Weapons","DKoK_Weapons","OrkBoyz","OrkDakka","Renegades_Foot","TIOW_AutoWeapons","TIOW_IG_Cosmetics","TIOW_Comissar","TIOW_Mordian","TIOW_OrkBoyz","TIOW_OrkDakka","TIOW_SM","TIOW_SMWep","TIOW_Valhallans","max_melee_weapons"};
+        {"ace_common"};
 		requiredVersion = 0.1;
 		units[] = {};
 		weapons[] = {};
