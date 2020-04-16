@@ -56,7 +56,7 @@ class cfgVehicles {
 		hiddenSelectionsTextures[] = {"143rd\reskins\data\land_vehicles\tiow_taurox\143rd_AC_Grey.paa"};
     };
 	class TIOW_Taurox_AC_667;
-	class 143rd_Taurox_Grey_Base_AC: TIOW_Taurox_HS_667
+	class 143rd_Taurox_Grey_Base_AC: TIOW_Taurox_AC_667
     {
         _generalMacro = "TIOW_Taurox_HS_667";
         scope = 2;
