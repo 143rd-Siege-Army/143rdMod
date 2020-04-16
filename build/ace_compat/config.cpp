@@ -7,7 +7,7 @@ class CfgPatches
 		author = "Siggyfreed";
 		name = "DK143 TIOW ACE Compat";
 		requiredAddons[] = 
-        {"ace_common", "tiow"};
+        {"ace_common", "DkoKFoot","CadFoot","OrkBoyz","TIOWSpaceMarines"};
 		requiredVersion = 0.1;
 		units[] = {};
 		weapons[] = {};
