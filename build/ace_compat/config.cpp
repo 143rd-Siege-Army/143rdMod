@@ -24,7 +24,7 @@ class CfgAmmo
 	class medium_hit: BUlletBase
 	{
 		hit = 9;
-		timeToLive = 0.045;
+		timeToLive = 0.0675;
 	};
 	class light_hit: medium_hit
 	{
@@ -104,6 +104,14 @@ class CfgAmmo
 	};
 };
 
+class CfgMagazines
+{
+	class CA_Magazine;
+	class Type14_mag: CA_Magazine
+	{
+		mass = 175;
+	};
+};
 class CfgVehicles
 {
     class Man;
@@ -132,7 +140,7 @@ class CfgVehicles
 	class Bag_Base;
 	class TIOW_IG_Vox_Caster: Bag_Base
 	{
-		maximumLoad = 40;
+		maximumLoad = 80;
 	};
 
 	/*
@@ -2345,7 +2353,10 @@ class CfgWeapons
     class VestItem;
     class UniformItem;
     class ItemCore;
-    class H_HelmetB;
+    class H_HelmetB: ItemCore
+	{
+		class ItemInfo;
+	};
 	class SM_Gear: ItemCore
 	{
 		scope = 0;
@@ -2504,7 +2515,7 @@ Helmets
 	// IG patrol caps, no armor.
     class TIOW_IG_PatrolCap_836: H_HelmetB
     {
-        class ItemInfo: HeadgearItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
             {
@@ -2517,9 +2528,9 @@ Helmets
             };
         };
     };
-    class TIOW_IG_PatrolCap_2836: H_HelmetB
+    class TIOW_IG_PatrolCap2_836: H_HelmetB
     {
-        class ItemInfo: HeadgearItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
             {
@@ -2534,7 +2545,7 @@ Helmets
     };
     class TIOW_IG_PatrolCap3_836: H_HelmetB
     {
-        class ItemInfo: HeadgearItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
             {
@@ -2549,7 +2560,7 @@ Helmets
     };
     class TIOW_IG_PatrolCap4_836: H_HelmetB
     {
-        class ItemInfo: HeadgearItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
             {
@@ -2564,7 +2575,7 @@ Helmets
     };
     class TIOW_IG_PatrolCap_700: H_HelmetB
     {
-        class ItemInfo: HeadgearItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
             {
@@ -2579,7 +2590,7 @@ Helmets
     };
     class TIOW_IG_PatrolCap2_700: H_HelmetB
     {
-        class ItemInfo: HeadgearItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
             {
@@ -2594,7 +2605,7 @@ Helmets
     };
     class TIOW_IG_PatrolCap3_700: H_HelmetB
     {
-        class ItemInfo: HeadgearItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
             {
@@ -2609,7 +2620,7 @@ Helmets
     };
     class TIOW_IG_PatrolCap4_700: H_HelmetB
     {
-        class ItemInfo: HeadgearItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
             {
@@ -2624,7 +2635,7 @@ Helmets
     };
     class TIOW_IG_PatrolCap_776: H_HelmetB
     {
-        class ItemInfo: HeadgearItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
             {
@@ -2639,7 +2650,7 @@ Helmets
     };
     class TIOW_IG_PatrolCap2_776: H_HelmetB
     {
-        class ItemInfo: HeadgearItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
             {
@@ -2654,7 +2665,7 @@ Helmets
     };
     class TIOW_IG_PatrolCap3_776: H_HelmetB
     {
-        class ItemInfo: HeadgearItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
             {
@@ -2669,7 +2680,7 @@ Helmets
     };
     class TIOW_IG_PatrolCap4_776: H_HelmetB
     {
-        class ItemInfo: HeadgearItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
             {
@@ -2684,7 +2695,7 @@ Helmets
     };
     class TIOW_IG_PatrolCap_661: H_HelmetB
     {
-        class ItemInfo: HeadgearItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
             {
@@ -2699,7 +2710,7 @@ Helmets
     };
     class TIOW_IG_PatrolCap2_661: H_HelmetB
     {
-        class ItemInfo: HeadgearItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
             {
@@ -2714,7 +2725,7 @@ Helmets
     };
     class TIOW_IG_PatrolCap3_661: H_HelmetB
     {
-        class ItemInfo: HeadgearItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
             {
@@ -2729,7 +2740,7 @@ Helmets
     };
     class TIOW_IG_PatrolCap4_661: H_HelmetB
     {
-        class ItemInfo: HeadgearItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
             {
@@ -2744,7 +2755,7 @@ Helmets
     };
     class TIOW_IG_Officer_Cap1_836: H_HelmetB
     {
-        class ItemInfo: HeadgearItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
             {
@@ -2759,7 +2770,7 @@ Helmets
     };
     class TIOW_IG_Officer_Cap2_836: H_HelmetB
     {
-        class ItemInfo: HeadgearItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
             {
@@ -2774,7 +2785,7 @@ Helmets
     };
     class TIOW_IG_Officer_Cap3_836: H_HelmetB
     {
-        class ItemInfo: HeadgearItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
             {
@@ -2789,7 +2800,7 @@ Helmets
     };
     class TIOW_IG_Officer_Cap1_776: H_HelmetB
     {
-        class ItemInfo: HeadgearItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
             {
@@ -2804,7 +2815,7 @@ Helmets
     };
     class TIOW_IG_Officer_Cap2_776: H_HelmetB
     {
-        class ItemInfo: HeadgearItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
             {
@@ -2819,7 +2830,7 @@ Helmets
     };
     class TIOW_IG_Officer_Cap3_776: H_HelmetB
     {
-        class ItemInfo: HeadgearItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
             {
@@ -2834,7 +2845,7 @@ Helmets
     };
     class TIOW_IG_Officer_Cap1_667: H_HelmetB
     {
-        class ItemInfo: HeadgearItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
             {
@@ -2849,7 +2860,7 @@ Helmets
     };
     class TIOW_IG_Officer_Cap2_667: H_HelmetB
     {
-        class ItemInfo: HeadgearItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
             {
@@ -2864,7 +2875,7 @@ Helmets
     };
     class TIOW_IG_Officer_Cap3_667: H_HelmetB
     {
-        class ItemInfo: HeadgearItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
             {
@@ -2879,7 +2890,7 @@ Helmets
     };
     class TIOW_IG_Officer_Cap1_700: H_HelmetB
     {
-        class ItemInfo: HeadgearItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
             {
@@ -2894,7 +2905,7 @@ Helmets
     };
     class TIOW_IG_Officer_Cap2_700: H_HelmetB
     {
-        class ItemInfo: HeadgearItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
             {
@@ -2909,7 +2920,7 @@ Helmets
     };
     class TIOW_IG_Officer_Cap3_700: H_HelmetB
     {
-        class ItemInfo: HeadgearItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
             {
@@ -2925,7 +2936,7 @@ Helmets
 	// IG Priest hoods, no armor.
     class TIOW_Priest_Hood: H_HelmetB
     {
-        class ItemInfo: HeadgearItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
             {
@@ -2940,7 +2951,7 @@ Helmets
     };
     class TIOW_Priest_Hood_Grey: H_HelmetB
     {
-        class ItemInfo: HeadgearItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
             {
@@ -2955,7 +2966,7 @@ Helmets
     };
     class TIOW_Priest_Hood_Red: H_HelmetB
     {
-        class ItemInfo: HeadgearItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
             {
@@ -2971,7 +2982,7 @@ Helmets
 	// IG Comissar caps, no armor. Krieg cap inherits.
     class TIOW_Comissar_Cap: H_HelmetB
     {
-        class ItemInfo: HeadgearItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
             {
@@ -2987,7 +2998,7 @@ Helmets
 	// IG Mordian caps, no armor.
     class TIOW_Mordian_Cap: H_HelmetB
     {
-        class ItemInfo: HeadgearItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
             {
@@ -3002,7 +3013,7 @@ Helmets
     };
     class TIOW_Mordian_Cap_2: H_HelmetB
     {
-        class ItemInfo: HeadgearItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
             {
@@ -3017,7 +3028,7 @@ Helmets
     };
     class TIOW_Mordian_Cap_white_2: H_HelmetB
     {
-        class ItemInfo: HeadgearItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
             {
@@ -3032,7 +3043,7 @@ Helmets
     };
     class TIOW_Mordian_Cap_3: H_HelmetB
     {
-        class ItemInfo: HeadgearItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
             {
@@ -3047,7 +3058,7 @@ Helmets
     };
     class TIOW_Mordian_Cap_white_3: H_HelmetB
     {
-        class ItemInfo: HeadgearItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
             {
@@ -3060,6 +3071,23 @@ Helmets
             };
         };
     };
+	// Bloodpact helmet, heavy armor. Adding to virtual arsenal
+	class TIOW_Bloodpact_helmet_01: H_HelmetB
+	{
+		scopeArsenal = 2;
+		class ItemInfo: ItemInfo
+		{
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
+					hitpointName = "HitHead";
+					armor = 10;
+					passThrough = 0.5;
+				};
+			};
+		};
+	};
 	// Renegade enforcer mask, heavy armor and face protection.
     class Ren_Helm_00: ItemCore
     {
@@ -3085,7 +3113,7 @@ Helmets
 	// Renegade cultist hoods, no armor.
     class TIOW_Cultist_Hood: H_HelmetB
     {
-        class ItemInfo: HeadgearItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
             {
@@ -3100,7 +3128,7 @@ Helmets
     };
     class TIOW_Cultist_Hood_green: H_HelmetB
     {
-        class ItemInfo: HeadgearItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
             {
@@ -3115,7 +3143,7 @@ Helmets
     };
     class TIOW_Cultist_Hood_brown: H_HelmetB
     {
-        class ItemInfo: HeadgearItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
             {
@@ -3131,7 +3159,7 @@ Helmets
 	// IG Valhallan caps, light armor.
     class TIOW_Valhallan_Cap: H_HelmetB
     {
-        class ItemInfo: HeadgearItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
             {
@@ -3146,7 +3174,7 @@ Helmets
     };
     class TIOW_Valhallan_brown_Cap: H_HelmetB
     {
-        class ItemInfo: HeadgearItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
             {
@@ -3161,7 +3189,7 @@ Helmets
     };
     class TIOW_Valhallan_camo_Cap: H_HelmetB
     {
-        class ItemInfo: HeadgearItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
             {
@@ -3176,7 +3204,7 @@ Helmets
     };
     class TIOW_Valhallan_white_Cap: H_HelmetB
     {
-        class ItemInfo: HeadgearItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
             {
@@ -3191,7 +3219,7 @@ Helmets
     };
     class TIOW_Valhallan_Cap_2: H_HelmetB
     {
-        class ItemInfo: HeadgearItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
             {
@@ -3206,7 +3234,7 @@ Helmets
     };
     class TIOW_Valhallan_Cap_camo_2: H_HelmetB
     {
-        class ItemInfo: HeadgearItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
             {
@@ -3221,7 +3249,7 @@ Helmets
     };
     class TIOW_Valhallan_Cap_brown_2: H_HelmetB
     {
-        class ItemInfo: HeadgearItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
             {
@@ -3236,7 +3264,7 @@ Helmets
     };
     class TIOW_Valhallan_Cap_white_2: H_HelmetB
     {
-        class ItemInfo: HeadgearItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
             {
@@ -3251,7 +3279,7 @@ Helmets
     };
     class TIOW_Valhallan_Cap_3: H_HelmetB
     {
-        class ItemInfo: HeadgearItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
             {
@@ -3266,7 +3294,7 @@ Helmets
     };
     class TIOW_Valhallan_Cap_camo_3: H_HelmetB
     {
-        class ItemInfo: HeadgearItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
             {
@@ -3281,7 +3309,7 @@ Helmets
     };
     class TIOW_Valhallan_Cap_white_3: H_HelmetB
     {
-        class ItemInfo: HeadgearItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
             {
@@ -3296,7 +3324,7 @@ Helmets
     };
     class TIOW_Valhallan_Cap_brown_3: H_HelmetB
     {
-        class ItemInfo: HeadgearItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
             {
@@ -3312,7 +3340,7 @@ Helmets
 	// Valhallan helmet, medium armor.
     class TIOW_Valhallan_Helmet: H_HelmetB
     {
-        class ItemInfo: HeadgearItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
             {
@@ -3344,7 +3372,7 @@ Helmets
 	// Tau F. Warrior Breacher Helms, heavy armor with face protection.
     class TIOW_Tau_HelmetB2: H_HelmetB
     {
-        class ItemInfo: HeadgearItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
             {
@@ -3366,7 +3394,7 @@ Helmets
 	// Tau F. Warrior striker helms, medium armor with face protection.
     class TIOW_Tau_HelmetS: H_HelmetB
     {
-        class ItemInfo: HeadgearItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
             {
@@ -3388,7 +3416,7 @@ Helmets
 	// Tau headsets, no armor.
     class TIOW_Tau_Hset1: H_HelmetB
     {
-        class ItemInfo: HeadgearItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
             {
@@ -3403,7 +3431,7 @@ Helmets
     };
     class TIOW_Tau_Hset2: H_HelmetB
     {
-        class ItemInfo: HeadgearItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
             {
@@ -3418,7 +3446,7 @@ Helmets
     };
     class TIOW_Tau_Hset3: H_HelmetB
     {
-        class ItemInfo: HeadgearItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
             {
@@ -3433,7 +3461,7 @@ Helmets
     };
     class TIOW_Tau_Hset4: H_HelmetB
     {
-        class ItemInfo: HeadgearItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
             {
@@ -3448,7 +3476,7 @@ Helmets
     };
     class TIOW_Tau_Hset5: H_HelmetB
     {
-        class ItemInfo: HeadgearItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
             {
@@ -3464,7 +3492,7 @@ Helmets
 	// Tau pathfinder helmet, medium armor with face protection.
     class TIOW_Tau_HelmetP: H_HelmetB
     {
-        class ItemInfo: HeadgearItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
             {
@@ -4738,10 +4766,13 @@ Helmets
 	};
 
 	// Cad. Flak Armors (Base, Medicae, and Sergeant), Medium.
-    class Cad_Gear_Vest2: ItemCore {};
+    class Cad_Gear_Vest2: ItemCore 
+	{
+		class ItemInfo;
+	};
     class Cad_Gear2: Cad_Gear_Vest2
     {
-        class ItemInfo: VestItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
 			{
@@ -4774,7 +4805,7 @@ Helmets
 	// Cad. Kasrkin Armor, Heavy.
     class Cad_KasrGear667th: Cad_Gear2
     {
-        class ItemInfo: VestItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
 			{
@@ -4818,7 +4849,7 @@ Helmets
     };
     class Cad_KasrGear700th: Cad_Gear2
     {
-        class ItemInfo: VestItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
 			{
@@ -4862,7 +4893,7 @@ Helmets
     };
     class Cad_KasrGear776th: Cad_Gear2
     {
-        class ItemInfo: VestItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
 			{
@@ -4906,7 +4937,7 @@ Helmets
     };
     class Cad_KasrGear836th: Cad_Gear2
     {
-        class ItemInfo: VestItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
 			{
@@ -4951,7 +4982,7 @@ Helmets
 	// Cad. Officer Flak Armor, Light.
     class TIOW_IG_Sergeant_Armour_836: Cad_Gear_Vest2
     {
-        class ItemInfo: VestItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
 			{
@@ -4983,7 +5014,7 @@ Helmets
     };
     class TIOW_IG_Officer_Armour_836: TIOW_IG_Sergeant_Armour_836
     {
-        class ItemInfo: VestItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
 			{
@@ -5015,7 +5046,7 @@ Helmets
     };
     class TIOW_IG_Sergeant_Armour_776: Cad_Gear_Vest2
     {
-        class ItemInfo: VestItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
 			{
@@ -5047,7 +5078,7 @@ Helmets
     };
     class TIOW_IG_Officer_Armour_776: TIOW_IG_Sergeant_Armour_776
     {
-        class ItemInfo: VestItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
 			{
@@ -5079,7 +5110,7 @@ Helmets
     };
     class TIOW_IG_Sergeant_Armour_700: Cad_Gear_Vest2
     {
-        class ItemInfo: VestItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
 			{
@@ -5111,7 +5142,7 @@ Helmets
     };
     class TIOW_IG_Officer_Armour_700: TIOW_IG_Sergeant_Armour_700
     {
-        class ItemInfo: VestItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
 			{
@@ -5143,7 +5174,7 @@ Helmets
     };
     class TIOW_IG_Sergeant_Armour_667: Cad_Gear_Vest2
     {
-        class ItemInfo: VestItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
 			{
@@ -5175,7 +5206,7 @@ Helmets
     };
     class TIOW_IG_Officer_Armour_667: TIOW_IG_Sergeant_Armour_667
     {
-        class ItemInfo: VestItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
 			{
@@ -5342,7 +5373,7 @@ Helmets
 	// Cad. Tanker Webbing, Light.
     class Cad_TnkGear836th: Cad_Gear2
     {
-        class ItemInfo: VestItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
 			{
@@ -5372,9 +5403,9 @@ Helmets
 			};
         };
     };
-    class Cad_TnkGear667th: Cad_Gear2
+    class Cad_TnkGear667th: Cad_TnkGear836th
     {
-        class ItemInfo: VestItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
 			{
@@ -5404,9 +5435,9 @@ Helmets
 			};
         };
     };
-    class Cad_TnkGear776th: Cad_Gear2
+    class Cad_TnkGear776th: Cad_TnkGear836th
     {
-        class ItemInfo: VestItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
 			{
@@ -5436,9 +5467,9 @@ Helmets
 			};
         };
     };
-    class Cad_TnkGear700th: Cad_Gear2
+    class Cad_TnkGear700th: Cad_TnkGear836th
     {
-        class ItemInfo: VestItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
 			{
@@ -5469,11 +5500,14 @@ Helmets
         };
     };
 	// DK Engineer Armor, Explosive resistant.
-    class DKoK_Gear: ItemCore {};
+    class DKoK_Gear: ItemCore 
+	{
+		class ItemInfo;
+	};
 
     class DKoK_Eng_Armor: DKoK_Gear
     {
-        class ItemInfo: VestItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
 			{
@@ -5524,7 +5558,7 @@ Helmets
 	// DK Grenadier Armor, Heavy.
     class DKoK_Gren_Armor: DKoK_Gear
     {
-        class ItemInfo: VestItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
 			{
@@ -5636,6 +5670,172 @@ Helmets
 			};
         };
     };
+	// Bloodpact Flak Armor, medium.
+	class Vest_Camo_Base: ItemCore
+	{
+		class ItemInfo;
+	};
+	class TIOW_Bloodpact_vest_01: Vest_Camo_Base
+	{
+        class ItemInfo: ItemInfo
+        {
+            class HitpointsProtectionInfo
+			{
+				class Chest
+				{
+					HitpointName="HitChest";
+					armor=20;
+					PassThrough=0.2;
+				};
+				class Diaphragm
+				{
+					HitpointName="HitDiaphragm";
+					armor=20;
+					PassThrough=0.2;
+				};
+				class Abdomen
+				{
+					hitpointName="HitAbdomen";
+					armor=20;
+					passThrough=0.2;
+				};
+				class Body
+				{
+					hitpointName="HitBody";
+					passThrough=0.2;
+				};
+			};
+        };		
+	};
+	// Bloodpact Grenadier Armor, heavy explosive resist.
+    class TIOW_Bloodpact_vest_02: TIOW_Bloodpact_vest_01
+    {
+        class ItemInfo: ItemInfo
+        {
+            class HitpointsProtectionInfo
+			{
+				class Neck
+				{
+					hitpointName="HitNeck";
+					armor=8;
+					passThrough=0.5;
+				};
+				class Arms
+				{
+					hitpointName="HitArms";
+					armor=8;
+					passThrough=0.5;
+				};
+				class Chest
+				{
+					hitpointName="HitChest";
+					armor=78;
+					passThrough=0.60000002;
+				};
+				class Diaphragm
+				{
+					hitpointName="HitDiaphragm";
+					armor=78;
+					passThrough=0.60000002;
+				};
+				class Abdomen
+				{
+					hitpointName="HitAbdomen";
+					armor=16;
+					passThrough=0.30000001;
+				};
+				class Pelvis
+				{
+					hitpointName="HitPelvis";
+					armor=16;
+					passThrough=0.30000001;
+				};
+				class Body
+				{
+					hitpointName="HitBody";
+					passThrough=0.60000002;
+				};
+			};
+        };
+    };
+	// Bloodpact Heavy Armor, heavy.
+    class TIOW_Bloodpact_vest_03: TIOW_Bloodpact_vest_01
+    {
+        class ItemInfo: ItemInfo
+        {
+            class HitpointsProtectionInfo
+			{
+				class Neck
+				{
+					hitpointName="HitNeck";
+					armor=8;
+					passThrough=0.5;
+				};
+				class Arms
+				{
+					hitpointName="HitArms";
+					armor=8;
+					passThrough=0.5;
+				};
+				class Chest
+				{
+					hitpointName="HitChest";
+					armor=24;
+					passThrough=0.1;
+				};
+				class Diaphragm
+				{
+					hitpointName="HitDiaphragm";
+					armor=24;
+					passThrough=0.1;
+				};
+				class Abdomen
+				{
+					hitpointName="HitAbdomen";
+					armor=24;
+					passThrough=0.1;
+				};
+				class Body
+				{
+					hitpointName="HitBody";
+					passThrough=0.1;
+				};
+			};
+        };
+    };
+	// Bloodpact Medium Armor, medium.
+    class TIOW_Bloodpact_vest_04: TIOW_Bloodpact_vest_01
+    {
+        class ItemInfo: ItemInfo
+        {
+            class HitpointsProtectionInfo
+			{
+				class Chest
+				{
+					HitpointName="HitChest";
+					armor=20;
+					PassThrough=0.2;
+				};
+				class Diaphragm
+				{
+					HitpointName="HitDiaphragm";
+					armor=20;
+					PassThrough=0.2;
+				};
+				class Abdomen
+				{
+					hitpointName="HitAbdomen";
+					armor=20;
+					passThrough=0.2;
+				};
+				class Body
+				{
+					hitpointName="HitBody";
+					passThrough=0.2;
+				};
+			};            
+        };
+    };	
 	// Ren. Armored Chestplate, Heavy.
     class Ren_ArmorSet_02_black: Ren_ArmorSet_00
     {
@@ -5821,7 +6021,7 @@ Helmets
     };
     class TIOW_Tau_Belt: TIOW_Tau_Gear_Base
     {
-        class ItemInfo: VestItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
 			{

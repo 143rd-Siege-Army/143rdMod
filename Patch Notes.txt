@@ -1,6 +1,22 @@
 Patch Notes
 
 ACE Compat
+Beta 1.2:
+
+	Magazine Adjustments
+	- Type-14 magazine weight reduced, can now fit 2 inside of one T14 powerpack
+	Backpack Adjustments
+	- Vox Caster carrying capacity increased
+	Uniform Adjustments
+	- Engineer and Grenadier vest baseclass values fixed, no more entirely blue armor
+	- Added Bloodpact items to compat, Bloodpact helmet now in arsenal
+
+----------
+Beta 1.1:
+	- Fixed bugs associated with initial workshop release
+
+----------
+ACE Compat
 Beta 1.0 Release:
 	Weapon adjustments:
 	- buffed Max Melee damage values and range
