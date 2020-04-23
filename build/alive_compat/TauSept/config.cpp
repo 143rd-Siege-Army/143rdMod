@@ -18,7 +18,8 @@ class CfgPatches {
         };
         weapons[] = {};
         requiredVersion = 1.62;
-        requiredAddons[] = {"ace_common"};
+        requiredAddons[] = {"TIOW_40k_Tau"
+        };
         author = "VGm. Venture";
         authors[] = {"VGm. Venture"};
     };
@@ -401,7 +402,7 @@ class CfgGroups {
                 name = "Mechanized Infantry";
 			        class O_143TauSept_mechanized_devilfish_firewarrior_squad {
                     name = "Devilfish Firewarrior Squad";
-                    side = 2;
+                    side =0;
                     faction = "O_143TauSept";
                     icon = "\A3\ui_f\data\map\markers\nato\n_mech_inf.paa";
                     rarityGroup = 0.5;
@@ -409,55 +410,55 @@ class CfgGroups {
                     class Unit0 {
                         position[] = {0,0,0};
                         rank = "SERGEANT";
-                        side = 2;
+                        side =0;
                         vehicle = "TIOW_Tau_Devilfish_O";
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
                         rank = "SERGEANT";
-                        side = 2;
+                        side =0;
                         vehicle = "O_Tau_Sept_Tau_Fire_Warrior_Shasui_01";
                     };
                     class Unit2 {
                         position[] = {10,-10,0};
                         rank = "CORPORAL";
-                        side = 2;
+                        side =0;
                         vehicle = "O_Tau_Sept_Tau_Fire_Warrior_Explosives_01";
                     };
                     class Unit3 {
                         position[] = {-5,-15,0};
                         rank = "CORPORAL";
-                        side = 2;
+                        side =0;
                         vehicle = "O_Tau_Sept_Tau_Fire_Warrior_Explosives_01";
                     };
                     class Unit4 {
                         position[] = {5,-15,0};
                         rank = "PRIVATE";
-                        side = 2;
+                        side =0;
                         vehicle = "O_Tau_Sept_Tau_Fire_Warrior_01";
                     };
                     class Unit5 {
                         position[] = {-0,-20,0};
                         rank = "PRIVATE";
-                        side = 2;
+                        side =0;
                         vehicle = "O_Tau_Sept_Tau_Fire_Warrior_01";
                     };
                     class Unit6 {
                         position[] = {0,-20,0};
                         rank = "PRIVATE";
-                        side = 2;
+                        side =0;
                         vehicle = "O_Tau_Sept_Tau_Fire_Warrior_01";
                     };
                     class Unit7 {
                         position[] = {5,-25,0};
                         rank = "PRIVATE";
-                        side = 2;
+                        side =0;
                         vehicle = "O_Tau_Sept_Tau_Fire_Warrior_01";
                     };
                     class Unit8 {
                         position[] = {-5,-25,0};
                         rank = "PRIVATE";
-                        side = 2;
+                        side =0;
                         vehicle = "O_Tau_Sept_Tau_Fire_Warrior_01";
                     };
                 };
@@ -468,7 +469,7 @@ class CfgGroups {
                 name = "Armor";
 				class O_143TauSept_armored_hammerhead_squadron {
                     name = "Hammerhead Squadron";
-                    side = 2;
+                    side =0;
                     faction = "O_143TauSept";
                     icon = "\A3\ui_f\data\map\markers\nato\n_mech_inf.paa";
                     rarityGroup = 0.5;
@@ -476,13 +477,13 @@ class CfgGroups {
                     class Unit0 {
                         position[] = {0,0,0};
                         rank = "LIEUTENANT";
-                        side = 2;
+                        side =0;
                         vehicle = "TIOW_Tau_Hammerhead_O";
                     };
                     class Unit1 {
                         position[] = {10,-10,0};
                         rank = "SERGEANT";
-                        side = 2;
+                        side =0;
                         vehicle = "TIOW_Tau_Hammerhead_O";
                     };
 				};
