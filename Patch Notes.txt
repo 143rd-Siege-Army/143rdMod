@@ -1,5 +1,28 @@
 Patch Notes
 
+Beta 1.2:
+
+ACE Compat
+	Weapon Adjustments
+	- Melee weapon ranges increased
+	- Type-14 magazine weight reduced, can now fit 2 inside of one T14 powerpack
+	Backpack Adjustments
+	- Vox Caster carrying capacity increased
+	Uniform Adjustments
+	- Engineer and Grenadier vest baseclass values fixed, no more entirely blue armor
+	- Added Bloodpact items to compat, Bloodpact helmet now in arsenal
+	- Most vest/helmet items had incorrect baseclass values causing issues, this has been fixed
+
+ALiVE Compat
+	- Cadian factions rendered into one PBO
+	- Fixes for Tau and 143rd factions
+	- Added Mordian factions
+	- Added upcoming campaign faction
+----------
+Beta 1.1:
+	- Fixed bugs associated with initial workshop release
+
+----------
 ACE Compat
 Beta 1.0 Release:
 	Weapon adjustments:
@@ -28,4 +51,5 @@ Beta 1.0 Release:
 Required Mods: 
 - There is Only War
 - There is Only War - Blood Pact Expansion
+- Grimdark Armory
 - Max_Melee_Weapons
