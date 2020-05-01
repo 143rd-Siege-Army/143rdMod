@@ -32,7 +32,7 @@ class CfgPatches
 		author = "Siggyfreed";
 		name = "DK143 TIOW ACE Compat";
 		requiredAddons[] = 
-        {"TIOW_Mordian"};
+        {"TIOW_Mordians"};
 		requiredVersion = 0.1;
 		units[] = {};
 		weapons[] = {};

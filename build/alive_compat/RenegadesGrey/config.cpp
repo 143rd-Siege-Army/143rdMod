@@ -22,7 +22,7 @@ class CfgPatches {
         };
         weapons[] = {};
         requiredVersion = 1.62;
-        requiredAddons[] = {};
+        requiredAddons[] = {"Renegades_Foot"};
         author = "VGm. Venture";
         authors[] = {"VGm. Venture"};
     };
