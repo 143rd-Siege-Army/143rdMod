@@ -21,7 +21,7 @@ class CfgAmmo
 	class ShotgunBase;
 	class B_127x99_Ball;
 	class B_12Gauge_Pellets;
-	class medium_hit: BUlletBase
+	class medium_hit: BulletBase
 	{
 		hit = 9;
 		timeToLive = 0.0675;
@@ -37,6 +37,8 @@ class CfgAmmo
 	class TIOW_LongLas_LasBolt: BulletBase
 	{
 		hit = 16;
+		typicalSpeed = 1000;
+		timetolive = 8.0;
 	};
     class Shoota1Round: BulletBase 
 	{
@@ -4768,7 +4770,7 @@ Helmets
 	// Cad. Flak Armors (Base, Medicae, and Sergeant), Medium.
     class Cad_Gear_Vest2: ItemCore 
 	{
-		class ItemInfo;
+		class ItemInfo: VestItem {};
 	};
     class Cad_Gear2: Cad_Gear_Vest2
     {
@@ -4776,6 +4778,18 @@ Helmets
         {
             class HitpointsProtectionInfo
 			{
+				class Neck
+				{
+					hitpointName = "HitNeck";
+					armor = 0;
+					passThrough = 1;
+				};
+				class Arms
+				{
+					hitpointName = "HitArms";
+					armor = 0;
+					passThrough = 1;
+				};
 				class Chest
 				{
 					HitpointName="HitChest";
@@ -4794,9 +4808,424 @@ Helmets
 					armor=20;
 					passThrough=0.2;
 				};
+				class Pelvis
+				{
+					hitpointName = "HitPelvis";
+					armor = 0;
+					passThrough = 1;
+				};
 				class Body
 				{
 					hitpointName="HitBody";
+					armor = 0;
+					passThrough=0.2;
+				};
+			};
+        };
+    };
+    class Cad_Gear836th: Cad_Gear2
+    {
+        class ItemInfo: ItemInfo
+        {
+            class HitpointsProtectionInfo
+			{
+				class Neck
+				{
+					hitpointName = "HitNeck";
+					armor = 0;
+					passThrough = 1;
+				};
+				class Arms
+				{
+					hitpointName = "HitArms";
+					armor = 0;
+					passThrough = 1;
+				};
+				class Chest
+				{
+					HitpointName="HitChest";
+					armor=20;
+					PassThrough=0.2;
+				};
+				class Diaphragm
+				{
+					HitpointName="HitDiaphragm";
+					armor=20;
+					PassThrough=0.2;
+				};
+				class Abdomen
+				{
+					hitpointName="HitAbdomen";
+					armor=20;
+					passThrough=0.2;
+				};
+				class Pelvis
+				{
+					hitpointName = "HitPelvis";
+					armor = 0;
+					passThrough = 1;
+				};
+				class Body
+				{
+					hitpointName="HitBody";
+					armor = 0;
+					passThrough=0.2;
+				};
+			};
+        };
+    };
+    class Cad_Gear700th: Cad_Gear2
+    {
+        class ItemInfo: ItemInfo
+        {
+            class HitpointsProtectionInfo
+			{
+				class Neck
+				{
+					hitpointName = "HitNeck";
+					armor = 0;
+					passThrough = 1;
+				};
+				class Arms
+				{
+					hitpointName = "HitArms";
+					armor = 0;
+					passThrough = 1;
+				};
+				class Chest
+				{
+					HitpointName="HitChest";
+					armor=20;
+					PassThrough=0.2;
+				};
+				class Diaphragm
+				{
+					HitpointName="HitDiaphragm";
+					armor=20;
+					PassThrough=0.2;
+				};
+				class Abdomen
+				{
+					hitpointName="HitAbdomen";
+					armor=20;
+					passThrough=0.2;
+				};
+				class Pelvis
+				{
+					hitpointName = "HitPelvis";
+					armor = 0;
+					passThrough = 1;
+				};
+				class Body
+				{
+					hitpointName="HitBody";
+					armor = 0;
+					passThrough=0.2;
+				};
+			};
+        };
+    };
+    class Cad_Gear776th: Cad_Gear2
+    {
+        class ItemInfo: ItemInfo
+        {
+            class HitpointsProtectionInfo
+			{
+				class Neck
+				{
+					hitpointName = "HitNeck";
+					armor = 0;
+					passThrough = 1;
+				};
+				class Arms
+				{
+					hitpointName = "HitArms";
+					armor = 0;
+					passThrough = 1;
+				};
+				class Chest
+				{
+					HitpointName="HitChest";
+					armor=20;
+					PassThrough=0.2;
+				};
+				class Diaphragm
+				{
+					HitpointName="HitDiaphragm";
+					armor=20;
+					PassThrough=0.2;
+				};
+				class Abdomen
+				{
+					hitpointName="HitAbdomen";
+					armor=20;
+					passThrough=0.2;
+				};
+				class Pelvis
+				{
+					hitpointName = "HitPelvis";
+					armor = 0;
+					passThrough = 1;
+				};
+				class Body
+				{
+					hitpointName="HitBody";
+					armor = 0;
+					passThrough=0.2;
+				};
+			};
+        };
+    };
+    class Cad_Gear667th: Cad_Gear2
+    {
+        class ItemInfo: ItemInfo
+        {
+            class HitpointsProtectionInfo
+			{
+				class Neck
+				{
+					hitpointName = "HitNeck";
+					armor = 0;
+					passThrough = 1;
+				};
+				class Arms
+				{
+					hitpointName = "HitArms";
+					armor = 0;
+					passThrough = 1;
+				};
+				class Chest
+				{
+					HitpointName="HitChest";
+					armor=20;
+					PassThrough=0.2;
+				};
+				class Diaphragm
+				{
+					HitpointName="HitDiaphragm";
+					armor=20;
+					PassThrough=0.2;
+				};
+				class Abdomen
+				{
+					hitpointName="HitAbdomen";
+					armor=20;
+					passThrough=0.2;
+				};
+				class Pelvis
+				{
+					hitpointName = "HitPelvis";
+					armor = 0;
+					passThrough = 1;
+				};
+				class Body
+				{
+					hitpointName="HitBody";
+					armor = 0;
+					passThrough=0.2;
+				};
+			};
+        };
+    };
+    class Cad_MedGear667th: Cad_Gear2
+    {
+        class ItemInfo: ItemInfo
+        {
+            class HitpointsProtectionInfo
+			{
+				class Neck
+				{
+					hitpointName = "HitNeck";
+					armor = 0;
+					passThrough = 1;
+				};
+				class Arms
+				{
+					hitpointName = "HitArms";
+					armor = 0;
+					passThrough = 1;
+				};
+				class Chest
+				{
+					HitpointName="HitChest";
+					armor=20;
+					PassThrough=0.2;
+				};
+				class Diaphragm
+				{
+					HitpointName="HitDiaphragm";
+					armor=20;
+					PassThrough=0.2;
+				};
+				class Abdomen
+				{
+					hitpointName="HitAbdomen";
+					armor=20;
+					passThrough=0.2;
+				};
+				class Pelvis
+				{
+					hitpointName = "HitPelvis";
+					armor = 0;
+					passThrough = 1;
+				};
+				class Body
+				{
+					hitpointName="HitBody";
+					armor = 0;
+					passThrough=0.2;
+				};
+			};
+        };
+    };
+    class Cad_MedGear776th: Cad_Gear2
+    {
+        class ItemInfo: ItemInfo
+        {
+            class HitpointsProtectionInfo
+			{
+				class Neck
+				{
+					hitpointName = "HitNeck";
+					armor = 0;
+					passThrough = 1;
+				};
+				class Arms
+				{
+					hitpointName = "HitArms";
+					armor = 0;
+					passThrough = 1;
+				};
+				class Chest
+				{
+					HitpointName="HitChest";
+					armor=20;
+					PassThrough=0.2;
+				};
+				class Diaphragm
+				{
+					HitpointName="HitDiaphragm";
+					armor=20;
+					PassThrough=0.2;
+				};
+				class Abdomen
+				{
+					hitpointName="HitAbdomen";
+					armor=20;
+					passThrough=0.2;
+				};
+				class Pelvis
+				{
+					hitpointName = "HitPelvis";
+					armor = 0;
+					passThrough = 1;
+				};
+				class Body
+				{
+					hitpointName="HitBody";
+					armor = 0;
+					passThrough=0.2;
+				};
+			};
+        };
+    };
+    class Cad_MedGear700th: Cad_Gear2
+    {
+        class ItemInfo: ItemInfo
+        {
+            class HitpointsProtectionInfo
+			{
+				class Neck
+				{
+					hitpointName = "HitNeck";
+					armor = 0;
+					passThrough = 1;
+				};
+				class Arms
+				{
+					hitpointName = "HitArms";
+					armor = 0;
+					passThrough = 1;
+				};
+				class Chest
+				{
+					HitpointName="HitChest";
+					armor=20;
+					PassThrough=0.2;
+				};
+				class Diaphragm
+				{
+					HitpointName="HitDiaphragm";
+					armor=20;
+					PassThrough=0.2;
+				};
+				class Abdomen
+				{
+					hitpointName="HitAbdomen";
+					armor=20;
+					passThrough=0.2;
+				};
+				class Pelvis
+				{
+					hitpointName = "HitPelvis";
+					armor = 0;
+					passThrough = 1;
+				};
+				class Body
+				{
+					hitpointName="HitBody";
+					armor = 0;
+					passThrough=0.2;
+				};
+			};
+        };
+    };
+    class Cad_MedGear836th: Cad_Gear2
+    {
+        class ItemInfo: ItemInfo
+        {
+            class HitpointsProtectionInfo
+			{
+				class Neck
+				{
+					hitpointName = "HitNeck";
+					armor = 0;
+					passThrough = 1;
+				};
+				class Arms
+				{
+					hitpointName = "HitArms";
+					armor = 0;
+					passThrough = 1;
+				};
+				class Chest
+				{
+					HitpointName="HitChest";
+					armor=20;
+					PassThrough=0.2;
+				};
+				class Diaphragm
+				{
+					HitpointName="HitDiaphragm";
+					armor=20;
+					PassThrough=0.2;
+				};
+				class Abdomen
+				{
+					hitpointName="HitAbdomen";
+					armor=20;
+					passThrough=0.2;
+				};
+				class Pelvis
+				{
+					hitpointName = "HitPelvis";
+					armor = 0;
+					passThrough = 1;
+				};
+				class Body
+				{
+					hitpointName="HitBody";
+					armor = 0;
 					passThrough=0.2;
 				};
 			};
@@ -4839,9 +5268,16 @@ Helmets
 					armor=24;
 					passThrough=0.1;
 				};
+				class Pelvis
+				{
+					hitpointName = "HitPelvis";
+					armor = 12;
+					passThrough = 0.1;
+				};
 				class Body
 				{
 					hitpointName="HitBody";
+					armor = 0;
 					passThrough=0.1;
 				};
 			};
@@ -4883,9 +5319,16 @@ Helmets
 					armor=24;
 					passThrough=0.1;
 				};
+				class Pelvis
+				{
+					hitpointName = "HitPelvis";
+					armor = 12;
+					passThrough = 0.1;
+				};
 				class Body
 				{
 					hitpointName="HitBody";
+					armor = 0;
 					passThrough=0.1;
 				};
 			};
@@ -4927,9 +5370,16 @@ Helmets
 					armor=24;
 					passThrough=0.1;
 				};
+				class Pelvis
+				{
+					hitpointName = "HitPelvis";
+					armor = 12;
+					passThrough = 0.1;
+				};
 				class Body
 				{
 					hitpointName="HitBody";
+					armor = 0;
 					passThrough=0.1;
 				};
 			};
@@ -4971,9 +5421,16 @@ Helmets
 					armor=24;
 					passThrough=0.1;
 				};
+				class Pelvis
+				{
+					hitpointName = "HitPelvis";
+					armor = 12;
+					passThrough = 0.1;
+				};
 				class Body
 				{
 					hitpointName="HitBody";
+					armor = 0;
 					passThrough=0.1;
 				};
 			};
@@ -5007,6 +5464,7 @@ Helmets
 				class Body
 				{
 					hitpointName="HitBody";
+					armor = 0;
 					passThrough=0.30000001;
 				};
 			};
@@ -5039,6 +5497,7 @@ Helmets
 				class Body
 				{
 					hitpointName="HitBody";
+					armor = 0;
 					passThrough=0.30000001;
 				};
 			};
@@ -5071,6 +5530,7 @@ Helmets
 				class Body
 				{
 					hitpointName="HitBody";
+					armor = 0;
 					passThrough=0.30000001;
 				};
 			};
@@ -5103,6 +5563,7 @@ Helmets
 				class Body
 				{
 					hitpointName="HitBody";
+					armor = 0;
 					passThrough=0.30000001;
 				};
 			};
@@ -5135,6 +5596,7 @@ Helmets
 				class Body
 				{
 					hitpointName="HitBody";
+					armor = 0;
 					passThrough=0.30000001;
 				};
 			};
@@ -5167,6 +5629,7 @@ Helmets
 				class Body
 				{
 					hitpointName="HitBody";
+					armor = 0;
 					passThrough=0.30000001;
 				};
 			};
@@ -5199,6 +5662,7 @@ Helmets
 				class Body
 				{
 					hitpointName="HitBody";
+					armor = 0;
 					passThrough=0.30000001;
 				};
 			};
@@ -5231,144 +5695,12 @@ Helmets
 				class Body
 				{
 					hitpointName="HitBody";
+					armor = 0;
 					passThrough=0.30000001;
 				};
 			};
         };
     };
-	// Cad. Officer Golden Shoulderpads, Unarmored.
-	// Cad. Sergeant Flak Armor, Medium.
-
-	/* Redundant.
-    class TIOW_IG_Sergeant_Armour_667: Cad_Gear_Vest2
-    {
-        class ItemInfo: VestItem
-        {
-            class HitpointsProtectionInfo
-			{
-				class Chest
-				{
-					HitpointName="HitChest";
-					armor=20;
-					PassThrough=0.2;
-				};
-				class Diaphragm
-				{
-					HitpointName="HitDiaphragm";
-					armor=20;
-					PassThrough=0.2;
-				};
-				class Abdomen
-				{
-					hitpointName="HitAbdomen";
-					armor=20;
-					passThrough=0.2;
-				};
-				class Body
-				{
-					hitpointName="HitBody";
-					passThrough=0.2;
-				};
-			};
-        };
-    };
-    class TIOW_IG_Seargeant_Armour_700: Cad_Gear_Vest2
-    {
-        class ItemInfo: VestItem
-        {
-            class HitpointsProtectionInfo
-			{
-				class Chest
-				{
-					HitpointName="HitChest";
-					armor=20;
-					PassThrough=0.2;
-				};
-				class Diaphragm
-				{
-					HitpointName="HitDiaphragm";
-					armor=20;
-					PassThrough=0.2;
-				};
-				class Abdomen
-				{
-					hitpointName="HitAbdomen";
-					armor=20;
-					passThrough=0.2;
-				};
-				class Body
-				{
-					hitpointName="HitBody";
-					passThrough=0.2;
-				};
-			};
-        };
-    };
-    class TIOW_IG_Seargeant_Armour_776: Cad_Gear_Vest2
-    {
-        class ItemInfo: VestItem
-        {
-            class HitpointsProtectionInfo
-			{
-				class Chest
-				{
-					HitpointName="HitChest";
-					armor=20;
-					PassThrough=0.2;
-				};
-				class Diaphragm
-				{
-					HitpointName="HitDiaphragm";
-					armor=20;
-					PassThrough=0.2;
-				};
-				class Abdomen
-				{
-					hitpointName="HitAbdomen";
-					armor=20;
-					passThrough=0.2;
-				};
-				class Body
-				{
-					hitpointName="HitBody";
-					passThrough=0.2;
-				};
-			};
-        };
-    };
-    class TIOW_IG_Seargeant_Armour_836: Cad_Gear_Vest2
-    {
-        class ItemInfo: VestItem
-        {
-            class HitpointsProtectionInfo
-			{
-				class Chest
-				{
-					HitpointName="HitChest";
-					armor=20;
-					PassThrough=0.2;
-				};
-				class Diaphragm
-				{
-					HitpointName="HitDiaphragm";
-					armor=20;
-					PassThrough=0.2;
-				};
-				class Abdomen
-				{
-					hitpointName="HitAbdomen";
-					armor=20;
-					passThrough=0.2;
-				};
-				class Body
-				{
-					hitpointName="HitBody";
-					passThrough=0.2;
-				};
-			};
-        };
-    };    
-    */
 
 	// Cad. Tanker Webbing, Light.
     class Cad_TnkGear836th: Cad_Gear2
@@ -5377,6 +5709,18 @@ Helmets
         {
             class HitpointsProtectionInfo
 			{
+				class Neck
+				{
+					hitpointName = "HitNeck";
+					armor = 0;
+					passThrough = 1;
+				};
+				class Arms
+				{
+					hitpointName = "HitArms";
+					armor = 0;
+					passThrough = 1;
+				};
 				class Chest
 				{
 					HitpointName="HitChest";
@@ -5395,9 +5739,16 @@ Helmets
 					armor=16;
 					passThrough=0.30000001;
 				};
+				class Pelvis
+				{
+					hitpointName = "HitPelvis";
+					armor = 0;
+					passThrough = 1;
+				};
 				class Body
 				{
 					hitpointName="HitBody";
+					armor = 0;
 					passThrough=0.30000001;
 				};
 			};
@@ -5409,6 +5760,18 @@ Helmets
         {
             class HitpointsProtectionInfo
 			{
+				class Neck
+				{
+					hitpointName = "HitNeck";
+					armor = 0;
+					passThrough = 1;
+				};
+				class Arms
+				{
+					hitpointName = "HitArms";
+					armor = 0;
+					passThrough = 1;
+				};
 				class Chest
 				{
 					HitpointName="HitChest";
@@ -5427,9 +5790,16 @@ Helmets
 					armor=16;
 					passThrough=0.30000001;
 				};
+				class Pelvis
+				{
+					hitpointName = "HitPelvis";
+					armor = 0;
+					passThrough = 1;
+				};
 				class Body
 				{
 					hitpointName="HitBody";
+					armor = 0;
 					passThrough=0.30000001;
 				};
 			};
@@ -5441,6 +5811,18 @@ Helmets
         {
             class HitpointsProtectionInfo
 			{
+				class Neck
+				{
+					hitpointName = "HitNeck";
+					armor = 0;
+					passThrough = 1;
+				};
+				class Arms
+				{
+					hitpointName = "HitArms";
+					armor = 0;
+					passThrough = 1;
+				};
 				class Chest
 				{
 					HitpointName="HitChest";
@@ -5459,9 +5841,16 @@ Helmets
 					armor=16;
 					passThrough=0.30000001;
 				};
+				class Pelvis
+				{
+					hitpointName = "HitPelvis";
+					armor = 0;
+					passThrough = 1;
+				};
 				class Body
 				{
 					hitpointName="HitBody";
+					armor = 0;
 					passThrough=0.30000001;
 				};
 			};
@@ -5473,6 +5862,18 @@ Helmets
         {
             class HitpointsProtectionInfo
 			{
+				class Neck
+				{
+					hitpointName = "HitNeck";
+					armor = 0;
+					passThrough = 1;
+				};
+				class Arms
+				{
+					hitpointName = "HitArms";
+					armor = 0;
+					passThrough = 1;
+				};
 				class Chest
 				{
 					HitpointName="HitChest";
@@ -5491,9 +5892,16 @@ Helmets
 					armor=16;
 					passThrough=0.30000001;
 				};
+				class Pelvis
+				{
+					hitpointName = "HitPelvis";
+					armor = 0;
+					passThrough = 1;
+				};
 				class Body
 				{
 					hitpointName="HitBody";
+					armor = 0;
 					passThrough=0.30000001;
 				};
 			};
@@ -5550,6 +5958,7 @@ Helmets
 				class Body
 				{
 					hitpointName="HitBody";
+					armor = 0;
 					passThrough=0.60000002;
 				};
 			};
@@ -5595,6 +6004,7 @@ Helmets
 				class Body
 				{
 					hitpointName="HitBody";
+					armor = 0;
 					passThrough=0.1;
 				};
 			};
@@ -5628,6 +6038,7 @@ Helmets
 				class Body
 				{
 					hitpointName="HitBody";
+					armor = 0;
 					passThrough=0.5;
 				};
 			};
@@ -5665,6 +6076,7 @@ Helmets
 				class Body
 				{
 					hitpointName="HitBody";
+					armor = 0;
 					passThrough=0.2;
 				};
 			};
@@ -5681,11 +6093,23 @@ Helmets
         {
             class HitpointsProtectionInfo
 			{
+				class Neck
+				{
+					hitpointName = "HitNeck";
+					armor = 0;
+					passThrough = 1;
+				};
 				class Chest
 				{
 					HitpointName="HitChest";
 					armor=20;
 					PassThrough=0.2;
+				};
+				class Arms
+				{
+					hitpointName = "HitArms";
+					armor = 0;
+					passThrough = 1;
 				};
 				class Diaphragm
 				{
@@ -5699,9 +6123,16 @@ Helmets
 					armor=20;
 					passThrough=0.2;
 				};
+				class Pelvis
+				{
+					hitpointName = "HitPelvis";
+					armor = 0;
+					passThrough = 1;
+				};
 				class Body
 				{
 					hitpointName="HitBody";
+					armor = 0;
 					passThrough=0.2;
 				};
 			};
@@ -5753,6 +6184,7 @@ Helmets
 				class Body
 				{
 					hitpointName="HitBody";
+					armor = 0;
 					passThrough=0.60000002;
 				};
 			};
@@ -5795,6 +6227,12 @@ Helmets
 					armor=24;
 					passThrough=0.1;
 				};
+				class Pelvis
+				{
+					hitpointName = "HitPelvis";
+					armor = 0;
+					passThrough = 1;
+				};
 				class Body
 				{
 					hitpointName="HitBody";
@@ -5810,6 +6248,18 @@ Helmets
         {
             class HitpointsProtectionInfo
 			{
+				class Neck
+				{
+					hitpointName = "HitNeck";
+					armor = 0;
+					passThrough = 1;
+				};
+				class Arms
+				{
+					hitpointName = "HitArms";
+					armor = 0;
+					passThrough = 1;
+				};
 				class Chest
 				{
 					HitpointName="HitChest";
@@ -5828,9 +6278,16 @@ Helmets
 					armor=20;
 					passThrough=0.2;
 				};
+				class Pelvis
+				{
+					hitpointName = "HitPelvis";
+					armor = 0;
+					passThrough = 1;
+				};
 				class Body
 				{
 					hitpointName="HitBody";
+					armor = 0;
 					passThrough=0.2;
 				};
 			};            
@@ -5878,6 +6335,7 @@ Helmets
 				class Body
 				{
 					hitpointName="HitBody";
+					armor = 0;
 					passThrough=0.1;
 				};
 			};
@@ -5911,6 +6369,7 @@ Helmets
 				class Body
 				{
 					hitpointName="HitBody";
+					armor = 0;
 					passThrough=0.5;
 				};
 			};            
@@ -5944,6 +6403,7 @@ Helmets
 				class Body
 				{
 					hitpointName="HitBody";
+					armor = 0;
 					passThrough=0.5;
 				};
 			};            
@@ -5976,6 +6436,7 @@ Helmets
 				class Body
 				{
 					hitpointName="HitBody";
+					armor = 0;
 					passThrough=0.5;
 				};
 			};            
@@ -6009,6 +6470,7 @@ Helmets
 				class Body
 				{
 					hitpointName="HitBody";
+					armor = 0;
 					passThrough=0.5;
 				};
 			};            
@@ -6046,6 +6508,7 @@ Helmets
 				class Body
 				{
 					hitpointName="HitBody";
+					armor = 0;
 					passThrough=0.2;
 				};
 			};            
