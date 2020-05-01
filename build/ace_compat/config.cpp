@@ -40,7 +40,13 @@ class CfgAmmo
 		typicalSpeed = 1000;
 		timetolive = 8.0;
 	};
-    class Shoota1Round: BulletBase 
+    class DK143_LongLas_HPBolt: TIOW_LongLas_LasBolt
+	{
+		hit = 32;
+		typicalSpeed = 1000;
+		timetoLive = 10.0;
+	};
+	class Shoota1Round: BulletBase 
 	{
 		hit = 9;
     };
@@ -92,7 +98,7 @@ class CfgAmmo
 	{
 		hit = 11.6;
 	};
-	    class TIOW_blaster_pulseshot: B_12Gauge_Pellets 
+	class TIOW_blaster_pulseshot: B_12Gauge_Pellets 
 	{
 		hit = 2;
     };
@@ -112,6 +118,17 @@ class CfgMagazines
 	class Type14_mag: CA_Magazine
 	{
 		mass = 175;
+	};
+	class TIOW_LongLas_Mag: CA_Magazine 
+	{
+		initSpeed = 1000;
+	};
+	class DK143_LongLasHP_Mag: TIOW_LongLas_Mag
+	{
+		displayName = "[DK143] LongLas Overcharged Powerpack";
+		ammo = "DK143_LongLas_HPBolt";
+		count = 10;
+		descriptionShort = "[DK143] LongLas Overcharged Powerpack";
 	};
 };
 class CfgVehicles
@@ -2369,6 +2386,15 @@ class CfgWeapons
 			hiddenSelections[] = {"camo"};
 			LOAD[] = {"(0","0)"};
 		};
+	};
+
+	class Rifle;
+	class Rifle_Base_F: Rifle {};
+	class arifle_MX_Base_F: Rifle_Base_F {};
+
+	class TIOW_LongLas_Base: arifle_MX_Base_F
+	{
+		magazines[] = {"TIOW_LongLas_Mag","DK143_LongLasHP_Mag"};
 	};
 /*
 
