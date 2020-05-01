@@ -1,8 +1,19 @@
 Patch Notes
 
 ACE Compat
-Beta 1.2:
+Beta 1.21:
+	Weapon Adjustments
+	- Long las overcharged powerpack added
+	- Long las config adjusted for accuracy
+	Uniform Adjustments
+	- Vest classes reconfigured, removed armor from class Body
 
+AliVe Compat:
+Beta 1.21:
+	- Error calls with Renegade and Mordian templates fixed
+----------
+ACE Compat
+Beta 1.2:
 	Magazine Adjustments
 	- Type-14 magazine weight reduced, can now fit 2 inside of one T14 powerpack
 	Backpack Adjustments
