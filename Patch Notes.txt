@@ -1,7 +1,7 @@
 Patch Notes
 
 ACE Compat
-Beta 1.21:
+Beta 1.2.1:
 	Weapon Adjustments
 	- Long las overcharged powerpack added
 	- Long las config adjusted for accuracy
@@ -9,7 +9,7 @@ Beta 1.21:
 	- Vest classes reconfigured, removed armor from class Body
 
 AliVe Compat:
-Beta 1.21:
+Beta 1.2.1:
 	- Error calls with Renegade and Mordian templates fixed
 ----------
 ACE Compat
