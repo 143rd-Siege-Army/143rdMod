@@ -32,7 +32,7 @@ class CfgPatches
 		author = "Siggyfreed";
 		name = "DK143 TIOW ACE Compat";
 		requiredAddons[] = 
-        {"TIOW_Mordians"};
+        {"TIOW_Mordian"};
 		requiredVersion = 0.1;
 		units[] = {};
 		weapons[] = {};
@@ -225,7 +225,7 @@ class CfgGroups {
                         position[] = {-5,-5,0};
                         rank = "PRIVATE";
                         side = 2;
-                        vehicle = "TIOW_Mordian_Plasmagunner_1_Indep1";
+                        vehicle = "TIOW_Mordian_Plasmagunner_1_Indep";
                     };
                     class Unit3 {
                         position[] = {10,-10,0};

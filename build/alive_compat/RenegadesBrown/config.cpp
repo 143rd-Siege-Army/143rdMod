@@ -22,7 +22,7 @@ class CfgPatches {
         };
         weapons[] = {};
         requiredVersion = 1.62;
-        requiredAddons[] = {"ace_common"};
+        requiredAddons[] = {};
         author = "VGm. Venture";
         authors[] = {"VGm. Venture"};
     };
@@ -1473,7 +1473,7 @@ class CfgVehicles {
 
 			backpack = "Ren_Backpack_02_Brown_Plasma";
 
-			ALiVE_orbatCreator_loadout[] = {{"Chaos_PlasmaGun","","","",{"DK_PlasmaGun_Flask",10},{},""},{},{},{"OP_Ren_Uniform_01_Brown",{{"FirstAidKit",1},{"DK_PlasmaGun_Flask",1,10},{"TIOW_chaos_frag_grenade_mag",2,1}}},{"Ren_ArmorSet_02_Brown",{{"DK_PlasmaGun_Flask",1,10},{"TIOW_ig_smoke_grenade_mag",1,1}}},{"Ren_Backpack_02_Brown_Plasma",{{"DK_PlasmaGun_Flask",3,10}}},"","Ren_Gasmask_02",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
+			ALiVE_orbatCreator_loadout[] = {{"Chaos_PlasmaGun","","","",{"DK_PlasmaGun_Flask",10},{},""},{},{},{"OP_Ren_Uniform_01_Brown",{{"FirstAidKit",1},{"DK_PlasmaGun_Flask",1,10},{"TIOW_chaos_frag_grenade_mag",2,1}}},{"Ren_ArmorSet_02_Brown",{{"DK_PlasmaGun_Flask",1,10},{"TIOW_ig_smoke_grenade_mag",1,1}}},{"Ren_Backpack_02_black_Plasma",{{"DK_PlasmaGun_Flask",3,10}}},"","Ren_Gasmask_02",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
 
 
 			class EventHandlers : EventHandlers {

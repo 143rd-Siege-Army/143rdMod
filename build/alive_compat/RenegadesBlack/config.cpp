@@ -22,7 +22,7 @@ class CfgPatches {
         };
         weapons[] = {};
         requiredVersion = 1.62;
-        requiredAddons[] = {"ace_common"};
+        requiredAddons[] = {};
         author = "VGm. Venture";
         authors[] = {"VGm. Venture"};
     };
