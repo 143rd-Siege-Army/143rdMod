@@ -74,6 +74,11 @@ class CfgAmmo
 	{
 		hit = 9;
 	};
+	class DK143_KantRifle_HPBolt: M36KantRifle_LasBolt
+	{
+		hit = 16;
+		caliber = 2;
+	};
 	class TIOW_IGBoltRound: BulletBase
 	{
 		hit = 5;
@@ -118,6 +123,13 @@ class CfgMagazines
 	class Type14_mag: CA_Magazine
 	{
 		mass = 175;
+	};
+	class M36KantRifle_mag: CA_Magazine {};
+	class DK143_KantRifleHP_Mag: M36KantRifle_mag
+	{
+		displayName = "[DK143] Kantrael Overcharged Laspack";
+		ammo = "DK143_KantRifle_HPBolt";
+		count = 20;
 	};
 	class TIOW_LongLas_Mag: CA_Magazine 
 	{
@@ -2395,6 +2407,10 @@ class CfgWeapons
 	class TIOW_LongLas_Base: arifle_MX_Base_F
 	{
 		magazines[] = {"TIOW_LongLas_Mag","DK143_LongLasHP_Mag"};
+	};
+	class M36KantRifleBase: arifle_MX_Base_F
+	{
+		magazines[] = {"M36KantRifle_mag","DK143_KantRifleHP_Mag"};
 	};
 /*
 
