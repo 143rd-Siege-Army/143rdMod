@@ -1,5 +1,10 @@
 Patch Notes
 
+Ace Compat
+Beta 1.2.2
+	Weapon Adjustments
+	- Added Kantrael overcharged laspack
+----------
 ACE Compat
 Beta 1.2.1:
 	Weapon Adjustments
