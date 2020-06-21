@@ -17,6 +17,36 @@ class CfgPatches
 
 class CfgAmmo
 {
+	class ammo_Penetrator_Base;
+	class RocketBase;
+	class MissileBase;
+	class M_Titan_AA: MissileBase{};
+	class TIOW_MLAT: RocketBase
+	{
+		hit = 150;
+		indirectHit = 14;
+		indirectHitRange = 3; 
+	};
+	class TIOW_MLAT_Penetrator: ammo_Penetrator_Base
+	{
+		caliber = 33.333;
+		hit = 495;
+		indirectHit = 0;
+		indirectHitRange = 0;
+	};
+	class TIOW_MLHE: RocketBase
+	{
+		hit = 150;
+		indirectHit = 28;
+		indirectHitRange = 3;
+	};
+	class TIOW_MLAA: M_Titan_AA
+	{
+		hit = 80;
+		indirectHit = 60;
+		indirectHitRange = 6;
+	};
+	
 	class BulletBase;
 	class ShotgunBase;
 	class B_127x99_Ball;
@@ -1930,8 +1960,8 @@ class CfgVehicles
 
 	// Tau
     class TIOW_Fire_Warrior: B_Soldier_base_f {
-        armor=2;
-        armorStructural=3;
+        armor=0;
+        armorStructural=0;
         explosionShielding=0.30000001;
         
         class Hitpoints: Hitpoints 
@@ -2063,8 +2093,8 @@ class CfgVehicles
 		};
     };
     class TIOW_Air_Caste_Pilot_B : B_Soldier_base_f {
-        armor=2;
-        armorStructural=3;
+        armor=0;
+        armorStructural=0;
         explosionShielding=0.30000001;
         
         class Hitpoints: Hitpoints 
@@ -2196,8 +2226,8 @@ class CfgVehicles
 		};
     };
     class TIOW_Pathfinder: B_Soldier_base_f {
-        armor=2;
-        armorStructural=3;
+        armor=0;
+        armorStructural=0;
         explosionShielding=0.30000001;
         
         class Hitpoints: Hitpoints 
@@ -6529,6 +6559,18 @@ Helmets
         {
             class HitpointsProtectionInfo
 			{
+				class Neck
+				{
+					hitpointName = "HitNeck";
+					armor = 0;
+					passThrough = 1;
+				};
+				class Arms
+				{
+					hitpointName = "HitArms";
+					armor = 0;
+					passThrough = 1;
+				};
 				class Chest
 				{
 					HitpointName="HitChest";
@@ -6547,13 +6589,79 @@ Helmets
 					armor=20;
 					passThrough=0.2;
 				};
+				class Pelvis
+				{
+					hitpointName = "HitPelvis";
+					armor = 0;
+					passThrough = 1;
+				};
 				class Body
 				{
 					hitpointName="HitBody";
 					armor = 0;
 					passThrough=0.2;
 				};
+				class Legs: Body
+				{
+					hitpointName = "HitLegs";
+					armor = 0;
+					passThrough = 1;
+				};
 			};            
         };
     };
+    class TIOW_Tau_BeltP: TIOW_Tau_Belt
+    {
+        class ItemInfo: ItemInfo
+        {
+            class HitpointsProtectionInfo
+			{
+				class Neck
+				{
+					hitpointName = "HitNeck";
+					armor = 0;
+					passThrough = 1;
+				};
+				class Arms
+				{
+					hitpointName = "HitArms";
+					armor = 0;
+					passThrough = 1;
+				};
+				class Chest
+				{
+					HitpointName="HitChest";
+					armor=20;
+					PassThrough=0.2;
+				};
+				class Diaphragm
+				{
+					HitpointName="HitDiaphragm";
+					armor=20;
+					PassThrough=0.2;
+				};
+				class Abdomen
+				{
+					hitpointName="HitAbdomen";
+					armor=20;
+					passThrough=0.2;
+				};
+				class Pelvis
+				{
+					hitpointName = "HitPelvis";
+					armor = 0;
+					passThrough = 1;
+				};
+				class Body
+				{
+					hitpointName="HitBody";
+					armor = 0;
+					passThrough=0.2;
+				};
+				class Legs: Body
+				{
+					hitpointName = "HitLegs";
+					armor = 0;
+					passThrough = 1;
+				};
 };
