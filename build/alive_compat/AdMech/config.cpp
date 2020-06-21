@@ -3,7 +3,7 @@ class CfgPatches {
 		author = "Siggyfreed";
 		name = "DK143 TIOW ACE Compat";
 		requiredAddons[] = 
-        {"AM_v2_1"};
+        {"AM_weapons"};
 		requiredVersion = 0.1;
 		units[] = {
 			"G_AdMech_Skitarii_Ranger_01",
