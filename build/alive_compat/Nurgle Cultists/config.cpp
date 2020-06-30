@@ -414,7 +414,7 @@ class CfgVehicles {
 
 
     class O_Nurgle_Cultists_Nurgle_Rifleman_01 : O_Green_Renegades_Rifleman_01_OCimport_02 {
-        editorPreview = \x\\addons\onurglecultists\data\preview\O_Nurgle_Cultists_Nurgle_Rifleman_01.JPG;
+        // editorPreview = \x\\addons\onurglecultists\data\preview\O_Nurgle_Cultists_Nurgle_Rifleman_01.JPG;
         author = "VAp. Venture";
         scope = 2;
         scopeCurator = 2;
@@ -453,7 +453,7 @@ class CfgVehicles {
     };
 
     class O_Nurgle_Cultists_Nurgle_Meltaman_01 : O_Nurgle_Cultists_Nurgle_Rifleman_01 {
-        editorPreview = \x\\addons\onurglecultists\data\preview\O_Nurgle_Cultists_Nurgle_Meltaman_01.JPG;
+        // editorPreview = \x\\addons\onurglecultists\data\preview\O_Nurgle_Cultists_Nurgle_Meltaman_01.JPG;
         author = "VAp. Venture";
         scope = 2;
         scopeCurator = 2;
@@ -494,7 +494,7 @@ class CfgVehicles {
     };
 
     class O_Nurgle_Cultists_Nurgle_Plasmagunner_01 : O_Nurgle_Cultists_Nurgle_Rifleman_01 {
-        editorPreview = \x\\addons\onurglecultists\data\preview\O_Nurgle_Cultists_Nurgle_Plasmagunner_01.JPG;
+        // editorPreview = \x\\addons\onurglecultists\data\preview\O_Nurgle_Cultists_Nurgle_Plasmagunner_01.JPG;
         author = "VAp. Venture";
         scope = 2;
         scopeCurator = 2;
@@ -535,7 +535,7 @@ class CfgVehicles {
     };
 
     class O_Nurgle_Cultists_Nurlge_Misslelauncher_01 : O_Nurgle_Cultists_Nurgle_Rifleman_01 {
-        editorPreview = \x\\addons\onurglecultists\data\preview\O_Nurgle_Cultists_Nurlge_Misslelauncher_01.JPG;
+        // editorPreview = \x\\addons\onurglecultists\data\preview\O_Nurgle_Cultists_Nurlge_Misslelauncher_01.JPG;
         author = "VAp. Venture";
         scope = 2;
         scopeCurator = 2;
@@ -576,7 +576,7 @@ class CfgVehicles {
     };
 
     class O_Nurgle_Cultists_Nurgle_Captain_01 : O_Nurgle_Cultists_Nurgle_Rifleman_01 {
-        editorPreview = \x\\addons\onurglecultists\data\preview\O_Nurgle_Cultists_Nurgle_Captain_01.JPG;
+       // editorPreview = \x\\addons\onurglecultists\data\preview\O_Nurgle_Cultists_Nurgle_Captain_01.JPG;
         author = "VAp. Venture";
         scope = 2;
         scopeCurator = 2;
@@ -615,7 +615,7 @@ class CfgVehicles {
     };
 
     class O_Nurgle_Cultists_Nurgle_Sergeant_01 : O_Nurgle_Cultists_Nurgle_Rifleman_01 {
-        editorPreview = \x\\addons\onurglecultists\data\preview\O_Nurgle_Cultists_Nurgle_Sergeant_01.JPG;
+       // editorPreview = \x\\addons\onurglecultists\data\preview\O_Nurgle_Cultists_Nurgle_Sergeant_01.JPG;
         author = "VAp. Venture";
         scope = 2;
         scopeCurator = 2;
