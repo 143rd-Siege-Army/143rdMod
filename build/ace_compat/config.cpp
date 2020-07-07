@@ -145,6 +145,46 @@ class CfgMagazines
 };
 class CfgVehicles
 {
+	class FlagCarrierCore;
+	class FlagCarrier: FlagCarrierCore{};
+	class DK143_Flag: FlagCarrier
+	{
+		author="Siggyfreed";
+		class SimpleObject
+		{
+			eden=0;
+			animate[]=
+			{
+				
+				{
+					"flag",
+					0
+				}
+			};
+			hide[]={};
+			verticalOffset=3.977;
+			verticalOffsetWorld=0;
+			init="''";
+		};
+		editorPreview="\A3\EditorPreviews_F\Data\CfgVehicles\Flag_NATO_F.jpg";
+		_generalMacro="DK143_Flag";
+		scope=2;
+		scopeCurator=2;
+		displayName="DK143 Flag";
+		hiddenSelectionsTextures[]=
+        {
+            "\A3\Structures_F\Mil\Flags\Data\Mast_mil_CO.paa"
+        };
+        hiddenSelectionsMaterials[]=
+        {
+            "\A3\Structures_F\Mil\Flags\Data\Mast_mil.rvmat"
+        };
+        class EventHandlers
+        {
+            init="(_this select 0) setFlagTexture '143rdMod\build\ace_compat\Images\DK143Flag_CO.paa'";
+        };
+	};
+
     class Man;
     class CAManBase: Man{
         class HitPoints {
