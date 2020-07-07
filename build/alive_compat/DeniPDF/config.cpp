@@ -6,13 +6,14 @@ class CfgPatches {
             "O_DeniPDF_Deni_Heavy_Stubber_01",
             "O_DeniPDF_Deni_Sharpshooter_01",
             "O_DeniPDF_Deni_Sergeant_01",
-            "O_DeniPDF_Deni_Meltagunner_01"
+            "O_DeniPDF_Deni_Meltagunner_01",
+			"O_DeniPDF_LR_Battlecannon"
         };
         weapons[] = {};
         requiredVersion = 1.62;
         requiredAddons[] = {
             "CADFOOT",
-            "Renegades_Foot"};
+            "Renegades_Foot",};
         author = "VGm. Venture";
         authors[] = {"VGm. Venture"};
     };
@@ -472,6 +473,75 @@ class CfgGroups {
                     };
                 };
 
+                class o_denipdf_infantry_squad_Missle_Grenade {
+                    name = "Squad Missle/Grenade Launchers";
+                    side = 0;
+                    faction = "O_DeniPDF";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                    rarityGroup = 0.3;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "O_DeniPDF_Deni_Sergeant_01";
+                    };
+                    class Unit1 {
+                        position[] = {-5,-5,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "O_ODeniPDF_Deni_Missile_Launcher_01";
+                    };
+                    class Unit2 {
+                        position[] = {5,-5,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "O_ODeniPDF_Deni_Grenade_Launcher_01";
+                    };
+                    class Unit3 {
+                        position[] = {-0,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_DeniPDF_Deni_Regular_01";
+                    };
+                    class Unit4 {
+                        position[] = {0,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_DeniPDF_Deni_Regular_01";
+                    };
+                    class Unit5 {
+                        position[] = {5,-15,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_DeniPDF_Deni_Regular_01";
+                    };
+                    class Unit6 {
+                        position[] = {-5,-15,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_DeniPDF_Deni_Regular_01";
+                    };
+                    class Unit7 {
+                        position[] = {10,-20,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_DeniPDF_Deni_Regular_01";
+                    };
+                    class Unit8 {
+                        position[] = {-10,-20,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_DeniPDF_Deni_Regular_01";
+                    };
+                    class Unit9 {
+                        position[] = {15,-25,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_DeniPDF_Deni_Regular_01";
+                    };
+                };
+
             };
 
             class SpecOps {
@@ -481,6 +551,80 @@ class CfgGroups {
 
             class Motorized {
                 name = "Motorized Infantry";
+				 class o_denipdf_Mechanized_squad_stubber_melta {
+                    name = "Mechanized Squad Stubber/Melta";
+                    side = 0;
+                    faction = "O_DeniPDF";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                    rarityGroup = 0.3;
+					
+					class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "O_DeniPDF_Taurox_Autocannon";
+                    };
+                    class Unit1 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "O_DeniPDF_Deni_Sergeant_01";
+                    };
+                    class Unit2 {
+                        position[] = {5,-5,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "O_DeniPDF_Deni_Meltagunner_01";
+                    };
+                    class Unit3 {
+                        position[] = {-5,-5,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "O_DeniPDF_Deni_Heavy_Stubber_01";
+                    };
+                    class Unit4 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_DeniPDF_Deni_Regular_01";
+                    };
+                    class Unit5 {
+                        position[] = {-10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_DeniPDF_Deni_Regular_01";
+                    };
+                    class Unit6 {
+                        position[] = {15,-15,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_DeniPDF_Deni_Regular_01";
+                    };
+                    class Unit7 {
+                        position[] = {-15,-15,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_DeniPDF_Deni_Regular_01";
+                    };
+                    class Unit8 {
+                        position[] = {20,-20,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_DeniPDF_Deni_Regular_01";
+                    };
+                    class Unit9 {
+                        position[] = {-20,-20,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_DeniPDF_Deni_Regular_01";
+                    };
+                    class Unit10 {
+                        position[] = {25,-25,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_DeniPDF_Deni_Regular_01";
+                    };
+                };
 
             };
 
@@ -496,11 +640,105 @@ class CfgGroups {
 
             class Mechanized {
                 name = "Mechanized Infantry";
+				 class o_denipdf_Mechanized_squad_stubber_melta {
+                    name = "Mechanized Squad Stubber/Melta";
+                    side = 0;
+                    faction = "O_DeniPDF";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                    rarityGroup = 0.3;
+					
+					class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "O_DeniPDF_Chimera_Autocannon";
+                    };
+                    class Unit1 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "O_DeniPDF_Deni_Sergeant_01";
+                    };
+                    class Unit2 {
+                        position[] = {5,-5,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "O_DeniPDF_Deni_Meltagunner_01";
+                    };
+                    class Unit3 {
+                        position[] = {-5,-5,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "O_DeniPDF_Deni_Heavy_Stubber_01";
+                    };
+                    class Unit4 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_DeniPDF_Deni_Regular_01";
+                    };
+                    class Unit5 {
+                        position[] = {-10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_DeniPDF_Deni_Regular_01";
+                    };
+                    class Unit6 {
+                        position[] = {15,-15,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_DeniPDF_Deni_Regular_01";
+                    };
+                    class Unit7 {
+                        position[] = {-15,-15,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_DeniPDF_Deni_Regular_01";
+                    };
+                    class Unit8 {
+                        position[] = {20,-20,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_DeniPDF_Deni_Regular_01";
+                    };
+                    class Unit9 {
+                        position[] = {-20,-20,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_DeniPDF_Deni_Regular_01";
+                    };
+                    class Unit10 {
+                        position[] = {25,-25,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_DeniPDF_Deni_Regular_01";
+                    };
+                };
 
             };
 
             class Armored {
                 name = "Armor";
+                class o_denipdf_Armored_tank_Squadon {
+                    name = "Tank Squadron";
+                    side = 0;
+                    faction = "O_DeniPDF";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                    rarityGroup = 0.1;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "O_DeniPDF_LR_Battlecannon";
+                    };
+                    class Unit1 {
+                        position[] = {15,-5,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_DeniPDF_LR_Battlecannon";
+                    };
+                };
 
             };
 
@@ -529,6 +767,7 @@ class CBA_Extended_EventHandlers_base;
 
 class CfgVehicles {
 
+	// Infantry
     class TIOW_O_Ren_G_Rifleman;
 	class TIOW_O_Ren_G_Rifleman_Import_1 : TIOW_O_Ren_G_Rifleman { scope = 2; class EventHandlers; };
 	class TIOW_O_Ren_G_Rifleman_Import_2 : TIOW_O_Ren_G_Rifleman_Import_1 { class EventHandlers; };
@@ -598,7 +837,8 @@ class CfgVehicles {
         backpack = "Ren_Backpack_02_black";
 
         ALiVE_orbatCreator_loadout[] = {{"Chaos_PlasmaGun","","","",{"DK_PlasmaGun_Flask",10},{},""},{},{"TIOW_StubPistol","","","",{"TIOW_6rnd_StubPistolMag",6},{},""},{"CadTnkUni776th",{{"ACE_Fortify",1},{"SmokeShellGreen",3,1},{"SmokeShellRed",3,1},{"HandGrenade",3,1},{"ACE_Chemlight_HiRed",1,1},{"TIOW_6rnd_StubPistolMag",3,6}}},{"Ren_ArmorSet_02_black",{{"ACE_fieldDressing",7},{"ACE_packingBandage",7},{"ACE_morphine",7},{"ACE_tourniquet",7},{"TIOW_chaos_frag_grenade_mag",4,1},{"TIOW_chaos_krak_grenade_mag",4,1},{"DK_PlasmaGun_Flask",1,10}}},{"Ren_Backpack_02_black",{{"ACE_elasticBandage",5},{"ACE_quikclot",5},{"ACE_bloodIV_250",2},{"ACE_CableTie",4},{"ACE_EntrenchingTool",1},{"ACE_Fortify",1},{"ACE_morphine",3},{"ACE_packingBandage",5},{"ACE_personalAidKit",1},{"ACE_plasmaIV_250",2},{"ACE_salineIV_250",2},{"ACE_tourniquet",4},{"ACE_Chemlight_HiRed",1,1},{"DK_PlasmaGun_Flask",3,10}}},"Cad_RebreatherMaskPhoto776th","",{"OPTRE_Smartfinder","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","TFAR_microdagr",""}};
-		
+
+
         class EventHandlers : EventHandlers {
             class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
@@ -637,7 +877,8 @@ class CfgVehicles {
         backpack = "Ren_Backpack_02_black";
 
         ALiVE_orbatCreator_loadout[] = {{"KriegHeavyStubberDK","","","",{"TIOW_50Rnd_Stubber_mag",50},{},"KriegHeavyStubberDK_Bipod"},{},{"TIOW_StubPistol","","","",{"TIOW_6rnd_StubPistolMag",6},{},""},{"CadTnkUni776th",{{"ACE_Fortify",1},{"SmokeShellGreen",3,1},{"SmokeShellRed",3,1},{"HandGrenade",3,1},{"ACE_Chemlight_HiRed",1,1},{"TIOW_6rnd_StubPistolMag",3,6}}},{"Ren_ArmorSet_02_black",{{"ACE_fieldDressing",7},{"ACE_packingBandage",7},{"ACE_morphine",7},{"ACE_tourniquet",7},{"TIOW_chaos_frag_grenade_mag",4,1},{"TIOW_chaos_krak_grenade_mag",4,1},{"TIOW_50Rnd_Stubber_manstop",1,50},{"TIOW_50Rnd_Stubber_expander",1,50},{"TIOW_50Rnd_Stubber_amput",1,50},{"TIOW_50Rnd_Stubber_mag",1,50}}},{"Ren_Backpack_02_black",{{"ACE_elasticBandage",5},{"ACE_quikclot",5},{"ACE_bloodIV_250",2},{"ACE_CableTie",4},{"ACE_EntrenchingTool",1},{"ACE_Fortify",1},{"ACE_morphine",3},{"ACE_packingBandage",5},{"ACE_personalAidKit",1},{"ACE_plasmaIV_250",2},{"ACE_salineIV_250",2},{"ACE_tourniquet",4},{"ACE_Chemlight_HiRed",1,1},{"TIOW_50Rnd_Stubber_mag",2,50},{"TIOW_50Rnd_Stubber_amput",2,50},{"TIOW_50Rnd_Stubber_expander",2,50},{"TIOW_50Rnd_Stubber_manstop",2,50}}},"Cad_RebreatherMaskPhoto776th","",{"OPTRE_Smartfinder","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","TFAR_microdagr",""}};
-		
+
+
         class EventHandlers : EventHandlers {
             class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
@@ -676,6 +917,7 @@ class CfgVehicles {
         backpack = "Ren_Backpack_02_black";
 
         ALiVE_orbatCreator_loadout[] = {{"TIOW_LongLas_776","","","",{"TIOW_LongLas_Mag",20},{},""},{},{"TIOW_StubPistol","","","",{"TIOW_6rnd_StubPistolMag",6},{},""},{"CadTnkUni776th",{{"ACE_Fortify",1},{"SmokeShellGreen",3,1},{"SmokeShellRed",3,1},{"HandGrenade",3,1},{"ACE_Chemlight_HiRed",1,1},{"TIOW_6rnd_StubPistolMag",3,6}}},{"Ren_ArmorSet_02_black",{{"ACE_fieldDressing",3},{"ACE_packingBandage",3},{"ACE_morphine",3},{"ACE_tourniquet",3},{"TIOW_LongLas_Mag",4,20}}},{},"OPTRE_h_PatrolCap_Green","",{"OPTRE_Smartfinder","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","TFAR_microdagr",""}};
+
 
         class EventHandlers : EventHandlers {
             class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
@@ -770,4 +1012,133 @@ class CfgVehicles {
 
     };
 
+    class O_ODeniPDF_Deni_Missile_Launcher_01 : O_DeniPDF_Deni_Regular_01 {
+        author = "VAp. Venture";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Deni Missile Launcher";
+        side = 0;
+        faction = "O_DeniPDF";
+
+        identityTypes[] = {"Head_NATO","LanguageENGB"};
+
+        uniformClass = "CadTnkUni776th";
+
+        linkedItems[] = {"Ren_ArmorSet_02_black","Cad_Inf_Helm776th","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","TFAR_microdagr"};
+        respawnlinkedItems[] = {"Ren_ArmorSet_02_black","Cad_Inf_Helm776th","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","TFAR_microdagr"};
+
+        weapons[] = {"Antioc43Lasgun","MissileLauncherDKOKGreen"};
+        respawnWeapons[] = {"Antioc43Lasgun","MissileLauncherDKOKGreen"};
+
+        magazines[] = {"TIOW_Antioc43_Mag","MLAT_Mag","TIOW_Antioc43_Mag"};
+        respawnMagazines[] = {"TIOW_Antioc43_Mag","MLAT_Mag","TIOW_Antioc43_Mag"};
+
+        backpack = "Ren_Backpack_02_black";
+
+        ALiVE_orbatCreator_loadout[] = {{"Antioc43Lasgun","","","",{"TIOW_Antioc43_Mag",50},{},""},{"MissileLauncherDKOKGreen","","","",{"MLAT_Mag",1},{},""},{},{"CadTnkUni776th",{{"SmokeShellGreen",3,1},{"SmokeShellRed",3,1},{"HandGrenade",3,1},{"ACE_Chemlight_HiRed",1,1},{"TIOW_Antioc43_Mag",3,50}}},{"Ren_ArmorSet_02_black",{{"ACE_fieldDressing",7},{"ACE_packingBandage",7},{"ACE_morphine",7},{"ACE_tourniquet",7},{"TIOW_chaos_frag_grenade_mag",4,1},{"TIOW_chaos_krak_grenade_mag",4,1},{"TIOW_Antioc43_Mag",4,50}}},{"Ren_Backpack_02_black",{{"ACE_elasticBandage",5},{"ACE_quikclot",5},{"ACE_morphine",3},{"ACE_packingBandage",5},{"ACE_tourniquet",4},{"ACE_Chemlight_HiRed",1,1},{"MLAT_Mag",4,1},{"TIOW_Antioc43_MagHeavy",2,10}}},"Cad_Inf_Helm776th","TIOW_Cultist_FaceCover",{},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","TFAR_microdagr",""}};
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
+    };
+
+    class O_ODeniPDF_Deni_Grenade_Launcher_01 : O_DeniPDF_Deni_Regular_01 {
+        author = "VAp. Venture";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Deni Grenade Launcher";
+        side = 0;
+        faction = "O_DeniPDF";
+
+        identityTypes[] = {"Head_NATO","LanguageENGB"};
+
+        uniformClass = "CadTnkUni776th";
+
+        linkedItems[] = {"Ren_ArmorSet_02_black","Cad_Inf_Helm776th","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","TFAR_microdagr"};
+        respawnlinkedItems[] = {"Ren_ArmorSet_02_black","Cad_Inf_Helm776th","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","TFAR_microdagr"};
+
+        weapons[] = {"TIOW_IG_GL"};
+        respawnWeapons[] = {"TIOW_IG_GL"};
+
+        magazines[] = {"TIOW_IG_GL_Frag_mag","TIOW_IG_GL_Frag_mag"};
+        respawnMagazines[] = {"TIOW_IG_GL_Frag_mag","TIOW_IG_GL_Frag_mag"};
+
+        backpack = "Ren_Backpack_02_black";
+
+        ALiVE_orbatCreator_loadout[] = {{"TIOW_IG_GL","","","",{"TIOW_IG_GL_Frag_mag",8},{},""},{},{},{"CadTnkUni776th",{{"SmokeShellGreen",3,1},{"SmokeShellRed",3,1},{"HandGrenade",3,1},{"ACE_Chemlight_HiRed",1,1},{"TIOW_IG_GL_Frag_mag",1,8}}},{"Ren_ArmorSet_02_black",{{"ACE_fieldDressing",7},{"ACE_packingBandage",7},{"ACE_morphine",7},{"ACE_tourniquet",7},{"TIOW_chaos_frag_grenade_mag",4,1},{"TIOW_chaos_krak_grenade_mag",4,1},{"TIOW_IG_GL_Frag_mag",1,8}}},{"Ren_Backpack_02_black",{{"ACE_elasticBandage",5},{"ACE_quikclot",5},{"ACE_bloodIV_250",2},{"ACE_CableTie",4},{"ACE_EntrenchingTool",1},{"ACE_Fortify",1},{"ACE_morphine",3},{"ACE_packingBandage",5},{"ACE_personalAidKit",1},{"ACE_plasmaIV_250",2},{"ACE_salineIV_250",2},{"ACE_tourniquet",4},{"ACE_Chemlight_HiRed",1,1},{"TIOW_IG_GL_Frag_mag",2,8},{"TIOW_IG_GL_Krak_mag",2,8}}},"Cad_Inf_Helm776th","TIOW_Cultist_FaceCover",{},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","TFAR_microdagr",""}};
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
+    };
+
+
+	//Motorized
+	class ML700_Taurox_Autocannon;
+	class O_DeniPDF_Taurox_Autocannon_01im : ML700_Taurox_Autocannon { side = 0; scope = 2; class EventHandlers; };
+	class O_DeniPDF_Taurox_Autocannon_02im : O_DeniPDF_Taurox_Autocannon_01im { class EventHandlers; };
+	
+	class O_DeniPDF_Taurox_Autocannon : O_DeniPDF_Taurox_Autocannon_02im
+	{
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		displayName="Deni Taurox (Autocannon)";
+		faction="O_DeniPDF";
+		crew="O_DeniPDF_Deni_Regular_01";
+		side=0;
+		hiddenSelectionsTextures[] = {"GD_Main\ML700_Taurox\data\hood_co.paa","GD_Main\ML700_Taurox\data\wheels_co.paa","GD_Main\ML700_Taurox\data\hood_co.paa","GD_Main\ML700_Taurox\data\interior1_co.paa","GD_Main\ML700_Taurox\data\interior2_co.paa","GD_Main\ML700_Taurox\data\reardoor_co.paa","GD_Main\ML700_Taurox\data\roof_co.paa","GD_Main\ML700_Taurox\data\wheels_co.paa","GD_Main\ML700_Taurox\data\autocannon_co.paa"};
+	};
+	//APCs
+	class ML700_Chimera_Autocannon;
+	class O_DeniPDF_Chimera_Autocannon_01im : ML700_Chimera_Autocannon { side = 0; scope = 2; class EventHandlers; };
+	class O_DeniPDF_Chimera_Autocannon_02im : O_DeniPDF_Chimera_Autocannon_01im { class EventHandlers; };
+	
+	class O_DeniPDF_Chimera_Autocannon : O_DeniPDF_Chimera_Autocannon_02im
+	{
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		displayName="Deni Chimera (Autocannon)";
+		faction="O_DeniPDF";
+		crew="O_DeniPDF_Deni_Regular_01";
+		side=0;
+		hiddenSelectionsTextures[] = {"GD_Main\ML700_Chimera\data\driveassembly_co.paa","GD_Main\ML700_Chimera\data\hull_co.paa","GD_Main\ML700_Chimera\data\hullheavybolter_co.paa","GD_Main\ML700_Chimera\data\hullmisc_ca.paa","GD_Main\ML700_Chimera\data\interior_co.paa","GD_Main\ML700_Chimera\data\lasarray_co.paa","GD_Main\ML700_Chimera\data\reardoor_co.paa","GD_Main\ML700_Chimera\data\turretexterior_co.paa","GD_Main\ML700_Chimera\data\turretweapons_co.paa"};
+	}
+	// Tanks
+	class TIOW_Cad_LR_Battlecannon_836th_OP;
+	class O_DeniPDF_LR_Battlecannon_01im : TIOW_Cad_LR_Battlecannon_836th_OP { scope = 2; class EventHandlers; };
+	class O_DeniPDF_LR_Battlecannon_02im : O_DeniPDF_LR_Battlecannon_01im { class EventHandlers; };
+	
+	class O_DeniPDF_LR_Battlecannon : O_DeniPDF_LR_Battlecannon_02im
+	{
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		displayName="Leman Russ Battlecannon";
+		faction="O_DeniPDF";
+		crew="O_DeniPDF_Deni_Regular_01";
+		side=0;
+		hiddenSelectionsTextures[] = {"APCs\data\Textures\ChimeraInsigniaCadian836_ca.paa","WHtracked\LRMIV\Data\LR_Cad836th_co.paa"};
+	};
 };
