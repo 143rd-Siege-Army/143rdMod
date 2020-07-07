@@ -13,7 +13,7 @@ class CfgPatches {
         requiredVersion = 1.62;
         requiredAddons[] = {
             "CADFOOT",
-            "Renegades_Foot",};
+            "Renegades_Foot"};
         author = "VGm. Venture";
         authors[] = {"VGm. Venture"};
     };
@@ -1107,7 +1107,7 @@ class CfgVehicles {
 		faction="O_DeniPDF";
 		crew="O_DeniPDF_Deni_Regular_01";
 		side=0;
-		hiddenSelectionsTextures[] = {"GD_Main\ML700_Taurox\data\hood_co.paa","GD_Main\ML700_Taurox\data\wheels_co.paa","GD_Main\ML700_Taurox\data\hood_co.paa","GD_Main\ML700_Taurox\data\interior1_co.paa","GD_Main\ML700_Taurox\data\interior2_co.paa","GD_Main\ML700_Taurox\data\reardoor_co.paa","GD_Main\ML700_Taurox\data\roof_co.paa","GD_Main\ML700_Taurox\data\wheels_co.paa","GD_Main\ML700_Taurox\data\autocannon_co.paa"};
+		//hiddenSelectionsTextures[] = {"GD_Main\ML700_Taurox\data\hood_co.paa","GD_Main\ML700_Taurox\data\wheels_co.paa","GD_Main\ML700_Taurox\data\hood_co.paa","GD_Main\ML700_Taurox\data\interior1_co.paa","GD_Main\ML700_Taurox\data\interior2_co.paa","GD_Main\ML700_Taurox\data\reardoor_co.paa","GD_Main\ML700_Taurox\data\roof_co.paa","GD_Main\ML700_Taurox\data\wheels_co.paa","GD_Main\ML700_Taurox\data\autocannon_co.paa"};
 	};
 	//APCs
 	class ML700_Chimera_Autocannon;
@@ -1123,8 +1123,8 @@ class CfgVehicles {
 		faction="O_DeniPDF";
 		crew="O_DeniPDF_Deni_Regular_01";
 		side=0;
-		hiddenSelectionsTextures[] = {"GD_Main\ML700_Chimera\data\driveassembly_co.paa","GD_Main\ML700_Chimera\data\hull_co.paa","GD_Main\ML700_Chimera\data\hullheavybolter_co.paa","GD_Main\ML700_Chimera\data\hullmisc_ca.paa","GD_Main\ML700_Chimera\data\interior_co.paa","GD_Main\ML700_Chimera\data\lasarray_co.paa","GD_Main\ML700_Chimera\data\reardoor_co.paa","GD_Main\ML700_Chimera\data\turretexterior_co.paa","GD_Main\ML700_Chimera\data\turretweapons_co.paa"};
-	}
+		//hiddenSelectionsTextures[] = {"GD_Main\ML700_Chimera\data\driveassembly_co.paa","GD_Main\ML700_Chimera\data\hull_co.paa","GD_Main\ML700_Chimera\data\hullheavybolter_co.paa","GD_Main\ML700_Chimera\data\hullmisc_ca.paa","GD_Main\ML700_Chimera\data\interior_co.paa","GD_Main\ML700_Chimera\data\lasarray_co.paa","GD_Main\ML700_Chimera\data\reardoor_co.paa","GD_Main\ML700_Chimera\data\turretexterior_co.paa","GD_Main\ML700_Chimera\data\turretweapons_co.paa"};
+	};
 	// Tanks
 	class TIOW_Cad_LR_Battlecannon_836th_OP;
 	class O_DeniPDF_LR_Battlecannon_01im : TIOW_Cad_LR_Battlecannon_836th_OP { scope = 2; class EventHandlers; };
@@ -1139,6 +1139,6 @@ class CfgVehicles {
 		faction="O_DeniPDF";
 		crew="O_DeniPDF_Deni_Regular_01";
 		side=0;
-		hiddenSelectionsTextures[] = {"APCs\data\Textures\ChimeraInsigniaCadian836_ca.paa","WHtracked\LRMIV\Data\LR_Cad836th_co.paa"};
+		//hiddenSelectionsTextures[] = {"APCs\data\Textures\ChimeraInsigniaCadian836_ca.paa","WHtracked\LRMIV\Data\LR_Cad836th_co.paa"};
 	};
 };
