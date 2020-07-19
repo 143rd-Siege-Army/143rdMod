@@ -782,7 +782,7 @@ class CfgVehicles {
 
         identityTypes[] = {"Head_NATO","LanguageENGB"};
 
-        uniformClass = "CadTnkUni776th";
+        uniformClass = "CadTnkUni776th_OP";
 
         linkedItems[] = {"Ren_ArmorSet_02_green","Cad_Inf_Helm836th","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
         respawnlinkedItems[] = {"Ren_ArmorSet_02_green","Cad_Inf_Helm836th","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
@@ -795,7 +795,7 @@ class CfgVehicles {
 
         backpack = "Ren_Backpack_02_black";
 
-        ALiVE_orbatCreator_loadout[] = {{"Antioc43Lasgun","","","",{"TIOW_Antioc43_Mag",50},{},""},{},{},{"CadTnkUni776th",{{"SmokeShellGreen",3,1},{"SmokeShellRed",3,1},{"HandGrenade",3,1},{"ACE_Chemlight_HiRed",1,1},{"TIOW_Antioc43_Mag",3,50}}},{"Ren_ArmorSet_02_black",{{"ACE_fieldDressing",7},{"ACE_packingBandage",7},{"ACE_morphine",7},{"ACE_tourniquet",7},{"TIOW_chaos_frag_grenade_mag",4,1},{"TIOW_chaos_krak_grenade_mag",4,1},{"TIOW_Antioc43_Mag",4,50}}},{"Ren_Backpack_02_black",{{"ACE_elasticBandage",5},{"ACE_quikclot",5},{"ACE_bloodIV_250",2},{"ACE_CableTie",4},{"ACE_EntrenchingTool",1},{"ACE_Fortify",1},{"ACE_morphine",3},{"ACE_packingBandage",5},{"ACE_personalAidKit",1},{"ACE_plasmaIV_250",2},{"ACE_salineIV_250",2},{"ACE_tourniquet",4},{"ACE_Chemlight_HiRed",1,1}}},"Cad_Inf_Helm776th","TIOW_Cultist_FaceCover",{"OPTRE_Smartfinder","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","TFAR_microdagr",""}};
+        ALiVE_orbatCreator_loadout[] = {{"Antioc43Lasgun","","","",{"TIOW_Antioc43_Mag",50},{},""},{},{},{"CadTnkUni776th_OP",{{"SmokeShellGreen",3,1},{"SmokeShellRed",3,1},{"HandGrenade",3,1},{"ACE_Chemlight_HiRed",1,1},{"TIOW_Antioc43_Mag",3,50}}},{"Ren_ArmorSet_02_black",{{"ACE_fieldDressing",7},{"ACE_packingBandage",7},{"ACE_morphine",7},{"ACE_tourniquet",7},{"TIOW_chaos_frag_grenade_mag",4,1},{"TIOW_chaos_krak_grenade_mag",4,1},{"TIOW_Antioc43_Mag",4,50}}},{"Ren_Backpack_02_black",{{"ACE_elasticBandage",5},{"ACE_quikclot",5},{"ACE_bloodIV_250",2},{"ACE_CableTie",4},{"ACE_EntrenchingTool",1},{"ACE_Fortify",1},{"ACE_morphine",3},{"ACE_packingBandage",5},{"ACE_personalAidKit",1},{"ACE_plasmaIV_250",2},{"ACE_salineIV_250",2},{"ACE_tourniquet",4},{"ACE_Chemlight_HiRed",1,1}}},"Cad_Inf_Helm776th","TIOW_Cultist_FaceCover",{"","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","TFAR_microdagr",""}};
 
 
 
@@ -823,7 +823,7 @@ class CfgVehicles {
 
         identityTypes[] = {"Head_NATO","LanguageENGB"};
 
-        uniformClass = "CadTnkUni776th";
+        uniformClass = "CadTnkUni776th_OP";
 
         linkedItems[] = {"Ren_ArmorSet_02_green","Cad_Inf_Helm836th","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
         respawnlinkedItems[] = {"Ren_ArmorSet_02_green","Cad_Inf_Helm836th","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
@@ -836,7 +836,7 @@ class CfgVehicles {
 
         backpack = "Ren_Backpack_02_black";
 
-        ALiVE_orbatCreator_loadout[] = {{"Chaos_PlasmaGun","","","",{"DK_PlasmaGun_Flask",10},{},""},{},{"TIOW_StubPistol","","","",{"TIOW_6rnd_StubPistolMag",6},{},""},{"CadTnkUni776th",{{"ACE_Fortify",1},{"SmokeShellGreen",3,1},{"SmokeShellRed",3,1},{"HandGrenade",3,1},{"ACE_Chemlight_HiRed",1,1},{"TIOW_6rnd_StubPistolMag",3,6}}},{"Ren_ArmorSet_02_black",{{"ACE_fieldDressing",7},{"ACE_packingBandage",7},{"ACE_morphine",7},{"ACE_tourniquet",7},{"TIOW_chaos_frag_grenade_mag",4,1},{"TIOW_chaos_krak_grenade_mag",4,1},{"DK_PlasmaGun_Flask",1,10}}},{"Ren_Backpack_02_black",{{"ACE_elasticBandage",5},{"ACE_quikclot",5},{"ACE_bloodIV_250",2},{"ACE_CableTie",4},{"ACE_EntrenchingTool",1},{"ACE_Fortify",1},{"ACE_morphine",3},{"ACE_packingBandage",5},{"ACE_personalAidKit",1},{"ACE_plasmaIV_250",2},{"ACE_salineIV_250",2},{"ACE_tourniquet",4},{"ACE_Chemlight_HiRed",1,1},{"DK_PlasmaGun_Flask",3,10}}},"Cad_RebreatherMaskPhoto776th","",{"OPTRE_Smartfinder","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","TFAR_microdagr",""}};
+        ALiVE_orbatCreator_loadout[] = {{"Chaos_PlasmaGun","","","",{"DK_PlasmaGun_Flask",10},{},""},{},{"TIOW_StubPistol","","","",{"TIOW_6rnd_StubPistolMag",6},{},""},{"CadTnkUni776th_OP",{{"ACE_Fortify",1},{"SmokeShellGreen",3,1},{"SmokeShellRed",3,1},{"HandGrenade",3,1},{"ACE_Chemlight_HiRed",1,1},{"TIOW_6rnd_StubPistolMag",3,6}}},{"Ren_ArmorSet_02_black",{{"ACE_fieldDressing",7},{"ACE_packingBandage",7},{"ACE_morphine",7},{"ACE_tourniquet",7},{"TIOW_chaos_frag_grenade_mag",4,1},{"TIOW_chaos_krak_grenade_mag",4,1},{"DK_PlasmaGun_Flask",1,10}}},{"Ren_Backpack_02_black",{{"ACE_elasticBandage",5},{"ACE_quikclot",5},{"ACE_bloodIV_250",2},{"ACE_CableTie",4},{"ACE_EntrenchingTool",1},{"ACE_Fortify",1},{"ACE_morphine",3},{"ACE_packingBandage",5},{"ACE_personalAidKit",1},{"ACE_plasmaIV_250",2},{"ACE_salineIV_250",2},{"ACE_tourniquet",4},{"ACE_Chemlight_HiRed",1,1},{"DK_PlasmaGun_Flask",3,10}}},"Cad_RebreatherMaskPhoto776th","",{"","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","TFAR_microdagr",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -863,7 +863,7 @@ class CfgVehicles {
 
         identityTypes[] = {"Head_NATO","LanguageENGB"};
 
-        uniformClass = "CadTnkUni776th";
+        uniformClass = "CadTnkUni776th_OP";
 
         linkedItems[] = {"Ren_ArmorSet_02_green","Cad_Inf_Helm836th","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
         respawnlinkedItems[] = {"Ren_ArmorSet_02_green","Cad_Inf_Helm836th","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
@@ -876,7 +876,7 @@ class CfgVehicles {
 
         backpack = "Ren_Backpack_02_black";
 
-        ALiVE_orbatCreator_loadout[] = {{"KriegHeavyStubberDK","","","",{"TIOW_50Rnd_Stubber_mag",50},{},"KriegHeavyStubberDK_Bipod"},{},{"TIOW_StubPistol","","","",{"TIOW_6rnd_StubPistolMag",6},{},""},{"CadTnkUni776th",{{"ACE_Fortify",1},{"SmokeShellGreen",3,1},{"SmokeShellRed",3,1},{"HandGrenade",3,1},{"ACE_Chemlight_HiRed",1,1},{"TIOW_6rnd_StubPistolMag",3,6}}},{"Ren_ArmorSet_02_black",{{"ACE_fieldDressing",7},{"ACE_packingBandage",7},{"ACE_morphine",7},{"ACE_tourniquet",7},{"TIOW_chaos_frag_grenade_mag",4,1},{"TIOW_chaos_krak_grenade_mag",4,1},{"TIOW_50Rnd_Stubber_manstop",1,50},{"TIOW_50Rnd_Stubber_expander",1,50},{"TIOW_50Rnd_Stubber_amput",1,50},{"TIOW_50Rnd_Stubber_mag",1,50}}},{"Ren_Backpack_02_black",{{"ACE_elasticBandage",5},{"ACE_quikclot",5},{"ACE_bloodIV_250",2},{"ACE_CableTie",4},{"ACE_EntrenchingTool",1},{"ACE_Fortify",1},{"ACE_morphine",3},{"ACE_packingBandage",5},{"ACE_personalAidKit",1},{"ACE_plasmaIV_250",2},{"ACE_salineIV_250",2},{"ACE_tourniquet",4},{"ACE_Chemlight_HiRed",1,1},{"TIOW_50Rnd_Stubber_mag",2,50},{"TIOW_50Rnd_Stubber_amput",2,50},{"TIOW_50Rnd_Stubber_expander",2,50},{"TIOW_50Rnd_Stubber_manstop",2,50}}},"Cad_RebreatherMaskPhoto776th","",{"OPTRE_Smartfinder","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","TFAR_microdagr",""}};
+        ALiVE_orbatCreator_loadout[] = {{"KriegHeavyStubberDK","","","",{"TIOW_50Rnd_Stubber_mag",50},{},"KriegHeavyStubberDK_Bipod"},{},{"TIOW_StubPistol","","","",{"TIOW_6rnd_StubPistolMag",6},{},""},{"CadTnkUni776th_OP",{{"ACE_Fortify",1},{"SmokeShellGreen",3,1},{"SmokeShellRed",3,1},{"HandGrenade",3,1},{"ACE_Chemlight_HiRed",1,1},{"TIOW_6rnd_StubPistolMag",3,6}}},{"Ren_ArmorSet_02_black",{{"ACE_fieldDressing",7},{"ACE_packingBandage",7},{"ACE_morphine",7},{"ACE_tourniquet",7},{"TIOW_chaos_frag_grenade_mag",4,1},{"TIOW_chaos_krak_grenade_mag",4,1},{"TIOW_50Rnd_Stubber_manstop",1,50},{"TIOW_50Rnd_Stubber_expander",1,50},{"TIOW_50Rnd_Stubber_amput",1,50},{"TIOW_50Rnd_Stubber_mag",1,50}}},{"Ren_Backpack_02_black",{{"ACE_elasticBandage",5},{"ACE_quikclot",5},{"ACE_bloodIV_250",2},{"ACE_CableTie",4},{"ACE_EntrenchingTool",1},{"ACE_Fortify",1},{"ACE_morphine",3},{"ACE_packingBandage",5},{"ACE_personalAidKit",1},{"ACE_plasmaIV_250",2},{"ACE_salineIV_250",2},{"ACE_tourniquet",4},{"ACE_Chemlight_HiRed",1,1},{"TIOW_50Rnd_Stubber_mag",2,50},{"TIOW_50Rnd_Stubber_amput",2,50},{"TIOW_50Rnd_Stubber_expander",2,50},{"TIOW_50Rnd_Stubber_manstop",2,50}}},"Cad_RebreatherMaskPhoto776th","",{"","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","TFAR_microdagr",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -903,7 +903,7 @@ class CfgVehicles {
 
         identityTypes[] = {"Head_NATO","LanguageENGB"};
 
-        uniformClass = "CadTnkUni776th";
+        uniformClass = "CadTnkUni776th_OP";
 
         linkedItems[] = {"Ren_ArmorSet_02_green","Cad_Inf_Helm836th","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
         respawnlinkedItems[] = {"Ren_ArmorSet_02_green","Cad_Inf_Helm836th","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
@@ -916,7 +916,7 @@ class CfgVehicles {
 
         backpack = "Ren_Backpack_02_black";
 
-        ALiVE_orbatCreator_loadout[] = {{"TIOW_LongLas_776","","","",{"TIOW_LongLas_Mag",20},{},""},{},{"TIOW_StubPistol","","","",{"TIOW_6rnd_StubPistolMag",6},{},""},{"CadTnkUni776th",{{"ACE_Fortify",1},{"SmokeShellGreen",3,1},{"SmokeShellRed",3,1},{"HandGrenade",3,1},{"ACE_Chemlight_HiRed",1,1},{"TIOW_6rnd_StubPistolMag",3,6}}},{"Ren_ArmorSet_02_black",{{"ACE_fieldDressing",3},{"ACE_packingBandage",3},{"ACE_morphine",3},{"ACE_tourniquet",3},{"TIOW_LongLas_Mag",4,20}}},{},"OPTRE_h_PatrolCap_Green","",{"OPTRE_Smartfinder","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","TFAR_microdagr",""}};
+        ALiVE_orbatCreator_loadout[] = {{"TIOW_LongLas_776","","","",{"TIOW_LongLas_Mag",20},{},""},{},{"TIOW_StubPistol","","","",{"TIOW_6rnd_StubPistolMag",6},{},""},{"CadTnkUni776th_OP",{{"ACE_Fortify",1},{"SmokeShellGreen",3,1},{"SmokeShellRed",3,1},{"HandGrenade",3,1},{"ACE_Chemlight_HiRed",1,1},{"TIOW_6rnd_StubPistolMag",3,6}}},{"Ren_ArmorSet_02_black",{{"ACE_fieldDressing",3},{"ACE_packingBandage",3},{"ACE_morphine",3},{"ACE_tourniquet",3},{"TIOW_LongLas_Mag",4,20}}},{},"","",{"","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","TFAR_microdagr",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -943,7 +943,7 @@ class CfgVehicles {
 
         identityTypes[] = {"Head_NATO","LanguageENGB"};
 
-        uniformClass = "CadTnkUni776th";
+        uniformClass = "CadTnkUni776th_OP";
 
         linkedItems[] = {"Ren_ArmorSet_02_green","Cad_InfPhoto_Helm776th","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
         respawnlinkedItems[] = {"Ren_ArmorSet_02_green","Cad_InfPhoto_Helm776th","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
@@ -956,7 +956,7 @@ class CfgVehicles {
 
         backpack = "Ren_Backpack_02_black";
 
-        ALiVE_orbatCreator_loadout[] = {{"Antioc43Lasgun","","","",{"TIOW_Antioc43_Mag",50},{},""},{},{"TIOW_StubPistol","","","",{"TIOW_6rnd_StubPistolMag",6},{},""},{"CadTnkUni776th",{{"ACE_Fortify",1},{"SmokeShellGreen",3,1},{"SmokeShellRed",3,1},{"HandGrenade",3,1},{"ACE_Chemlight_HiRed",1,1},{"TIOW_Antioc43_Mag",3,50}}},{"Ren_ArmorSet_02_black",{{"ACE_fieldDressing",7},{"ACE_packingBandage",7},{"ACE_morphine",7},{"ACE_tourniquet",7},{"TIOW_chaos_frag_grenade_mag",4,1},{"TIOW_chaos_krak_grenade_mag",4,1},{"TIOW_Antioc43_Mag",4,50}}},{"Ren_Backpack_02_black",{{"ACE_elasticBandage",5},{"ACE_quikclot",5},{"ACE_bloodIV_250",2},{"ACE_CableTie",4},{"ACE_EntrenchingTool",1},{"ACE_Fortify",1},{"ACE_morphine",3},{"ACE_packingBandage",5},{"ACE_personalAidKit",1},{"ACE_plasmaIV_250",2},{"ACE_salineIV_250",2},{"ACE_tourniquet",4},{"ACE_Chemlight_HiRed",1,1},{"TIOW_6rnd_StubPistolMag",4,6}}},"Cad_InfPhoto_Helm776th","",{"OPTRE_Smartfinder","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","TFAR_microdagr",""}};
+        ALiVE_orbatCreator_loadout[] = {{"Antioc43Lasgun","","","",{"TIOW_Antioc43_Mag",50},{},""},{},{"TIOW_StubPistol","","","",{"TIOW_6rnd_StubPistolMag",6},{},""},{"CadTnkUni776th_OP",{{"ACE_Fortify",1},{"SmokeShellGreen",3,1},{"SmokeShellRed",3,1},{"HandGrenade",3,1},{"ACE_Chemlight_HiRed",1,1},{"TIOW_Antioc43_Mag",3,50}}},{"Ren_ArmorSet_02_black",{{"ACE_fieldDressing",7},{"ACE_packingBandage",7},{"ACE_morphine",7},{"ACE_tourniquet",7},{"TIOW_chaos_frag_grenade_mag",4,1},{"TIOW_chaos_krak_grenade_mag",4,1},{"TIOW_Antioc43_Mag",4,50}}},{"Ren_Backpack_02_black",{{"ACE_elasticBandage",5},{"ACE_quikclot",5},{"ACE_bloodIV_250",2},{"ACE_CableTie",4},{"ACE_EntrenchingTool",1},{"ACE_Fortify",1},{"ACE_morphine",3},{"ACE_packingBandage",5},{"ACE_personalAidKit",1},{"ACE_plasmaIV_250",2},{"ACE_salineIV_250",2},{"ACE_tourniquet",4},{"ACE_Chemlight_HiRed",1,1},{"TIOW_6rnd_StubPistolMag",4,6}}},"Cad_InfPhoto_Helm776th","",{"","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","TFAR_microdagr",""}};
 
         class EventHandlers : EventHandlers {
             class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
@@ -982,7 +982,7 @@ class CfgVehicles {
 
         identityTypes[] = {"Head_NATO","LanguageENGB"};
 
-        uniformClass = "CadTnkUni776th";
+        uniformClass = "CadTnkUni776th_OP";
 
         linkedItems[] = {"Ren_ArmorSet_02_green","Cad_Inf_Helm836th","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
         respawnlinkedItems[] = {"Ren_ArmorSet_02_green","Cad_Inf_Helm836th","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
@@ -995,7 +995,7 @@ class CfgVehicles {
 
         backpack = "Ren_Backpack_02_black";
 
-        ALiVE_orbatCreator_loadout[] = {{"TIOW_MeltaGun_01","","","",{"TIOW_Meltagun_Mag",5},{},""},{},{"TIOW_StubPistol","","","",{"TIOW_6rnd_StubPistolMag",6},{},""},{"CadTnkUni776th",{{"FirstAidKit",1},{"TIOW_chaos_frag_grenade_mag",2,1},{"TIOW_ig_smoke_grenade_mag",1,1},{"TIOW_Meltagun_Mag",3,5},{"TIOW_6rnd_StubPistolMag",3,6}}},{"Ren_ArmorSet_02_green",{{"ACE_fieldDressing",7},{"ACE_elasticBandage",7},{"OPTRE_M2_Smoke_Green",3,1},{"OPTRE_M2_Smoke_Red",3,1},{"TIOW_chaos_frag_grenade_mag",4,1},{"TIOW_chaos_krak_grenade_mag",4,1},{"TIOW_Meltagun_Mag",2,5}}},{"Ren_Backpack_02_black",{{"ACE_morphine",7},{"ACE_tourniquet",7},{"ACE_plasmaIV_250",2},{"ACE_salineIV_250",2},{"ACE_bloodIV_250",2},{"ACE_elasticBandage",10},{"ACE_quikclot",10},{"ACE_Chemlight_HiRed",1,1},{"ML700_frag_grenade_magazine",3,1},{"TIOW_6rnd_StubPistolMag",4,6},{"TIOW_Meltagun_Mag",5,5}}},"Cad_Inf_Helm776th","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
+        ALiVE_orbatCreator_loadout[] = {{"TIOW_MeltaGun_01","","","",{"TIOW_Meltagun_Mag",5},{},""},{},{"TIOW_StubPistol","","","",{"TIOW_6rnd_StubPistolMag",6},{},""},{"CadTnkUni776th_OP",{{"FirstAidKit",1},{"TIOW_chaos_frag_grenade_mag",2,1},{"TIOW_ig_smoke_grenade_mag",1,1},{"TIOW_Meltagun_Mag",3,5},{"TIOW_6rnd_StubPistolMag",3,6}}},{"Ren_ArmorSet_02_green",{{"ACE_fieldDressing",7},{"ACE_elasticBandage",7},{"TIOW_chaos_frag_grenade_mag",4,1},{"TIOW_chaos_krak_grenade_mag",4,1},{"TIOW_Meltagun_Mag",2,5}}},{"Ren_Backpack_02_black",{{"ACE_morphine",7},{"ACE_tourniquet",7},{"ACE_plasmaIV_250",2},{"ACE_salineIV_250",2},{"ACE_bloodIV_250",2},{"ACE_elasticBandage",10},{"ACE_quikclot",10},{"ACE_Chemlight_HiRed",1,1},{"ML700_frag_grenade_magazine",3,1},{"TIOW_6rnd_StubPistolMag",4,6},{"TIOW_Meltagun_Mag",5,5}}},"Cad_Inf_Helm776th","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -1022,7 +1022,7 @@ class CfgVehicles {
 
         identityTypes[] = {"Head_NATO","LanguageENGB"};
 
-        uniformClass = "CadTnkUni776th";
+        uniformClass = "CadTnkUni776th_OP";
 
         linkedItems[] = {"Ren_ArmorSet_02_black","Cad_Inf_Helm776th","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","TFAR_microdagr"};
         respawnlinkedItems[] = {"Ren_ArmorSet_02_black","Cad_Inf_Helm776th","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","TFAR_microdagr"};
@@ -1035,7 +1035,7 @@ class CfgVehicles {
 
         backpack = "Ren_Backpack_02_black";
 
-        ALiVE_orbatCreator_loadout[] = {{"Antioc43Lasgun","","","",{"TIOW_Antioc43_Mag",50},{},""},{"MissileLauncherDKOKGreen","","","",{"MLAT_Mag",1},{},""},{},{"CadTnkUni776th",{{"SmokeShellGreen",3,1},{"SmokeShellRed",3,1},{"HandGrenade",3,1},{"ACE_Chemlight_HiRed",1,1},{"TIOW_Antioc43_Mag",3,50}}},{"Ren_ArmorSet_02_black",{{"ACE_fieldDressing",7},{"ACE_packingBandage",7},{"ACE_morphine",7},{"ACE_tourniquet",7},{"TIOW_chaos_frag_grenade_mag",4,1},{"TIOW_chaos_krak_grenade_mag",4,1},{"TIOW_Antioc43_Mag",4,50}}},{"Ren_Backpack_02_black",{{"ACE_elasticBandage",5},{"ACE_quikclot",5},{"ACE_morphine",3},{"ACE_packingBandage",5},{"ACE_tourniquet",4},{"ACE_Chemlight_HiRed",1,1},{"MLAT_Mag",4,1},{"TIOW_Antioc43_MagHeavy",2,10}}},"Cad_Inf_Helm776th","TIOW_Cultist_FaceCover",{},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","TFAR_microdagr",""}};
+        ALiVE_orbatCreator_loadout[] = {{"Antioc43Lasgun","","","",{"TIOW_Antioc43_Mag",50},{},""},{"MissileLauncherDKOKGreen","","","",{"MLAT_Mag",1},{},""},{},{"CadTnkUni776th_OP",{{"SmokeShellGreen",3,1},{"SmokeShellRed",3,1},{"HandGrenade",3,1},{"ACE_Chemlight_HiRed",1,1},{"TIOW_Antioc43_Mag",3,50}}},{"Ren_ArmorSet_02_black",{{"ACE_fieldDressing",7},{"ACE_packingBandage",7},{"ACE_morphine",7},{"ACE_tourniquet",7},{"TIOW_chaos_frag_grenade_mag",4,1},{"TIOW_chaos_krak_grenade_mag",4,1},{"TIOW_Antioc43_Mag",4,50}}},{"Ren_Backpack_02_black",{{"ACE_elasticBandage",5},{"ACE_quikclot",5},{"ACE_morphine",3},{"ACE_packingBandage",5},{"ACE_tourniquet",4},{"ACE_Chemlight_HiRed",1,1},{"MLAT_Mag",4,1},{"TIOW_Antioc43_MagHeavy",2,10}}},"Cad_Inf_Helm776th","TIOW_Cultist_FaceCover",{},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","TFAR_microdagr",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -1062,7 +1062,7 @@ class CfgVehicles {
 
         identityTypes[] = {"Head_NATO","LanguageENGB"};
 
-        uniformClass = "CadTnkUni776th";
+        uniformClass = "CadTnkUni776th_OP";
 
         linkedItems[] = {"Ren_ArmorSet_02_black","Cad_Inf_Helm776th","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","TFAR_microdagr"};
         respawnlinkedItems[] = {"Ren_ArmorSet_02_black","Cad_Inf_Helm776th","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","TFAR_microdagr"};
@@ -1075,7 +1075,7 @@ class CfgVehicles {
 
         backpack = "Ren_Backpack_02_black";
 
-        ALiVE_orbatCreator_loadout[] = {{"TIOW_IG_GL","","","",{"TIOW_IG_GL_Frag_mag",8},{},""},{},{},{"CadTnkUni776th",{{"SmokeShellGreen",3,1},{"SmokeShellRed",3,1},{"HandGrenade",3,1},{"ACE_Chemlight_HiRed",1,1},{"TIOW_IG_GL_Frag_mag",1,8}}},{"Ren_ArmorSet_02_black",{{"ACE_fieldDressing",7},{"ACE_packingBandage",7},{"ACE_morphine",7},{"ACE_tourniquet",7},{"TIOW_chaos_frag_grenade_mag",4,1},{"TIOW_chaos_krak_grenade_mag",4,1},{"TIOW_IG_GL_Frag_mag",1,8}}},{"Ren_Backpack_02_black",{{"ACE_elasticBandage",5},{"ACE_quikclot",5},{"ACE_bloodIV_250",2},{"ACE_CableTie",4},{"ACE_EntrenchingTool",1},{"ACE_Fortify",1},{"ACE_morphine",3},{"ACE_packingBandage",5},{"ACE_personalAidKit",1},{"ACE_plasmaIV_250",2},{"ACE_salineIV_250",2},{"ACE_tourniquet",4},{"ACE_Chemlight_HiRed",1,1},{"TIOW_IG_GL_Frag_mag",2,8},{"TIOW_IG_GL_Krak_mag",2,8}}},"Cad_Inf_Helm776th","TIOW_Cultist_FaceCover",{},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","TFAR_microdagr",""}};
+        ALiVE_orbatCreator_loadout[] = {{"TIOW_IG_GL","","","",{"TIOW_IG_GL_Frag_mag",8},{},""},{},{},{"CadTnkUni776th_OP",{{"SmokeShellGreen",3,1},{"SmokeShellRed",3,1},{"HandGrenade",3,1},{"ACE_Chemlight_HiRed",1,1},{"TIOW_IG_GL_Frag_mag",1,8}}},{"Ren_ArmorSet_02_black",{{"ACE_fieldDressing",7},{"ACE_packingBandage",7},{"ACE_morphine",7},{"ACE_tourniquet",7},{"TIOW_chaos_frag_grenade_mag",4,1},{"TIOW_chaos_krak_grenade_mag",4,1},{"TIOW_IG_GL_Frag_mag",1,8}}},{"Ren_Backpack_02_black",{{"ACE_elasticBandage",5},{"ACE_quikclot",5},{"ACE_bloodIV_250",2},{"ACE_CableTie",4},{"ACE_EntrenchingTool",1},{"ACE_Fortify",1},{"ACE_morphine",3},{"ACE_packingBandage",5},{"ACE_personalAidKit",1},{"ACE_plasmaIV_250",2},{"ACE_salineIV_250",2},{"ACE_tourniquet",4},{"ACE_Chemlight_HiRed",1,1},{"TIOW_IG_GL_Frag_mag",2,8},{"TIOW_IG_GL_Krak_mag",2,8}}},"Cad_Inf_Helm776th","TIOW_Cultist_FaceCover",{},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","TFAR_microdagr",""}};
 
 
         class EventHandlers : EventHandlers {
