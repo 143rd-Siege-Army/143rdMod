@@ -215,6 +215,12 @@ class CfgVehicles
 		maximumLoad = 80;
 	};
 
+	// Invisible vox caster
+	class DK143_Voxcaster_Invisible: TIOW_IG_Vox_Caster
+	{
+		model = "\A3\Weapons_F\empty.p3d";
+	};
+
 	/*
 
 	Uniforms: Note that uniforms are being adjusted in TIOW by adjusting the health values of their base soldier classes.
