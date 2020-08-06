@@ -21,19 +21,19 @@ class CfgAmmo
 	class ShotgunBase;
 	class B_127x99_Ball;
 	class B_12Gauge_Pellets;
-	class medium_hit: BulletBase
-	{
-		hit = 9;
-		timeToLive = 0.0675;
-	};
-	class light_hit: medium_hit
-	{
-		hit = 5;
-	};
-	class hard_hit: medium_hit
-	{
-		hit = 12;
-	};
+	// class medium_hit: BulletBase
+	// {
+	// 	hit = 9;
+	// 	timeToLive = 0.0675;
+	// };
+	// class light_hit: medium_hit
+	// {
+	// 	hit = 5;
+	// };
+	// class hard_hit: medium_hit
+	// {
+	// 	hit = 12;
+	// };
 	class TIOW_LongLas_LasBolt: BulletBase
 	{
 		hit = 16;
