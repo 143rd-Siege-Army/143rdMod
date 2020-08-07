@@ -218,7 +218,17 @@ class CfgVehicles
 	// Invisible vox caster
 	class DK143_Voxcaster_Invisible: TIOW_IG_Vox_Caster
 	{
+		author = "Cpt. Stinkyrowanbutt";
+		displayName = "[Krieg] Voxcaster (Invisible)";
 		model = "\A3\Weapons_F\empty.p3d";
+		hiddenSelections[] = 
+		{
+			"camo","camo1"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"\A3\Weapons_F\empty.p3d",""
+		};
 	};
 
 	/*
