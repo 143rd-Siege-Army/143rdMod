@@ -6157,21 +6157,27 @@ Helmets
 				class Chest
 				{
 					HitpointName="HitChest";
-					armor=20;
+					armor= 16;
 					PassThrough=0.2;
 				};
 				class Diaphragm
 				{
 					HitpointName="HitDiaphragm";
-					armor=20;
+					armor= 16;
 					PassThrough=0.2;
 				};
 				class Abdomen
 				{
 					hitpointName="HitAbdomen";
-					armor=20;
+					armor= 16;
 					passThrough=0.2;
 				};
+				class Pelvis
+				{
+					hitpointName = "HitPelvis";
+					armor = 12;
+					passThrough = 0.4;
+				}
 				class Body
 				{
 					hitpointName="HitBody";
