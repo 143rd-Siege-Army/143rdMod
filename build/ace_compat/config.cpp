@@ -6177,7 +6177,7 @@ Helmets
 					hitpointName = "HitPelvis";
 					armor = 12;
 					passThrough = 0.4;
-				}
+				};
 				class Body
 				{
 					hitpointName="HitBody";
