@@ -64,7 +64,7 @@ class CfgAmmo
 	};
 	class Type14_LasBolt: BulletBase
 	{
-		hit = 11.6;
+		hit = 12;
 		caliber = 3;
 	};
 	class Lucius22c_Pellets: ShotgunBase
