@@ -164,6 +164,9 @@ class CfgMagazines
 		count = 10;
 		descriptionShort = "[DK143] LongLas Overcharged Powerpack";
 	};
+	
+	//Grim Dark Medium Stubber Mags go HERE
+	//HERE
 };
 class CfgVehicles
 {
