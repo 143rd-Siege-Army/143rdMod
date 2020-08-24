@@ -148,7 +148,7 @@ class CfgMagazines
 	class Lucius98_mag : CA_Magazine {};
 	class DK143_HotShot_Lucius_Mag : Lucius98_mag 
 	{ 
-		displayName "[DK143] Lucius Hotshot Laspack"; 
+		displayName = "[DK143] Lucius Hotshot Laspack"; 
 		ammo = "DK143_HotShot_Lucius98_Lasbolt"; 
 		count = 15;
 	};
