@@ -58,7 +58,7 @@ class CfgAmmo
 	{
 		//caliber for the lucius is already 3, so upping damage to 14 should significantly increase performance to match/exceed the Kantreal
 		hit = 14;
-	}
+	};
 	class TIOW_Antioc43_LasBolt: Lucius98_LasBolt
 	{
 		hit = 9;
@@ -143,9 +143,16 @@ class CfgMagazines
 		ammo = "DK143_KantRifle_HPBolt";
 		count = 20;
 	};
+	
 	//DKK hotshot laspack
-	//class wtfdidTIOWcallthisthing : CA_Magazine {};
-	//class DK143_HotShot_Lucius_Mag : wtfdidTIOWcallthisthing { displayName "[DK143] Lucius Hotshot Laspack"; ammo = "DK143_HotShot_Lucius98_Lasbolt"; count = 15;}
+	class Lucius98_mag : CA_Magazine {};
+	class DK143_HotShot_Lucius_Mag : Lucius98_mag 
+	{ 
+		displayName "[DK143] Lucius Hotshot Laspack"; 
+		ammo = "DK143_HotShot_Lucius98_Lasbolt"; 
+		count = 15;
+	};
+	
 	class TIOW_LongLas_Mag: CA_Magazine 
 	{
 		initSpeed = 1000;
@@ -2483,6 +2490,14 @@ class CfgWeapons
 	{
 		magazines[] = {"M36KantRifle_mag","DK143_KantRifleHP_Mag"};
 	};
+	// this adds the high power mags to the Lucius Lasgun
+	class Lucius98Lasgun : Rifle_Base_F
+	{
+		magazines[] = {"Lucius98_mag", "DK143_HotShot_Lucius_Mag"};
+	};
+	
+	//Medium Stubber stuff goes here
+	//stuff
 /*
 
 Helmets
