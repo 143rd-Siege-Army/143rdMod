@@ -126,12 +126,12 @@ class CfgAmmo
 	//Create new ammoumnition for medium stubber
 	class DK143_Medium_ManStopper : TIOW_Long825HSMS
 	{
-		hit = 12;
+		hit = 9;
 	};
 	
 	class DK143_Medium_Expanders : TIOW_Long825HSER
 	{
-		hit = 14;
+		hit = 10;
 	};
 	
 	class DK143_Medium_Amputators : TIOW_Long825HSA
