@@ -7,7 +7,7 @@ class CfgPatches
 		author = "Siggyfreed";
 		name = "DK143 TIOW ACE Compat";
 		requiredAddons[] = 
-        {"ace_common", "DkoKFoot","CadFoot","OrkBoyz","TIOWSpaceMarines"}; //GD weapons + GD ACE Patch
+        {"ace_common", "DkoKFoot","CadFoot","OrkBoyz","TIOWSpaceMarines", "ML700_Weapons"}; 
 		requiredVersion = 0.1;
 		units[] = {};
 		weapons[] = {};
@@ -122,11 +122,23 @@ class CfgAmmo
 		hit = 5;
 	};
 	
-	//Grim Dark edits here:
-	//Medium Stubber
+	//Grim Dark edits here
+	//Create new ammoumnition for medium stubber
+	class DK143_Medium_ManStopper : TIOW_Long825HSMS
+	{
+		hit = 12;
+	};
 	
-	//Medium Stubber extra ammo types
+	class DK143_Medium_Expanders : TIOW_Long825HSER
+	{
+		hit = 14;
+	};
 	
+	class DK143_Medium_Amputators : TIOW_Long825HSA
+	{
+		hit = 6;
+		indirectHit = 2;
+	};
 };
 
 class CfgMagazines
@@ -166,7 +178,32 @@ class CfgMagazines
 	};
 	
 	//Grim Dark Medium Stubber Mags go HERE
-	//HERE
+	class 200Rnd_556x45_Box_F; //import base class
+	class ML700_Stubber_Drum: 200Rnd_556x45_Box_F {}; // import the GD class for the base mag
+	
+	class DK143_Expander_Drum : ML700_Stubber_Drum // Expanders Drum
+	{
+		displayname = "100rnd Stubber Expander Drum";
+		displaynameshort = "Stubber Expander Drum Magazine";
+		ammo = "DK143_Medium_Expanders";
+		count = 100;
+	};
+	
+	class DK143_Amputators_Drum : ML700_Stubber_Drum // Amputators
+	{
+		displayname = "100rnd Stubber Amputators Drum";
+		displaynameshort = "Stubber Amputators Drum Magazine";
+		ammo = "DK143_Medium_Amputators";
+		count = 100;
+	};
+	
+	class DK143_ManStopper_Drum : ML700_Stubber_Drum // Manstoppers
+	{
+		displayname = "100rnd Stubber ManStopper Drum";
+		displaynameshort = "Stubber ManStopper Drum Magazine";
+		ammo = "DK143_Medium_ManStopper";
+		count = 100;
+	};
 };
 class CfgVehicles
 {
@@ -2499,8 +2536,21 @@ class CfgWeapons
 		magazines[] = {"Lucius98_mag", "DK143_HotShot_Lucius_Mag"};
 	};
 	
-	//Medium Stubber stuff goes here
-	//stuff
+	//Medium Stubber changes to the magazines go here
+	class LMG_Mk200_F;
+	class ML700_MachineGun_Base: LMG_Mk200_F{};
+	class ML700_LMG_Stubber_base_F: ML700_MachineGun_Base{};
+	
+	class ML700_LMG_Stubber_Black: ML700_LMG_Stubber_base_F
+	{
+		magazines[] = {"ML700_Stubber_Drum","ML700_Stubber_Drum_Green","ML700_Stubber_Drum_Red","ML700_Stubber_Drum_Yellow", "DK143_Expander_Drum", "DK143_Amputators_Drum", "DK143_ManStopper_Drum"};
+	};
+	
+	class ML700_LMG_Stubber_Green: ML700_LMG_Stubber_Black
+	{
+		magazines[] = {"ML700_Stubber_Drum","ML700_Stubber_Drum_Green","ML700_Stubber_Drum_Red","ML700_Stubber_Drum_Yellow", "DK143_Expander_Drum", "DK143_Amputators_Drum", "DK143_ManStopper_Drum"};
+	};
+	
 /*
 
 Helmets
