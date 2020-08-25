@@ -234,7 +234,7 @@ class CfgMagazines
 		displayName = "150 Round Heavy Stubber Magazine";
 		descriptionShort = "150 Round Magazine";
 		count = 150;
-		mass = 40; 
+		mass = 30; 
 	};
 	
 	class DK143_150Rnd_Hvy_Stubber_Tracer_Mag : TIOW_50Rnd_Stubber_mag_Tracer
@@ -242,7 +242,7 @@ class CfgMagazines
 		displayName = "150 Round Heavy Stubber Magazine, Tracers";
 		descriptionShort = "150 Round Tracer Magazine";
 		count = 150;
-		mass = 40; 
+		mass = 30; 
 	};
 	
 	class DK143_150Rnd_Hvy_Stubber_Amput_Mag : TIOW_50Rnd_Stubber_amput
@@ -250,7 +250,7 @@ class CfgMagazines
 		displayName = "150 Round Heavy Stubber Magazine, Amputators";
 		descriptionShort = "150 Round Amputator Magazine";
 		count = 150;
-		mass = 40; 
+		mass = 30; 
 	};
 	
 	class DK143_150Rnd_Hvy_Stubber_Manstop_Mag : TIOW_50Rnd_Stubber_manstop
@@ -258,7 +258,7 @@ class CfgMagazines
 		displayName = "150 Round Heavy Stubber Magazine, ManStoppers";
 		descriptionShort = "150 Round ManStoppers Magazine";
 		count = 150;
-		mass = 40; 
+		mass = 30; 
 	};
 	
 	class DK143_150Rnd_Hvy_Stubber_Expander_Mag : TIOW_50Rnd_Stubber_expander
@@ -266,7 +266,7 @@ class CfgMagazines
 		displayName = "150 Round Heavy Stubber Magazine, Expanders";
 		descriptionShort = "150 Round Expanders Magazine";
 		count = 150;
-		mass = 40; 
+		mass = 30; 
 	};
 	
 };
