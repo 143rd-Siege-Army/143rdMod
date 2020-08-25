@@ -204,6 +204,71 @@ class CfgMagazines
 		ammo = "DK143_Medium_ManStopper";
 		count = 100;
 	};
+	
+	// Heavy Stubber larger mags
+	// call TIOW classes for inheritance
+	class TIOW_50Rnd_Stubber_mag: CA_Magazine 
+	{
+		tracersEvery = 5;
+	};
+	class TIOW_50Rnd_Stubber_mag_Tracer: TIOW_50Rnd_Stubber_mag 
+	{
+		tracersEvery = 2;
+	};
+	class TIOW_50Rnd_Stubber_amput: CA_Magazine 
+	{
+		tracersEvery = 5;
+	};
+	class TIOW_50Rnd_Stubber_manstop: CA_Magazine 
+	{
+		tracersEvery = 5;
+	};
+	class TIOW_50Rnd_Stubber_expander: CA_Magazine 
+	{
+		tracersEvery = 5;
+	};
+	
+	// now to define larger mags for the heavy stubber
+	class DK143_150Rnd_Hvy_Stubber_Mag : TIOW_50Rnd_Stubber_mag 
+	{
+		displayName = "150 Round Heavy Stubber Magazine";
+		descriptionShort = "150 Round Magazine";
+		count = 150;
+		mass = 40; 
+	};
+	
+	class DK143_150Rnd_Hvy_Stubber_Tracer_Mag : TIOW_50Rnd_Stubber_mag_Tracer
+	{
+		displayName = "150 Round Heavy Stubber Magazine, Tracers";
+		descriptionShort = "150 Round Tracer Magazine";
+		count = 150;
+		mass = 40; 
+	};
+	
+	class DK143_150Rnd_Hvy_Stubber_Amput_Mag : TIOW_50Rnd_Stubber_amput
+	{
+		displayName = "150 Round Heavy Stubber Magazine, Amputators";
+		descriptionShort = "150 Round Amputator Magazine";
+		count = 150;
+		mass = 40; 
+	};
+	
+	class DK143_150Rnd_Hvy_Stubber_Manstop_Mag : TIOW_50Rnd_Stubber_manstop
+	{
+		displayName = "150 Round Heavy Stubber Magazine, ManStoppers";
+		descriptionShort = "150 Round ManStoppers Magazine";
+		count = 150;
+		mass = 40; 
+	};
+	
+	class DK143_150Rnd_Hvy_Stubber_Expander_Mag : TIOW_50Rnd_Stubber_expander
+	{
+		displayName = "150 Round Heavy Stubber Magazine, Expanders";
+		descriptionShort = "150 Round Expanders Magazine";
+		count = 150;
+		mass = 40; 
+	};
+	
 };
 class CfgVehicles
 {
@@ -2549,6 +2614,11 @@ class CfgWeapons
 	class ML700_LMG_Stubber_Green: ML700_LMG_Stubber_Black
 	{
 		magazines[] = {"ML700_Stubber_Drum","ML700_Stubber_Drum_Green","ML700_Stubber_Drum_Red","ML700_Stubber_Drum_Yellow", "DK143_Expander_Drum", "DK143_Amputators_Drum", "DK143_ManStopper_Drum"};
+	};
+	
+	class KriegHeavyStubber : Rifle_Base_F 
+	{
+		magazines[] = {"TIOW_50Rnd_Stubber_mag","TIOW_50Rnd_Stubber_mag_Tracer","TIOW_50Rnd_Stubber_amput","TIOW_50Rnd_Stubber_manstop","TIOW_50Rnd_Stubber_expander", "DK143_150Rnd_Hvy_Stubber_Expander_Mag", "DK143_150Rnd_Hvy_Stubber_Manstop_Mag", "DK143_150Rnd_Hvy_Stubber_Amput_Mag", "DK143_150Rnd_Hvy_Stubber_Tracer_Mag", "DK143_150Rnd_Hvy_Stubber_Mag"};
 	};
 	
 /*
