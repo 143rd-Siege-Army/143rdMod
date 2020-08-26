@@ -21,6 +21,7 @@ class CfgAmmo
 	class ShotgunBase;
 	class B_127x99_Ball;
 	class B_12Gauge_Pellets;
+	class B_762x51_Ball;
 	// class medium_hit: BulletBase
 	// {
 	// 	hit = 9;
@@ -124,20 +125,28 @@ class CfgAmmo
 	
 	//Grim Dark edits here
 	//Create new ammoumnition for medium stubber
-	class DK143_Medium_ManStopper : TIOW_Long825HSMS
+	class DK143_Medium_ManStopper : B_762x51_Ball
+	{
+		hit = 12;
+		caliber = 1.7;
+	};
+	
+	class DK143_Medium_Expanders : B_762x51_Ball
 	{
 		hit = 9;
+		caliber = 2.5
 	};
 	
-	class DK143_Medium_Expanders : TIOW_Long825HSER
-	{
-		hit = 10;
-	};
-	
-	class DK143_Medium_Amputators : TIOW_Long825HSA
+	class DK143_Medium_Amputators : B_762x51_Ball
 	{
 		hit = 6;
 		indirectHit = 2;
+		indirectHitRange = 1;
+		explosive = 0.25;
+		explosionSoundEffect = "DefaultExplosion";
+		CraterEffects = "";
+		explosionEffects = "AmputatorRoundExplosion";
+		
 	};
 };
 
