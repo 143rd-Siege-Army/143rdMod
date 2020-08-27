@@ -304,7 +304,7 @@ class CfgGroups {
                         position[] = {10,-10,0};
                         rank = "CORPORAL";
                         side = 2;
-                        vehicle = "TIOW_Mordian_Plasmagunner_1_Indep1";
+                        vehicle = "TIOW_Mordian_Plasmagunner_1_Indep";
                     };
                     class Unit3 {
                         position[] = {-5,-15,0};
@@ -376,7 +376,7 @@ class CfgGroups {
                         position[] = {5,-5,0};
                         rank = "PRIVATE";
                         side = 2;
-                        vehicle = "TIOW_Mordian_Plasmagunner_1_Indep1";
+                        vehicle = "TIOW_Mordian_Plasmagunner_1_Indep";
                     };
                     class Unit2 {
                         position[] = {-5,-5,0};
@@ -426,7 +426,7 @@ class CfgGroups {
                         position[] = {10,-10,0};
                         rank = "CORPORAL";
                         side = 2;
-                        vehicle = "TIOW_Mordian_Plasmagunner_1_Indep1";
+                        vehicle = "TIOW_Mordian_Plasmagunner_1_Indep";
                     };
                     class Unit3 {
                         position[] = {-5,-15,0};
