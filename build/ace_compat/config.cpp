@@ -127,7 +127,7 @@ class CfgAmmo
 	//Create new ammoumnition for medium stubber
 	class DK143_Medium_ManStopper : B_762x51_Ball
 	{
-		hit = 12;
+		hit = 10;
 		caliber = 1.7;
 	};
 	
