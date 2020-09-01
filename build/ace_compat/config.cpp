@@ -7,7 +7,7 @@ class CfgPatches
 		author = "Siggyfreed";
 		name = "DK143 TIOW ACE Compat";
 		requiredAddons[] = 
-        {"ace_common", "DkoKFoot","CadFoot","OrkBoyz","TIOWSpaceMarines"};
+        {"ace_common", "DkoKFoot","CadFoot","OrkBoyz","TIOWSpaceMarines", "ML700_Weapons"}; 
 		requiredVersion = 0.1;
 		units[] = {};
 		weapons[] = {};
@@ -21,6 +21,7 @@ class CfgAmmo
 	class ShotgunBase;
 	class B_127x99_Ball;
 	class B_12Gauge_Pellets;
+	class B_762x51_Ball;
 	// class medium_hit: BulletBase
 	// {
 	// 	hit = 9;
@@ -53,6 +54,11 @@ class CfgAmmo
 	class Lucius98_LasBolt: BulletBase
 	{
 		hit = 10;
+	};
+	class DK143_HotShot_Lucius98_Lasbolt : Lucius98_LasBolt
+	{
+		//caliber for the lucius is already 3, so upping damage to 14 should significantly increase performance to match/exceed the Kantreal
+		hit = 14;
 	};
 	class TIOW_Antioc43_LasBolt: Lucius98_LasBolt
 	{
@@ -116,6 +122,32 @@ class CfgAmmo
 	{
 		hit = 5;
 	};
+	
+	//Grim Dark edits here
+	//Create new ammoumnition for medium stubber
+	class DK143_Medium_ManStopper : B_762x51_Ball
+	{
+		hit = 10;
+		caliber = 1.7;
+	};
+	
+	class DK143_Medium_Expanders : B_762x51_Ball
+	{
+		hit = 9;
+		caliber = 2.5
+	};
+	
+	class DK143_Medium_Amputators : B_762x51_Ball
+	{
+		hit = 6;
+		indirectHit = 2;
+		indirectHitRange = 1;
+		explosive = 0.25;
+		explosionSoundEffect = "DefaultExplosion";
+		CraterEffects = "";
+		explosionEffects = "AmputatorRoundExplosion";
+		
+	};
 };
 
 class CfgMagazines
@@ -132,6 +164,16 @@ class CfgMagazines
 		ammo = "DK143_KantRifle_HPBolt";
 		count = 20;
 	};
+	
+	//DKK hotshot laspack
+	class Lucius98_mag : CA_Magazine {};
+	class DK143_HotShot_Lucius_Mag : Lucius98_mag 
+	{ 
+		displayName = "[DK143] Lucius Hotshot Laspack"; 
+		ammo = "DK143_HotShot_Lucius98_Lasbolt"; 
+		count = 15;
+	};
+	
 	class TIOW_LongLas_Mag: CA_Magazine 
 	{
 		initSpeed = 1000;
@@ -143,6 +185,99 @@ class CfgMagazines
 		count = 10;
 		descriptionShort = "[DK143] LongLas Overcharged Powerpack";
 	};
+	
+	//Grim Dark Medium Stubber Mags go HERE
+	class 200Rnd_556x45_Box_F; //import base class
+	class ML700_Stubber_Drum: 200Rnd_556x45_Box_F {}; // import the GD class for the base mag
+	
+	class DK143_Expander_Drum : ML700_Stubber_Drum // Expanders Drum
+	{
+		displayname = "100rnd Stubber Expander Drum";
+		displaynameshort = "Stubber Expander Drum Magazine";
+		ammo = "DK143_Medium_Expanders";
+		count = 100;
+	};
+	
+	class DK143_Amputators_Drum : ML700_Stubber_Drum // Amputators
+	{
+		displayname = "100rnd Stubber Amputators Drum";
+		displaynameshort = "Stubber Amputators Drum Magazine";
+		ammo = "DK143_Medium_Amputators";
+		count = 100;
+	};
+	
+	class DK143_ManStopper_Drum : ML700_Stubber_Drum // Manstoppers
+	{
+		displayname = "100rnd Stubber ManStopper Drum";
+		displaynameshort = "Stubber ManStopper Drum Magazine";
+		ammo = "DK143_Medium_ManStopper";
+		count = 100;
+	};
+	
+	// Heavy Stubber larger mags
+	// call TIOW classes for inheritance
+	class TIOW_50Rnd_Stubber_mag: CA_Magazine 
+	{
+		tracersEvery = 5;
+	};
+	class TIOW_50Rnd_Stubber_mag_Tracer: TIOW_50Rnd_Stubber_mag 
+	{
+		tracersEvery = 2;
+	};
+	class TIOW_50Rnd_Stubber_amput: CA_Magazine 
+	{
+		tracersEvery = 5;
+	};
+	class TIOW_50Rnd_Stubber_manstop: CA_Magazine 
+	{
+		tracersEvery = 5;
+	};
+	class TIOW_50Rnd_Stubber_expander: CA_Magazine 
+	{
+		tracersEvery = 5;
+	};
+	
+	// now to define larger mags for the heavy stubber
+	class DK143_150Rnd_Hvy_Stubber_Mag : TIOW_50Rnd_Stubber_mag 
+	{
+		displayName = "150 Round Heavy Stubber Magazine";
+		descriptionShort = "150 Round Magazine";
+		count = 150;
+		mass = 30; 
+	};
+	
+	class DK143_150Rnd_Hvy_Stubber_Tracer_Mag : TIOW_50Rnd_Stubber_mag_Tracer
+	{
+		displayName = "150 Round Heavy Stubber Magazine, Tracers";
+		descriptionShort = "150 Round Tracer Magazine";
+		count = 150;
+		mass = 30; 
+	};
+	
+	class DK143_150Rnd_Hvy_Stubber_Amput_Mag : TIOW_50Rnd_Stubber_amput
+	{
+		displayName = "150 Round Heavy Stubber Magazine, Amputators";
+		descriptionShort = "150 Round Amputator Magazine";
+		count = 150;
+		mass = 30; 
+	};
+	
+	class DK143_150Rnd_Hvy_Stubber_Manstop_Mag : TIOW_50Rnd_Stubber_manstop
+	{
+		displayName = "150 Round Heavy Stubber Magazine, ManStoppers";
+		descriptionShort = "150 Round ManStoppers Magazine";
+		count = 150;
+		mass = 30; 
+	};
+	
+	class DK143_150Rnd_Hvy_Stubber_Expander_Mag : TIOW_50Rnd_Stubber_expander
+	{
+		displayName = "150 Round Heavy Stubber Magazine, Expanders";
+		descriptionShort = "150 Round Expanders Magazine";
+		count = 150;
+		mass = 30; 
+	};
+	
 };
 class CfgVehicles
 {
@@ -2469,6 +2604,32 @@ class CfgWeapons
 	{
 		magazines[] = {"M36KantRifle_mag","DK143_KantRifleHP_Mag"};
 	};
+	// this adds the high power mags to the Lucius Lasgun
+	class Lucius98Lasgun : Rifle_Base_F
+	{
+		magazines[] = {"Lucius98_mag", "DK143_HotShot_Lucius_Mag"};
+	};
+	
+	//Medium Stubber changes to the magazines go here
+	class LMG_Mk200_F;
+	class ML700_MachineGun_Base: LMG_Mk200_F{};
+	class ML700_LMG_Stubber_base_F: ML700_MachineGun_Base{};
+	
+	class ML700_LMG_Stubber_Black: ML700_LMG_Stubber_base_F
+	{
+		magazines[] = {"ML700_Stubber_Drum","ML700_Stubber_Drum_Green","ML700_Stubber_Drum_Red","ML700_Stubber_Drum_Yellow", "DK143_Expander_Drum", "DK143_Amputators_Drum", "DK143_ManStopper_Drum"};
+	};
+	
+	class ML700_LMG_Stubber_Green: ML700_LMG_Stubber_Black
+	{
+		magazines[] = {"ML700_Stubber_Drum","ML700_Stubber_Drum_Green","ML700_Stubber_Drum_Red","ML700_Stubber_Drum_Yellow", "DK143_Expander_Drum", "DK143_Amputators_Drum", "DK143_ManStopper_Drum"};
+	};
+	
+	class KriegHeavyStubber : Rifle_Base_F 
+	{
+		magazines[] = {"TIOW_50Rnd_Stubber_mag","TIOW_50Rnd_Stubber_mag_Tracer","TIOW_50Rnd_Stubber_amput","TIOW_50Rnd_Stubber_manstop","TIOW_50Rnd_Stubber_expander", "DK143_150Rnd_Hvy_Stubber_Expander_Mag", "DK143_150Rnd_Hvy_Stubber_Manstop_Mag", "DK143_150Rnd_Hvy_Stubber_Amput_Mag", "DK143_150Rnd_Hvy_Stubber_Tracer_Mag", "DK143_150Rnd_Hvy_Stubber_Mag"};
+	};
+	
 /*
 
 Helmets
