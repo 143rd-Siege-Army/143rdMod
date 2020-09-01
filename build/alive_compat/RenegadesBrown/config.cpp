@@ -1037,9 +1037,9 @@ class CfgVehicles {
 			magazines[] = {"TIOW_Meltagun_Mag","TIOW_6rnd_StubPistolMag","TIOW_Meltagun_Mag","TIOW_6rnd_StubPistolMag"};
 			respawnMagazines[] = {"TIOW_Meltagun_Mag","TIOW_6rnd_StubPistolMag","TIOW_Meltagun_Mag","TIOW_6rnd_StubPistolMag"};
 
-			backpack = "Ren_Backpack_02_Brown_Melta";
+			backpack = "Ren_Backpack_02_Black";
 
-			ALiVE_orbatCreator_loadout[] = {{"TIOW_MeltaGun_01","","","",{"TIOW_Meltagun_Mag",5},{},""},{},{"TIOW_StubPistol","","","",{"TIOW_6rnd_StubPistolMag",6},{},""},{"OP_Ren_Uniform_01_Brown",{{"FirstAidKit",1},{"TIOW_Meltagun_Mag",2,5},{"TIOW_6rnd_StubPistolMag",2,6}}},{"Ren_ArmorSet_02_Brown",{}},{"Ren_Backpack_02_Brown_Melta",{{"TIOW_Meltagun_Mag",3,5}}},"","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
+			ALiVE_orbatCreator_loadout[] = {{"TIOW_MeltaGun_01","","","",{"TIOW_Meltagun_Mag",5},{},""},{},{"TIOW_StubPistol","","","",{"TIOW_6rnd_StubPistolMag",6},{},""},{"OP_Ren_Uniform_01_Brown",{{"FirstAidKit",1},{"TIOW_Meltagun_Mag",2,5},{"TIOW_6rnd_StubPistolMag",2,6}}},{"Ren_ArmorSet_02_Brown",{}},{"Ren_Backpack_02_Black",{{"TIOW_Meltagun_Mag",3,5}}},"","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
 
 
 			class EventHandlers : EventHandlers {
@@ -1077,9 +1077,9 @@ class CfgVehicles {
 			magazines[] = {"TIOW_50Rnd_Stubber_mag_Tracer","TIOW_50Rnd_Stubber_mag_Tracer"};
 			respawnMagazines[] = {"TIOW_50Rnd_Stubber_mag_Tracer","TIOW_50Rnd_Stubber_mag_Tracer"};
 
-			backpack = "Ren_Backpack_02_Brown_LMG";
+			backpack = "Ren_Backpack_02_Black";
 
-			ALiVE_orbatCreator_loadout[] = {{"KriegHeavyStubberDK","","","",{"TIOW_50Rnd_Stubber_mag_Tracer",50},{},"KriegHeavyStubberDK_Bipod"},{},{},{"OP_Ren_Uniform_01_Brown",{{"FirstAidKit",1},{"TIOW_50Rnd_Stubber_mag_Tracer",2,50},{"20Rnd_Agrip_mag_Tracer",1,30}}},{"Ren_ArmorSet_01_green",{}},{"Ren_Backpack_02_Brown_LMG",{{"30Rnd_Agrip_mag",2,30},{"20Rnd_Agrip_mag_Tracer",2,30}}},"","Ren_Gasmask_01",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
+			ALiVE_orbatCreator_loadout[] = {{"KriegHeavyStubberDK","","","",{"TIOW_50Rnd_Stubber_mag_Tracer",50},{},"KriegHeavyStubberDK_Bipod"},{},{},{"OP_Ren_Uniform_01_Brown",{{"FirstAidKit",1},{"TIOW_50Rnd_Stubber_mag_Tracer",2,50},{"20Rnd_Agrip_mag_Tracer",1,30}}},{"Ren_ArmorSet_01_green",{}},{"Ren_Backpack_02_Black",{{"30Rnd_Agrip_mag",2,30},{"20Rnd_Agrip_mag_Tracer",2,30}}},"","Ren_Gasmask_01",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
 
 
 			class EventHandlers : EventHandlers {
@@ -1117,9 +1117,9 @@ class CfgVehicles {
 			magazines[] = {"20Rnd_Agrip_mag","20Rnd_Agrip_mag"};
 			respawnMagazines[] = {"20Rnd_Agrip_mag","20Rnd_Agrip_mag"};
 
-			backpack = "Ren_Backpack_02_Brown_Medic_Mil";
+			backpack = "Ren_Backpack_02_Black";
 
-			ALiVE_orbatCreator_loadout[] = {{"TIOW_Type3_AgripinaaAuto_Base","","","",{"20Rnd_Agrip_mag",30},{},""},{},{},{"OP_Ren_Uniform_01_Brown",{{"FirstAidKit",1},{"20Rnd_Agrip_mag",8,30}}},{"Ren_ArmorSet_02_Brown",{{"20Rnd_Agrip_mag",3,30},{"TIOW_chaos_frag_grenade_mag",1,1}}},{"Ren_Backpack_02_Brown_Medic_Mil",{{"FirstAidKit",8}}},"","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
+			ALiVE_orbatCreator_loadout[] = {{"TIOW_Type3_AgripinaaAuto_Base","","","",{"20Rnd_Agrip_mag",30},{},""},{},{},{"OP_Ren_Uniform_01_Brown",{{"FirstAidKit",1},{"20Rnd_Agrip_mag",8,30}}},{"Ren_ArmorSet_02_Brown",{{"20Rnd_Agrip_mag",3,30},{"TIOW_chaos_frag_grenade_mag",1,1}}},{"Ren_Backpack_02_Black",{{"FirstAidKit",8}}},"","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
 
 
 			class EventHandlers : EventHandlers {
@@ -1311,9 +1311,9 @@ class CfgVehicles {
 			magazines[] = {"30Rnd_Agrip_mag","MLAT_Mag","30Rnd_Agrip_mag"};
 			respawnMagazines[] = {"30Rnd_Agrip_mag","MLAT_Mag","30Rnd_Agrip_mag"};
 
-			backpack = "Ren_Backpack_02_Brown_AT";
+			backpack = "Ren_Backpack_02_Black";
 
-			ALiVE_orbatCreator_loadout[] = {{"AgripinaaAutoChaos","","","",{"30Rnd_Agrip_mag",30},{},""},{"MissileLauncherDKOKGreen","","","",{"MLAT_Mag",1},{},""},{},{"OP_Ren_Uniform_01_Brown",{{"FirstAidKit",1},{"30Rnd_Agrip_mag",3,30},{"TIOW_chaos_frag_grenade_mag",2,1},{"TIOW_ig_smoke_grenade_mag",1,1}}},{"Ren_ArmorSet_02_Brown",{}},{"Ren_Backpack_02_Brown_AT",{{"MLAT_Mag",3,1},{"MLHE_Mag",2,1}}},"","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
+			ALiVE_orbatCreator_loadout[] = {{"AgripinaaAutoChaos","","","",{"30Rnd_Agrip_mag",30},{},""},{"MissileLauncherDKOKGreen","","","",{"MLAT_Mag",1},{},""},{},{"OP_Ren_Uniform_01_Brown",{{"FirstAidKit",1},{"30Rnd_Agrip_mag",3,30},{"TIOW_chaos_frag_grenade_mag",2,1},{"TIOW_ig_smoke_grenade_mag",1,1}}},{"Ren_ArmorSet_02_Brown",{}},{"Ren_Backpack_02_Black",{{"MLAT_Mag",3,1},{"MLHE_Mag",2,1}}},"","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
 
 
 			class EventHandlers : EventHandlers {
@@ -1351,9 +1351,9 @@ class CfgVehicles {
 			magazines[] = {"30Rnd_Agrip_mag","30Rnd_Agrip_mag"};
 			respawnMagazines[] = {"30Rnd_Agrip_mag","30Rnd_Agrip_mag"};
 
-			backpack = "Ren_Backpack_02_Brown_Medic";
+			backpack = "Ren_Backpack_02_Black";
 
-			ALiVE_orbatCreator_loadout[] = {{"TIOW_Type3_AgripinaaAuto_Base","","","",{"30Rnd_Agrip_mag",30},{},""},{},{},{"OP_Ren_Uniform_01_Brown",{{"FirstAidKit",1},{"30Rnd_Agrip_mag",3,30},{"TIOW_chaos_frag_grenade_mag",2,1},{"TIOW_ig_smoke_grenade_mag",1,1}}},{"Ren_ArmorSet_02_Brown",{}},{"Ren_Backpack_02_Brown_Medic",{{"FirstAidKit",10},{"Medikit",1}}},"","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
+			ALiVE_orbatCreator_loadout[] = {{"TIOW_Type3_AgripinaaAuto_Base","","","",{"30Rnd_Agrip_mag",30},{},""},{},{},{"OP_Ren_Uniform_01_Brown",{{"FirstAidKit",1},{"30Rnd_Agrip_mag",3,30},{"TIOW_chaos_frag_grenade_mag",2,1},{"TIOW_ig_smoke_grenade_mag",1,1}}},{"Ren_ArmorSet_02_Brown",{}},{"Ren_Backpack_02_Black",{{"FirstAidKit",10},{"Medikit",1}}},"","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
 
 
 			class EventHandlers : EventHandlers {
@@ -1391,9 +1391,9 @@ class CfgVehicles {
 			magazines[] = {"TIOW_50Rnd_Stubber_mag","TIOW_50Rnd_Stubber_mag"};
 			respawnMagazines[] = {"TIOW_50Rnd_Stubber_mag","TIOW_50Rnd_Stubber_mag"};
 
-			backpack = "Ren_Backpack_02_Brown_LMG";
+			backpack = "Ren_Backpack_02_Black";
 
-			ALiVE_orbatCreator_loadout[] = {{"KriegHeavyStubberDK","","","",{"TIOW_50Rnd_Stubber_mag",50},{},"KriegHeavyStubberDK_Bipod"},{},{},{"OP_Ren_Uniform_01_Brown",{{"FirstAidKit",1},{"TIOW_50Rnd_Stubber_mag",3,50},{"TIOW_chaos_frag_grenade_mag",2,1},{"TIOW_ig_smoke_grenade_mag",1,1}}},{"Ren_ArmorSet_01_green",{}},{"Ren_Backpack_02_Brown_LMG",{{"30Rnd_Agrip_mag",2,30},{"20Rnd_Agrip_mag_Tracer",2,30}}},"","Ren_Gasmask_02",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
+			ALiVE_orbatCreator_loadout[] = {{"KriegHeavyStubberDK","","","",{"TIOW_50Rnd_Stubber_mag",50},{},"KriegHeavyStubberDK_Bipod"},{},{},{"OP_Ren_Uniform_01_Brown",{{"FirstAidKit",1},{"TIOW_50Rnd_Stubber_mag",3,50},{"TIOW_chaos_frag_grenade_mag",2,1},{"TIOW_ig_smoke_grenade_mag",1,1}}},{"Ren_ArmorSet_01_green",{}},{"Ren_Backpack_02_Black",{{"30Rnd_Agrip_mag",2,30},{"20Rnd_Agrip_mag_Tracer",2,30}}},"","Ren_Gasmask_02",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
 
 
 			class EventHandlers : EventHandlers {
@@ -1431,9 +1431,9 @@ class CfgVehicles {
 			magazines[] = {"TIOW_Meltagun_Mag","TIOW_6rnd_StubPistolMag","TIOW_Meltagun_Mag","TIOW_6rnd_StubPistolMag"};
 			respawnMagazines[] = {"TIOW_Meltagun_Mag","TIOW_6rnd_StubPistolMag","TIOW_Meltagun_Mag","TIOW_6rnd_StubPistolMag"};
 
-			backpack = "Ren_Backpack_02_Brown_Melta";
+			backpack = "Ren_Backpack_02_Black";
 
-			ALiVE_orbatCreator_loadout[] = {{"TIOW_MeltaGun_01","","","",{"TIOW_Meltagun_Mag",5},{},""},{},{"TIOW_StubPistol","","","",{"TIOW_6rnd_StubPistolMag",6},{},""},{"OP_Ren_Uniform_01_Brown",{{"FirstAidKit",1},{"TIOW_Meltagun_Mag",2,5},{"TIOW_6rnd_StubPistolMag",2,6},{"TIOW_chaos_frag_grenade_mag",2,1},{"TIOW_ig_smoke_grenade_mag",1,1}}},{"Ren_ArmorSet_02_Brown",{}},{"Ren_Backpack_02_Brown_Melta",{{"TIOW_Meltagun_Mag",3,5}}},"","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
+			ALiVE_orbatCreator_loadout[] = {{"TIOW_MeltaGun_01","","","",{"TIOW_Meltagun_Mag",5},{},""},{},{"TIOW_StubPistol","","","",{"TIOW_6rnd_StubPistolMag",6},{},""},{"OP_Ren_Uniform_01_Brown",{{"FirstAidKit",1},{"TIOW_Meltagun_Mag",2,5},{"TIOW_6rnd_StubPistolMag",2,6},{"TIOW_chaos_frag_grenade_mag",2,1},{"TIOW_ig_smoke_grenade_mag",1,1}}},{"Ren_ArmorSet_02_Brown",{}},{"Ren_Backpack_02_Black",{{"TIOW_Meltagun_Mag",3,5}}},"","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
 
 
 			class EventHandlers : EventHandlers {
@@ -1471,7 +1471,7 @@ class CfgVehicles {
 			magazines[] = {"DK_PlasmaGun_Flask","DK_PlasmaGun_Flask"};
 			respawnMagazines[] = {"DK_PlasmaGun_Flask","DK_PlasmaGun_Flask"};
 
-			backpack = "Ren_Backpack_02_Brown_Plasma";
+			backpack = "Ren_Backpack_02_Black";
 
 			ALiVE_orbatCreator_loadout[] = {{"Chaos_PlasmaGun","","","",{"DK_PlasmaGun_Flask",10},{},""},{},{},{"OP_Ren_Uniform_01_Brown",{{"FirstAidKit",1},{"DK_PlasmaGun_Flask",1,10},{"TIOW_chaos_frag_grenade_mag",2,1}}},{"Ren_ArmorSet_02_Brown",{{"DK_PlasmaGun_Flask",1,10},{"TIOW_ig_smoke_grenade_mag",1,1}}},{"Ren_Backpack_02_black_Plasma",{{"DK_PlasmaGun_Flask",3,10}}},"","Ren_Gasmask_02",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
 
@@ -1511,9 +1511,9 @@ class CfgVehicles {
 			magazines[] = {"30Rnd_Agrip_mag","30Rnd_Agrip_mag"};
 			respawnMagazines[] = {"30Rnd_Agrip_mag","30Rnd_Agrip_mag"};
 
-			backpack = "Ren_Backpack_02_Brown_Engineer";
+			backpack = "Ren_Backpack_02_Black";
 
-			ALiVE_orbatCreator_loadout[] = {{"AgripinaaAutoChaos","","","",{"30Rnd_Agrip_mag",30},{},""},{},{},{"OP_Ren_Uniform_01_Brown",{{"FirstAidKit",1},{"30Rnd_Agrip_mag",3,30},{"TIOW_chaos_frag_grenade_mag",2,1},{"TIOW_ig_smoke_grenade_mag",1,1}}},{"Ren_ArmorSet_02_Brown",{}},{"Ren_Backpack_02_Brown_Engineer",{{"ToolKit",1},{"MineDetector",1}}},"","Ren_Gasmask_01",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
+			ALiVE_orbatCreator_loadout[] = {{"AgripinaaAutoChaos","","","",{"30Rnd_Agrip_mag",30},{},""},{},{},{"OP_Ren_Uniform_01_Brown",{{"FirstAidKit",1},{"30Rnd_Agrip_mag",3,30},{"TIOW_chaos_frag_grenade_mag",2,1},{"TIOW_ig_smoke_grenade_mag",1,1}}},{"Ren_ArmorSet_02_Brown",{}},{"Ren_Backpack_02_Black",{{"ToolKit",1},{"MineDetector",1}}},"","Ren_Gasmask_01",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
 
 
 			class EventHandlers : EventHandlers {
@@ -1551,9 +1551,9 @@ class CfgVehicles {
 			magazines[] = {"30Rnd_Agrip_mag","30Rnd_Agrip_mag"};
 			respawnMagazines[] = {"30Rnd_Agrip_mag","30Rnd_Agrip_mag"};
 
-			backpack = "Ren_Backpack_02_Brown_Sapper";
+			backpack = "Ren_Backpack_02_Black";
 
-			ALiVE_orbatCreator_loadout[] = {{"AgripinaaAutoChaos","","","",{"30Rnd_Agrip_mag",30},{},""},{},{},{"OP_Ren_Uniform_01_Brown",{{"FirstAidKit",1},{"30Rnd_Agrip_mag",3,30},{"TIOW_chaos_frag_grenade_mag",2,1},{"TIOW_ig_smoke_grenade_mag",1,1}}},{"Ren_ArmorSet_02_Brown",{}},{"Ren_Backpack_02_Brown_Sapper",{{"ToolKit",1},{"MineDetector",1},{"DemoCharge_Remote_Mag",2,1},{"APERSBoundingMine_Range_Mag",1,1}}},"","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
+			ALiVE_orbatCreator_loadout[] = {{"AgripinaaAutoChaos","","","",{"30Rnd_Agrip_mag",30},{},""},{},{},{"OP_Ren_Uniform_01_Brown",{{"FirstAidKit",1},{"30Rnd_Agrip_mag",3,30},{"TIOW_chaos_frag_grenade_mag",2,1},{"TIOW_ig_smoke_grenade_mag",1,1}}},{"Ren_ArmorSet_02_Brown",{}},{"Ren_Backpack_02_Black",{{"ToolKit",1},{"MineDetector",1},{"DemoCharge_Remote_Mag",2,1},{"APERSBoundingMine_Range_Mag",1,1}}},"","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
 
 
 			class EventHandlers : EventHandlers {
@@ -1591,9 +1591,9 @@ class CfgVehicles {
 			magazines[] = {"30Rnd_Agrip_mag","30Rnd_Agrip_mag"};
 			respawnMagazines[] = {"30Rnd_Agrip_mag","30Rnd_Agrip_mag"};
 
-			backpack = "Ren_Backpack_02_Brown_Ammo";
+			backpack = "Ren_Backpack_02_Black";
 
-			ALiVE_orbatCreator_loadout[] = {{"AgripinaaAutoChaos","","","",{"30Rnd_Agrip_mag",30},{},""},{},{},{"OP_Ren_Uniform_01_Brown",{{"FirstAidKit",1},{"30Rnd_Agrip_mag",3,30},{"TIOW_chaos_frag_grenade_mag",2,1},{"TIOW_ig_smoke_grenade_mag",1,1}}},{"Ren_ArmorSet_01_green",{}},{"Ren_Backpack_02_Brown_Ammo",{{"30Rnd_Agrip_mag",2,30},{"MLAT_Mag",1,1},{"DK_PlasmaGun_Flask",1,10},{"TIOW_Meltagun_Mag",1,5}}},"","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
+			ALiVE_orbatCreator_loadout[] = {{"AgripinaaAutoChaos","","","",{"30Rnd_Agrip_mag",30},{},""},{},{},{"OP_Ren_Uniform_01_Brown",{{"FirstAidKit",1},{"30Rnd_Agrip_mag",3,30},{"TIOW_chaos_frag_grenade_mag",2,1},{"TIOW_ig_smoke_grenade_mag",1,1}}},{"Ren_ArmorSet_01_green",{}},{"Ren_Backpack_02_Black",{{"30Rnd_Agrip_mag",2,30},{"MLAT_Mag",1,1},{"DK_PlasmaGun_Flask",1,10},{"TIOW_Meltagun_Mag",1,5}}},"","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
 
 
 			class EventHandlers : EventHandlers {
