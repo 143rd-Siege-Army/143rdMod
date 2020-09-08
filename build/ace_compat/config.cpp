@@ -21,6 +21,7 @@ class CfgAmmo
 	class ShotgunBase;
 	class B_127x99_Ball;
 	class B_12Gauge_Pellets;
+	class B_762x51_Ball;
 	// class medium_hit: BulletBase
 	// {
 	// 	hit = 9;
@@ -53,6 +54,10 @@ class CfgAmmo
 	class Lucius98_LasBolt: BulletBase
 	{
 		hit = 10;
+	};
+	class DK143_HotShot_Lucius98_Lasbolt: Lucius98_LasBolt
+	{
+		hit = 14;
 	};
 	class TIOW_Antioc43_LasBolt: Lucius98_LasBolt
 	{
@@ -116,11 +121,34 @@ class CfgAmmo
 	{
 		hit = 5;
 	};
+	class DK143_Medium_ManStopper: B_762x51_Ball
+	{
+		hit = 10;
+		caliber = 1.7;
+	};
+	class DK143_Medium_Expanders: B_762x51_Ball
+	{
+		hit = 9;
+		caliber = 2.5;
+	};
+	class DK143_Medium_Amputators: B_762x51_Ball
+	{
+		hit = 6;
+		indirectHit = 2;
+		indirectHitRange = 1;
+		explosive = 0.25;
+		explosionSoundEffect = "DefaultExplosion";
+		craterEffects = "";
+		explosionEffects = "AmputatorRoundExplosion";
+	};
 };
 
 class CfgMagazines
 {
 	class CA_Magazine;
+	class 200Rnd_556x45_Box_F;
+	class Lucius98_mag: CA_Magazine {};
+	class ML700_Stubber_drum: 200Rnd_556x45_Box_F {};
 	class Type14_mag: CA_Magazine
 	{
 		mass = 175;
@@ -143,7 +171,92 @@ class CfgMagazines
 		count = 10;
 		descriptionShort = "[DK143] LongLas Overcharged Powerpack";
 	};
+	class DK143_HotShot_Lucius_Mag: Lucius98_mag
+	{
+		displayName = "[DK143] Lucius Hotshot Laspack";
+		ammo = "DK143_HotShot_Lucius98_Lasbolt";
+		count = 15;
+	};
+	class DK143_Expander_Drum: ML700_Stubber_Drum
+	{
+		displayName = "[DK143] 100rnd Stubber Expander Drum";
+		displayNameShort = "Stubber Expander Drum Magazine";
+		ammo = "DK143_Medium_Expanders";
+		count = 100;
+	};
+	class DK143_Amputators_Drum: ML700_Stubber_Drum
+	{
+		displayName = "[DK143] 100rnd Stubber Amputators Drum";
+		displayNameShort = "Stubber Amputators Drum Magazine";
+		ammo = "DK143_Medium_Amputators";
+		count = 100;
+	};
+	class DK143_ManStopper_Drum: ML700_Stubber_Drum
+	{
+		displayName = "[DK143] 100rnd Stubber ManStopper Drum";
+		displayNameShort = "Stubber ManStopper Drum Magazine";
+		ammo = "DK143_Medium_ManStopper";
+		count = 100;
+	};
+
+	class TIOW_50Rnd_Stubber_mag: CA_Magazine
+	{
+		tracersEvery = 5;
+	};
+	class TIOW_50Rnd_Stubber_mag_Tracer: CA_Magazine
+	{
+		tracersEvery = 2;
+	};
+	class TIOW_50Rnd_Stubber_amput: CA_Magazine
+	{
+		tracersEvery = 5;
+	};
+	class TIOW_50Rnd_Stubber_manstop: CA_Magazine
+	{
+		tracersEvery = 5;
+	};
+	class TIOW_50Rnd_Stubber_expander: CA_Magazine
+	{
+		tracersEvery = 5;
+	};
+
+	class DK143_150Rnd_Hvy_Stubber_Mag: TIOW_50Rnd_Stubber_mag
+	{
+		displayName = "[DK143] 150 Round Heavy Stubber Magazine";
+		descriptionShort = "150 Round Tracer Magazine";
+		count = 150;
+		mass = 30;
+	};
+	class DK143_150Rnd_Hvy_Stubber_Tracer_Mag: TIOW_50Rnd_Stubber_mag_Tracer
+	{
+		displayName = "[DK143] 150 Round Heavy Stubber Magazine, Tracers";
+		descriptionShort = "150 Round Amputator Magazine";
+		count = 150;
+		mass = 30;
+	};
+	class DK143_150Rnd_Hvy_Stubber_Amput_Mag: TIOW_50Rnd_Stubber_amput
+	{
+		displayName = "[DK143] 150 Round Heavy Stubber Magazine, ManStoppers";
+		descriptionShort = "150 Round ManStoppers Magazine";
+		count = 150;
+		mass = 30;
+	};
+	class DK143_150Rnd_Hvy_Stubber_Manstop_Mag: TIOW_50Rnd_Stubber_manstop
+	{
+		displayName = "[DK143] 150 Round Heavy Stubber Magazine, ManStoppers";
+		descriptionShort = "150 Round ManStoppers Magazine";
+		count = 150;
+		mass = 30; 
+	};
+	class DK143_150Rnd_Hvy_Stubber_Expander_Mag: TIOW_50Rnd_Stubber_expander
+	{
+		displayName = "[DK143] 150 Round Heavy Stubber Magazine, Expanders";
+		descriptionShort = "150 Round Expanders Magazine";
+		count = 150;
+		mass = 30; 
+	};
 };
+
 class CfgVehicles
 {
 	class FlagCarrierCore;
@@ -2460,6 +2573,9 @@ class CfgWeapons
 	class Rifle;
 	class Rifle_Base_F: Rifle {};
 	class arifle_MX_Base_F: Rifle_Base_F {};
+	class LMG_Mk200_F;
+	class ML700_MachineGun_Base: LMG_Mk200_F {};
+	class ML700_LMG_Stubber_base_F: ML700_MachineGun_Base {};
 
 	class TIOW_LongLas_Base: arifle_MX_Base_F
 	{
@@ -2468,6 +2584,23 @@ class CfgWeapons
 	class M36KantRifleBase: arifle_MX_Base_F
 	{
 		magazines[] = {"M36KantRifle_mag","DK143_KantRifleHP_Mag"};
+	};
+	class Lucius98Lasgun: Rifle_Base_F
+	{
+		magazines[] = {"Lucius98_mag", "DK143_HotShot_Lucius_Mag"};
+	};
+
+	class ML700_LMG_Stubber_Black: ML700_LMG_Stubber_base_F
+	{
+		magazines[] = {"ML700_Stubber_Drum","ML700_Stubber_Drum_Green","ML700_Stubber_Drum_Red","ML700_Stubber_Drum_Yellow", "DK143_Expander_Drum", "DK143_Amputators_Drum", "DK143_ManStopper_Drum"};
+	};
+	class ML700_LMG_Stubber_Green: ML700_LMG_Stubber_Black
+	{
+		magazines[] = {"ML700_Stubber_Drum","ML700_Stubber_Drum_Green","ML700_Stubber_Drum_Red","ML700_Stubber_Drum_Yellow", "DK143_Expander_Drum", "DK143_Amputators_Drum", "DK143_ManStopper_Drum"};
+	};
+	class KriegHeavyStubber: Rifle_Base_F 
+	{
+		magazines[] = {"TIOW_50Rnd_Stubber_mag","TIOW_50Rnd_Stubber_mag_Tracer","TIOW_50Rnd_Stubber_amput","TIOW_50Rnd_Stubber_manstop","TIOW_50Rnd_Stubber_expander", "DK143_150Rnd_Hvy_Stubber_Expander_Mag", "DK143_150Rnd_Hvy_Stubber_Manstop_Mag", "DK143_150Rnd_Hvy_Stubber_Amput_Mag", "DK143_150Rnd_Hvy_Stubber_Tracer_Mag", "DK143_150Rnd_Hvy_Stubber_Mag"};
 	};
 /*
 
