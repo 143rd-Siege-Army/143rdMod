@@ -70,7 +70,7 @@ class CfgAmmo
 	class Type14_LasBolt: BulletBase
 	{
 		hit = 11.6;
-		caliber = 3;
+		caliber = 5;
 	};
 	class Lucius22c_Pellets: ShotgunBase
 	{
@@ -295,7 +295,7 @@ class CfgVehicles
         };
         class EventHandlers
         {
-            init="(_this select 0) setFlagTexture '143rdMod\build\ace_compat\Images\DK143Flag_CO.paa'";
+            init="(_this select 0) setFlagTexture '\143rdMod\build\ace_compat\Images\DK143Flag_CO.paa'";
         };
 	};
 
@@ -2548,6 +2548,7 @@ class CfgVehicles
 	};
 };
 
+class Mode_FullAuto; //Required to adjust T14 firemode inheritance
 class CfgWeapons
 {
     class HeadgearItem;
@@ -2571,12 +2572,24 @@ class CfgWeapons
 	};
 
 	class Rifle;
-	class Rifle_Base_F: Rifle {};
+	class Rifle_Base_F: Rifle 
+	{
+		class WeaponSlotsInfo;
+		class GunParticles;
+	};
 	class arifle_MX_Base_F: Rifle_Base_F {};
 	class LMG_Mk200_F;
 	class ML700_MachineGun_Base: LMG_Mk200_F {};
 	class ML700_LMG_Stubber_base_F: ML700_MachineGun_Base {};
 
+	class Type14Heavy: Rifle_Base_F
+	{
+		class FullAuto: Mode_FullAuto
+		{
+			reloadTime = 0.125;
+		};
+	};
+	
 	class TIOW_LongLas_Base: arifle_MX_Base_F
 	{
 		magazines[] = {"TIOW_LongLas_Mag","DK143_LongLasHP_Mag"};
