@@ -6,7 +6,8 @@ class CfgPatches {
             "O_Cornellia_Rebels_AT_Launcher_01",
             "O_Cornellia_Rebels_Medium_Stubber_01",
             "O_Cornellia_Rebels_Autorifleman_01",
-            "O_Cornellia_Rebels_Rifleman_01"
+            "O_Cornellia_Rebels_Rifleman_01",
+			"O_Cornellia_Rebels_Plasmagunner_01"
         };
         weapons[] = {};
         requiredVersion = 1.62;
@@ -58,6 +59,39 @@ class CfgGroups {
                         rank = "CORPORAL";
                         side = 0;
                         vehicle = "O_Cornellia_Rebels_Rifleman_01";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_Cornellia_Rebels_Rifleman_01";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_Cornellia_Rebels_Rifleman_01";
+                    };
+                };
+
+                class o_cornellia_rebels_infantry_fireteam_plasma {
+                    name = "Fireteam Plasma";
+                    side = 0;
+                    faction = "O_CornelliaRebels";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "O_Cornellia_Rebels_Squadleader_01";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "O_Cornellia_Rebels_Plasmagunner_01";
                     };
                     class Unit2 {
                         position[] = {-5,-5,0};
@@ -412,6 +446,75 @@ class CfgGroups {
                     };
                 };
 
+			
+			    class o_cornellia_rebels_infantry_squad_Plasma {
+                    name = "Squad Plasma";
+                    side = 0;
+                    faction = "O_CornelliaRebels";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "O_Cornellia_Rebels_Squadleader_01";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "O_Cornellia_Rebels_Plasmagunner_01";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "O_Cornellia_Rebels_Plasmagunner_01";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_Cornellia_Rebels_Rifleman_01";
+                    };
+                    class Unit4 {
+                        position[] = {-10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_Cornellia_Rebels_Rifleman_01";
+                    };
+                    class Unit5 {
+                        position[] = {15,-15,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_Cornellia_Rebels_Rifleman_01";
+                    };
+                    class Unit6 {
+                        position[] = {-15,-15,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_Cornellia_Rebels_Rifleman_01";
+                    };
+                    class Unit7 {
+                        position[] = {20,-20,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_Cornellia_Rebels_Rifleman_01";
+                    };
+                    class Unit8 {
+                        position[] = {-20,-20,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_Cornellia_Rebels_Rifleman_01";
+                    };
+                    class Unit9 {
+                        position[] = {25,-25,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_Cornellia_Rebels_Rifleman_01";
+                    };
+                };
             };
 
             class SpecOps {
@@ -498,7 +601,7 @@ class CfgVehicles {
 
         backpack = "TIOW_Vox_Caster_Red";
 
-        ALiVE_orbatCreator_loadout[] = {{"ML700_Lasgun_Aquila_Rifle_Black","","","ML700_Lasgun_CarryHandle_black",{"ML700_Lasgun_Rifle_B_Battery",150},{},""},{},{},{"U_O_CombatUniform_oucamo",{{"ACE_morphine",1},{"ACE_tourniquet",1},{"ACE_CTS9",1,1},{"TIOW_ig_frag_grenade_mag",2,1},{"TIOW_ig_smoke_grenade_mag",3,1}}},{"Cad_Gear700th",{{"HandGrenade",2,1},{"SmokeShell",1,1},{"SmokeShellRed",1,1},{"Chemlight_red",2,1},{"ML700_Lasgun_Rifle_B_Battery",1,150}}},{"TIOW_Vox_Caster_Red",{{"ML700_Lasgun_Rifle_B_Battery",2,150}}},"Cad_Inf_Helm700th","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch","TIOW_PhotovisorContacts"}};
+        ALiVE_orbatCreator_loadout[] = {{"ML700_Lasgun_Aquila_Rifle_Black","","","ML700_Lasgun_CarryHandle_black",{"ML700_Lasgun_Rifle_B_Battery",150},{},""},{},{},{"U_O_CombatUniform_oucamo",{{"ACE_morphine",1},{"ACE_tourniquet",1},{"ACE_CTS9",1,1},{"TIOW_ig_frag_grenade_mag",2,1},{"TIOW_ig_smoke_grenade_mag",3,1}}},{"Cad_Gear700th",{{"HandGrenade",2,1},{"SmokeShell",1,1},{"SmokeShellRed",1,1},{"ML700_Lasgun_Rifle_B_Battery",1,150},{"TIOW_ig_smoke_grenade_mag",4,1}}},{"TIOW_Vox_Caster_Red",{{"ML700_Lasgun_Rifle_B_Battery",2,150},{"ACE_CTS9",2,1}}},"Cad_Inf_Helm700th","G_AirPurifyingRespirator_02_black_F",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch","TIOW_PhotovisorContacts"}};
 
 
         class EventHandlers : EventHandlers {
@@ -538,7 +641,47 @@ class CfgVehicles {
 
         backpack = "TIOW_CadBackpack";
 
-        ALiVE_orbatCreator_loadout[] = {{"TIOW_MeltaGun_01","","","",{"TIOW_Meltagun_Mag",5},{},""},{},{"ML700_B_LasPistol_F_Black","","","",{"ML700_Laspistol_B_Battery",15},{},""},{"U_C_Driver_3",{{"ACE_packingBandage",1},{"ACE_morphine",1},{"ACE_tourniquet",1},{"ACE_CTS9",1,1},{"TIOW_ig_frag_grenade_mag",2,1},{"TIOW_ig_smoke_grenade_mag",3,1}}},{"Cad_Gear700th",{{"HandGrenade",2,1},{"SmokeShell",1,1},{"SmokeShellRed",1,1},{"Chemlight_red",2,1},{"ML700_Laspistol_B_Battery",12,15}}},{"TIOW_CadBackpack",{{"FirstAidKit",2},{"M36KantRifle_mag",6,50},{"TIOW_ig_frag_grenade_mag",4,1},{"TIOW_Meltagun_Mag",8,5}}},"Cad_Inf_Helm700th","G_RegulatorMask_F",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch","TIOW_PhotovisorContacts"}};
+        ALiVE_orbatCreator_loadout[] = {{"TIOW_MeltaGun_01","","","",{"TIOW_Meltagun_Mag",5},{},""},{},{"ML700_B_LasPistol_F_Black","","","",{"ML700_Laspistol_B_Battery",15},{},""},{"U_C_Driver_3",{{"ACE_packingBandage",4},{"ACE_morphine",1},{"ACE_tourniquet",1},{"TIOW_ig_frag_grenade_mag",1,1},{"TIOW_ig_smoke_grenade_mag",1,1}}},{"Cad_Gear700th",{{"HandGrenade",2,1},{"SmokeShell",1,1},{"SmokeShellRed",1,1},{"Chemlight_red",2,1},{"ML700_Laspistol_B_Battery",12,15}}},{"TIOW_CadBackpack",{{"FirstAidKit",2},{"M36KantRifle_mag",6,50},{"TIOW_ig_frag_grenade_mag",1,1},{"TIOW_Meltagun_Mag",8,5},{"TIOW_ig_melta_bomb_mag",3,1}}},"Cad_Inf_Helm700th","G_RegulatorMask_F",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch","TIOW_PhotovisorContacts"}};
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
+    };
+
+    class O_Cornellia_Rebels_Plasmagunner_01 : O_Cornellia_Rebels_Squadleader_01 {
+        author = "VAp. Venture";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Plasmagunner";
+        side = 0;
+        faction = "O_CornelliaRebels";
+
+        identityTypes[] = {"Head_TK","LanguagePER_F","G_IRAN_default"};
+
+        uniformClass = "U_C_Driver_3";
+
+        linkedItems[] = {"Cad_Gear700th","Cad_Inf_Helm700th","ItemMap","ItemRadio","ItemCompass","ItemWatch","TIOW_PhotovisorContacts"};
+        respawnlinkedItems[] = {"Cad_Gear700th","Cad_Inf_Helm700th","ItemMap","ItemRadio","ItemCompass","ItemWatch","TIOW_PhotovisorContacts"};
+
+        weapons[] = {"ML700_PlasmaRifle_BP"};
+        respawnWeapons[] = {"ML700_PlasmaRifle_BP"};
+
+        magazines[] = {"ML700_PlasmaRifle_Battery", "ML700_PlasmaRifle_Battery"};
+        respawnMagazines[] = {"ML700_PlasmaRifle_Battery", "ML700_PlasmaRifle_Battery"};
+
+        backpack = "TIOW_CadBackpack";
+
+        ALiVE_orbatCreator_loadout[] = {{"ML700_PlasmaRifle_BP","","","",{"ML700_PlasmaRifle_Battery",20},{},""},{},{},{"U_C_Driver_3",{{"ACE_fieldDressing",1},{"ACE_packingBandage",1},{"ACE_morphine",1},{"ACE_tourniquet",1},{"ACE_CTS9",1,1},{"TIOW_ig_frag_grenade_mag",1,1}}},{"Cad_Gear700th",{{"HandGrenade",2,1},{"SmokeShell",1,1},{"SmokeShellRed",1,1},{"TIOW_ig_frag_grenade_mag",2,1},{"ML700_PlasmaRifle_Battery",5,20}}},{"ML700_ML_Cadian_Rucksack_light",{{"ML700_PlasmaRifle_Battery",25,20}}},"Cad_Inf_Helm700th","G_RegulatorMask_F",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch","TIOW_PhotovisorContacts"}};
 
 
         class EventHandlers : EventHandlers {
@@ -578,7 +721,7 @@ class CfgVehicles {
 
         backpack = "TIOW_CadBackpack";
 
-        ALiVE_orbatCreator_loadout[] = {{"ML700_Lasgun_Aquila_Rifle_Black","","","ML700_Lasgun_CarryHandle_black",{"ML700_Lasgun_Rifle_B_Battery",150},{},""},{"ML700_Launcher_Weapon_TreadFether_Blood","","","",{"ML700_40mm_Treadfether_Mag",1},{},""},{},{"U_C_Driver_3",{{"ACE_packingBandage",1},{"ACE_morphine",1},{"ACE_tourniquet",1},{"ACE_CTS9",1,1},{"TIOW_ig_frag_grenade_mag",2,1},{"TIOW_ig_smoke_grenade_mag",3,1}}},{"Cad_Gear700th",{{"HandGrenade",2,1},{"SmokeShell",1,1},{"SmokeShellRed",1,1},{"Chemlight_red",2,1},{"ML700_Lasgun_Rifle_B_Battery",1,150}}},{"TIOW_CadBackpack",{{"FirstAidKit",2},{"M36KantRifle_mag",6,50},{"TIOW_ig_frag_grenade_mag",4,1},{"ML700_40mm_Treadfether_Mag",1,1}}},"Cad_Inf_Helm700th","G_RegulatorMask_F",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch","TIOW_PhotovisorContacts"}};
+        ALiVE_orbatCreator_loadout[] = {{"ML700_Lasgun_Aquila_Rifle_Black","","","ML700_Lasgun_CarryHandle_black",{"ML700_Lasgun_Rifle_B_Battery",150},{},""},{"ML700_Launcher_Weapon_TreadFether_Blood","","","",{"ML700_40mm_Treadfether_Mag",1},{},""},{},{"U_C_Driver_3",{{"ACE_packingBandage",1},{"ACE_morphine",1},{"ACE_tourniquet",1},{"ACE_CTS9",1,1},{"TIOW_ig_frag_grenade_mag",1,1}}},{"Cad_Gear700th",{{"HandGrenade",2,1},{"SmokeShell",1,1},{"SmokeShellRed",1,1},{"Chemlight_red",2,1},{"ML700_Lasgun_Rifle_B_Battery",1,150}}},{"TIOW_CadBackpack",{{"FirstAidKit",2},{"M36KantRifle_mag",6,50},{"TIOW_ig_frag_grenade_mag",3,1},{"ML700_40mm_Treadfether_Mag",1,1},{"TIOW_ig_smoke_grenade_mag",2,1},{"DemoCharge_Remote_Mag",1,1}}},"Cad_Inf_Helm700th","G_RegulatorMask_F",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch","TIOW_PhotovisorContacts"}};
 
 
         class EventHandlers : EventHandlers {
@@ -616,7 +759,7 @@ class CfgVehicles {
         magazines[] = {"ML700_Stubber_Drum_Red","ML700_Stubber_Drum_Red"};
         respawnMagazines[] = {"ML700_Stubber_Drum_Red","ML700_Stubber_Drum_Red"};
 
-        ALiVE_orbatCreator_loadout[] = {{"ML700_LMG_Stubber_Black","","","",{"ML700_Stubber_Drum_Red",100},{},""},{},{},{"U_C_Driver_3",{{"ACE_CTS9",1,1},{"TIOW_ig_frag_grenade_mag",2,1},{"TIOW_ig_smoke_grenade_mag",3,1}}},{"Cad_Gear700th",{{"HandGrenade",2,1},{"SmokeShell",1,1},{"SmokeShellRed",1,1},{"Chemlight_red",2,1},{"ML700_Stubber_Drum_Red",4,100}}},{},"Cad_Inf_Helm700th","G_RegulatorMask_F",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch","TIOW_PhotovisorContacts"}};
+        ALiVE_orbatCreator_loadout[] = {{"ML700_LMG_Stubber_Black","","","",{"ML700_Stubber_Drum_Red",100},{},""},{},{},{"U_C_Driver_3",{{"ACE_CTS9",1,1},{"TIOW_ig_frag_grenade_mag",1,1},{"TIOW_ig_smoke_grenade_mag",1,1}}},{"Cad_Gear700th",{{"HandGrenade",2,1},{"SmokeShell",1,1},{"SmokeShellRed",1,1},{"ML700_Stubber_Drum_Red",4,100},{"TIOW_ig_smoke_grenade_mag",2,1}}},{"ML700_ML_Cadian_Rucksack_light",{{"ML700_Stubber_Drum_Red",13,100},{"TIOW_ig_smoke_grenade_mag",1,1}}},"Cad_Inf_Helm700th","G_RegulatorMask_F",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch","TIOW_PhotovisorContacts"}};
 
 
         class EventHandlers : EventHandlers {
@@ -656,7 +799,7 @@ class CfgVehicles {
 
         backpack = "TIOW_CadBackpack";
 
-        ALiVE_orbatCreator_loadout[] = {{"arifle_AK12_GL_F","ACE_muzzle_mzls_B","acc_flashlight","optic_Arco_AK_blk_F",{"75Rnd_762x39_Mag_Tracer_F",75},{},""},{},{},{"U_C_Driver_3",{{"ACE_CTS9",1,1},{"TIOW_ig_frag_grenade_mag",2,1},{"TIOW_ig_smoke_grenade_mag",3,1}}},{"Cad_Gear700th",{{"HandGrenade",2,1},{"SmokeShell",1,1},{"SmokeShellRed",1,1},{"Chemlight_red",2,1}}},{"TIOW_CadBackpack",{{"FirstAidKit",2},{"M36KantRifle_mag",6,50},{"TIOW_ig_frag_grenade_mag",4,1},{"TIOW_1Rnd_HE_Grenade_shell",8,1}}},"Cad_Inf_Helm700th","G_RegulatorMask_F",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch","TIOW_PhotovisorContacts"}};
+        ALiVE_orbatCreator_loadout[] = {{"arifle_AK12_GL_F","ACE_muzzle_mzls_B","acc_flashlight","optic_Arco_AK_blk_F",{"75Rnd_762x39_Mag_Tracer_F",75},{"1Rnd_HE_Grenade_shell",1},""},{},{},{"U_C_Driver_3",{{"FirstAidKit",1},{"TIOW_ig_frag_grenade_mag",1,1},{"TIOW_ig_smoke_grenade_mag",1,1}}},{"Cad_Gear700th",{{"HandGrenade",2,1},{"SmokeShell",1,1},{"SmokeShellRed",1,1},{"TIOW_ig_frag_grenade_mag",3,1},{"TIOW_ig_krak_grenade_mag",1,1},{"TIOW_ig_smoke_grenade_mag",3,1}}},{"TIOW_CadBackpack",{{"TIOW_1Rnd_HE_Grenade_shell",8,1},{"1Rnd_HE_Grenade_shell",5,1},{"75Rnd_762x39_Mag_Tracer_F",2,75},{"ACE_40mm_Flare_white",1,1},{"TIOW_ig_krak_grenade_mag",1,1},{"TIOW_ig_frag_grenade_mag",1,1}}},"Cad_Inf_Helm700th","G_RegulatorMask_F",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch","TIOW_PhotovisorContacts"}};
 
 
         class EventHandlers : EventHandlers {
@@ -696,7 +839,7 @@ class CfgVehicles {
 
         backpack = "ML700_ML_Cadian_Rucksack_light";
 
-        ALiVE_orbatCreator_loadout[] = {{"ML700_Lasgun_Aquila_Rifle_Black","","","ML700_Lasgun_CarryHandle_black",{"ML700_Lasgun_Rifle_B_Battery",150},{},""},{},{},{"U_C_Driver_3",{{"ACE_packingBandage",1},{"ACE_morphine",1},{"ACE_tourniquet",1},{"ACE_CTS9",1,1},{"TIOW_ig_frag_grenade_mag",2,1},{"TIOW_ig_smoke_grenade_mag",3,1}}},{"Cad_Gear700th",{{"HandGrenade",2,1},{"SmokeShell",1,1},{"SmokeShellRed",1,1},{"Chemlight_red",2,1},{"ML700_Lasgun_Rifle_B_Battery",1,150}}},{"ML700_ML_Cadian_Rucksack_light",{{"ML700_Lasgun_Rifle_B_Battery",4,150}}},"Cad_Inf_Helm700th","G_RegulatorMask_F",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch","TIOW_PhotovisorContacts"}};
+        ALiVE_orbatCreator_loadout[] = {{"ML700_Lasgun_Aquila_Rifle_Black","","","ML700_Lasgun_CarryHandle_black",{"ML700_Lasgun_Rifle_B_Battery",150},{},""},{},{},{"U_C_Driver_3",{{"ACE_packingBandage",1},{"ACE_morphine",1},{"ACE_tourniquet",1},{"TIOW_ig_frag_grenade_mag",1,1},{"TIOW_ig_smoke_grenade_mag",1,1}}},{"Cad_Gear700th",{{"HandGrenade",2,1},{"SmokeShell",1,1},{"SmokeShellRed",1,1},{"ML700_Lasgun_Rifle_B_Battery",1,150},{"TIOW_ig_frag_grenade_mag",1,1},{"TIOW_ig_smoke_grenade_mag",1,1}}},{"ML700_ML_Cadian_Rucksack_light",{{"ML700_Lasgun_Rifle_B_Battery",4,150}}},"Cad_Inf_Helm700th","G_RegulatorMask_F",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch","TIOW_PhotovisorContacts"}};
 
 
         class EventHandlers : EventHandlers {
