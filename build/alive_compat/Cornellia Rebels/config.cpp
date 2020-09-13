@@ -601,7 +601,7 @@ class CfgVehicles {
 
         backpack = "TIOW_Vox_Caster_Red";
 
-        ALiVE_orbatCreator_loadout[] = {{"ML700_Lasgun_Aquila_Rifle_Black","","","ML700_Lasgun_CarryHandle_black",{"ML700_Lasgun_Rifle_B_Battery",150},{},""},{},{},{"U_O_CombatUniform_oucamo",{{"ACE_morphine",1},{"ACE_tourniquet",1},{"ACE_CTS9",1,1},{"TIOW_ig_frag_grenade_mag",2,1},{"TIOW_ig_smoke_grenade_mag",3,1}}},{"Cad_Gear700th",{{"HandGrenade",2,1},{"SmokeShell",1,1},{"SmokeShellRed",1,1},{"ML700_Lasgun_Rifle_B_Battery",1,150},{"TIOW_ig_smoke_grenade_mag",4,1}}},{"TIOW_Vox_Caster_Red",{{"ML700_Lasgun_Rifle_B_Battery",2,150},{"ACE_CTS9",2,1}}},"Cad_Inf_Helm700th","G_AirPurifyingRespirator_02_black_F",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch","TIOW_PhotovisorContacts"}};
+        ALiVE_orbatCreator_loadout[] = {{"ML700_Lasgun_Aquila_Rifle_Black","","","ML700_Lasgun_CarryHandle_black",{"ML700_Lasgun_Rifle_B_Battery",150},{},""},{},{},{"U_O_CombatUniform_oucamo",{{"ACE_morphine",1},{"ACE_tourniquet",1},{"TIOW_ig_frag_grenade_mag",2,1},{"TIOW_ig_smoke_grenade_mag",3,1}}},{"Cad_Gear700th",{{"HandGrenade",2,1},{"SmokeShell",1,1},{"SmokeShellRed",1,1},{"ML700_Lasgun_Rifle_B_Battery",1,150},{"TIOW_ig_smoke_grenade_mag",4,1}}},{"TIOW_Vox_Caster_Red",{{"ML700_Lasgun_Rifle_B_Battery",2,150}}},"Cad_Inf_Helm700th","G_AirPurifyingRespirator_02_black_F",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch","TIOW_PhotovisorContacts"}};
 
 
         class EventHandlers : EventHandlers {
@@ -681,7 +681,7 @@ class CfgVehicles {
 
         backpack = "TIOW_CadBackpack";
 
-        ALiVE_orbatCreator_loadout[] = {{"ML700_PlasmaRifle_BP","","","",{"ML700_PlasmaRifle_Battery",20},{},""},{},{},{"U_C_Driver_3",{{"ACE_fieldDressing",1},{"ACE_packingBandage",1},{"ACE_morphine",1},{"ACE_tourniquet",1},{"ACE_CTS9",1,1},{"TIOW_ig_frag_grenade_mag",1,1}}},{"Cad_Gear700th",{{"HandGrenade",2,1},{"SmokeShell",1,1},{"SmokeShellRed",1,1},{"TIOW_ig_frag_grenade_mag",2,1},{"ML700_PlasmaRifle_Battery",5,20}}},{"ML700_ML_Cadian_Rucksack_light",{{"ML700_PlasmaRifle_Battery",25,20}}},"Cad_Inf_Helm700th","G_RegulatorMask_F",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch","TIOW_PhotovisorContacts"}};
+        ALiVE_orbatCreator_loadout[] = {{"ML700_PlasmaRifle_BP","","","",{"ML700_PlasmaRifle_Battery",20},{},""},{},{},{"U_C_Driver_3",{{"ACE_fieldDressing",1},{"ACE_packingBandage",1},{"ACE_morphine",1},{"ACE_tourniquet",1},{"TIOW_ig_frag_grenade_mag",1,1}}},{"Cad_Gear700th",{{"HandGrenade",2,1},{"SmokeShell",1,1},{"SmokeShellRed",1,1},{"TIOW_ig_frag_grenade_mag",2,1},{"ML700_PlasmaRifle_Battery",5,20}}},{"ML700_ML_Cadian_Rucksack_light",{{"ML700_PlasmaRifle_Battery",25,20}}},"Cad_Inf_Helm700th","G_RegulatorMask_F",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch","TIOW_PhotovisorContacts"}};
 
 
         class EventHandlers : EventHandlers {
@@ -721,7 +721,7 @@ class CfgVehicles {
 
         backpack = "TIOW_CadBackpack";
 
-        ALiVE_orbatCreator_loadout[] = {{"ML700_Lasgun_Aquila_Rifle_Black","","","ML700_Lasgun_CarryHandle_black",{"ML700_Lasgun_Rifle_B_Battery",150},{},""},{"ML700_Launcher_Weapon_TreadFether_Blood","","","",{"ML700_40mm_Treadfether_Mag",1},{},""},{},{"U_C_Driver_3",{{"ACE_packingBandage",1},{"ACE_morphine",1},{"ACE_tourniquet",1},{"ACE_CTS9",1,1},{"TIOW_ig_frag_grenade_mag",1,1}}},{"Cad_Gear700th",{{"HandGrenade",2,1},{"SmokeShell",1,1},{"SmokeShellRed",1,1},{"Chemlight_red",2,1},{"ML700_Lasgun_Rifle_B_Battery",1,150}}},{"TIOW_CadBackpack",{{"FirstAidKit",2},{"M36KantRifle_mag",6,50},{"TIOW_ig_frag_grenade_mag",3,1},{"ML700_40mm_Treadfether_Mag",1,1},{"TIOW_ig_smoke_grenade_mag",2,1},{"DemoCharge_Remote_Mag",1,1}}},"Cad_Inf_Helm700th","G_RegulatorMask_F",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch","TIOW_PhotovisorContacts"}};
+        ALiVE_orbatCreator_loadout[] = {{"ML700_Lasgun_Aquila_Rifle_Black","","","ML700_Lasgun_CarryHandle_black",{"ML700_Lasgun_Rifle_B_Battery",150},{},""},{"ML700_Launcher_Weapon_TreadFether_Blood","","","",{"ML700_40mm_Treadfether_Mag",1},{},""},{},{"U_C_Driver_3",{{"ACE_packingBandage",1},{"ACE_morphine",1},{"ACE_tourniquet",1},{"TIOW_ig_frag_grenade_mag",1,1}}},{"Cad_Gear700th",{{"HandGrenade",2,1},{"SmokeShell",1,1},{"SmokeShellRed",1,1},{"Chemlight_red",2,1},{"ML700_Lasgun_Rifle_B_Battery",1,150}}},{"TIOW_CadBackpack",{{"FirstAidKit",2},{"M36KantRifle_mag",6,50},{"TIOW_ig_frag_grenade_mag",3,1},{"ML700_40mm_Treadfether_Mag",1,1},{"TIOW_ig_smoke_grenade_mag",2,1},{"DemoCharge_Remote_Mag",1,1}}},"Cad_Inf_Helm700th","G_RegulatorMask_F",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch","TIOW_PhotovisorContacts"}};
 
 
         class EventHandlers : EventHandlers {
@@ -759,7 +759,7 @@ class CfgVehicles {
         magazines[] = {"ML700_Stubber_Drum_Red","ML700_Stubber_Drum_Red"};
         respawnMagazines[] = {"ML700_Stubber_Drum_Red","ML700_Stubber_Drum_Red"};
 
-        ALiVE_orbatCreator_loadout[] = {{"ML700_LMG_Stubber_Black","","","",{"ML700_Stubber_Drum_Red",100},{},""},{},{},{"U_C_Driver_3",{{"ACE_CTS9",1,1},{"TIOW_ig_frag_grenade_mag",1,1},{"TIOW_ig_smoke_grenade_mag",1,1}}},{"Cad_Gear700th",{{"HandGrenade",2,1},{"SmokeShell",1,1},{"SmokeShellRed",1,1},{"ML700_Stubber_Drum_Red",4,100},{"TIOW_ig_smoke_grenade_mag",2,1}}},{"ML700_ML_Cadian_Rucksack_light",{{"ML700_Stubber_Drum_Red",13,100},{"TIOW_ig_smoke_grenade_mag",1,1}}},"Cad_Inf_Helm700th","G_RegulatorMask_F",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch","TIOW_PhotovisorContacts"}};
+        ALiVE_orbatCreator_loadout[] = {{"ML700_LMG_Stubber_Black","","","",{"ML700_Stubber_Drum_Red",100},{},""},{},{},{"U_C_Driver_3",{{"TIOW_ig_frag_grenade_mag",1,1},{"TIOW_ig_smoke_grenade_mag",1,1}}},{"Cad_Gear700th",{{"HandGrenade",2,1},{"SmokeShell",1,1},{"SmokeShellRed",1,1},{"ML700_Stubber_Drum_Red",4,100},{"TIOW_ig_smoke_grenade_mag",2,1}}},{"ML700_ML_Cadian_Rucksack_light",{{"ML700_Stubber_Drum_Red",13,100},{"TIOW_ig_smoke_grenade_mag",1,1}}},"Cad_Inf_Helm700th","G_RegulatorMask_F",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch","TIOW_PhotovisorContacts"}};
 
 
         class EventHandlers : EventHandlers {
