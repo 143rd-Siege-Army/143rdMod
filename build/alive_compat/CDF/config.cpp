@@ -16,7 +16,6 @@ class CfgPatches {
             "AM_weapons",
             "TIOW_Bloodpact",
             "TIOW_Navy_Pilot",
-            "lambs_danger",
             "A3_Sounds_F",
             "A3_Sounds_F_Exp",
             "tfar_core",
