@@ -11,30 +11,7 @@ class CfgPatches {
         };
         weapons[] = {};
         requiredVersion = 1.62;
-        requiredAddons[] = {
-            "A3_Characters_F",
-            "AM_weapons",
-            "TIOW_Bloodpact",
-            "TIOW_Navy_Pilot",
-            "lambs_danger",
-            "A3_Sounds_F",
-            "A3_Sounds_F_Exp",
-            "tfar_core",
-            "ace_gforces",
-            "ace_movement",
-            "ace_medical_feedback",
-            "A3_Data_F",
-            "A3_Data_F_Curator",
-            "A3_Air_F_Heli",
-            "CUP_Worlds_DustEffects",
-            "A3_Map_IslaDuala3",
-            "pja310",
-            "A3_Map_Panthera3",
-            "ace_thermals",
-            "ace_refuel",
-            "CUP_Core",
-            "cba_xeh"
-        };
+        requiredAddons[] = {"ace_common"};
         author = "VAp. Venture";
         authors[] = {"VAp. Venture"};
     };
