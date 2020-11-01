@@ -1411,9 +1411,8 @@ class CfgGroups{
                 name = "Air";
 
             };
+	    };
 	};
-		}
- 
 };
 
 class CfgVehicles
