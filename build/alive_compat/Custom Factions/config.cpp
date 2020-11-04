@@ -242,12 +242,30 @@ class CfgVehicles
 		backpack = "Ren_Backpack_02_black";
 	};
 	
+	class DK143_Base_Farsight_Dominate : O_Soldier_base_F {
+		scope = 0;
+		scopeCurator = 0;
+		displayName = "Farsight Dominate Human";
+		side = 0;
+		faction = "DK143_O_FarsightDominate";
+
+		identityTypes[] = {"Head_TK","LanguagePER_F","G_IRAN_default"};
+
+		uniformClass = "ML700_ML_Cadian_Uniform2";
+
+		linkedItems[] = {"ML700_ML_Cadian_Armor0","ML700_ML_Cadian_Helmet1","ItemMap","ItemcTab","TFAR_anprc152","ItemCompass","TFAR_microdagr","ML700_Photo_NVG"};
+		respawnlinkedItems[] = {"ML700_ML_Cadian_Armor0","ML700_ML_Cadian_Helmet1","ItemMap","ItemcTab","TFAR_anprc152","ItemCompass","TFAR_microdagr","ML700_Photo_NVG"};
+
+		backpack = "TIOW_Tau_Bck_Strike_FE";
+	};
+	
 	// Fleshed out Units
 	// Nurgle Cultists
 	// OPFOR
 	class DK143_O_Nurgle_Cultist_Rifleman : DK143_Base_Nurgle_Cultist {
 		displayName = "Rifleman Cultist";
 		scope = 2;
+		scopeCurator = 2;
 		side = 0;
 		uniformClass = "U_TIOW_Cultist_brown";
 		// Give AI gun
@@ -261,6 +279,7 @@ class CfgVehicles
 	class DK143_O_Nurgle_Cultist_Melta : DK143_Base_Nurgle_Cultist {
 		displayName = "Melta Gunner Cultist";
 		scope = 2;
+		scopeCurator = 2;
 		side = 0;
 		cost = 3;
 		uniformClass = "U_TIOW_Cultist_brown";
@@ -276,6 +295,7 @@ class CfgVehicles
 	class DK143_O_Nurgle_Cultist_Plasmagun : DK143_Base_Nurgle_Cultist {
 		displayName = "Plasma Gunner Cultist";
 		scope = 2;
+		scopeCurator = 2;
 		side = 0;
 		cost = 3;
 		uniformClass = "U_TIOW_Cultist_brown";
@@ -291,6 +311,7 @@ class CfgVehicles
 	class DK143_O_Nurgle_Cultist_ML : DK143_Base_Nurgle_Cultist {
 		displayName = "Missle Launcher Cultist";
 		scope = 2;
+		scopeCurator = 2;
 		side = 0;
 		cost = 3;
 		uniformClass = "U_TIOW_Cultist_brown";
@@ -305,6 +326,7 @@ class CfgVehicles
 	class DK143_O_Nurgle_Cultist_SquadLeader : DK143_Base_Nurgle_Cultist {
 		displayName = "Firebrand";
 		scope = 2;
+		scopeCurator = 2;
 		side = 0;
 		cost = 4;
 		uniformClass = "U_TIOW_Cultist_brown";
@@ -315,4 +337,7 @@ class CfgVehicles
        	 	magazines[] = {mag_5(30Rnd_Agrip_mag_Tracer),mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine), mag_2(TIOW_ig_smoke_grenade_mag)};
         	respawnMagazines[] = {mag_5(30Rnd_Agrip_mag_Tracer),mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine), mag_2(TIOW_ig_smoke_grenade_mag)};
 	};
+	
+	// Farsight Dominate
+	
 };
