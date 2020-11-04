@@ -22,6 +22,14 @@ class CfgFactionClasses {
 		icon = "\A3\ui_f\data\map\markers\flags\CSAT_ca.paa";
 		priority = 0;
     	};
+	
+	class DK143_O_Farsight_Dominate {
+		displayname = "Farsight Dominate";
+		side = 0;
+		flag = "\A3\ui_f\data\map\markers\flags\CSAT_ca.paa";
+		icon = "\A3\ui_f\data\map\markers\flags\CSAT_ca.paa";
+		priority = 0;
+	};
 };
 
 class CfgGroups {
@@ -247,7 +255,7 @@ class CfgVehicles
 		scopeCurator = 0;
 		displayName = "Farsight Dominate Human";
 		side = 0;
-		faction = "DK143_O_FarsightDominate";
+		faction = "DK143_O_Farsight_Dominate";
 
 		identityTypes[] = {"Head_TK","LanguagePER_F","G_IRAN_default"};
 
