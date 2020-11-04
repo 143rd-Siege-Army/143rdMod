@@ -3,8 +3,8 @@ class CfgPatches
 {
 	class DK143_ALIVE_COMPAT_Custom_Factions
 	{
-		author = "Siggyfreed";
-		name = "DK143 TIOW ALIVE_COMPAT";
+		author = "Venture";
+		name = "DK143 TIOW ALIVE_COMPAT Custom Factions";
 		requiredAddons[] = 
         {"ace_common", "DkoKFoot","CadFoot","OrkBoyz","TIOWSpaceMarines"};
 		requiredVersion = 0.1;
@@ -25,7 +25,185 @@ class CfgFactionClasses {
 };
 
 class CfgGroups {
-	class EAST {};
+	class EAST {
+		class DK143_Custom_Factions{
+			name = "143rd Custom Factions;
+			class DK143_O_NurgleCultists
+			{
+				displayName = "Nurgle Cultists";
+				class DK143_O_NurgleCultists_fireteam {
+					name = "Fireteam";
+					side = 0;
+					faction = "DK143_O_NurgleCultists";
+					icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+					rarityGroup = 0.5;
+					
+					class Unit0 {
+						position[] = {0,0,0};
+						rank = "SERGEANT";
+						side = 0;
+						vehicle = "DK143_O_Nurgle_Cultist_Rifleman";
+					};
+					class Unit1 {
+						position[] = {5,-5,0};
+						rank = "CORPORAL";
+						side = 0;
+						vehicle = "DK143_O_Nurgle_Cultist_Plasmagun";
+					};
+					class Unit2 {
+						position[] = {-5,-5,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_Nurgle_Cultist_Rifleman";
+					 };
+					 class Unit3 {
+						position[] = {10,-10,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_Nurgle_Cultist_Rifleman";
+					 };
+				};
+				
+				class DK143_O_NurgleCultists_Squad {
+					name = "Squad";
+					side = 0;
+					faction = "DK143_O_NurgleCultists";
+					icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+					rarityGroup = 0.5;
+					
+					class Unit0 {
+						position[] = {0,0,0};
+						rank = "SERGEANT";
+						side = 0;
+						vehicle = "DK143_O_Nurgle_Cultist_Rifleman";
+					};
+					class Unit1 {
+						position[] = {0,0,0};
+						rank = "CORPORAL";
+						side = 0;
+						vehicle = "DK143_O_Nurgle_Cultist_Plasmagun";
+					};
+					class Unit2 {
+						position[] = {0,0,0};
+						rank = "CORPORAL";
+						side = 0;
+						vehicle = "DK143_O_Nurgle_Cultist_ML";
+					};
+					class Unit3 {
+						position[] = {0,0,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_Nurgle_Cultist_Rifleman";
+					};
+					class Unit4 {
+						position[] = {0,0,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_Nurgle_Cultist_Rifleman";
+					};
+					class Unit5 {
+						position[] = {0,0,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_Nurgle_Cultist_Rifleman";
+					};
+					class Unit6 {
+						position[] = {0,0,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_Nurgle_Cultist_Rifleman";
+					};
+					class Unit7 {
+						position[] = {0,0,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_Nurgle_Cultist_Rifleman";
+					};
+					class Unit8 {
+						position[] = {0,0,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_Nurgle_Cultist_Rifleman";
+					};
+					class Unit9 {
+						position[] = {0,0,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_Nurgle_Cultist_Rifleman";
+					};
+				};
+				
+				class DK143_O_NurgleCultists_Squad_CQB {
+					name = "Squad CQB";
+					side = 0;
+					faction = "DK143_O_NurgleCultists";
+					icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+					rarityGroup = 0.5;
+					
+					class Unit0 {
+						position[] = {0,0,0};
+						rank = "SERGEANT";
+						side = 0;
+						vehicle = "DK143_O_Nurgle_Cultist_Rifleman";
+					};
+					class Unit1 {
+						position[] = {0,0,0};
+						rank = "CORPORAL";
+						side = 0;
+						vehicle = "DK143_O_Nurgle_Cultist_Plasmagun";
+					};
+					class Unit2 {
+						position[] = {0,0,0};
+						rank = "CORPORAL";
+						side = 0;
+						vehicle = "DK143_O_Nurgle_Cultist_Melta";
+					};
+					class Unit3 {
+						position[] = {0,0,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_Nurgle_Cultist_Rifleman";
+					};
+					class Unit4 {
+						position[] = {0,0,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_Nurgle_Cultist_Rifleman";
+					};
+					class Unit5 {
+						position[] = {0,0,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_Nurgle_Cultist_Rifleman";
+					};
+					class Unit6 {
+						position[] = {0,0,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_Nurgle_Cultist_Rifleman";
+					};
+					class Unit7 {
+						position[] = {0,0,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_Nurgle_Cultist_Rifleman";
+					};
+					class Unit8 {
+						position[] = {0,0,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_Nurgle_Cultist_Rifleman";
+					};
+					class Unit9 {
+						position[] = {0,0,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_Nurgle_Cultist_Rifleman";
+					};
+				};
+			};
+		};
+	};
 	class WEST{};
 	class INDEP{};
 };
@@ -62,6 +240,7 @@ class CfgVehicles
 		// Give AI boolets
        	 	magazines[] = {mag_5("30Rnd_Agrip_mag_Tracer"),mag_2("TIOW_ig_frag_grenade_mag"), mag_2("ML700_krak_grenade_magazine")};
         	respawnMagazines[] = {mag_5("30Rnd_Agrip_mag_Tracer"),mag_2("TIOW_ig_frag_grenade_mag"), mag_2("ML700_krak_grenade_magazine")};
+		backpack = "Ren_Backpack_02_black";
 	};
 	
 	class DK143_O_Nurgle_Cultist_Melta : DK143_Base_Nurgle_Cultist {
@@ -75,7 +254,6 @@ class CfgVehicles
         	magazines[] = {mag_5("TIOW_Meltagun_Mag"), mag_2("LuciusLaspistol_mag"), mag_2("TIOW_ig_frag_grenade_mag"), mag_2("ML700_krak_grenade_magazine")};
         	respawnMagazines[] = {mag_5("TIOW_Meltagun_Mag"), mag_2("LuciusLaspistol_mag"),mag_2("TIOW_ig_frag_grenade_mag"), mag_2("ML700_krak_grenade_magazine")};
 
-        	backpack = "Ren_Backpack_02_black";
 	};
 	
 	class DK143_O_Nurgle_Cultist_Plasmagun : DK143_Base_Nurgle_Cultist {
@@ -88,8 +266,7 @@ class CfgVehicles
 		// Give AI Boolets
         	magazines[] = {mag_5("DK_PlasmaGun_Flask"), mag_2("ML700_Laspistol_Battery"), mag_2("TIOW_ig_frag_grenade_mag"), mag_2("ML700_krak_grenade_magazine")};
 		respawnMagazines[] = {mag_5("DK_PlasmaGun_Flask"), mag_2("ML700_Laspistol_Battery"), mag_2("TIOW_ig_frag_grenade_mag"), mag_2("ML700_krak_grenade_magazine")};
-		
-		backpack = "Ren_Backpack_02_black";
+
 	};
 	
 	class DK143_O_Nurgle_Cultist_ML : DK143_Base_Nurgle_Cultist {
@@ -102,7 +279,5 @@ class CfgVehicles
 		// Give AI Boolets
         	magazines[] = {mag_5("30Rnd_Agrip_mag_Tracer"), mag_2("ML700_84mm_HE_Locke_Mag"), mag_2("TIOW_ig_frag_grenade_mag"), mag_2("ML700_krak_grenade_magazine")};
         	respawnMagazines[] = {mag_5("30Rnd_Agrip_mag_Tracer"), mag_2("ML700_84mm_HE_Locke_Mag"), mag_2("TIOW_ig_frag_grenade_mag"), mag_2("ML700_krak_grenade_magazine")};
-		
-		backpack = "Ren_Backpack_02_black";
 	};
 };
