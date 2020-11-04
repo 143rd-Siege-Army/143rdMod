@@ -286,7 +286,7 @@ class CfgVehicles
 	};
 	
 	class DK143_O_Nurgle_Cultist_SquadLeader : DK143_Base_Nurgle_Cultist {
-		name = "Squad Leader";
+		name = "Firebrand";
 		scope = 2;
 		side = 0;
 		cost = 4;
