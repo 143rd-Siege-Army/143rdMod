@@ -340,4 +340,16 @@ class CfgVehicles
 	
 	// Farsight Dominate
 	
+	class DK143_O_Farsight_Dominate_Rifleman : DK143_Base_Farsight_Dominate {
+		displayName = "Farsight Dominate Rifleman";
+		scope = 2;
+		scopeCurator = 2;
+		side = 0;
+		cost = 1;
+		weapons[] = {"TIOW_pulse_carbine_FE","Laserdesignator_01_khk_F"};
+		respawnWeapons[] = {"TIOW_pulse_carbine_FE","Laserdesignator_01_khk_F"};
+
+		magazines[] = {mag_5(TIOW_pulse_mag),"Laserbatteries", "Laserbatteries"};
+		respawnMagazines[] = {mag_5(TIOW_pulse_mag),"Laserbatteries", "Laserbatteries"};
+	};
 };
