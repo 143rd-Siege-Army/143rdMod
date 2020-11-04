@@ -210,6 +210,19 @@ class CfgGroups {
 
 class CfgVehicles
 {
+	// Define Macros
+	/// Magazines macros definition ///
+	#define mag_2(a) a, a
+	#define mag_3(a) a, a, a
+	#define mag_4(a) a, a, a, a
+	#define mag_5(a) a, a, a, a, a
+	#define mag_6(a) a, a, a, a, a, a
+	#define mag_7(a) a, a, a, a, a, a, a
+	#define mag_8(a) a, a, a, a, a, a, a, a
+	#define mag_9(a) a, a, a, a, a, a, a, a, a
+	#define mag_10(a) a, a, a, a, a, a, a, a, a, a
+	#define mag_11(a) a, a, a, a, a, a, a, a, a, a, a
+	#define mag_12(a) a, a, a, a, a, a, a, a, a, a, a, a
 	// ARMA 3 Base Soldier Classes
 	class O_Soldier_base_F;
 	
@@ -241,8 +254,8 @@ class CfgVehicles
 		weapons[] = {"AgripinaaAutoChaos3"};
         	respawnWeapons[] = {"AgripinaaAutoChaos3"};
 		// Give AI boolets
-       	 	magazines[] = {mag_5("30Rnd_Agrip_mag_Tracer"),mag_2("TIOW_ig_frag_grenade_mag"), mag_2("ML700_krak_grenade_magazine")};
-        	respawnMagazines[] = {mag_5("30Rnd_Agrip_mag_Tracer"),mag_2("TIOW_ig_frag_grenade_mag"), mag_2("ML700_krak_grenade_magazine")};
+       	 	magazines[] = {mag_5(30Rnd_Agrip_mag_Tracer), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+        	respawnMagazines[] = {mag_5(30Rnd_Agrip_mag_Tracer), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
 	};
 	
 	class DK143_O_Nurgle_Cultist_Melta : DK143_Base_Nurgle_Cultist {
@@ -255,8 +268,8 @@ class CfgVehicles
 		weapons[] = {"TIOW_MeltaGun_01","LuciusLaspistolGreen"};
         	respawnWeapons[] = {"TIOW_MeltaGun_01","LuciusLaspistolGreen"};
 		// Give AI boolets
-        	magazines[] = {mag_5("TIOW_Meltagun_Mag"), mag_2("LuciusLaspistol_mag"), mag_2("TIOW_ig_frag_grenade_mag"), mag_2("ML700_krak_grenade_magazine")};
-        	respawnMagazines[] = {mag_5("TIOW_Meltagun_Mag"), mag_2("LuciusLaspistol_mag"),mag_2("TIOW_ig_frag_grenade_mag"), mag_2("ML700_krak_grenade_magazine")};
+        	magazines[] = {mag_5(TIOW_Meltagun_Mag), mag_2(LuciusLaspistol_mag), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+        	respawnMagazines[] = {mag_5(TIOW_Meltagun_Mag), mag_2(LuciusLaspistol_mag), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
 
 	};
 	
@@ -270,8 +283,8 @@ class CfgVehicles
 		weapons[] = {"Chaos_PlasmaGun","ML700_LasPistol_F"};
         	respawnWeapons[] = {"Chaos_PlasmaGun","ML700_LasPistol_F"};
 		// Give AI Boolets
-        	magazines[] = {mag_5("DK_PlasmaGun_Flask"), mag_2("ML700_Laspistol_Battery"), mag_2("TIOW_ig_frag_grenade_mag"), mag_2("ML700_krak_grenade_magazine")};
-		respawnMagazines[] = {mag_5("DK_PlasmaGun_Flask"), mag_2("ML700_Laspistol_Battery"), mag_2("TIOW_ig_frag_grenade_mag"), mag_2("ML700_krak_grenade_magazine")};
+        	magazines[] = {mag_5(DK_PlasmaGun_Flask), mag_2(ML700_Laspistol_Battery), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+		respawnMagazines[] = {mag_5(DK_PlasmaGun_Flask), mag_2(ML700_Laspistol_Battery), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
 
 	};
 	
@@ -285,8 +298,8 @@ class CfgVehicles
 		weapons[] = {"AgripinaaAutoChaos3","ML700_Launcher_Weapon_LockeLauncher_Blood"};
         	respawnWeapons[] = {"AgripinaaAutoChaos3","ML700_Launcher_Weapon_LockeLauncher_Blood"};
 		// Give AI Boolets
-        	magazines[] = {mag_5("30Rnd_Agrip_mag_Tracer"), mag_2("ML700_84mm_HE_Locke_Mag"), mag_2("TIOW_ig_frag_grenade_mag"), mag_2("ML700_krak_grenade_magazine")};
-        	respawnMagazines[] = {mag_5("30Rnd_Agrip_mag_Tracer"), mag_2("ML700_84mm_HE_Locke_Mag"), mag_2("TIOW_ig_frag_grenade_mag"), mag_2("ML700_krak_grenade_magazine")};
+        	magazines[] = {mag_5(30Rnd_Agrip_mag_Tracer), mag_2(ML700_84mm_HE_Locke_Mag), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+        	respawnMagazines[] = {mag_5(30Rnd_Agrip_mag_Tracer), mag_2(ML700_84mm_HE_Locke_Mag), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
 	};
 	
 	class DK143_O_Nurgle_Cultist_SquadLeader : DK143_Base_Nurgle_Cultist {
@@ -299,7 +312,7 @@ class CfgVehicles
 		weapons[] = {"AgripinaaAutoChaos3"};
         	respawnWeapons[] = {"AgripinaaAutoChaos3"};
 		// Give AI boolets
-       	 	magazines[] = {mag_5("30Rnd_Agrip_mag_Tracer"),mag_2("TIOW_ig_frag_grenade_mag"), mag_2("ML700_krak_grenade_magazine"), mag_2("TIOW_ig_smoke_grenade_mag")};
-        	respawnMagazines[] = {mag_5("30Rnd_Agrip_mag_Tracer"),mag_2("TIOW_ig_frag_grenade_mag"), mag_2("ML700_krak_grenade_magazine"), mag_2("TIOW_ig_smoke_grenade_mag")};
+       	 	magazines[] = {mag_5(30Rnd_Agrip_mag_Tracer),mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine), mag_2(TIOW_ig_smoke_grenade_mag)};
+        	respawnMagazines[] = {mag_5(30Rnd_Agrip_mag_Tracer),mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine), mag_2(TIOW_ig_smoke_grenade_mag)};
 	};
 };
