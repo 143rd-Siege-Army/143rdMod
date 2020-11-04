@@ -38,7 +38,7 @@ class CfgGroups {
 			name = "143rd Custom Factions";
 			class DK143_O_NurgleCultists
 			{
-				displayName = "Nurgle Cultists";
+				name = "Nurgle Cultists";
 				class DK143_O_NurgleCultists_fireteam {
 					name = "Fireteam";
 					side = 0;
