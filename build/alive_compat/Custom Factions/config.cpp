@@ -42,7 +42,7 @@ class CfgGroups {
 						position[] = {0,0,0};
 						rank = "SERGEANT";
 						side = 0;
-						vehicle = "DK143_O_Nurgle_Cultist_Rifleman";
+						vehicle = "DK143_O_Nurgle_Cultist_SquadLeader";
 					};
 					class Unit1 {
 						position[] = {5,-5,0};
@@ -75,7 +75,7 @@ class CfgGroups {
 						position[] = {0,0,0};
 						rank = "SERGEANT";
 						side = 0;
-						vehicle = "DK143_O_Nurgle_Cultist_Rifleman";
+						vehicle = "DK143_O_Nurgle_Cultist_SquadLeader";
 					};
 					class Unit1 {
 						position[] = {0,0,0};
@@ -144,7 +144,7 @@ class CfgGroups {
 						position[] = {0,0,0};
 						rank = "SERGEANT";
 						side = 0;
-						vehicle = "DK143_O_Nurgle_Cultist_Rifleman";
+						vehicle = "DK143_O_Nurgle_Cultist_SquadLeader";
 					};
 					class Unit1 {
 						position[] = {0,0,0};
@@ -226,12 +226,14 @@ class CfgVehicles
 		//Base/small items
 		linkedItems[] = {"TIOW_Cultist_Gear","TIOW_Cultist_Hood_brown","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
 		respawnlinkedItems[] = {"TIOW_Cultist_Gear","TIOW_Cultist_Hood_brown","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+		backpack = "Ren_Backpack_02_black";
 	};
 	
 	// Fleshed out Units
 	// Nurgle Cultists
 	// OPFOR
 	class DK143_O_Nurgle_Cultist_Rifleman : DK143_Base_Nurgle_Cultist {
+		name = "Rifleman Cultist";
 		scope = 2;
 		side = 0;
 		// Give AI gun
@@ -240,10 +242,10 @@ class CfgVehicles
 		// Give AI boolets
        	 	magazines[] = {mag_5("30Rnd_Agrip_mag_Tracer"),mag_2("TIOW_ig_frag_grenade_mag"), mag_2("ML700_krak_grenade_magazine")};
         	respawnMagazines[] = {mag_5("30Rnd_Agrip_mag_Tracer"),mag_2("TIOW_ig_frag_grenade_mag"), mag_2("ML700_krak_grenade_magazine")};
-		backpack = "Ren_Backpack_02_black";
 	};
 	
 	class DK143_O_Nurgle_Cultist_Melta : DK143_Base_Nurgle_Cultist {
+		name = "Melta Gunner Cultist";
 		scope = 2;
 		side = 0;
 		cost = 3;
@@ -257,6 +259,7 @@ class CfgVehicles
 	};
 	
 	class DK143_O_Nurgle_Cultist_Plasmagun : DK143_Base_Nurgle_Cultist {
+		name = "Plasma Gunner Cultist";
 		scope = 2;
 		side = 0;
 		cost = 3;
@@ -270,6 +273,7 @@ class CfgVehicles
 	};
 	
 	class DK143_O_Nurgle_Cultist_ML : DK143_Base_Nurgle_Cultist {
+		name = "Missle Launcher Cultist";
 		scope = 2;
 		side = 0;
 		cost = 3;
@@ -279,5 +283,18 @@ class CfgVehicles
 		// Give AI Boolets
         	magazines[] = {mag_5("30Rnd_Agrip_mag_Tracer"), mag_2("ML700_84mm_HE_Locke_Mag"), mag_2("TIOW_ig_frag_grenade_mag"), mag_2("ML700_krak_grenade_magazine")};
         	respawnMagazines[] = {mag_5("30Rnd_Agrip_mag_Tracer"), mag_2("ML700_84mm_HE_Locke_Mag"), mag_2("TIOW_ig_frag_grenade_mag"), mag_2("ML700_krak_grenade_magazine")};
+	};
+	
+	class DK143_O_Nurgle_Cultist_SquadLeader : DK143_Base_Nurgle_Cultist {
+		name = "Squad Leader";
+		scope = 2;
+		side = 0;
+		cost = 4;
+		// Give AI gun
+		weapons[] = {"AgripinaaAutoChaos3"};
+        	respawnWeapons[] = {"AgripinaaAutoChaos3"};
+		// Give AI boolets
+       	 	magazines[] = {mag_5("30Rnd_Agrip_mag_Tracer"),mag_2("TIOW_ig_frag_grenade_mag"), mag_2("ML700_krak_grenade_magazine"), mag_2("TIOW_ig_smoke_grenade_mag")};
+        	respawnMagazines[] = {mag_5("30Rnd_Agrip_mag_Tracer"),mag_2("TIOW_ig_frag_grenade_mag"), mag_2("ML700_krak_grenade_magazine"), mag_2("TIOW_ig_smoke_grenade_mag")};
 	};
 };
