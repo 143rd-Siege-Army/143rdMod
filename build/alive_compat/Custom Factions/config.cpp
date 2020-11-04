@@ -233,9 +233,10 @@ class CfgVehicles
 	// Nurgle Cultists
 	// OPFOR
 	class DK143_O_Nurgle_Cultist_Rifleman : DK143_Base_Nurgle_Cultist {
-		name = "Rifleman Cultist";
+		displayName = "Rifleman Cultist";
 		scope = 2;
 		side = 0;
+		uniformClass = "U_TIOW_Cultist_brown";
 		// Give AI gun
 		weapons[] = {"AgripinaaAutoChaos3"};
         	respawnWeapons[] = {"AgripinaaAutoChaos3"};
@@ -245,10 +246,11 @@ class CfgVehicles
 	};
 	
 	class DK143_O_Nurgle_Cultist_Melta : DK143_Base_Nurgle_Cultist {
-		name = "Melta Gunner Cultist";
+		displayName = "Melta Gunner Cultist";
 		scope = 2;
 		side = 0;
 		cost = 3;
+		uniformClass = "U_TIOW_Cultist_brown";
 		// Give AI gun
 		weapons[] = {"TIOW_MeltaGun_01","LuciusLaspistolGreen"};
         	respawnWeapons[] = {"TIOW_MeltaGun_01","LuciusLaspistolGreen"};
@@ -259,10 +261,11 @@ class CfgVehicles
 	};
 	
 	class DK143_O_Nurgle_Cultist_Plasmagun : DK143_Base_Nurgle_Cultist {
-		name = "Plasma Gunner Cultist";
+		displayName = "Plasma Gunner Cultist";
 		scope = 2;
 		side = 0;
 		cost = 3;
+		uniformClass = "U_TIOW_Cultist_brown";
 		// Give AI gun
 		weapons[] = {"Chaos_PlasmaGun","ML700_LasPistol_F"};
         	respawnWeapons[] = {"Chaos_PlasmaGun","ML700_LasPistol_F"};
@@ -273,10 +276,11 @@ class CfgVehicles
 	};
 	
 	class DK143_O_Nurgle_Cultist_ML : DK143_Base_Nurgle_Cultist {
-		name = "Missle Launcher Cultist";
+		displayName = "Missle Launcher Cultist";
 		scope = 2;
 		side = 0;
 		cost = 3;
+		uniformClass = "U_TIOW_Cultist_brown";
 		// Give AI Gun
 		weapons[] = {"AgripinaaAutoChaos3","ML700_Launcher_Weapon_LockeLauncher_Blood"};
         	respawnWeapons[] = {"AgripinaaAutoChaos3","ML700_Launcher_Weapon_LockeLauncher_Blood"};
@@ -286,10 +290,11 @@ class CfgVehicles
 	};
 	
 	class DK143_O_Nurgle_Cultist_SquadLeader : DK143_Base_Nurgle_Cultist {
-		name = "Firebrand";
+		displayName = "Firebrand";
 		scope = 2;
 		side = 0;
 		cost = 4;
+		uniformClass = "U_TIOW_Cultist_brown";
 		// Give AI gun
 		weapons[] = {"AgripinaaAutoChaos3"};
         	respawnWeapons[] = {"AgripinaaAutoChaos3"};
