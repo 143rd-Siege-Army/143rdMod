@@ -243,7 +243,7 @@ class CfgVehicles
 		// Identity (head, language)	
         	identityTypes[] = {"Head_Chaos","LanguageENGB"};
 		// Uniform
-		uniformClass = "U_TIOW_Cultist_brown";
+		uniformClass = "OP_Ren_Uniform_01_Brown";
 		//Base/small items
 		linkedItems[] = {"TIOW_Cultist_Gear","TIOW_Cultist_Hood_brown","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
 		respawnlinkedItems[] = {"TIOW_Cultist_Gear","TIOW_Cultist_Hood_brown","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
@@ -275,7 +275,6 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		side = 0;
-		uniformClass = "U_TIOW_Cultist_brown";
 		// Give AI gun
 		weapons[] = {"AgripinaaAutoChaos3"};
         	respawnWeapons[] = {"AgripinaaAutoChaos3"};
@@ -290,7 +289,6 @@ class CfgVehicles
 		scopeCurator = 2;
 		side = 0;
 		cost = 3;
-		uniformClass = "U_TIOW_Cultist_brown";
 		// Give AI gun
 		weapons[] = {"TIOW_MeltaGun_01","LuciusLaspistolGreen"};
         	respawnWeapons[] = {"TIOW_MeltaGun_01","LuciusLaspistolGreen"};
@@ -322,7 +320,6 @@ class CfgVehicles
 		scopeCurator = 2;
 		side = 0;
 		cost = 3;
-		uniformClass = "U_TIOW_Cultist_brown";
 		// Give AI Gun
 		weapons[] = {"AgripinaaAutoChaos3","ML700_Launcher_Weapon_LockeLauncher_Blood"};
         	respawnWeapons[] = {"AgripinaaAutoChaos3","ML700_Launcher_Weapon_LockeLauncher_Blood"};
@@ -337,7 +334,6 @@ class CfgVehicles
 		scopeCurator = 2;
 		side = 0;
 		cost = 4;
-		uniformClass = "U_TIOW_Cultist_brown";
 		// Give AI gun
 		weapons[] = {"AgripinaaAutoChaos3"};
         	respawnWeapons[] = {"AgripinaaAutoChaos3"};
