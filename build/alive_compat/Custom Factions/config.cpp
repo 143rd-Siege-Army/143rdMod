@@ -353,7 +353,49 @@ class CfgVehicles
 		weapons[] = {"TIOW_pulse_carbine_FE","Laserdesignator_01_khk_F"};
 		respawnWeapons[] = {"TIOW_pulse_carbine_FE","Laserdesignator_01_khk_F"};
 
-		magazines[] = {mag_5(TIOW_pulse_mag),"Laserbatteries", "Laserbatteries"};
-		respawnMagazines[] = {mag_5(TIOW_pulse_mag),"Laserbatteries", "Laserbatteries"};
+		magazines[] = {mag_5(TIOW_pulse_mag),"Laserbatteries", "Laserbatteries", mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine), mag_2(TIOW_ig_smoke_grenade_mag)};
+		respawnMagazines[] = {mag_5(TIOW_pulse_mag),"Laserbatteries", "Laserbatteries", mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine), mag_2(TIOW_ig_smoke_grenade_mag)};
+	};
+	
+	class DK143_O_Farsight_Dominate_Marksmen : DK143_Base_Farsight_Dominate {
+		displayName = "Farsight Dominate Marksmen";
+		scope = 2;
+		scopeCurator = 2;
+		side = 0;
+		cost = 2;
+		
+		weapons[] = {"TIOW_pulse_rifle_FE","Laserdesignator_01_khk_F"};
+        	respawnWeapons[] = {"TIOW_pulse_rifle_FE","Laserdesignator_01_khk_F"};
+
+        	magazines[] = {mag_5(TIOW_pulse_mag), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine),"Laserbatteries","Laserbatteries"};
+        	respawnMagazines[] = {mag_5(TIOW_pulse_mag), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine),"Laserbatteries","Laserbatteries"};
+	};
+	
+	class DK143_O_Farsight_Dominate_IonRifle : DK143_Base_Farsight_Dominate {
+		displayName = "Farsight Dominate Ion Riflemen";
+		scope = 2;
+		scopeCurator = 2;
+		side = 0;
+		cost = 2;
+		
+		weapons[] = {"TIOW_ion_rifle_FE","Laserdesignator_01_khk_F"};
+        	respawnWeapons[] = {"TIOW_ion_rifle_FE","Laserdesignator_01_khk_F"};
+
+        	magazines[] = {mag_5(TIOW_ionrifle_shot_mag), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine),"Laserbatteries","Laserbatteries"};
+        	respawnMagazines[] = {mag_5(TIOW_ionrifle_shot_mag), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine),"Laserbatteries","Laserbatteries"};
+	};
+	
+	class DK143_O_Farsight_Dominate_RailRifle : DK143_Base_Farsight_Dominate {
+		displayName = "Farsight Dominate Rail Riflemen";
+		scope = 2;
+		scopeCurator = 2;
+		side = 0;
+		cost = 2;
+		
+		weapons[] = {"TIOW_rail_rifle_FE","Laserdesignator_01_khk_F"};
+		respawnWeapons[] = {"TIOW_rail_rifle_FE","Laserdesignator_01_khk_F"};
+
+        	magazines[] = {mag_5(TIOW_railrifle_mag), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine),"Laserbatteries","Laserbatteries"};
+        	respawnMagazines[] = {mag_5(TIOW_railrifle_mag), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine),"Laserbatteries","Laserbatteries"};
 	};
 };
