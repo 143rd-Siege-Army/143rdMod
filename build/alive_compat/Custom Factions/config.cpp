@@ -27,7 +27,7 @@ class CfgFactionClasses {
 class CfgGroups {
 	class EAST {
 		class DK143_Custom_Factions{
-			name = "143rd Custom Factions;
+			name = "143rd Custom Factions";
 			class DK143_O_NurgleCultists
 			{
 				displayName = "Nurgle Cultists";
