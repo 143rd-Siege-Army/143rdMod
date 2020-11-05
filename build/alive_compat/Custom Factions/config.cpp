@@ -86,55 +86,55 @@ class CfgGroups {
 						vehicle = "DK143_O_Nurgle_Cultist_SquadLeader";
 					};
 					class Unit1 {
-						position[] = {0,0,0};
+						position[] = {5,-5,0};
 						rank = "CORPORAL";
 						side = 0;
 						vehicle = "DK143_O_Nurgle_Cultist_Plasmagun";
 					};
 					class Unit2 {
-						position[] = {0,0,0};
+						position[] = {-5,-5,0};
 						rank = "CORPORAL";
 						side = 0;
 						vehicle = "DK143_O_Nurgle_Cultist_ML";
 					};
 					class Unit3 {
-						position[] = {0,0,0};
+						position[] = {10,-10,0};
 						rank = "PRIVATE";
 						side = 0;
 						vehicle = "DK143_O_Nurgle_Cultist_Rifleman";
 					};
 					class Unit4 {
-						position[] = {0,0,0};
+						position[] = {-10,-10,0};
 						rank = "PRIVATE";
 						side = 0;
 						vehicle = "DK143_O_Nurgle_Cultist_Rifleman";
 					};
 					class Unit5 {
-						position[] = {0,0,0};
+						position[] = {15,-15,0};
 						rank = "PRIVATE";
 						side = 0;
 						vehicle = "DK143_O_Nurgle_Cultist_Rifleman";
 					};
 					class Unit6 {
-						position[] = {0,0,0};
+						position[] = {-15,-15,0};
 						rank = "PRIVATE";
 						side = 0;
 						vehicle = "DK143_O_Nurgle_Cultist_Rifleman";
 					};
 					class Unit7 {
-						position[] = {0,0,0};
+						position[] = {20,-20,0};
 						rank = "PRIVATE";
 						side = 0;
 						vehicle = "DK143_O_Nurgle_Cultist_Rifleman";
 					};
 					class Unit8 {
-						position[] = {0,0,0};
+						position[] = {-20,-20,0};
 						rank = "PRIVATE";
 						side = 0;
 						vehicle = "DK143_O_Nurgle_Cultist_Rifleman";
 					};
 					class Unit9 {
-						position[] = {0,0,0};
+						position[] = {25,-25,0};
 						rank = "PRIVATE";
 						side = 0;
 						vehicle = "DK143_O_Nurgle_Cultist_Rifleman";
@@ -155,61 +155,237 @@ class CfgGroups {
 						vehicle = "DK143_O_Nurgle_Cultist_SquadLeader";
 					};
 					class Unit1 {
-						position[] = {0,0,0};
+						position[] = {5,-5,0};
 						rank = "CORPORAL";
 						side = 0;
 						vehicle = "DK143_O_Nurgle_Cultist_Plasmagun";
 					};
 					class Unit2 {
-						position[] = {0,0,0};
+						position[] = {-5,-5,0};
 						rank = "CORPORAL";
 						side = 0;
 						vehicle = "DK143_O_Nurgle_Cultist_Melta";
 					};
 					class Unit3 {
-						position[] = {0,0,0};
+						position[] = {10,-10,0};
 						rank = "PRIVATE";
 						side = 0;
 						vehicle = "DK143_O_Nurgle_Cultist_Rifleman";
 					};
 					class Unit4 {
-						position[] = {0,0,0};
+						position[] = {-10,-10,0};
 						rank = "PRIVATE";
 						side = 0;
 						vehicle = "DK143_O_Nurgle_Cultist_Rifleman";
 					};
 					class Unit5 {
-						position[] = {0,0,0};
+						position[] = {15,-15,0};
 						rank = "PRIVATE";
 						side = 0;
 						vehicle = "DK143_O_Nurgle_Cultist_Rifleman";
 					};
 					class Unit6 {
-						position[] = {0,0,0};
+						position[] = {-15,-15,0};
 						rank = "PRIVATE";
 						side = 0;
 						vehicle = "DK143_O_Nurgle_Cultist_Rifleman";
 					};
 					class Unit7 {
-						position[] = {0,0,0};
+						position[] = {20,-20,0};
 						rank = "PRIVATE";
 						side = 0;
 						vehicle = "DK143_O_Nurgle_Cultist_Rifleman";
 					};
 					class Unit8 {
-						position[] = {0,0,0};
+						position[] = {-20,-20,0};
 						rank = "PRIVATE";
 						side = 0;
 						vehicle = "DK143_O_Nurgle_Cultist_Rifleman";
 					};
 					class Unit9 {
-						position[] = {0,0,0};
+						position[] = {25,-25,0};
 						rank = "PRIVATE";
 						side = 0;
 						vehicle = "DK143_O_Nurgle_Cultist_Rifleman";
 					};
 				};
 			};
+		
+			class DK143_O_Farsight_Dominate{
+				name = "Farsight Dominate";
+				class DK143_O_Farsight_Dominate_fireteam {
+					name = "Fireteam";
+					side = 0;
+					faction = "DK143_O_Farsight_Dominate";
+					icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+					rarityGroup = 0.5;
+					
+					class Unit0 {
+						position[] = {0,0,0};
+						rank = "SERGEANT";
+						side = 0;
+						vehicle = "DK143_O_Farsight_Dominate_Marksmen";
+					};
+					class Unit1 {
+						position[] = {5,-5,0};
+						rank = "CORPORAL";
+						side = 0;
+						vehicle = "DK143_O_Farsight_Dominate_IonRifle";
+					};
+					class Unit2 {
+						position[] = {-5,-5,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_Farsight_Dominate_Rifleman";
+					 };
+					 class Unit3 {
+						position[] = {10,-10,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_Farsight_Dominate_Rifleman";
+					 };
+				};
+				
+				class DK143_O_Farsight_Dominate_Squad {
+					name = "Squad";
+					side = 0;
+					faction = "DK143_O_Farsight_Dominate";
+					icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+					rarityGroup = 0.5;
+					
+					class Unit0 {
+						position[] = {0,0,0};
+						rank = "SERGEANT";
+						side = 0;
+						vehicle = "DK143_O_Farsight_Dominate_Marksmen";
+					};
+					class Unit1 {
+						position[] = {5,-5,0};
+						rank = "CORPORAL";
+						side = 0;
+						vehicle = "DK143_O_Farsight_Dominate_IonRifle";
+					};
+					class Unit2 {
+						position[] = {-5,-5,0};
+						rank = "CORPORAL";
+						side = 0;
+						vehicle = "DK143_O_Farsight_Dominate_RailRifle";
+					};
+					class Unit3 {
+						position[] = {10,-10,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_Farsight_Dominate_Rifleman";
+					};
+					class Unit4 {
+						position[] = {-10,-10,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_Farsight_Dominate_Rifleman";
+					};
+					class Unit5 {
+						position[] = {15,-15,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_Farsight_Dominate_Rifleman";
+					};
+					class Unit6 {
+						position[] = {-15,-15,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_Farsight_Dominate_Rifleman";
+					};
+					class Unit7 {
+						position[] = {20,-20,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_Farsight_Dominate_Rifleman";
+					};
+					class Unit8 {
+						position[] = {-20,-20,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_Farsight_Dominate_Rifleman";
+					};
+					class Unit9 {
+						position[] = {25,-25,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_Farsight_Dominate_Rifleman";
+					};
+				};
+				
+				class DK143_O_Farsight_Dominate_Squad_CQB {
+					name = "Squad CQB";
+					side = 0;
+					faction = "DK143_O_Farsight_Dominate";
+					icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+					rarityGroup = 0.5;
+					
+					class Unit0 {
+						position[] = {0,0,0};
+						rank = "SERGEANT";
+						side = 0;
+						vehicle = "DK143_O_Farsight_Dominate_Marksmen";
+					};
+					class Unit1 {
+						position[] = {5,-5,0};
+						rank = "CORPORAL";
+						side = 0;
+						vehicle = "DK143_O_Farsight_Dominate_IonRifle";
+					};
+					class Unit2 {
+						position[] = {-5,-5,0};
+						rank = "CORPORAL";
+						side = 0;
+						vehicle = "DK143_O_Farsight_Dominate_IonRifle";
+					};
+					class Unit3 {
+						position[] = {10,-10,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_Farsight_Dominate_Rifleman";
+					};
+					class Unit4 {
+						position[] = {-10,-10,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_Farsight_Dominate_Rifleman";
+					};
+					class Unit5 {
+						position[] = {15,-15,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_Farsight_Dominate_Rifleman";
+					};
+					class Unit6 {
+						position[] = {-15,-15,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_Farsight_Dominate_Rifleman";
+					};
+					class Unit7 {
+						position[] = {20,-20,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_Farsight_Dominate_Rifleman";
+					};
+					class Unit8 {
+						position[] = {-20,-20,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_Farsight_Dominate_Rifleman";
+					};
+					class Unit9 {
+						position[] = {25,-25,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_Farsight_Dominate_Rifleman";
+					};
+				};
+			};
+		
+		
 		};
 	};
 	class WEST{};
@@ -304,7 +480,6 @@ class CfgVehicles
 		scopeCurator = 2;
 		side = 0;
 		cost = 3;
-		uniformClass = "U_TIOW_Cultist_brown";
 		// Give AI gun
 		weapons[] = {"Chaos_PlasmaGun","ML700_LasPistol_F"};
         	respawnWeapons[] = {"Chaos_PlasmaGun","ML700_LasPistol_F"};
