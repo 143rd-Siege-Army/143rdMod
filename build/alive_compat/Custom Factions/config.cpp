@@ -31,7 +31,7 @@ class CfgFactionClasses {
 		priority = 0;
 	};
 	
-		class DK143_O_Admech {
+	class DK143_O_Admech {
 		displayname = "Adeptus Mechanicus";
 		side = 0;
 		flag = "\A3\ui_f\data\map\markers\flags\CSAT_ca.paa";
