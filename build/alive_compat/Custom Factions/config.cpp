@@ -38,6 +38,30 @@ class CfgFactionClasses {
 		icon = "\A3\ui_f\data\map\markers\flags\CSAT_ca.paa";
 		priority = 0;
 	};
+	
+	class DK143_O_AgaWil {
+		displayname = "Agamemnon's Will";
+		side = 0;
+		flag = "\A3\ui_f\data\map\markers\flags\CSAT_ca.paa";
+		icon = "\A3\ui_f\data\map\markers\flags\CSAT_ca.paa";
+		priority = 0;
+	};
+	
+	class DK143_B_ArgosIV {
+		displayname = "Argos IV PDF";
+		side = 0;
+		flag = "\A3\ui_f\data\map\markers\flags\CSAT_ca.paa";
+		icon = "\A3\ui_f\data\map\markers\flags\CSAT_ca.paa";
+		priority = 0;
+	};
+	
+	class DK143_B_EmpAlleyFighters {
+		displayname = "Emperor's Alley Fighters";
+		side = 0;
+		flag = "\A3\ui_f\data\map\markers\flags\CSAT_ca.paa";
+		icon = "\A3\ui_f\data\map\markers\flags\CSAT_ca.paa";
+		priority = 0
+	};
 };
 
 class CfgGroups {
@@ -723,36 +747,89 @@ class CfgVehicles
 
 		backpack = "TIOW_Tau_Bck_Strike_FE";
 	};
-	//	Adeptus Mechanicus
+	// Adeptus Mechanicus
 	class DK143_O_AdmechSkitarii_BaseRanger : O_Soldier_base_F {
-        scope = 0;
-        scopeCurator = 0;
-		cost = 1;
-        displayName = "Skitarii Ranger";
-        side = 0;
-        faction = "DK143_O_Admech";
-        identityTypes[] = {"Head_NATO","LanguageENG_F","NoGlasses"};
-        uniformClass = "AM_robesUNI";
-		hiddenSelections[] = {"camo"};
-        linkedItems[] = {"AM_armor","AM_hood","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
-        respawnlinkedItems[] = {"AM_armor","AM_hood","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
-        backpack = "BP";
-};
+		scope = 0;
+		scopeCurator = 0;
+			cost = 1;
+		displayName = "Skitarii Ranger";
+		side = 0;
+		faction = "DK143_O_Admech";
+		identityTypes[] = {"Head_NATO","LanguageENG_F","NoGlasses"};
+		uniformClass = "AM_robesUNI";
+			hiddenSelections[] = {"camo"};
+		linkedItems[] = {"AM_armor","AM_hood","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+		respawnlinkedItems[] = {"AM_armor","AM_hood","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+		backpack = "BP";
+	};
 
 	class DK143_O_AdmechSkitarii_BaseVanguard : O_Soldier_base_F {
-        scope = 0;
-        scopeCurator = 0;
+		scope = 0;
+		scopeCurator = 0;
 		cost = 1;
-        displayName = "Skitarii Vanguard";
-        side = 0;
-        faction = "DK143_O_Admech";
-        identityTypes[] = {"Head_NATO","LanguageENG_F","NoGlasses"};
-        uniformClass = "AM_alpha_robesUNI";
+		displayName = "Skitarii Vanguard";
+		side = 0;
+		faction = "DK143_O_Admech";
+		identityTypes[] = {"Head_NATO","LanguageENG_F","NoGlasses"};
+		uniformClass = "AM_alpha_robesUNI";
 		hiddenSelections[] = {"camo"};
-        linkedItems[] = {"AM_armor","AM_VH1","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
-        respawnlinkedItems[] = {"AM_armor","AM_VH1","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
-        backpack = "BP";
-};
+		linkedItems[] = {"AM_armor","AM_VH1","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+		respawnlinkedItems[] = {"AM_armor","AM_VH1","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+		backpack = "BP";
+	};
+	
+	// Agamemnon's Will
+	class DK143_O_AgaWill_Base : O_Soldier_base_F {
+		scope = 0;
+		scopeCurator = 0;
+		displayName = "Agamemnon's Will Soldier";
+		side = 0;
+		faction = "DK143_O_AgaWill";
+
+		identityTypes[] = {"Head_TK","LanguagePER_F","G_IRAN_default"};
+
+		uniformClass = "U_O_VSoldier_Viper_hex_F";
+
+		linkedItems[] = {"ML700_BP_Armor0","H_HelmetO_ocamo","G_AirPurifyingRespirator_02_sand_F","ItemMap","ItemcTab","TFAR_anprc152","ItemCompass","TFAR_microdagr","TIOW_IG_NVG"};
+		respawnlinkedItems[] = {"ML700_BP_Armor0","H_HelmetO_ocamo","G_AirPurifyingRespirator_02_sand_F","ItemMap","ItemcTab","TFAR_anprc152","ItemCompass","TFAR_microdagr","TIOW_IG_NVG"};
+
+		backpack = "Ren_Backpack_02_black";
+	};
+	
+	// Argos IV PDF
+	class DK143_B_ArgosIV_Base : B_Soldier_base_F {
+		scope = 0;
+		scopeCurator = 0;
+		displayName = "Argos IV PDF";
+		side = 0;
+		faction = "DK143_B_ArgosIV";
+
+		identityTypes[] = {"Head_NATO","LanguageENG_F","NoGlasses"};
+
+		uniformClass = "SGA_SG1_Uniform_wood";
+
+		linkedItems[] = {"V_PlateCarrier2_rgr","IC_cad_helmet_green","ItemMap","ItemcTab","TFAR_anprc152","ItemCompass","TFAR_microdagr"};
+		respawnlinkedItems[] = {"V_PlateCarrier2_rgr","IC_cad_helmet_green","ItemMap","ItemcTab","TFAR_anprc152","ItemCompass","TFAR_microdagr"};
+
+	};
+	
+	// Emperor's Alley Fighters
+	class DK143_B_EmpAlleyFighters_Base : B_Soldier_base_F {
+		scope = 0;
+		scopeCurator = 0;
+		displayName = "Emperor's Alley Fighters Soldier";
+		side = 0;
+		faction = "DK143_B_EmpAlleyFighters";
+
+		identityTypes[] = {"Head_NATO","LanguageENG_F","NoGlasses"};
+
+		uniformClass = "YSA_Uniform_Urban_MARPAT_Patchless";
+
+		linkedItems[] = {"IC_CAD_FlakArmor_Bandolier_Grey","IC_cad_helmet_gray", "G_AirPurifyingRespirator_01","ItemMap","ItemcTab","TFAR_anprc152","ItemCompass","TFAR_microdagr", "NVGoogles_blk_F"};
+		respawnlinkedItems[] = {"IC_CAD_FlakArmor_Bandolier_Grey","IC_cad_helmet_gray", "G_AirPurifyingRespirator_01","ItemMap","ItemcTab","TFAR_anprc152","ItemCompass","TFAR_microdagr", "NVGoogles_blk_F"}
+		
+		backpack = "IC_CAD_assaultpack_grey_03";
+	};
 	// Fleshed out Units
 	// Nurgle Cultists
 	// OPFOR
