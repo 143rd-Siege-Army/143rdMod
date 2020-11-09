@@ -49,7 +49,7 @@ class CfgFactionClasses {
 	
 	class DK143_B_ArgosIV {
 		displayname = "Argos IV PDF";
-		side = 0;
+		side = 1;
 		flag = "\A3\ui_f\data\map\markers\flags\CSAT_ca.paa";
 		icon = "\A3\ui_f\data\map\markers\flags\CSAT_ca.paa";
 		priority = 0;
@@ -57,7 +57,7 @@ class CfgFactionClasses {
 	
 	class DK143_B_EmpAlleyFighters {
 		displayname = "Emperor's Alley Fighters";
-		side = 0;
+		side = 1;
 		flag = "\A3\ui_f\data\map\markers\flags\CSAT_ca.paa";
 		icon = "\A3\ui_f\data\map\markers\flags\CSAT_ca.paa";
 		priority = 0
