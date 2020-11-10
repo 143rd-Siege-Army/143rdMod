@@ -39,7 +39,7 @@ class CfgFactionClasses {
 		priority = 0;
 	};
 	
-	class DK143_O_AgaWil {
+	class DK143_O_AgaWill {
 		displayname = "Agamemnon's Will";
 		side = 0;
 		flag = "\A3\ui_f\data\map\markers\flags\CSAT_ca.paa";
@@ -55,9 +55,25 @@ class CfgFactionClasses {
 		priority = 0;
 	};
 	
+	class DK143_I_ArgosIV {
+		displayname = "Argos IV PDF";
+		side = 2;
+		flag = "\A3\ui_f\data\map\markers\flags\CSAT_ca.paa";
+		icon = "\A3\ui_f\data\map\markers\flags\CSAT_ca.paa";
+		priority = 0;
+	};
+	
 	class DK143_B_EmpAlleyFighters {
 		displayname = "Emperor's Alley Fighters";
 		side = 1;
+		flag = "\A3\ui_f\data\map\markers\flags\CSAT_ca.paa";
+		icon = "\A3\ui_f\data\map\markers\flags\CSAT_ca.paa";
+		priority = 0
+	};
+	
+	class DK143_I_EmpAlleyFighters {
+		displayname = "Emperor's Alley Fighters";
+		side = 2;
 		flag = "\A3\ui_f\data\map\markers\flags\CSAT_ca.paa";
 		icon = "\A3\ui_f\data\map\markers\flags\CSAT_ca.paa";
 		priority = 0
@@ -68,8 +84,10 @@ class CfgGroups {
 	class EAST {
 		class DK143_Custom_Factions{
 			name = "143rd Custom Factions";
+			
 			class DK143_O_NurgleCultists {
 				name = "Nurgle Cultists";
+				
 				class DK143_O_NurgleCultists_fireteam {
 					name = "Fireteam";
 					side = 0;
@@ -244,6 +262,7 @@ class CfgGroups {
 		
 			class DK143_O_Farsight_Dominate {
 				name = "Farsight Dominate";
+				
 				class DK143_O_Farsight_Dominate_fireteam {
 					name = "Fireteam";
 					side = 0;
@@ -518,7 +537,6 @@ class CfgGroups {
                     };
                 };
 
-
                 class DK143_O_Admechfireteam_plasma {
                     name = "Skitarii Vanguard Fireteam Plasma";
                     side = 0;
@@ -690,12 +708,964 @@ class CfgGroups {
                     };
                 };
 			};
+		
+			class DK143_O_AgaWill {
+				name = "Agamemnon's Will";
+				
+				class DK143_O_AgaWill_fireteam {
+					name = "Fireteam";
+					side = 0;
+					faction = "DK143_O_AgaWill";
+					icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+					rarityGroup = 0.5;
+					
+					class Unit0 {
+						position[] = {0,0,0};
+						rank = "SERGEANT";
+						side = 0;
+						vehicle = "DK143_O_AgaWill_Riflemen";
+					};
+					class Unit1 {
+						position[] = {5,-5,0};
+						rank = "CORPORAL";
+						side = 0;
+						vehicle = "DK143_O_AgaWill_Plasma";
+					};
+					class Unit2 {
+						position[] = {-5,-5,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_AgaWill_Riflemen";
+					 };
+					 class Unit3 {
+						position[] = {10,-10,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_AgaWill_Riflemen";
+					 };
+				};
+				
+				class DK143_O_AgaWill_Squad {
+					name = "Squad";
+					side = 0;
+					faction = "DK143_O_AgaWill";
+					icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+					rarityGroup = 0.5;
+					
+					class Unit0 {
+						position[] = {0,0,0};
+						rank = "SERGEANT";
+						side = 0;
+						vehicle = "DK143_O_AgaWill_Riflemen";
+					};
+					class Unit1 {
+						position[] = {5,-5,0};
+						rank = "CORPORAL";
+						side = 0;
+						vehicle = "DK143_O_AgaWill_Plasma";
+					};
+					class Unit2 {
+						position[] = {-5,-5,0};
+						rank = "CORPORAL";
+						side = 0;
+						vehicle = "DK143_O_AgaWill_Stubber";
+					};
+					class Unit3 {
+						position[] = {10,-10,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_AgaWill_Riflemen";
+					};
+					class Unit4 {
+						position[] = {-10,-10,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_AgaWill_Riflemen";
+					};
+					class Unit5 {
+						position[] = {15,-15,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_AgaWill_Riflemen";
+					};
+					class Unit6 {
+						position[] = {-15,-15,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_AgaWill_Riflemen";
+					};
+					class Unit7 {
+						position[] = {20,-20,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_AgaWill_Riflemen";
+					};
+					class Unit8 {
+						position[] = {-20,-20,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_AgaWill_Riflemen";
+					};
+					class Unit9 {
+						position[] = {25,-25,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_AgaWill_Riflemen";
+					};
+				};
+				
+				class DK143_O_AgaWill_Squad_CQB {
+					name = "Squad CQB";
+					side = 0;
+					faction = "DK143_O_AgaWill";
+					icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+					rarityGroup = 0.5;
+					
+					class Unit0 {
+						position[] = {0,0,0};
+						rank = "SERGEANT";
+						side = 0;
+						vehicle = "DK143_O_AgaWill_Riflemen";
+					};
+					class Unit1 {
+						position[] = {5,-5,0};
+						rank = "CORPORAL";
+						side = 0;
+						vehicle = "DK143_O_AgaWill_Plasma";
+					};
+					class Unit2 {
+						position[] = {-5,-5,0};
+						rank = "CORPORAL";
+						side = 0;
+						vehicle = "Mod_Faction_MeltaGunner";
+					};
+					class Unit3 {
+						position[] = {10,-10,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_AgaWill_Riflemen";
+					};
+					class Unit4 {
+						position[] = {-10,-10,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_AgaWill_Riflemen";
+					};
+					class Unit5 {
+						position[] = {15,-15,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_AgaWill_Riflemen";
+					};
+					class Unit6 {
+						position[] = {-15,-15,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_AgaWill_Riflemen";
+					};
+					class Unit7 {
+						position[] = {20,-20,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_AgaWill_Riflemen";
+					};
+					class Unit8 {
+						position[] = {-20,-20,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_AgaWill_Riflemen";
+					};
+					class Unit9 {
+						position[] = {25,-25,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_AgaWill_Riflemen";
+					};
+				};
+			};
 		};
 	};
-	class WEST{};
-	class INDEP{};
+	class WEST{
+		class DK143_Custom_Factions {
+			name = "143rd Custom Factions";
+			
+			class DK143_B_EmpAlleyFighters {
+				name = "Emperor's Alley Fighters";
+				
+				class DK143_B_EmpAlleyFighters_fireteam {
+					name = "Fireteam";
+					side = 1;
+					faction = "DK143_B_EmpAlleyFighters";
+					icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+					rarityGroup = 0.5;
+					
+					class Unit0 {
+						position[] = {0,0,0};
+						rank = "SERGEANT";
+						side = 1;
+						vehicle = "DK143_B_EmpAlleyFighters_Trooper";
+					};
+					class Unit1 {
+						position[] = {5,-5,0};
+						rank = "CORPORAL";
+						side = 1;
+						vehicle = "DK143_B_EmpAlleyFighters_PlasmaTrooper";
+					};
+					class Unit2 {
+						position[] = {-5,-5,0};
+						rank = "PRIVATE";
+						side = 1;
+						vehicle = "DK143_B_EmpAlleyFighters_Trooper";
+					 };
+					 class Unit3 {
+						position[] = {10,-10,0};
+						rank = "PRIVATE";
+						side = 1;
+						vehicle = "DK143_B_EmpAlleyFighters_Trooper";
+					 };
+				};
+				
+				class DK143_B_EmpAlleyFighters_Squad {
+					name = "Squad";
+					side = 1;
+					faction = "DK143_B_EmpAlleyFighters";
+					icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+					rarityGroup = 0.5;
+					
+					class Unit0 {
+						position[] = {0,0,0};
+						rank = "SERGEANT";
+						side = 1;
+						vehicle = "DK143_B_EmpAlleyFighters_Trooper";
+					};
+					class Unit1 {
+						position[] = {5,-5,0};
+						rank = "CORPORAL";
+						side = 1;
+						vehicle = "DK143_B_EmpAlleyFighters_PlasmaTrooper";
+					};
+					class Unit2 {
+						position[] = {-5,-5,0};
+						rank = "CORPORAL";
+						side = 1;
+						vehicle = "DK143_B_EmpAlleyFighters_ATTrooper";
+					};
+					class Unit3 {
+						position[] = {10,-10,0};
+						rank = "PRIVATE";
+						side = 1;
+						vehicle = "DK143_B_EmpAlleyFighters_Trooper";
+					};
+					class Unit4 {
+						position[] = {-10,-10,0};
+						rank = "PRIVATE";
+						side = 1;
+						vehicle = "DK143_B_EmpAlleyFighters_Trooper";
+					};
+					class Unit5 {
+						position[] = {15,-15,0};
+						rank = "PRIVATE";
+						side = 1;
+						vehicle = "DK143_B_EmpAlleyFighters_Trooper";
+					};
+					class Unit6 {
+						position[] = {-15,-15,0};
+						rank = "PRIVATE";
+						side = 1;
+						vehicle = "DK143_B_EmpAlleyFighters_Trooper";
+					};
+					class Unit7 {
+						position[] = {20,-20,0};
+						rank = "PRIVATE";
+						side = 1;
+						vehicle = "DK143_B_EmpAlleyFighters_Trooper";
+					};
+					class Unit8 {
+						position[] = {-20,-20,0};
+						rank = "PRIVATE";
+						side = 1;
+						vehicle = "DK143_B_EmpAlleyFighters_Trooper";
+					};
+					class Unit9 {
+						position[] = {25,-25,0};
+						rank = "PRIVATE";
+						side = 1;
+						vehicle = "DK143_B_EmpAlleyFighters_Trooper";
+					};
+				};
+				
+				class DK143_B_EmpAlleyFighters_Squad_CQB {
+					name = "Squad CQB";
+					side = 1;
+					faction = "DK143_B_EmpAlleyFighters";
+					icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+					rarityGroup = 0.5;
+					
+					class Unit0 {
+						position[] = {0,0,0};
+						rank = "SERGEANT";
+						side = 1;
+						vehicle = "DK143_B_EmpAlleyFighters_CQCTrooper";
+					};
+					class Unit1 {
+						position[] = {5,-5,0};
+						rank = "CORPORAL";
+						side = 1;
+						vehicle = "DK143_B_EmpAlleyFighters_PlasmaTrooper";
+					};
+					class Unit2 {
+						position[] = {-5,-5,0};
+						rank = "CORPORAL";
+						side = 1;
+						vehicle = "DK143_B_EmpAlleyFighters_Stubber";
+					};
+					class Unit3 {
+						position[] = {10,-10,0};
+						rank = "PRIVATE";
+						side = 1;
+						vehicle = "DK143_B_EmpAlleyFighters_CQCTrooper";
+					};
+					class Unit4 {
+						position[] = {-10,-10,0};
+						rank = "PRIVATE";
+						side = 1;
+						vehicle = "DK143_B_EmpAlleyFighters_CQCTrooper";
+					};
+					class Unit5 {
+						position[] = {15,-15,0};
+						rank = "PRIVATE";
+						side = 1;
+						vehicle = "DK143_B_EmpAlleyFighters_CQCTrooper";
+					};
+					class Unit6 {
+						position[] = {-15,-15,0};
+						rank = "PRIVATE";
+						side = 1;
+						vehicle = "DK143_B_EmpAlleyFighters_CQCTrooper";
+					};
+					class Unit7 {
+						position[] = {20,-20,0};
+						rank = "PRIVATE";
+						side = 1;
+						vehicle = "DK143_B_EmpAlleyFighters_CQCTrooper";
+					};
+					class Unit8 {
+						position[] = {-20,-20,0};
+						rank = "PRIVATE";
+						side = 1;
+						vehicle = "DK143_B_EmpAlleyFighters_CQCTrooper";
+					};
+					class Unit9 {
+						position[] = {25,-25,0};
+						rank = "PRIVATE";
+						side = 1;
+						vehicle = "DK143_B_EmpAlleyFighters_CQCTrooper";
+					};
+				};
+			};
+			
+			class DK143_B_ArgosIV {
+				name = "Argos IV PDF";
+				
+				class DK143_B_ArgosIV_fireteam {
+					name = "Fireteam";
+					side = 1;
+					faction = "DK143_B_ArgosIV";
+					icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+					rarityGroup = 0.5;
+					
+					class Unit0 {
+						position[] = {0,0,0};
+						rank = "SERGEANT";
+						side = 1;
+						vehicle = "DK143_B_ArgosIV_Trooper";
+					};
+					class Unit1 {
+						position[] = {5,-5,0};
+						rank = "CORPORAL";
+						side = 1;
+						vehicle = "DK143_B_ArgosIV_GrenadeLauncher";
+					};
+					class Unit2 {
+						position[] = {-5,-5,0};
+						rank = "PRIVATE";
+						side = 1;
+						vehicle = "DK143_B_ArgosIV_Trooper";
+					 };
+					 class Unit3 {
+						position[] = {10,-10,0};
+						rank = "PRIVATE";
+						side = 1;
+						vehicle = "DK143_B_ArgosIV_Trooper";
+					 };
+				};
+				
+				class DK143_B_ArgosIV_Squad {
+					name = "Squad";
+					side = 1;
+					faction = "DK143_B_ArgosIV";
+					icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+					rarityGroup = 0.5;
+					
+					class Unit0 {
+						position[] = {0,0,0};
+						rank = "SERGEANT";
+						side = 1;
+						vehicle = "DK143_B_ArgosIV_Trooper";
+					};
+					class Unit1 {
+						position[] = {5,-5,0};
+						rank = "CORPORAL";
+						side = 1;
+						vehicle = "DK143_B_ArgosIV_GrenadeLauncher";
+					};
+					class Unit2 {
+						position[] = {-5,-5,0};
+						rank = "CORPORAL";
+						side = 1;
+						vehicle = "DK143_B_ArgosIV_Sniper";
+					};
+					class Unit3 {
+						position[] = {10,-10,0};
+						rank = "PRIVATE";
+						side = 1;
+						vehicle = "DK143_B_ArgosIV_Trooper";
+					};
+					class Unit4 {
+						position[] = {-10,-10,0};
+						rank = "PRIVATE";
+						side = 1;
+						vehicle = "DK143_B_ArgosIV_Trooper";
+					};
+					class Unit5 {
+						position[] = {15,-15,0};
+						rank = "PRIVATE";
+						side = 1;
+						vehicle = "DK143_B_ArgosIV_Trooper";
+					};
+					class Unit6 {
+						position[] = {-15,-15,0};
+						rank = "PRIVATE";
+						side = 1;
+						vehicle = "DK143_B_ArgosIV_Trooper";
+					};
+					class Unit7 {
+						position[] = {20,-20,0};
+						rank = "PRIVATE";
+						side = 1;
+						vehicle = "DK143_B_ArgosIV_Trooper";
+					};
+					class Unit8 {
+						position[] = {-20,-20,0};
+						rank = "PRIVATE";
+						side = 1;
+						vehicle = "DK143_B_ArgosIV_Trooper";
+					};
+					class Unit9 {
+						position[] = {25,-25,0};
+						rank = "PRIVATE";
+						side = 1;
+						vehicle = "DK143_B_ArgosIV_Trooper";
+					};
+				};
+							
+				class DK143_B_ArgosIV_Airfireteam {
+					name = "Fireteam";
+					side = 1;
+					faction = "DK143_B_ArgosIV";
+					icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+					rarityGroup = 0.5;
+					
+					class Unit0 {
+						position[] = {0,0,0};
+						rank = "SERGEANT";
+						side = 1;
+						vehicle = "DK143_B_ArgosIV_TrooperAirbourne";
+					};
+					class Unit1 {
+						position[] = {5,-5,0};
+						rank = "CORPORAL";
+						side = 1;
+						vehicle = "DK143_B_ArgosIV_GrenadeLauncherAir";
+					};
+					class Unit2 {
+						position[] = {-5,-5,0};
+						rank = "PRIVATE";
+						side = 1;
+						vehicle = "DK143_B_ArgosIV_TrooperAirbourne";
+					 };
+					 class Unit3 {
+						position[] = {10,-10,0};
+						rank = "PRIVATE";
+						side = 1;
+						vehicle = "DK143_B_ArgosIV_TrooperAirbourne";
+					 };
+				};
+				
+				class DK143_B_ArgosIV_AirSquad {
+					name = "Squad";
+					side = 1;
+					faction = "DK143_B_ArgosIV";
+					icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+					rarityGroup = 0.5;
+					
+					class Unit0 {
+						position[] = {0,0,0};
+						rank = "SERGEANT";
+						side = 1;
+						vehicle = "DK143_B_ArgosIV_TrooperAirbourne";
+					};
+					class Unit1 {
+						position[] = {5,-5,0};
+						rank = "CORPORAL";
+						side = 1;
+						vehicle = "DK143_B_ArgosIV_GrenadeLauncherAir";
+					};
+					class Unit2 {
+						position[] = {-5,-5,0};
+						rank = "CORPORAL";
+						side = 1;
+						vehicle = "DK143_B_ArgosIV_AirSniper";
+					};
+					class Unit3 {
+						position[] = {10,-10,0};
+						rank = "PRIVATE";
+						side = 1;
+						vehicle = "DK143_B_ArgosIV_TrooperAirbourne";
+					};
+					class Unit4 {
+						position[] = {-10,-10,0};
+						rank = "PRIVATE";
+						side = 1;
+						vehicle = "DK143_B_ArgosIV_TrooperAirbourne";
+					};
+					class Unit5 {
+						position[] = {15,-15,0};
+						rank = "PRIVATE";
+						side = 1;
+						vehicle = "DK143_B_ArgosIV_TrooperAirbourne";
+					};
+					class Unit6 {
+						position[] = {-15,-15,0};
+						rank = "PRIVATE";
+						side = 1;
+						vehicle = "DK143_B_ArgosIV_TrooperAirbourne";
+					};
+					class Unit7 {
+						position[] = {20,-20,0};
+						rank = "PRIVATE";
+						side = 1;
+						vehicle = "DK143_B_ArgosIV_TrooperAirbourne";
+					};
+					class Unit8 {
+						position[] = {-20,-20,0};
+						rank = "PRIVATE";
+						side = 1;
+						vehicle = "DK143_B_ArgosIV_TrooperAirbourne";
+					};
+					class Unit9 {
+						position[] = {25,-25,0};
+						rank = "PRIVATE";
+						side = 1;
+						vehicle = "DK143_B_ArgosIV_TrooperAirbourne";
+					};
+				};
+			};
+		};
+	};
+	
+	class INDEP{
+		class DK143_Custom_Factions {
+			name = "143rd Custom Factions";
+			
+			class DK143_I_EmpAlleyFighters {
+				name = "Emperor's Alley Fighters";
+				
+				class DK143_I_EmpAlleyFighters_fireteam {
+					name = "Fireteam";
+					side = 2;
+					faction = "DK143_I_EmpAlleyFighters";
+					icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+					rarityGroup = 0.5;
+					
+					class Unit0 {
+						position[] = {0,0,0};
+						rank = "SERGEANT";
+						side = 2;
+						vehicle = "DK143_I_EmpAlleyFighters_Trooper";
+					};
+					class Unit1 {
+						position[] = {5,-5,0};
+						rank = "CORPORAL";
+						side = 2;
+						vehicle = "DK143_I_EmpAlleyFighters_PlasmaTrooper";
+					};
+					class Unit2 {
+						position[] = {-5,-5,0};
+						rank = "PRIVATE";
+						side = 2;
+						vehicle = "DK143_I_EmpAlleyFighters_Trooper";
+					 };
+					 class Unit3 {
+						position[] = {10,-10,0};
+						rank = "PRIVATE";
+						side = 2;
+						vehicle = "DK143_I_EmpAlleyFighters_Trooper";
+					 };
+				};
+				
+				class DK143_I_EmpAlleyFighters_Squad {
+					name = "Squad";
+					side = 2;
+					faction = "DK143_I_EmpAlleyFighters";
+					icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+					rarityGroup = 0.5;
+					
+					class Unit0 {
+						position[] = {0,0,0};
+						rank = "SERGEANT";
+						side = 2;
+						vehicle = "DK143_I_EmpAlleyFighters_Trooper";
+					};
+					class Unit1 {
+						position[] = {5,-5,0};
+						rank = "CORPORAL";
+						side = 2;
+						vehicle = "DK143_I_EmpAlleyFighters_PlasmaTrooper";
+					};
+					class Unit2 {
+						position[] = {-5,-5,0};
+						rank = "CORPORAL";
+						side = 2;
+						vehicle = "DK143_I_EmpAlleyFighters_ATTrooper";
+					};
+					class Unit3 {
+						position[] = {10,-10,0};
+						rank = "PRIVATE";
+						side = 2;
+						vehicle = "DK143_I_EmpAlleyFighters_Trooper";
+					};
+					class Unit4 {
+						position[] = {-10,-10,0};
+						rank = "PRIVATE";
+						side = 2;
+						vehicle = "DK143_I_EmpAlleyFighters_Trooper";
+					};
+					class Unit5 {
+						position[] = {15,-15,0};
+						rank = "PRIVATE";
+						side = 2;
+						vehicle = "DK143_I_EmpAlleyFighters_Trooper";
+					};
+					class Unit6 {
+						position[] = {-15,-15,0};
+						rank = "PRIVATE";
+						side = 2;
+						vehicle = "DK143_I_EmpAlleyFighters_Trooper";
+					};
+					class Unit7 {
+						position[] = {20,-20,0};
+						rank = "PRIVATE";
+						side = 2;
+						vehicle = "DK143_I_EmpAlleyFighters_Trooper";
+					};
+					class Unit8 {
+						position[] = {-20,-20,0};
+						rank = "PRIVATE";
+						side = 2;
+						vehicle = "DK143_I_EmpAlleyFighters_Trooper";
+					};
+					class Unit9 {
+						position[] = {25,-25,0};
+						rank = "PRIVATE";
+						side = 2;
+						vehicle = "DK143_I_EmpAlleyFighters_Trooper";
+					};
+				};
+				
+				class DK143_I_EmpAlleyFighters_Squad_CQB {
+					name = "Squad CQB";
+					side = 2;
+					faction = "DK143_I_EmpAlleyFighters";
+					icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+					rarityGroup = 0.5;
+					
+					class Unit0 {
+						position[] = {0,0,0};
+						rank = "SERGEANT";
+						side = 2;
+						vehicle = "DK143_I_EmpAlleyFighters_CQCTrooper";
+					};
+					class Unit1 {
+						position[] = {5,-5,0};
+						rank = "CORPORAL";
+						side = 2;
+						vehicle = "DK143_I_EmpAlleyFighters_PlasmaTrooper";
+					};
+					class Unit2 {
+						position[] = {-5,-5,0};
+						rank = "CORPORAL";
+						side = 2;
+						vehicle = "DK143_I_EmpAlleyFighters_Stubber";
+					};
+					class Unit3 {
+						position[] = {10,-10,0};
+						rank = "PRIVATE";
+						side = 2;
+						vehicle = "DK143_I_EmpAlleyFighters_CQCTrooper";
+					};
+					class Unit4 {
+						position[] = {-10,-10,0};
+						rank = "PRIVATE";
+						side = 2;
+						vehicle = "DK143_I_EmpAlleyFighters_CQCTrooper";
+					};
+					class Unit5 {
+						position[] = {15,-15,0};
+						rank = "PRIVATE";
+						side = 2;
+						vehicle = "DK143_I_EmpAlleyFighters_CQCTrooper";
+					};
+					class Unit6 {
+						position[] = {-15,-15,0};
+						rank = "PRIVATE";
+						side = 2;
+						vehicle = "DK143_I_EmpAlleyFighters_CQCTrooper";
+					};
+					class Unit7 {
+						position[] = {20,-20,0};
+						rank = "PRIVATE";
+						side = 2;
+						vehicle = "DK143_I_EmpAlleyFighters_CQCTrooper";
+					};
+					class Unit8 {
+						position[] = {-20,-20,0};
+						rank = "PRIVATE";
+						side = 2;
+						vehicle = "DK143_I_EmpAlleyFighters_CQCTrooper";
+					};
+					class Unit9 {
+						position[] = {25,-25,0};
+						rank = "PRIVATE";
+						side = 2;
+						vehicle = "DK143_I_EmpAlleyFighters_CQCTrooper";
+					};
+				};
+			};
+			
+			class DK143_I_ArgosIV {
+				name = "Argos IV PDF";
+				
+				class DK143_I_ArgosIV_fireteam {
+					name = "Fireteam";
+					side = 2;
+					faction = "DK143_I_ArgosIV";
+					icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+					rarityGroup = 0.5;
+					
+					class Unit0 {
+						position[] = {0,0,0};
+						rank = "SERGEANT";
+						side = 2;
+						vehicle = "DK143_I_ArgosIV_Trooper";
+					};
+					class Unit1 {
+						position[] = {5,-5,0};
+						rank = "CORPORAL";
+						side = 2;
+						vehicle = "DK143_I_ArgosIV_GrenadeLauncher";
+					};
+					class Unit2 {
+						position[] = {-5,-5,0};
+						rank = "PRIVATE";
+						side = 2;
+						vehicle = "DK143_I_ArgosIV_Trooper";
+					 };
+					 class Unit3 {
+						position[] = {10,-10,0};
+						rank = "PRIVATE";
+						side = 2;
+						vehicle = "DK143_I_ArgosIV_Trooper";
+					 };
+				};
+				
+				class DK143_I_ArgosIV_Squad {
+					name = "Squad";
+					side = 2;
+					faction = "DK143_I_ArgosIV";
+					icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+					rarityGroup = 0.5;
+					
+					class Unit0 {
+						position[] = {0,0,0};
+						rank = "SERGEANT";
+						side = 2;
+						vehicle = "DK143_I_ArgosIV_Trooper";
+					};
+					class Unit1 {
+						position[] = {5,-5,0};
+						rank = "CORPORAL";
+						side = 2;
+						vehicle = "DK143_I_ArgosIV_GrenadeLauncher";
+					};
+					class Unit2 {
+						position[] = {-5,-5,0};
+						rank = "CORPORAL";
+						side = 2;
+						vehicle = "DK143_I_ArgosIV_Sniper";
+					};
+					class Unit3 {
+						position[] = {10,-10,0};
+						rank = "PRIVATE";
+						side = 2;
+						vehicle = "DK143_I_ArgosIV_Trooper";
+					};
+					class Unit4 {
+						position[] = {-10,-10,0};
+						rank = "PRIVATE";
+						side = 2;
+						vehicle = "DK143_I_ArgosIV_Trooper";
+					};
+					class Unit5 {
+						position[] = {15,-15,0};
+						rank = "PRIVATE";
+						side = 2;
+						vehicle = "DK143_I_ArgosIV_Trooper";
+					};
+					class Unit6 {
+						position[] = {-15,-15,0};
+						rank = "PRIVATE";
+						side = 2;
+						vehicle = "DK143_I_ArgosIV_Trooper";
+					};
+					class Unit7 {
+						position[] = {20,-20,0};
+						rank = "PRIVATE";
+						side = 2;
+						vehicle = "DK143_I_ArgosIV_Trooper";
+					};
+					class Unit8 {
+						position[] = {-20,-20,0};
+						rank = "PRIVATE";
+						side = 2;
+						vehicle = "DK143_I_ArgosIV_Trooper";
+					};
+					class Unit9 {
+						position[] = {25,-25,0};
+						rank = "PRIVATE";
+						side = 2;
+						vehicle = "DK143_I_ArgosIV_Trooper";
+					};
+				};
+								
+				class DK143_I_ArgosIV_Airfireteam {
+					name = "Airbourne Fireteam";
+					side = 2;
+					faction = "DK143_I_ArgosIV";
+					icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+					rarityGroup = 0.5;
+					
+					class Unit0 {
+						position[] = {0,0,0};
+						rank = "SERGEANT";
+						side = 2;
+						vehicle = "DK143_I_ArgosIV_TrooperAirbourne";
+					};
+					class Unit1 {
+						position[] = {5,-5,0};
+						rank = "CORPORAL";
+						side = 2;
+						vehicle = "DK143_I_ArgosIV_GrenadeLauncherAir";
+					};
+					class Unit2 {
+						position[] = {-5,-5,0};
+						rank = "PRIVATE";
+						side = 2;
+						vehicle = "DK143_I_ArgosIV_TrooperAirbourne";
+					 };
+					 class Unit3 {
+						position[] = {10,-10,0};
+						rank = "PRIVATE";
+						side = 2;
+						vehicle = "DK143_I_ArgosIV_TrooperAirbourne";
+					 };
+				};
+				
+				class DK143_I_ArgosIV_AirSquad {
+					name = "Airbourne Squad";
+					side = 2;
+					faction = "DK143_I_ArgosIV";
+					icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+					rarityGroup = 0.5;
+					
+					class Unit0 {
+						position[] = {0,0,0};
+						rank = "SERGEANT";
+						side = 2;
+						vehicle = "DK143_I_ArgosIV_TrooperAirbourne";
+					};
+					class Unit1 {
+						position[] = {5,-5,0};
+						rank = "CORPORAL";
+						side = 2;
+						vehicle = "DK143_I_ArgosIV_GrenadeLauncherAir";
+					};
+					class Unit2 {
+						position[] = {-5,-5,0};
+						rank = "CORPORAL";
+						side = 2;
+						vehicle = "DK143_I_ArgosIV_AirSniper";
+					};
+					class Unit3 {
+						position[] = {10,-10,0};
+						rank = "PRIVATE";
+						side = 2;
+						vehicle = "DK143_I_ArgosIV_TrooperAirbourne";
+					};
+					class Unit4 {
+						position[] = {-10,-10,0};
+						rank = "PRIVATE";
+						side = 2;
+						vehicle = "DK143_I_ArgosIV_TrooperAirbourne";
+					};
+					class Unit5 {
+						position[] = {15,-15,0};
+						rank = "PRIVATE";
+						side = 2;
+						vehicle = "DK143_I_ArgosIV_TrooperAirbourne";
+					};
+					class Unit6 {
+						position[] = {-15,-15,0};
+						rank = "PRIVATE";
+						side = 2;
+						vehicle = "DK143_I_ArgosIV_TrooperAirbourne";
+					};
+					class Unit7 {
+						position[] = {20,-20,0};
+						rank = "PRIVATE";
+						side = 2;
+						vehicle = "DK143_I_ArgosIV_TrooperAirbourne";
+					};
+					class Unit8 {
+						position[] = {-20,-20,0};
+						rank = "PRIVATE";
+						side = 2;
+						vehicle = "DK143_I_ArgosIV_TrooperAirbourne";
+					};
+					class Unit9 {
+						position[] = {25,-25,0};
+						rank = "PRIVATE";
+						side = 2;
+						vehicle = "DK143_I_ArgosIV_TrooperAirbourne";
+					};
+				};
+				
+			};
+		};
+	};
 };
 
+	
 class CfgVehicles
 {
 	// Define Macros
@@ -711,6 +1681,7 @@ class CfgVehicles
 	#define mag_10(a) a, a, a, a, a, a, a, a, a, a
 	#define mag_11(a) a, a, a, a, a, a, a, a, a, a, a
 	#define mag_12(a) a, a, a, a, a, a, a, a, a, a, a, a
+
 	// ARMA 3 Base Soldier Classes
 	class O_Soldier_base_F;
 	
@@ -797,7 +1768,7 @@ class CfgVehicles
 	};
 	
 	// Argos IV PDF
-	class DK143_B_ArgosIV_Base : B_Soldier_base_F {
+	class DK143_B_ArgosIV_Base : O_Soldier_base_F {
 		scope = 0;
 		scopeCurator = 0;
 		displayName = "Argos IV PDF";
@@ -814,25 +1785,26 @@ class CfgVehicles
 	};
 	
 	// Emperor's Alley Fighters
-	class DK143_B_EmpAlleyFighters_Base : B_Soldier_base_F {
+	class DK143_B_EmpAlleyFighters_Base : O_Soldier_base_F {
 		scope = 0;
 		scopeCurator = 0;
 		displayName = "Emperor's Alley Fighters Soldier";
-		side = 0;
+		side = 1;
 		faction = "DK143_B_EmpAlleyFighters";
 
 		identityTypes[] = {"Head_NATO","LanguageENG_F","NoGlasses"};
 
 		uniformClass = "YSA_Uniform_Urban_MARPAT_Patchless";
 
-		linkedItems[] = {"IC_CAD_FlakArmor_Bandolier_Grey","IC_cad_helmet_gray", "G_AirPurifyingRespirator_01","ItemMap","ItemcTab","TFAR_anprc152","ItemCompass","TFAR_microdagr", "NVGoogles_blk_F"};
-		respawnlinkedItems[] = {"IC_CAD_FlakArmor_Bandolier_Grey","IC_cad_helmet_gray", "G_AirPurifyingRespirator_01","ItemMap","ItemcTab","TFAR_anprc152","ItemCompass","TFAR_microdagr", "NVGoogles_blk_F"}
+		linkedItems[] = {"IC_CAD_FlakArmor_Bandolier_Grey","IC_cad_helmet_grey", "G_AirPurifyingRespirator_01_F","ItemMap","ItemcTab","TFAR_anprc152","ItemCompass","TFAR_microdagr", "NVGoogles_blk_F"};
+		respawnlinkedItems[] = {"IC_CAD_FlakArmor_Bandolier_Grey","IC_cad_helmet_grey", "G_AirPurifyingRespirator_01_F","ItemMap","ItemcTab","TFAR_anprc152","ItemCompass","TFAR_microdagr", "NVGoogles_blk_F"};
 		
 		backpack = "IC_CAD_assaultpack_grey_03";
 	};
+	
 	// Fleshed out Units
-	// Nurgle Cultists
 	// OPFOR
+	// Nurgle Cultists
 	class DK143_O_Nurgle_Cultist_Rifleman : DK143_Base_Nurgle_Cultist {
 		displayName = "Rifleman Cultist";
 		scope = 2;
@@ -905,7 +1877,6 @@ class CfgVehicles
 	};
 	
 	// Farsight Dominate
-	
 	class DK143_O_Farsight_Dominate_Rifleman : DK143_Base_Farsight_Dominate {
 		displayName = "Farsight Dominate Rifleman";
 		scope = 2;
@@ -957,8 +1928,8 @@ class CfgVehicles
 		weapons[] = {"TIOW_rail_rifle_FE","Laserdesignator_01_khk_F"};
 		respawnWeapons[] = {"TIOW_rail_rifle_FE","Laserdesignator_01_khk_F"};
 
-        	magazines[] = {mag_5(TIOW_railrifle_mag), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine),"Laserbatteries","Laserbatteries"};
-        	respawnMagazines[] = {mag_5(TIOW_railrifle_mag), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine),"Laserbatteries","Laserbatteries"};
+        magazines[] = {mag_5(TIOW_railrifle_mag), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine),"Laserbatteries","Laserbatteries"};
+        respawnMagazines[] = {mag_5(TIOW_railrifle_mag), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine),"Laserbatteries","Laserbatteries"};
 	};
 
 	// Adeptus Mechanicus
@@ -1033,7 +2004,7 @@ class CfgVehicles
 	
 	class DK143_O_AdmechSkitarii_Vanguard_Alpha2 : DK143_O_AdmechSkitarii_BaseVanguard {
 		scope = 2;
-        	scopeCurator = 2;
+        scopeCurator = 2; 
 		uniformClass = "AM_alpha_robesUNI";
 		displayName = "Skitarii Vanguard Alpha-2";
 		linkedItems[] = {"AM_armor","AM_VH3","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
@@ -1043,5 +2014,268 @@ class CfgVehicles
 
 		magazines[] = {mag_5(radium_mag), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
 		respawnMagazines[] = {mag_5(radium_mag), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+	};
+
+	// Agamemnon's Will
+	class DK143_O_AgaWill_Riflemen : DK143_O_AgaWill_Base {
+		displayName = "Rifleman";
+		scope = 2;
+		scopeCurator = 2;
+		side = 0;
+		cost = 2;
+		
+		weapons[] = {"ic_cad_galaxy_lasgun"};
+		respawnWeapons[] = {"ic_cad_galaxy_lasgun"};
+
+        magazines[] = {mag_5(ic_las_powerpack), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+        respawnMagazines[] = {mag_5(ic_las_powerpack), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+	};
+
+	class DK143_O_AgaWill_Stubber : DK143_O_AgaWill_Base {
+		displayName = "Stubber Gunner";
+		scope = 2;
+		scopeCurator = 2;
+		side = 0;
+		cost = 2;
+		
+		weapons[] = {"ic_cad_galaxy_lasgun"};
+		respawnWeapons[] = {"ic_cad_galaxy_lasgun"};
+
+        magazines[] = {mag_5(DK143_150Rnd_Hvy_Stubber_Expander_Mag), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+        respawnMagazines[] = {mag_5(DK143_150Rnd_Hvy_Stubber_Expander_Mag), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+	};
+	
+	class DK143_O_AgaWill_Plasma : DK143_O_AgaWill_Base {
+		displayName = "Plasma Gunner";
+		scope = 2;
+		scopeCurator = 2;
+		side = 0;
+		cost = 2;
+		
+		weapons[] = {"ML700_PlasmaRifle_Silver"};
+		respawnWeapons[] = {"ML700_PlasmaRifle_Silver"};
+
+        magazines[] = {mag_5(ML700_PlasmaRifle_Battery), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+        respawnMagazines[] = {mag_5(ML700_PlasmaRifle_Battery), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+	};
+	
+	class DK143_O_AgaWill_Melta : DK143_O_AgaWill_Base {
+		displayName = "Melta Gunner";
+		scope = 2;
+		scopeCurator = 2;
+		side = 0;
+		cost = 2;
+		
+		weapons[] = {"TIOW_MeltaGun_01"};
+		respawnWeapons[] = {"TIOW_MeltaGun_01"};
+
+        magazines[] = {mag_5(TIOW_Meltagun_Mag), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+        respawnMagazines[] = {mag_5(TIOW_Meltagun_Mag), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+	};
+	
+	// Blufor
+	// Argos IV
+	class DK143_B_ArgosIV_Trooper : DK143_B_ArgosIV_Base {
+		displayName = "Trooper";
+		scope = 2;
+		scopeCurator = 2;
+		side = 1;
+		cost = 1;
+		
+		weapons[] = {"SMG_02_F"};
+		respawnWeapons[] = {"SMG_02_F"};
+
+        magazines[] = {mag_5(30Rnd_9x21_Mag_SMG_02), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+        respawnMagazines[] = {mag_5(30Rnd_9x21_Mag_SMG_02), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+	};
+	
+	class DK143_B_ArgosIV_TrooperAirbourne  : DK143_B_ArgosIV_Trooper {
+		backpack = "TIOW40k_GravChutePersonal_green";
+		displayName = "Airbourne Trooper";
+		scope = 2;
+		scopeCurator = 2;
+		side = 1;
+		cost = 1;
+	};
+	
+	class DK143_B_ArgosIV_GrenadeLauncher : DK143_B_ArgosIV_Base {
+		displayName = "GL Trooper";
+		scope = 2;
+		scopeCurator = 2;
+		side = 1;
+		cost = 1;
+		
+		weapons[] = {"TIOW_IG_GL", "ML700_B_LasPistol_F"};
+		respawnWeapons[] = {"TIOW_IG_GL", "ML700_B_LasPistol_F"};
+
+        magazines[] = {mag_5(TIOW_IG_GL_Frag_mag), mag_3(TIOW_IG_GL_Krak_mag), mag_3(TIOW_IG_GL_Krak_mag), mag_2(ML700_Laspistol_B_Battery), mag_2(ML700_krak_grenade_magazine), "TIOW_ig_smoke_grenade_mag", "TIOW_ig_smoke_grenade_mag"};
+        respawnMagazines[] = {mag_5(TIOW_IG_GL_Frag_mag), mag_3(TIOW_IG_GL_Krak_mag), mag_2(ML700_Laspistol_B_Battery), mag_2(ML700_krak_grenade_magazine), "TIOW_ig_smoke_grenade_mag", "TIOW_ig_smoke_grenade_mag"};
+
+	};
+	
+	class DK143_B_ArgosIV_GrenadeLauncherAir : DK143_B_ArgosIV_GrenadeLauncher {
+		displayName = "Airbourne GL Trooper";
+		scope = 2;
+		scopeCurator = 2;
+		side = 1;
+		cost = 1;
+		
+		backpack = "TIOW40k_GravChutePersonal_green";
+	};
+	
+	class DK143_B_ArgosIV_Sniper : DK143_B_ArgosIV_Base {
+		displayName = "Sniper";
+		scope = 2;
+		scopeCurator = 2;
+		side = 1;
+		cost = 1;
+		
+		weapons[] = {"srifle_LRR_tna_F"};
+		respawnWeapons[] = {"srifle_LRR_tna_F"};
+
+        magazines[] = {mag_5(7Rnd_408_Mag), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+        respawnMagazines[] = {mag_5(7Rnd_408_Mag), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+	};
+	
+	class DK143_B_ArgosIV_AirSniper : DK143_B_ArgosIV_Sniper {
+		displayName = "Airbourne Sniper";
+		scope = 2;
+		scopeCurator = 2;
+		side = 1;
+		cost = 1;
+		
+		backpack = "TIOW40k_GravChutePersonal_green";
+	};
+	
+	// Emperor's Alley Fighters
+	
+	class DK143_B_EmpAlleyFighters_Trooper : DK143_B_EmpAlleyFighters_Base {
+		displayName = "Trooper";
+		scope = 2;
+		scopeCurator = 2;
+		side = 1;
+		cost = 1;
+		
+		weapons[] = {"ic_cad_carbine_folded_lasgun"};
+		respawnWeapons[] = {"ic_cad_carbine_folded_lasgun"};
+
+        magazines[] = {mag_5(ic_las_powerpack), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+        respawnMagazines[] = {mag_5(ic_las_powerpack), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+	};
+	
+	class DK143_B_EmpAlleyFighters_ATTrooper : DK143_B_EmpAlleyFighters_Base {
+		displayName = "AT Trooper";
+		scope = 2;
+		scopeCurator = 2;
+		side = 1;
+		cost = 1;
+		
+		weapons[] = {"ic_cad_carbine_folded_lasgun", "IC_CAD_Rocketlauncher_base"};
+		respawnWeapons[] = {"ic_cad_carbine_folded_lasgun", "IC_CAD_Rocketlauncher_base"};
+
+        magazines[] = {mag_5(ic_las_powerpack), mag_4(IC_Krak_rocket_mag), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+        respawnMagazines[] = {mag_5(ic_las_powerpack), mag_4(IC_Krak_rocket_mag), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+	 };
+	
+	class DK143_B_EmpAlleyFighters_CQCTrooper : DK143_B_EmpAlleyFighters_Base {
+		displayName = "CQC Trooper";
+		scope = 2;
+		scopeCurator = 2;
+		side = 1;
+		cost = 1;
+		
+		weapons[] = {"SGA_USAS12"};
+		respawnWeapons[] = {"SGA_USAS12"};
+
+        magazines[] = {mag_5(SGA_SPAS12MAG_slug), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+        respawnMagazines[] = {mag_5(SGA_SPAS12MAG_slug), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+	};
+	
+	class DK143_B_EmpAlleyFighters_PlasmaTrooper : DK143_B_EmpAlleyFighters_Base {
+		displayName = "Plasma Trooper";
+		scope = 2;
+		scopeCurator = 2;
+		side = 1;
+		cost = 1;
+		
+		weapons[] = {"ML700_PlasmaRifle_Silver"};
+		respawnWeapons[] = {"ML700_PlasmaRifle_Silver"};
+
+        magazines[] = {mag_5(ML700_PlasmaRifle_Battery), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+        respawnMagazines[] = {mag_5(ML700_PlasmaRifle_Battery), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+	};
+	
+	class DK143_B_EmpAlleyFighters_Stubber : DK143_B_EmpAlleyFighters_Base {
+		displayName = "Stubber Trooper";
+		scope = 2;
+		scopeCurator = 2;
+		side = 1;
+		cost = 1;
+		
+		weapons[] = {"ML700_LMG_Stubber_Black"};
+		respawnWeapons[] = {"ML700_LMG_Stubber_Black"};
+
+        magazines[] = {mag_5(DK143_Expander_Drum), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+        respawnMagazines[] = {mag_5(DK143_Expander_Drum), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+	};
+	
+	// INDEP
+	// Argos IV INDEPFOR
+	
+	class DK143_I_ArgosIV_Trooper : DK143_B_ArgosIV_Trooper {
+		side = 2;
+		faction = "DK143_I_ArgosIV";
+	};
+	
+	class DK143_I_ArgosIV_TrooperAirbourne  : DK143_B_ArgosIV_TrooperAirbourne {
+		side = 2;
+		faction = "DK143_I_ArgosIV";
+	};
+	
+	class DK143_I_ArgosIV_GrenadeLauncher : DK143_B_ArgosIV_GrenadeLauncher {
+		side = 2;
+		faction = "DK143_I_ArgosIV";		
+	};
+	
+	class DK143_I_ArgosIV_GrenadeLauncherAir : DK143_B_ArgosIV_GrenadeLauncherAir {
+		side = 2;
+		faction = "DK143_I_ArgosIV";		
+	};
+	
+	class DK143_I_ArgosIV_Sniper : DK143_B_ArgosIV_Sniper {
+		side = 2;
+		faction = "DK143_I_ArgosIV";		
+	};
+	
+	class DK143_I_ArgosIV_AirSniper : DK143_B_ArgosIV_AirSniper {
+		side = 2;
+		faction = "DK143_I_ArgosIV";		
+	};
+	
+	// Emperor's Alley Fighters
+	
+	class DK143_I_EmpAlleyFighters_Trooper : DK143_B_EmpAlleyFighters_Trooper {
+		side = 2;
+		faction = "DK143_I_EmpAlleyFighters";		
+	};
+	
+	class DK143_I_EmpAlleyFighters_ATTrooper : DK143_B_EmpAlleyFighters_ATTrooper {
+		side = 2;
+		faction = "DK143_I_EmpAlleyFighters";		
+	};
+	
+	class DK143_I_EmpAlleyFighters_CQCTrooper : DK143_B_EmpAlleyFighters_CQCTrooper {
+		side = 2;
+		faction = "DK143_I_EmpAlleyFighters";		
+	};
+	
+	class DK143_I_EmpAlleyFighters_PlasmaTrooper : DK143_B_EmpAlleyFighters_PlasmaTrooper {
+		side = 2;
+		faction = "DK143_I_EmpAlleyFighters";		
+	};
+	
+	class DK143_I_EmpAlleyFighters_Stubber : DK143_B_EmpAlleyFighters_Stubber {
+		side = 2;
+		faction = "DK143_I_EmpAlleyFighters";		
 	};
 };
