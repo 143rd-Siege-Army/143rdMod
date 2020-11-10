@@ -78,6 +78,14 @@ class CfgFactionClasses {
 		icon = "\A3\ui_f\data\map\markers\flags\CSAT_ca.paa";
 		priority = 0
 	};
+	
+	class DK143_O_CornelliaRebels {
+        displayName = "Cornellia Rebels";
+        side = 0;
+        flag = "\A3\ui_f\data\map\markers\flags\CSAT_ca.paa";
+        icon = "\A3\ui_f\data\map\markers\flags\CSAT_ca.paa";
+        priority = 0;
+    };
 };
 
 class CfgGroups {
@@ -883,6 +891,485 @@ class CfgGroups {
 					};
 				};
 			};
+		
+		    class DK143_O_CornelliaRebels {
+				name = "Cornellia Rebels";
+
+				class DK143_O_CornelliaRebelsinfantry_fireteam {
+                name = "Fireteam";
+                side = 0;
+                faction = "DK143_O_CornelliaRebels";
+                icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "DK143_O_CornelliaRebelsSquadleader";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "DK143_O_CornelliaRebelsRifleman";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_CornelliaRebelsRifleman";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_CornelliaRebelsRifleman";
+                    };
+                };
+
+                class DK143_O_CornelliaRebelsinfantry_fireteam_plasma {
+                    name = "Fireteam Plasma";
+                    side = 0;
+                    faction = "DK143_O_CornelliaRebels";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "DK143_O_CornelliaRebelsSquadleader";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "DK143_O_CornelliaRebelsPlasmagunner";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_CornelliaRebelsRifleman";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_CornelliaRebelsRifleman";
+                    };
+                };
+
+                class DK143_O_CornelliaRebelsinfantry_fireteam_autorifle {
+                    name = "Fireteam Autorifle";
+                    side = 0;
+                    faction = "DK143_O_CornelliaRebels";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "DK143_O_CornelliaRebelsSquadleader";
+                    };
+                    class Unit1 {
+                        position[] = {-5,-5,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_CornelliaRebelsRifleman";
+                    };
+                    class Unit2 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_CornelliaRebelsRifleman";
+                    };
+                    class Unit3 {
+                        position[] = {-5,-15,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "DK143_O_CornelliaRebelsAutorifleman";
+                    };
+                };
+
+                class DK143_O_CornelliaRebelsinfantry_fireteam_melta {
+                    name = "Fireteam Melta";
+                    side = 0;
+                    faction = "DK143_O_CornelliaRebels";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "DK143_O_CornelliaRebelsSquadleader";
+                    };
+                    class Unit1 {
+                        position[] = {-5,-5,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_CornelliaRebelsRifleman";
+                    };
+                    class Unit2 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_CornelliaRebelsRifleman";
+                    };
+                    class Unit3 {
+                        position[] = {-5,-15,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "DK143_O_CornelliaRebelsMeltagunner";
+                    };
+                };
+
+                class DK143_O_CornelliaRebelsinfantry_fireteam_stubber {
+                    name = "Fireteam Stubber";
+                    side = 0;
+                    faction = "DK143_O_CornelliaRebels";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "DK143_O_CornelliaRebelsSquadleader";
+                    };
+                    class Unit1 {
+                        position[] = {-5,-5,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_CornelliaRebelsRifleman";
+                    };
+                    class Unit2 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_CornelliaRebelsRifleman";
+                    };
+                    class Unit3 {
+                        position[] = {-5,-15,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "DK143_O_CornelliaRebelsMedium_Stubber";
+                    };
+                };
+
+                class DK143_O_CornelliaRebelsinfantry_fireteam_at {
+                    name = "Fireteam AT";
+                    side = 0;
+                    faction = "DK143_O_CornelliaRebels";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "DK143_O_CornelliaRebelsSquadleader";
+                    };
+                    class Unit1 {
+                        position[] = {-5,-5,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_CornelliaRebelsRifleman";
+                    };
+                    class Unit2 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_CornelliaRebelsRifleman";
+                    };
+                    class Unit3 {
+                        position[] = {-5,-15,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "DK143_O_CornelliaRebelsAT_Launcher";
+                    };
+                };
+
+                class DK143_O_CornelliaRebelsinfantry_squad_cqb {
+                    name = "Squad CQB";
+                    side = 0;
+                    faction = "DK143_O_CornelliaRebels";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "DK143_O_CornelliaRebelsSquadleader";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "DK143_O_CornelliaRebelsAutorifleman";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "DK143_O_CornelliaRebelsAutorifleman";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_CornelliaRebelsRifleman";
+                    };
+                    class Unit4 {
+                        position[] = {-10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_CornelliaRebelsRifleman";
+                    };
+                    class Unit5 {
+                        position[] = {15,-15,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_CornelliaRebelsRifleman";
+                    };
+                    class Unit6 {
+                        position[] = {-15,-15,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_CornelliaRebelsRifleman";
+                    };
+                    class Unit7 {
+                        position[] = {20,-20,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_CornelliaRebelsRifleman";
+                    };
+                    class Unit8 {
+                        position[] = {-20,-20,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_CornelliaRebelsRifleman";
+                    };
+                    class Unit9 {
+                        position[] = {25,-25,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_CornelliaRebelsRifleman";
+                    };
+                };
+
+                class DK143_O_CornelliaRebelsinfantry_squad_melta_stubber {
+                    name = "Squad Melta+Stubber";
+                    side = 0;
+                    faction = "DK143_O_CornelliaRebels";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "DK143_O_CornelliaRebelsSquadleader";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "DK143_O_CornelliaRebelsMeltagunner";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "DK143_O_CornelliaRebelsMedium_Stubber";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_CornelliaRebelsRifleman";
+                    };
+                    class Unit4 {
+                        position[] = {-10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_CornelliaRebelsRifleman";
+                    };
+                    class Unit5 {
+                        position[] = {15,-15,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_CornelliaRebelsRifleman";
+                    };
+                    class Unit6 {
+                        position[] = {-15,-15,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_CornelliaRebelsRifleman";
+                    };
+                    class Unit7 {
+                        position[] = {20,-20,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_CornelliaRebelsRifleman";
+                    };
+                    class Unit8 {
+                        position[] = {-20,-20,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_CornelliaRebelsRifleman";
+                    };
+                    class Unit9 {
+                        position[] = {25,-25,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_CornelliaRebelsRifleman";
+                    };
+                };
+
+                class DK143_O_CornelliaRebelsinfantry_squad_at {
+                    name = "Squad AT";
+                    side = 0;
+                    faction = "DK143_O_CornelliaRebels";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "DK143_O_CornelliaRebelsSquadleader";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "DK143_O_CornelliaRebelsAT_Launcher";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "DK143_O_CornelliaRebelsAT_Launcher";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_CornelliaRebelsRifleman";
+                    };
+                    class Unit4 {
+                        position[] = {-10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_CornelliaRebelsRifleman";
+                    };
+                    class Unit5 {
+                        position[] = {15,-15,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_CornelliaRebelsRifleman";
+                    };
+                    class Unit6 {
+                        position[] = {-15,-15,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_CornelliaRebelsRifleman";
+                    };
+                    class Unit7 {
+                        position[] = {20,-20,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_CornelliaRebelsRifleman";
+                    };
+                    class Unit8 {
+                        position[] = {-20,-20,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_CornelliaRebelsRifleman";
+                    };
+                    class Unit9 {
+                        position[] = {25,-25,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_CornelliaRebelsRifleman";
+                    };
+                };
+			
+			    class DK143_O_CornelliaRebelsinfantry_squad_Plasma {
+                    name = "Squad Plasma";
+                    side = 0;
+                    faction = "DK143_O_CornelliaRebels";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "DK143_O_CornelliaRebelsSquadleader";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "DK143_O_CornelliaRebelsPlasmagunner";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "DK143_O_CornelliaRebelsPlasmagunner";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_CornelliaRebelsRifleman";
+                    };
+                    class Unit4 {
+                        position[] = {-10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_CornelliaRebelsRifleman";
+                    };
+                    class Unit5 {
+                        position[] = {15,-15,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_CornelliaRebelsRifleman";
+                    };
+                    class Unit6 {
+                        position[] = {-15,-15,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_CornelliaRebelsRifleman";
+                    };
+                    class Unit7 {
+                        position[] = {20,-20,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_CornelliaRebelsRifleman";
+                    };
+                    class Unit8 {
+                        position[] = {-20,-20,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_CornelliaRebelsRifleman";
+                    };
+                    class Unit9 {
+                        position[] = {25,-25,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_CornelliaRebelsRifleman";
+                    };
+                };
+            };
+		
 		};
 	};
 	class WEST{
@@ -1802,6 +2289,24 @@ class CfgVehicles
 		backpack = "IC_CAD_assaultpack_grey_03";
 	};
 	
+	// Cornellia Rebels
+	class DK143_O_CornelliaRebels_Base : O_Soldier_base_F {
+		scope = 0;
+		scopeCurator = 0;
+		displayName = "Cornellia Rebel Trooper";
+		side = 0;
+		backpack = "TIOW_CadBackpack";
+		faction = "DK143_O_CornelliaRebels";
+
+        identityTypes[] = {"Head_TK","LanguagePER_F","G_IRAN_default"};
+
+        uniformClass = "U_C_Driver_3";
+		
+		linkedItems[] = {"Cad_Gear700th","Cad_Inf_Helm700th","ItemMap","ItemRadio","ItemCompass","ItemWatch","TIOW_PhotovisorContacts"};
+		
+        respawnlinkedItems[] = {"Cad_Gear700th","Cad_Inf_Helm700th","ItemMap","ItemRadio","ItemCompass","ItemWatch","TIOW_PhotovisorContacts"};
+	};
+	
 	// Fleshed out Units
 	// OPFOR
 	// Nurgle Cultists
@@ -2073,6 +2578,103 @@ class CfgVehicles
         respawnMagazines[] = {mag_5(TIOW_Meltagun_Mag), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
 	};
 	
+	// Cornellia Rebels
+	
+	class DK143_O_CornelliaRebelsRifleman : DK143_O_CornelliaRebels_Base {
+		scope = 2;
+        scopeCurator = 2;
+        displayName = "Rebel Trooper";
+        side = 0;
+        weapons[] = {"ML700_Lasgun_Aquila_Rifle_Black"};
+        respawnWeapons[] = {"ML700_Lasgun_Aquila_Rifle_Black"};
+
+        magazines[] = {mag_5(ML700_Lasgun_Rifle_B_Battery), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+        respawnMagazines[] = {mag_5(ML700_Lasgun_Rifle_B_Battery), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+	};
+
+	class DK143_O_CornelliaRebelsAutorifleman : DK143_O_CornelliaRebels_Base {
+		scope = 2;
+        scopeCurator = 2;
+        displayName = "Rebel Autorifle Trooper";
+        side = 0;
+        weapons[] = {"arifle_AK12_GL_F"};
+        respawnWeapons[] = {"arifle_AK12_GL_F"};
+
+        magazines[] = {mag_5(75Rnd_762x39_Mag_Tracer_F), mag_3(1Rnd_HE_Grenade_shell) mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+		
+        respawnMagazines[] = {mag_5(75Rnd_762x39_Mag_Tracer_F), mag_3(1Rnd_HE_Grenade_shell) mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+	};	
+
+	class DK143_O_CornelliaRebelsMedium_Stubber : DK143_O_CornelliaRebels_Base {
+		scope = 2;
+        scopeCurator = 2;
+        displayName = "Rebel Stubber Trooper";
+        side = 0;
+        weapons[] = {"ML700_LMG_Stubber_Black"};
+        respawnWeapons[] = {"ML700_LMG_Stubber_Black"};
+
+        magazines[] = {mag_5(ML700_Stubber_Drum_Red), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+        respawnMagazines[] = {mag_5(ML700_Stubber_Drum_Red),  mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+	};
+
+	class DK143_O_CornelliaRebelsMeltagunner : DK143_O_CornelliaRebels_Base {
+		displayName = "Melta Trooper";
+		scope = 2;
+		scopeCurator = 2;
+		side = 0;
+		cost = 1;
+		
+        weapons[] = {"TIOW_MeltaGun_01","ML700_B_LasPistol_F_Black"};
+        respawnWeapons[] = {"TIOW_MeltaGun_01","ML700_B_LasPistol_F_Black"};
+
+        magazines[] = {mag_5(TIOW_Meltagun_Mag), mag_3(ML700_Laspistol_B_Battery), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+        respawnMagazines[] = {mag_5(TIOW_Meltagun_Mag), mag_3(ML700_Laspistol_B_Battery), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+	};
+
+	class DK143_O_CornelliaRebelsSquadleader : DK143_O_CornelliaRebels_Base {
+		scope = 2;
+        scopeCurator = 2;
+        displayName = "Rebel Squad Leader";
+        side = 0;
+		
+		uniformClass = "U_O_CombatUniform_oucamo";
+		backpack = "TIOW_Vox_Caster_Red";
+		
+        weapons[] = {"ML700_Lasgun_Aquila_Rifle_Black"};
+        respawnWeapons[] = {"ML700_Lasgun_Aquila_Rifle_Black"};
+
+        magazines[] = {mag_5(ML700_Lasgun_Rifle_B_Battery), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+		
+        respawnMagazines[] = {mag_5(ML700_Lasgun_Rifle_B_Battery), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+	};
+
+	class DK143_O_CornelliaRebelsAT_Launcher : DK143_O_CornelliaRebels_Base {
+		scope = 2;
+        scopeCurator = 2;
+        displayName = "Rebel AT Trooper";
+        side = 0;
+        weapons[] = {"ML700_Lasgun_Aquila_Rifle_Black","ML700_Launcher_Weapon_TreadFether_Blood"};
+        respawnWeapons[] = {"ML700_Lasgun_Aquila_Rifle_Black","ML700_Launcher_Weapon_TreadFether_Blood"};
+
+        magazines[] = {mag_5(ML700_Lasgun_Rifle_B_Battery), mag_3(ML700_40mm_Treadfether_Mag),  mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+        respawnMagazines[] = {ag_5(ML700_Lasgun_Rifle_B_Battery), mag_3(ML700_40mm_Treadfether_Mag),  mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+	};
+
+	class DK143_O_CornelliaRebelsPlasmagunner : DK143_O_CornelliaRebels_Base {
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "Plasma Trooper";
+		side = 0;
+		cost = 1;
+		
+        weapons[] = {"ML700_PlasmaRifle_BP"};
+        respawnWeapons[] = {"ML700_PlasmaRifle_BP"};
+
+        magazines[] = {mag_5(ML700_PlasmaRifle_Battery), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+        respawnMagazines[] = {mag_5(ML700_PlasmaRifle_Battery), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+	};
+
+
 	// Blufor
 	// Argos IV
 	class DK143_B_ArgosIV_Trooper : DK143_B_ArgosIV_Base {
