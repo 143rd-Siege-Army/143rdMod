@@ -86,6 +86,14 @@ class CfgFactionClasses {
         icon = "\A3\ui_f\data\map\markers\flags\CSAT_ca.paa";
         priority = 0;
     };
+	
+	class DK143_I_CDF {
+		displayName = "CDF";
+        side = 0;
+        flag = "\A3\ui_f\data\map\markers\flags\CSAT_ca.paa";
+        icon = "\A3\ui_f\data\map\markers\flags\CSAT_ca.paa";
+        priority = 0;
+	};
 };
 
 class CfgGroups {
@@ -2148,6 +2156,478 @@ class CfgGroups {
 				};
 				
 			};
+		
+			class DK143_I_CDF {
+				name = "CDF";
+
+                class DK143_I_CDF_infantry_fireteam {
+                    name = "Fireteam";
+                    side = 2;
+                    faction = "DK143_I_CDF";
+                    icon = "\A3\ui_f\data\map\markers\nato\n_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 2;
+                        vehicle = "DK143_I_CDF_Squadleader";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "CORPORAL";
+                        side = 2;
+                        vehicle = "DK143_I_CDF_Rifleman";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "PRIVATE";
+                        side = 2;
+                        vehicle = "DK143_I_CDF_Rifleman";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 2;
+                        vehicle = "DK143_I_CDF_Rifleman";
+                    };
+                };
+
+                class DK143_I_CDF_infantry_fireteam_melta {
+                    name = "Fireteam Melta";
+                    side = 2;
+                    faction = "DK143_I_CDF";
+                    icon = "\A3\ui_f\data\map\markers\nato\n_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 2;
+                        vehicle = "DK143_I_CDF_Squadleader";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "CORPORAL";
+                        side = 2;
+                        vehicle = "DK143_I_CDF_Meltagunner";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "PRIVATE";
+                        side = 2;
+                        vehicle = "DK143_I_CDF_Rifleman";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 2;
+                        vehicle = "DK143_I_CDF_Rifleman";
+                    };
+                };
+
+                class DK143_I_CDF_infantry_fireteam_stubber {
+                    name = "Fireteam Stubber";
+                    side = 2;
+                    faction = "DK143_I_CDF";
+                    icon = "\A3\ui_f\data\map\markers\nato\n_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 2;
+                        vehicle = "DK143_I_CDF_Squadleader";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "CORPORAL";
+                        side = 2;
+                        vehicle = "DK143_I_CDF_Machinegunner_Medium_Stubber";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "PRIVATE";
+                        side = 2;
+                        vehicle = "DK143_I_CDF_Rifleman";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 2;
+                        vehicle = "DK143_I_CDF_Rifleman";
+                    };
+                };
+
+                class DK143_I_CDF_infantry_fireteam_at {
+                    name = "Fireteam AT";
+                    side = 2;
+                    faction = "DK143_I_CDF";
+                    icon = "\A3\ui_f\data\map\markers\nato\n_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 2;
+                        vehicle = "DK143_I_CDF_Squadleader";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "CORPORAL";
+                        side = 2;
+                        vehicle = "DK143_I_CDF_AT_Launcher";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "PRIVATE";
+                        side = 2;
+                        vehicle = "DK143_I_CDF_Rifleman";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 2;
+                        vehicle = "DK143_I_CDF_Rifleman";
+                    };
+                };
+
+                class DK143_I_CDF_infantry_fireteam_plasma {
+                    name = "Fireteam Plasma";
+                    side = 2;
+                    faction = "DK143_I_CDF";
+                    icon = "\A3\ui_f\data\map\markers\nato\n_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 2;
+                        vehicle = "DK143_I_CDF_Squadleader";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "CORPORAL";
+                        side = 2;
+                        vehicle = "DK143_I_CDF_Plasmagunner";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "PRIVATE";
+                        side = 2;
+                        vehicle = "DK143_I_CDF_Rifleman";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 2;
+                        vehicle = "DK143_I_CDF_Rifleman";
+                    };
+                };
+
+                class DK143_I_CDF_infantry_sniper_team {
+                    name = "Sniper Team";
+                    side = 2;
+                    faction = "DK143_I_CDF";
+                    icon = "\A3\ui_f\data\map\markers\nato\n_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 2;
+                        vehicle = "DK143_I_CDF_Squadleader";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "CORPORAL";
+                        side = 2;
+                        vehicle = "DK143_I_CDF_Longlasman";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "CORPORAL";
+                        side = 2;
+                        vehicle = "DK143_I_CDF_Longlasman";
+                    };
+                };
+
+                class DK143_I_CDF_infantry_squad_stubber_longlas {
+                    name = "Squad (Stubber+Longlas)";
+                    side = 2;
+                    faction = "DK143_I_CDF";
+                    icon = "\A3\ui_f\data\map\markers\nato\n_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 2;
+                        vehicle = "DK143_I_CDF_Squadleader";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "CORPORAL";
+                        side = 2;
+                        vehicle = "DK143_I_CDF_Longlasman";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "CORPORAL";
+                        side = 2;
+                        vehicle = "DK143_I_CDF_Machinegunner_Medium_Stubber";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 2;
+                        vehicle = "DK143_I_CDF_Rifleman";
+                    };
+                    class Unit4 {
+                        position[] = {-10,-10,0};
+                        rank = "PRIVATE";
+                        side = 2;
+                        vehicle = "DK143_I_CDF_Rifleman";
+                    };
+                    class Unit5 {
+                        position[] = {15,-15,0};
+                        rank = "PRIVATE";
+                        side = 2;
+                        vehicle = "DK143_I_CDF_Rifleman";
+                    };
+                    class Unit6 {
+                        position[] = {-15,-15,0};
+                        rank = "PRIVATE";
+                        side = 2;
+                        vehicle = "DK143_I_CDF_Rifleman";
+                    };
+                    class Unit7 {
+                        position[] = {20,-20,0};
+                        rank = "PRIVATE";
+                        side = 2;
+                        vehicle = "DK143_I_CDF_Rifleman";
+                    };
+                    class Unit8 {
+                        position[] = {-20,-20,0};
+                        rank = "PRIVATE";
+                        side = 2;
+                        vehicle = "DK143_I_CDF_Rifleman";
+                    };
+                    class Unit9 {
+                        position[] = {25,-25,0};
+                        rank = "PRIVATE";
+                        side = 2;
+                        vehicle = "DK143_I_CDF_Rifleman";
+                    };
+                };
+
+                class DK143_I_CDF_infantry_squad_melta_plasma {
+                    name = "Squad (Melta+Plasma)";
+                    side = 2;
+                    faction = "DK143_I_CDF";
+                    icon = "\A3\ui_f\data\map\markers\nato\n_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 2;
+                        vehicle = "DK143_I_CDF_Squadleader";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "CORPORAL";
+                        side = 2;
+                        vehicle = "DK143_I_CDF_Meltagunner";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "CORPORAL";
+                        side = 2;
+                        vehicle = "DK143_I_CDF_Plasmagunner";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 2;
+                        vehicle = "DK143_I_CDF_Rifleman";
+                    };
+                    class Unit4 {
+                        position[] = {-10,-10,0};
+                        rank = "PRIVATE";
+                        side = 2;
+                        vehicle = "DK143_I_CDF_Rifleman";
+                    };
+                    class Unit5 {
+                        position[] = {15,-15,0};
+                        rank = "PRIVATE";
+                        side = 2;
+                        vehicle = "DK143_I_CDF_Rifleman";
+                    };
+                    class Unit6 {
+                        position[] = {-15,-15,0};
+                        rank = "PRIVATE";
+                        side = 2;
+                        vehicle = "DK143_I_CDF_Rifleman";
+                    };
+                    class Unit7 {
+                        position[] = {20,-20,0};
+                        rank = "PRIVATE";
+                        side = 2;
+                        vehicle = "DK143_I_CDF_Rifleman";
+                    };
+                    class Unit8 {
+                        position[] = {-20,-20,0};
+                        rank = "PRIVATE";
+                        side = 2;
+                        vehicle = "DK143_I_CDF_Rifleman";
+                    };
+                    class Unit9 {
+                        position[] = {25,-25,0};
+                        rank = "PRIVATE";
+                        side = 2;
+                        vehicle = "DK143_I_CDF_Rifleman";
+                    };
+                };
+
+                class DK143_I_CDF_infantry_squad_at {
+                    name = "Squad (AT)";
+                    side = 2;
+                    faction = "DK143_I_CDF";
+                    icon = "\A3\ui_f\data\map\markers\nato\n_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 2;
+                        vehicle = "DK143_I_CDF_Squadleader";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "CORPORAL";
+                        side = 2;
+                        vehicle = "DK143_I_CDF_AT_Launcher";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "CORPORAL";
+                        side = 2;
+                        vehicle = "DK143_I_CDF_AT_Launcher";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 2;
+                        vehicle = "DK143_I_CDF_Rifleman";
+                    };
+                    class Unit4 {
+                        position[] = {-10,-10,0};
+                        rank = "PRIVATE";
+                        side = 2;
+                        vehicle = "DK143_I_CDF_Rifleman";
+                    };
+                    class Unit5 {
+                        position[] = {15,-15,0};
+                        rank = "PRIVATE";
+                        side = 2;
+                        vehicle = "DK143_I_CDF_Rifleman";
+                    };
+                    class Unit6 {
+                        position[] = {-15,-15,0};
+                        rank = "PRIVATE";
+                        side = 2;
+                        vehicle = "DK143_I_CDF_Rifleman";
+                    };
+                    class Unit7 {
+                        position[] = {20,-20,0};
+                        rank = "PRIVATE";
+                        side = 2;
+                        vehicle = "DK143_I_CDF_Rifleman";
+                    };
+                    class Unit8 {
+                        position[] = {-20,-20,0};
+                        rank = "PRIVATE";
+                        side = 2;
+                        vehicle = "DK143_I_CDF_Rifleman";
+                    };
+                    class Unit9 {
+                        position[] = {25,-25,0};
+                        rank = "PRIVATE";
+                        side = 2;
+                        vehicle = "DK143_I_CDF_Rifleman";
+                    };
+                };
+
+                class DK143_I_CDF_infantry_squad_cqb {
+                    name = "Squad (CQB)";
+                    side = 2;
+                    faction = "DK143_I_CDF";
+                    icon = "\A3\ui_f\data\map\markers\nato\n_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 2;
+                        vehicle = "DK143_I_CDF_Squadleader";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "CORPORAL";
+                        side = 2;
+                        vehicle = "DK143_I_CDF_Rifleman";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "CORPORAL";
+                        side = 2;
+                        vehicle = "DK143_I_CDF_Rifleman";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 2;
+                        vehicle = "DK143_I_CDF_Rifleman";
+                    };
+                    class Unit4 {
+                        position[] = {-10,-10,0};
+                        rank = "PRIVATE";
+                        side = 2;
+                        vehicle = "DK143_I_CDF_Rifleman";
+                    };
+                    class Unit5 {
+                        position[] = {15,-15,0};
+                        rank = "PRIVATE";
+                        side = 2;
+                        vehicle = "DK143_I_CDF_Rifleman";
+                    };
+                    class Unit6 {
+                        position[] = {-15,-15,0};
+                        rank = "PRIVATE";
+                        side = 2;
+                        vehicle = "DK143_I_CDF_Rifleman";
+                    };
+                    class Unit7 {
+                        position[] = {20,-20,0};
+                        rank = "PRIVATE";
+                        side = 2;
+                        vehicle = "DK143_I_CDF_Rifleman";
+                    };
+                    class Unit8 {
+                        position[] = {-20,-20,0};
+                        rank = "PRIVATE";
+                        side = 2;
+                        vehicle = "DK143_I_CDF_Rifleman";
+                    };
+                    class Unit9 {
+                        position[] = {25,-25,0};
+                        rank = "PRIVATE";
+                        side = 2;
+                        vehicle = "DK143_I_CDF_Rifleman";
+                    };
+                };
+			};
 		};
 	};
 };
@@ -2305,6 +2785,22 @@ class CfgVehicles
 		linkedItems[] = {"Cad_Gear700th","Cad_Inf_Helm700th","ItemMap","ItemRadio","ItemCompass","ItemWatch","TIOW_PhotovisorContacts"};
 		
         respawnlinkedItems[] = {"Cad_Gear700th","Cad_Inf_Helm700th","ItemMap","ItemRadio","ItemCompass","ItemWatch","TIOW_PhotovisorContacts"};
+	};
+
+	// Cornellia Defense Force
+	class DK143_I_CDF_Base : O_Soldier_base_F {
+		scope = 0;
+        scopeCurator = 0;
+        displayName = "change this";
+        side = 2;
+        faction = "DK143_I_CDF";
+
+        identityTypes[] = {"Head_Greek","LanguageGRE_F","G_HAF_default"};
+
+        uniformClass = "U_I_CombatUniform";
+
+        linkedItems[] = {"V_PlateCarrierIAGL_dgtl","H_HelmetIA","ItemMap","ItemRadio","ItemCompass","ItemWatch","TIOW_CadPhotovisorGoggles"};
+        respawnlinkedItems[] = {"V_PlateCarrierIAGL_dgtl","H_HelmetIA","ItemMap","ItemRadio","ItemCompass","ItemWatch","TIOW_CadPhotovisorGoggles"};
 	};
 	
 	// Fleshed out Units
@@ -2600,9 +3096,9 @@ class CfgVehicles
         weapons[] = {"arifle_AK12_GL_F"};
         respawnWeapons[] = {"arifle_AK12_GL_F"};
 
-        magazines[] = {mag_5(75Rnd_762x39_Mag_Tracer_F), mag_3(1Rnd_HE_Grenade_shell) mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+        magazines[] = {mag_5(75Rnd_762x39_Mag_Tracer_F), mag_3(1Rnd_HE_Grenade_shell), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
 		
-        respawnMagazines[] = {mag_5(75Rnd_762x39_Mag_Tracer_F), mag_3(1Rnd_HE_Grenade_shell) mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+        respawnMagazines[] = {mag_5(75Rnd_762x39_Mag_Tracer_F), mag_3(1Rnd_HE_Grenade_shell), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
 	};	
 
 	class DK143_O_CornelliaRebelsMedium_Stubber : DK143_O_CornelliaRebels_Base {
@@ -2879,5 +3375,95 @@ class CfgVehicles
 	class DK143_I_EmpAlleyFighters_Stubber : DK143_B_EmpAlleyFighters_Stubber {
 		side = 2;
 		faction = "DK143_I_EmpAlleyFighters";		
+	};
+
+	// CDF
+	
+	class DK143_I_CDF_Rifleman : DK143_I_CDF_Base {
+		scope = 2;
+        scopeCurator = 2;
+		displayName = "Rifleman";
+		weapons[] = {"ML700_Lasgun_Bayonet_Rifle"};
+        respawnWeapons[] = {"ML700_Lasgun_Bayonet_Rifle"};
+		
+		magazines[] = {mag_5(ML700_Lasgun_Rifle_B_Battery), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+		
+        respawnMagazines[] = {mag_5(ML700_Lasgun_Rifle_B_Battery), mag_3(1Rnd_HE_Grenade_shell) mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+	};
+	
+	class DK143_I_CDF_Machinegunner_Medium_Stubber : DK143_I_CDF_Base {
+		scope = 2;
+        scopeCurator = 2;
+		displayName = "Machinegunner";
+        weapons[] = {"ML700_LMG_Stubber_Black"};
+        respawnWeapons[] = {"ML700_LMG_Stubber_Black"};
+		
+		magazines[] = {mag_5(ML700_Stubber_Drum_Green), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+		
+        respawnMagazines[] = {mag_5(ML700_Stubber_Drum_Green), mag_3(1Rnd_HE_Grenade_shell) mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+	};
+	
+	class DK143_I_CDF_Longlasman : DK143_I_CDF_Base {
+		scope = 2;
+        scopeCurator = 2;
+		displayName = "Sniper";
+        weapons[] = {"ML700_Longlas_Rifle"};
+        respawnWeapons[] = {"ML700_Longlas_Rifle"};
+		
+		magazines[] = {mag_5(ML700_Lasgun_Rifle_B_50_Battery), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+		
+        respawnMagazines[] = {mag_5(ML700_Lasgun_Rifle_B_50_Battery), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+	};
+	
+	class DK143_I_CDF_Meltagunner : DK143_I_CDF_Base {
+		scope = 2;
+        scopeCurator = 2;
+		displayName = "Melta Gunner";
+        weapons[] = {"TIOW_MeltaGun","ML700_B_LasPistol_F"};
+        respawnWeapons[] = {"TIOW_MeltaGun","ML700_B_LasPistol_F"};
+		
+		magazines[] = {mag_5(ML700_Lasgun_Rifle_B_Battery), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+		
+        respawnMagazines[] = {mag_5(ML700_Lasgun_Rifle_B_Battery), mag_3(1Rnd_HE_Grenade_shell) mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+	};
+	
+	class DK143_I_CDF_Plasmagunner : DK143_I_CDF_Base {
+		scope = 2;
+        scopeCurator = 2;
+		displayName = "Plasma Gunner";
+        weapons[] = {"ML700_PlasmaRifle_F"};
+        respawnWeapons[] = {"ML700_PlasmaRifle_F"};
+		
+		magazines[] = {mag_5(ML700_Lasgun_Rifle_B_Battery), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+		
+        respawnMagazines[] = {mag_5(ML700_Lasgun_Rifle_B_Battery), mag_3(1Rnd_HE_Grenade_shell) mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+	};
+	
+	class DK143_I_CDF_AT_Launcher : DK143_I_CDF_Base {
+		scope = 2;
+        scopeCurator = 2;
+		displayName = "AT Launcher Man";
+        weapons[] = {"ML700_Lasgun_Bayonet_Rifle","launch_O_Vorona_green_F"};
+        respawnWeapons[] = {"ML700_Lasgun_Bayonet_Rifle","launch_O_Vorona_green_F"};
+		
+		magazines[] = {mag_5(ML700_Lasgun_Rifle_B_Battery), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+		
+        respawnMagazines[] = {mag_5(ML700_Lasgun_Rifle_B_Battery), mag_3(1Rnd_HE_Grenade_shell) mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+		
+		backpack = "B_Carryall_oli";
+	};
+	
+	class DK143_I_CDF_Squadleader : DK143_I_CDF_Base {
+		scope = 2;
+        scopeCurator = 2;
+		displayName = "Squadleader";
+		weapons[] = {"ML700_Lasgun_Bayonet_Rifle"};
+        respawnWeapons[] = {"ML700_Lasgun_Bayonet_Rifle"};
+		
+		magazines[] = {mag_5(ML700_Lasgun_Rifle_B_Battery), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+		
+        respawnMagazines[] = {mag_5(ML700_Lasgun_Rifle_B_Battery), mag_3(1Rnd_HE_Grenade_shell) mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+		
+		backpack = "TFAR_rt1523g_bwmod";
 	};
 };
