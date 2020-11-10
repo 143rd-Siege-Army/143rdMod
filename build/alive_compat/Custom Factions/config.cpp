@@ -6,7 +6,7 @@ class CfgPatches
 		author = "Venture";
 		name = "DK143 TIOW ALIVE_COMPAT Custom Factions";
 		requiredAddons[] = 
-        {"ace_common", "DkoKFoot","CadFoot","OrkBoyz","TIOWSpaceMarines", "AM_weapons"};
+        {"ace_common", "DkoKFoot","CadFoot","OrkBoyz","TIOWSpaceMarines", "AM_weapons", "IC_CAD_WEAPONS", "SG1_tech_Pat"};
 		requiredVersion = 0.1;
 		units[] = {};
 		weapons[] = {};
