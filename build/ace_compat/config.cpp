@@ -319,10 +319,19 @@ class CfgVehicles
     class SoldierWB: CAManBase {};
     class B_Soldier_base_F: SoldierWB{};
     class B_Soldier_F: B_Soldier_base_F {};
+	class ReammoBox;
+	class Bag_Base: ReammoBox {};
+	class B_AssaultPack_Base: Bag_Base {};
+
+	// Backpacks
+
+	// DK AT Backpack
+	class DKoK_AT_BackPack: B_AssaultPack_Base
+	{
+		maximumLoad = 320;
+	};
 
 	// Vox Caster Storage
-
-	class Bag_Base;
 	class TIOW_IG_Vox_Caster: Bag_Base
 	{
 		maximumLoad = 80;
@@ -2615,6 +2624,7 @@ class CfgWeapons
 	{
 		magazines[] = {"TIOW_50Rnd_Stubber_mag","TIOW_50Rnd_Stubber_mag_Tracer","TIOW_50Rnd_Stubber_amput","TIOW_50Rnd_Stubber_manstop","TIOW_50Rnd_Stubber_expander", "DK143_150Rnd_Hvy_Stubber_Expander_Mag", "DK143_150Rnd_Hvy_Stubber_Manstop_Mag", "DK143_150Rnd_Hvy_Stubber_Amput_Mag", "DK143_150Rnd_Hvy_Stubber_Tracer_Mag", "DK143_150Rnd_Hvy_Stubber_Mag"};
 	};
+
 /*
 
 Helmets
@@ -3766,6 +3776,10 @@ Helmets
 */
 
 	// Invisible Flak Weave, medium 
+	class Vest_Camo_Base: ItemCore
+	{
+		class ItemInfo;
+	};
 	class DK143_ArmorBase: ItemCore
 	{
 		scope = 0;
@@ -5011,6 +5025,212 @@ Helmets
 			};
 	  	};
 	};
+
+	// Steel Legion
+	class IC_SL_VEST_01: Vest_Camo_Base
+    {
+        class ItemInfo: VestItem
+        {
+            class HitpointsProtectionInfo
+			{
+				class Neck
+				{
+					hitpointName = "HitNeck";
+					armor = 8;
+					passThrough = 1;
+				};
+				class Arms
+				{
+					hitpointName = "HitArms";
+					armor = 6;
+					passThrough = 1;
+				};
+				class Chest
+				{
+					HitpointName="HitChest";
+					armor=20;
+					PassThrough=0.2;
+				};
+				class Diaphragm
+				{
+					HitpointName="HitDiaphragm";
+					armor=20;
+					PassThrough=0.2;
+				};
+				class Abdomen
+				{
+					hitpointName="HitAbdomen";
+					armor=20;
+					passThrough=0.2;
+				};
+				class Pelvis
+				{
+					hitpointName = "HitPelvis";
+					armor = 20;
+					passThrough = 1;
+				};
+				class Body
+				{
+					hitpointName="HitBody";
+					armor = 6;
+					passThrough=0.2;
+				};
+			};
+        };
+    };
+	class IC_SL_VEST_02: IC_SL_VEST_01
+    {
+        class ItemInfo: VestItem
+        {
+            class HitpointsProtectionInfo
+			{
+				class Neck
+				{
+					hitpointName = "HitNeck";
+					armor = 8;
+					passThrough = 1;
+				};
+				class Arms
+				{
+					hitpointName = "HitArms";
+					armor = 6;
+					passThrough = 1;
+				};
+				class Chest
+				{
+					HitpointName="HitChest";
+					armor=20;
+					PassThrough=0.2;
+				};
+				class Diaphragm
+				{
+					HitpointName="HitDiaphragm";
+					armor=20;
+					PassThrough=0.2;
+				};
+				class Abdomen
+				{
+					hitpointName="HitAbdomen";
+					armor=20;
+					passThrough=0.2;
+				};
+				class Pelvis
+				{
+					hitpointName = "HitPelvis";
+					armor = 20;
+					passThrough = 1;
+				};
+				class Body
+				{
+					hitpointName="HitBody";
+					armor = 6;
+					passThrough=0.2;
+				};
+			};
+        };
+    };
+	class IC_SL_VEST_03: IC_SL_VEST_01
+    {
+        class ItemInfo: VestItem
+        {
+            class HitpointsProtectionInfo
+			{
+				class Neck
+				{
+					hitpointName = "HitNeck";
+					armor = 8;
+					passThrough = 1;
+				};
+				class Arms
+				{
+					hitpointName = "HitArms";
+					armor = 6;
+					passThrough = 1;
+				};
+				class Chest
+				{
+					HitpointName="HitChest";
+					armor=20;
+					PassThrough=0.2;
+				};
+				class Diaphragm
+				{
+					HitpointName="HitDiaphragm";
+					armor=20;
+					PassThrough=0.2;
+				};
+				class Abdomen
+				{
+					hitpointName="HitAbdomen";
+					armor=20;
+					passThrough=0.2;
+				};
+				class Pelvis
+				{
+					hitpointName = "HitPelvis";
+					armor = 20;
+					passThrough = 1;
+				};
+				class Body
+				{
+					hitpointName="HitBody";
+					armor = 6;
+					passThrough=0.2;
+				};
+			};
+        };
+    };
+	class IC_SL_VEST_04: IC_SL_VEST_01
+    {
+        class ItemInfo: VestItem
+        {
+            class HitpointsProtectionInfo
+			{
+				class Neck
+				{
+					hitpointName = "HitNeck";
+					armor = 8;
+					passThrough = 1;
+				};
+				class Arms
+				{
+					hitpointName = "HitArms";
+					armor = 6;
+					passThrough = 1;
+				};
+				class Chest
+				{
+					HitpointName="HitChest";
+					armor=20;
+					PassThrough=0.2;
+				};
+				class Diaphragm
+				{
+					HitpointName="HitDiaphragm";
+					armor=20;
+					PassThrough=0.2;
+				};
+				class Abdomen
+				{
+					hitpointName="HitAbdomen";
+					armor=20;
+					passThrough=0.2;
+				};
+				class Pelvis
+				{
+					hitpointName = "HitPelvis";
+					armor = 20;
+					passThrough = 1;
+				};
+				class Body
+				{
+					hitpointName="HitBody";
+					armor = 6;
+					passThrough=0.2;
+				};
+			};
+        };
+    };
 
 	// Cad. Flak Armors (Base, Medicae, and Sergeant), Medium.
     class Cad_Gear_Vest2: ItemCore 
@@ -6334,10 +6554,6 @@ Helmets
         };
     };
 	// Bloodpact Flak Armor, medium.
-	class Vest_Camo_Base: ItemCore
-	{
-		class ItemInfo;
-	};
 	class TIOW_Bloodpact_vest_01: Vest_Camo_Base
 	{
         class ItemInfo: ItemInfo
@@ -6411,13 +6627,13 @@ Helmets
 				class Chest
 				{
 					hitpointName="HitChest";
-					armor=78;
+					armor=24;
 					passThrough=0.60000002;
 				};
 				class Diaphragm
 				{
 					hitpointName="HitDiaphragm";
-					armor=78;
+					armor=24;
 					passThrough=0.60000002;
 				};
 				class Abdomen
