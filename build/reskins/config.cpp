@@ -56,6 +56,7 @@ class cfgVehicles {
         hiddenSelectionsTextures[] = {
             "\143rdMod\build\reskins\data\land_vehicles\gd_chimera\medical_green\driveassembly_co.paa","\143rdMod\build\reskins\data\land_vehicles\gd_chimera\medical_green\hull_co.paa","\143rdMod\build\reskins\data\land_vehicles\gd_chimera\medical_green\hullheavybolter_co.paa","\143rdMod\build\reskins\data\land_vehicles\gd_chimera\medical_green\hullmisc_co.paa","\143rdMod\build\reskins\data\land_vehicles\gd_chimera\medical_green\interior_co.paa","\143rdMod\build\reskins\data\land_vehicles\gd_chimera\medical_green\lasarray_co.paa","\143rdMod\build\reskins\data\land_vehicles\gd_chimera\medical_green\reardoor_co.paa","\143rdMod\build\reskins\data\land_vehicles\gd_chimera\medical_green\turretexterior_co.paa","\143rdMod\build\reskins\data\land_vehicles\gd_chimera\medical_green\turretweapons_co.paa"};
     };
+    /*      PULLED DUE TO TIOW UPDATE: FIX WHEN ICP ADDS THEIR STUPID SHIT IN!
 	class TIOW_Taurox_HS_667;
     class 143rd_Taurox_Grey_Base_HS: TIOW_Taurox_HS_667
     {
@@ -82,4 +83,5 @@ class cfgVehicles {
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[] = {"\143rdMod\build\reskins\data\land_vehicles\tiow_taurox\143rd_AC_Grey.paa"};
     };
+    */
 };
