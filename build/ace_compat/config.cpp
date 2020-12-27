@@ -2755,6 +2755,37 @@ Helmets
         };
     };
  
+	// Cadminae Helms
+	class TIOW_OCC_Helmet_Base_1: ItemCore
+	{
+        class ItemInfo: HeadgearItem
+        {
+            class HitpointsProtectionInfo
+            {
+                class Head
+                {
+                    hitpointName = "HitHead";
+                    armor = 6;
+                    passThrough = 0.5;
+                };
+            };
+        };		
+	};
+	class TIOW_OCC_Helmet_1: TIOW_OCC_Helmet_Base_1
+	{
+        class ItemInfo: HeadgearItem
+        {
+            class HitpointsProtectionInfo
+            {
+                class Head
+                {
+                    hitpointName = "HitHead";
+                    armor = 6;
+                    passThrough = 0.5;
+                };
+            };
+        };		
+	};
 	// All Cadian helmets, medium armor.
     class Cad_Inf_Helm2: ItemCore 
     {
@@ -5236,6 +5267,110 @@ Helmets
         };
     };
 
+	// Cadminae Flak
+	class TIOW_Gear_Vest_Base_1: ItemCore {};
+	class TIOW_Gear_Vest_Base_2: TIOW_Gear_Vest_Base_1
+	{
+        class ItemInfo: ItemInfo
+        {
+            class HitpointsProtectionInfo
+			{
+				class Neck
+				{
+					hitpointName = "HitNeck";
+					armor = 0;
+					passThrough = 1;
+				};
+				class Arms
+				{
+					hitpointName = "HitArms";
+					armor = 0;
+					passThrough = 1;
+				};
+				class Chest
+				{
+					HitpointName="HitChest";
+					armor=20;
+					PassThrough=0.2;
+				};
+				class Diaphragm
+				{
+					HitpointName="HitDiaphragm";
+					armor=20;
+					PassThrough=0.2;
+				};
+				class Abdomen
+				{
+					hitpointName="HitAbdomen";
+					armor=20;
+					passThrough=0.2;
+				};
+				class Pelvis
+				{
+					hitpointName = "HitPelvis";
+					armor = 0;
+					passThrough = 1;
+				};
+				class Body
+				{
+					hitpointName="HitBody";
+					armor = 0;
+					passThrough=0.2;
+				};
+			};
+        };		
+	};
+	class TIOW_OCC_Vest_1: TIOW_Gear_Vest_Base_2
+	{
+        class ItemInfo: ItemInfo
+        {
+            class HitpointsProtectionInfo
+			{
+				class Neck
+				{
+					hitpointName = "HitNeck";
+					armor = 0;
+					passThrough = 1;
+				};
+				class Arms
+				{
+					hitpointName = "HitArms";
+					armor = 0;
+					passThrough = 1;
+				};
+				class Chest
+				{
+					HitpointName="HitChest";
+					armor=20;
+					PassThrough=0.2;
+				};
+				class Diaphragm
+				{
+					HitpointName="HitDiaphragm";
+					armor=20;
+					PassThrough=0.2;
+				};
+				class Abdomen
+				{
+					hitpointName="HitAbdomen";
+					armor=20;
+					passThrough=0.2;
+				};
+				class Pelvis
+				{
+					hitpointName = "HitPelvis";
+					armor = 0;
+					passThrough = 1;
+				};
+				class Body
+				{
+					hitpointName="HitBody";
+					armor = 0;
+					passThrough=0.2;
+				};
+			};
+        };		
+	};
 	// Cad. Flak Armors (Base, Medicae, and Sergeant), Medium.
     class Cad_Gear_Vest2: ItemCore 
 	{
