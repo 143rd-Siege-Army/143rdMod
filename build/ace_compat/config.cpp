@@ -35,6 +35,11 @@ class CfgAmmo
 	// {
 	// 	hit = 12;
 	// };
+	class SH_120mm_HE;
+	class TIOW_PlasmagunRound: SH_120mm_HE
+	{
+		indirectHitRange = 3.0;
+	};
 	class TIOW_LongLas_LasBolt: BulletBase
 	{
 		hit = 16;
@@ -334,7 +339,7 @@ class CfgVehicles
 	// Vox Caster Storage
 	class TIOW_IG_Vox_Caster: Bag_Base
 	{
-		maximumLoad = 80;
+		maximumLoad = 120;
 	};
 
 	// Invisible vox caster
@@ -5268,7 +5273,9 @@ Helmets
     };
 
 	// Cadminae Flak
-	class TIOW_Gear_Vest_Base_1: ItemCore {};
+	class TIOW_Gear_Vest_Base_1: ItemCore {
+		class ItemInfo: VestItem {};
+	};
 	class TIOW_Gear_Vest_Base_2: TIOW_Gear_Vest_Base_1
 	{
         class ItemInfo: ItemInfo
