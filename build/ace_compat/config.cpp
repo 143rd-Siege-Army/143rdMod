@@ -894,6 +894,7 @@ class CfgVehicles
 		};
 	};
 
+	/*	PULLED UNTIL TIOW PULLS THEIR HEAD OUTTA THEIR ASSES :)
 	// Orks - SM Variant
 	class TIOWOrkTest1: TIOWSpaceMarine_Base 
 	{
@@ -1026,6 +1027,7 @@ class CfgVehicles
 			};
 		};
 	};
+	*/
 
 	//Renegade
 	class SoldierEB: CAManBase {};
@@ -3328,7 +3330,8 @@ Helmets
             };
         };
     };
-	// Bloodpact helmet, heavy armor. Adding to virtual arsenal
+	// Bloodpact helmet, heavy armor. Adding to virtual arsenal. Pulled from TIOW, readd with ICP.
+	/*
 	class TIOW_Bloodpact_helmet_01: H_HelmetB
 	{
 		scopeArsenal = 2;
@@ -3345,6 +3348,7 @@ Helmets
 			};
 		};
 	};
+	*/
 	// Renegade enforcer mask, heavy armor and face protection.
     class Ren_Helm_00: ItemCore
     {
@@ -6553,7 +6557,8 @@ Helmets
 			};
         };
     };
-	// Bloodpact Flak Armor, medium.
+	// Bloodpact Flak Armor, medium. Pulled from TIOW, readd to ICP
+	/*
 	class TIOW_Bloodpact_vest_01: Vest_Camo_Base
 	{
         class ItemInfo: ItemInfo
@@ -6759,7 +6764,8 @@ Helmets
 				};
 			};            
         };
-    };	
+    };
+	*/	
 	// Ren. Armored Chestplate, Heavy.
     class Ren_ArmorSet_02_black: Ren_ArmorSet_00
     {
