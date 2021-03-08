@@ -81,7 +81,7 @@ class CfgAmmo
 	{
 		hit = 2;
 	};
-	class M36KantRifle_LasBolt: Bulletbase
+	class M36KantRifle_LasBolt: BulletBase
 	{
 		hit = 9;
 	};
@@ -241,8 +241,8 @@ class CfgMagazines
 	};
 	class DK143_150Rnd_Hvy_Stubber_Amput_Mag: TIOW_50Rnd_Stubber_amput
 	{
-		displayName = "[DK143] 150 Round Heavy Stubber Magazine, ManStoppers";
-		descriptionShort = "150 Round ManStoppers Magazine";
+		displayName = "[DK143] 150 Round Heavy Stubber Magazine, Amputators";
+		descriptionShort = "150 Round Amputator Magazine";
 		count = 150;
 		mass = 30;
 	};
