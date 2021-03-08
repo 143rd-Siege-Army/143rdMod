@@ -2632,6 +2632,10 @@ class CfgWeapons
 		magazines[] = {"TIOW_50Rnd_Stubber_mag","TIOW_50Rnd_Stubber_mag_Tracer","TIOW_50Rnd_Stubber_amput","TIOW_50Rnd_Stubber_manstop","TIOW_50Rnd_Stubber_expander", "DK143_150Rnd_Hvy_Stubber_Expander_Mag", "DK143_150Rnd_Hvy_Stubber_Manstop_Mag", "DK143_150Rnd_Hvy_Stubber_Amput_Mag", "DK143_150Rnd_Hvy_Stubber_Tracer_Mag", "DK143_150Rnd_Hvy_Stubber_Mag"};
 	};
 
+	class TIOW_KriegLauncher: Rifle_Base_F
+	{
+		magazines[] = {"TIOW_Krieg_LauncherFrag_mag", "TIOW_IG_GL_Krak_mag", "TIOW_IG_GL_Smoke_mag", "TIOW_IG_GL_Buck_mag", "TIOW_IG_GL_Flare_mag", "TIOW_IG_GL_Flame_mag", "ML700_6rndFlareGreen", "ML700_6rndFlareRed", "ML700_6rndFlareYellow", "ML700_6rnd_SmokeRed", "ML700_6rnd_SmokeGreen", "ML700_6rnd_SmokeBlue"};
+	};
 /*
 
 Helmets
