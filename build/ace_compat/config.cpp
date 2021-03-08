@@ -17,6 +17,7 @@ class CfgPatches
 
 class CfgAmmo
 {
+	class RocketBase;
 	class BulletBase;
 	class ShotgunBase;
 	class B_127x99_Ball;
@@ -145,6 +146,161 @@ class CfgAmmo
 		explosionSoundEffect = "DefaultExplosion";
 		craterEffects = "";
 		explosionEffects = "AmputatorRoundExplosion";
+	};
+
+	class DK143_MLSmoke: RocketBase
+	{
+		model = "\A3\Weapons_F_Exp\Launchers\RPG7\rocket_rpg7.p3d";
+		hit = 10;
+		indirectHit = 10;
+		indirectHitRange = 4;
+		explosive = 1;
+		caliber = 0;
+		airFriction = 0.085;
+		sideAirFriction = 0.085;
+		maxSpeed = 500;
+		initTime = 0;
+		thrustTime = 1;
+		thrust = 1600;
+		fuseDistance = 15;
+		CraterEffects = "";
+		explosionEffects = "smokeMissileSmokeEffect";
+		effectsMissileInit = "";
+		effectsMissile = "EmptyEffect";
+		simulationStep = 0.02;
+		airLock = 0;
+		aiAmmoUsageFlags = "128 + 512";
+		irLock = 0;
+		timeToLive = 10;
+		maneuvrability = 0;
+		allowAgainstInfantry = 1;
+		soundHit1[] = {"A3\Sounds_F\arsenal\weapons\Launchers\Titan\Explosion_titan_missile_01",2.51189,1,1800};
+		soundHit2[] = {"A3\Sounds_F\arsenal\weapons\Launchers\Titan\Explosion_titan_missile_02",2.51189,1,1800};
+		soundHit3[] = {"A3\Sounds_F\arsenal\weapons\Launchers\Titan\Explosion_titan_missile_03",2.51189,1,1800};
+		multiSoundHit[] = {"soundHit1",0.34,"soundHit2",0.33,"soundHit3",0.33};
+		class CamShakeExplode
+		{
+			power = "(35*0.2)";
+			duration = "((round (35^0.5))*0.2 max 0.2)";
+			frequency = 20;
+			distance = "((4 + 35^0.5)*8)";
+		};
+		class CamShakeHit
+		{
+			power = 85;
+			duration = "((round (85^0.25))*0.2 max 0.2)";
+			frequency = 20;
+			distance = 1;
+		};
+		class CamShakeFire
+		{
+			power = "(15^0.25)";
+			duration = "((round (15^0.5))*0.2 max 0.2)";
+			frequency = 20;
+			distance = "((15^0.5)*8)";
+		};
+		class CamShakePlayerFire
+		{
+			power = 1;
+			duration = 0.1;
+			frequency = 20;
+			distance = 1;
+		};
+	};
+	class TIOW_MLAT;
+	class ammo_Penetrator_Base;
+	class DK143_MLMelta: TIOW_MLAT
+	{
+		model = "\A3\Weapons_F_Exp\Launchers\RPG7\rocket_rpg7.p3d";
+		hit = 400;
+		indirectHit = 3;
+		indirectHitRange = 1;
+		submunitionAmmo = "DK143_MLMelta_Penetrato";
+		CraterEffects = "ATMissileCrater";
+		explosionEffects = "TIOW_Meltagun_flameExplosion";
+		submunitionDirectionType = "SubmunitionModelDirection";
+		submunitionInitSpeed = 820;
+		submunitionParentSpeedCoef = 0;
+		submunitionInitialOffset[] = {0,0,-0.2};
+	};
+	class DK143_MLMelta_Penetrator: ammo_Penetrator_Base
+	{
+		warheadName = "TandemHEAT";
+		caliber = 300;
+		hit = 512;
+		indirectHit = 12;
+		indirectHitRange = 2;
+	};
+};
+
+class CfgCloudlets
+{
+	class Default;
+	class smokeMissileFast: Default // Borrowed with love from Dolf's Vanguard mod
+	{
+		interval = "0.4 * interval";
+		circleRadius = 40;
+		circleVelocity[] = {0,0.03,0};
+		angleVar = 1;
+		animationName = "";
+		timerPeriod = 1;
+		lifeTime = 140;
+		moveVelocity[] = {0.05,0.085,0.05};
+		rotationVelocity = 0;
+		weight = 0.052;
+		volume = 0.04;
+		rubbing = 0.025;
+		size[] = {"0.0125 * intensity + 7","0.0125 * intensity + 13","0.0125 * intensity + 14","0.0125 * intensity + 16"};
+		color[] = {{0.8,0.8,0.8,0.8},{0.9,0.9,0.9,0.9},{0.9,0.9,0.9,0.75},{0.97,0.97,0.97,0.65},{0.97,0.97,0.97,0.6},{0.98,0.98,0.98,0.6},{1,1,1,0}};
+		animationSpeed[] = {1.5,0.5,0.3,0.25,0.25};
+		randomDirectionPeriod = 0.2;
+		randomDirectionIntensity = 0.2;
+		onTimerScript = "";
+		beforeDestroyScript = "";
+		lifeTimeVar = 4;
+		positionVar[] = {5,12,5};
+		MoveVelocityVar[] = {0.05,0.05,0.05};
+		rotationVelocityVar = 20;
+		sizeVar = 1;
+		colorVar[] = {0,0,0,0};
+		randomDirectionPeriodVar = 0;
+		randomDirectionIntensityVar = 0;
+	};
+	class smokeMissileSlow: smokeMissileFast
+	{
+		circleRadius = 40;
+		interval = 0.1;
+		positionVar[] = {4,8,4};
+	};
+};
+class smokeMissileSmokeEffect // Borrowed with love from Dolf and the Vanguard Mod!
+{
+	class LightExpSmall
+	{
+		simulation = "light";
+		type = "ExploLight";
+		position[] = {0,1.3,0};
+		intensity = 0.0005;
+		interval = 1;
+		lifeTime = 0.4;
+	};
+	class SmokeCloud
+	{
+		simulation = "particles";
+		type = "smokeMissileFast";
+		position[] = {0,0.6,0};
+		intensity = 500;
+		interval = 0.5;
+		lifeTime = 2.2;
+	};
+	class SmokeCloudLinger
+	{
+		simulation = "particles";
+		type = "smokeMissileSlow";
+		position[] = {0,0.6,0};
+		intensity = 20000;
+		interval = 0.1;
+		lifeTime = 180;
 	};
 };
 
@@ -302,6 +458,36 @@ class CfgMagazines
 		mass = 2;
 		count = 1;
 	};
+
+	class RPG32_F;
+	class DK143_MLSmoke_Mag: RPG32_F
+	{
+		author = "Siggyfreed";
+		scope = 2;
+		displayName = "Smoke Missile";
+		displaynameShort = "Smoke";
+		descriptionShort = "";
+		model = "\A3\Weapons_F_Exp\Launchers\RPG7\rocket_rpg7_item.p3d";
+		picture = "\A3\Weapons_F_Exp\Launchers\RPG7\Data\UI\icon_rocket_RPG7_CA.paa";
+		initSpeed = 140;
+		ammo = "DK143_MLSmoke";
+		type = "2*	256";
+		mass = 30;
+	};
+	class DK143_MLMelta_Mag: RPG32_F
+	{
+		author = "Siggyfreed";
+		scope = 2;
+		displayName = "Melta Missile";
+		displaynameShort = "Melta";
+		descriptionShort = "";
+		model = "\A3\Weapons_F_Exp\Launchers\RPG7\rocket_rpg7_item.p3d";
+		picture = "\A3\Weapons_F_Exp\Launchers\RPG7\Data\UI\icon_rocket_RPG7_CA.paa";
+		initSpeed = 140;
+		ammo = "DK143_MLMelta";
+		type = "2*	256";
+		mass = 30;
+	};
 };
 
 class CfgVehicles
@@ -345,6 +531,15 @@ class CfgVehicles
             init="(_this select 0) setFlagTexture '\143rdMod\build\ace_compat\Images\DK143Flag_CO.paa'";
         };
 	};
+
+	// Can't confirm functionality at current.
+	// class ACE_Explosives_Place;
+	// class DK143_Melta_Place: ACE_Explosives_Place
+	// {
+	// 	displayName = "Melta Bomb";
+	// 	model = "E:\Program Files (x86)\Steam\steamapps\common\Arma 3\!Workshop\@There is Only War Mod - Release 5 BETA\Addons\TIOW_IG_Explosives\TIOW_IG_Explosives\tiow_ig_melta_bomb_placeable\ig_melta_bomb_placeable_mag.p3d";
+	// 	ACE_offset[] = {0,0,0};
+	// };
 
     class Man;
     class CAManBase: Man{
@@ -2648,6 +2843,12 @@ class CfgWeapons
 		};
 	};
 	
+	class launch_RPG7_F;
+	class MissileLauncherDKOK: launch_RPG7_F
+	{
+		magazines[] = {"MLAT_Mag", "MLHE_Mag", "DK143_MLMelta_Mag", "DK143_MLSmoke_Mag"};
+	};
+
 	class TIOW_LongLas_Base: arifle_MX_Base_F
 	{
 		magazines[] = {"TIOW_LongLas_Mag","DK143_LongLasHP_Mag"};
