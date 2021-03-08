@@ -260,6 +260,48 @@ class CfgMagazines
 		count = 150;
 		mass = 30; 
 	};
+
+	class TIOW_IG_GL_Frag_mag: CA_Magazine {};
+	class TIOW_IG_GL_Krak_mag: TIOW_IG_GL_Frag_mag {};
+	class TIOW_IG_GL_Smoke_mag: TIOW_IG_GL_Frag_mag {};
+	class TIOW_IG_GL_Flare_mag: TIOW_IG_GL_Frag_mag {};
+	class TIOW_IG_GL_Buck_mag: TIOW_IG_GL_Frag_mag {};
+	class TIOW_IG_GL_Flame_mag: TIOW_IG_GL_Frag_mag {};
+	class DK143_Krieg_GL_Krak_Mag: TIOW_IG_GL_Krak_mag
+	{
+		displayName = "[DK143] Krieg GL Krak Magazine";
+		descriptionShort = "GL (Krak)";
+		mass = 2;
+		count = 1;
+	};
+	class DK143_Krieg_GL_Smoke_Mag: TIOW_IG_GL_Smoke_mag
+	{
+		displayName = "[DK143] Krieg GL Smoke Magazine";
+		descriptionShort = "GL (Smoke)";
+		mass = 2;
+		count = 1;
+	};
+	class DK143_Krieg_GL_Flare_Mag: TIOW_IG_GL_Flare_mag
+	{
+		displayName = "[DK143] Krieg GL Flare Magazine";
+		descriptionShort = "GL (Flare)";
+		mass = 2;
+		count = 1;
+	};
+	class DK143_Krieg_GL_Buck_Mag: TIOW_IG_GL_Buck_mag
+	{
+		displayName = "[DK143] Krieg GL Buck Magazine";
+		descriptionShort = "GL (Buck)";
+		mass = 2;
+		count = 1;
+	};
+	class DK143_Krieg_GL_Flame_Mag: TIOW_IG_GL_Flame_mag
+	{
+		displayName = "[DK143] Krieg GL Flame Magazine";
+		descriptionShort = "GL (Flame)";
+		mass = 2;
+		count = 1;
+	};
 };
 
 class CfgVehicles
@@ -2634,7 +2676,7 @@ class CfgWeapons
 
 	class TIOW_KriegLauncher: Rifle_Base_F
 	{
-		magazines[] = {"TIOW_Krieg_LauncherFrag_mag", "TIOW_IG_GL_Krak_mag", "TIOW_IG_GL_Smoke_mag", "TIOW_IG_GL_Buck_mag", "TIOW_IG_GL_Flare_mag", "TIOW_IG_GL_Flame_mag", "ML700_6rndFlareGreen", "ML700_6rndFlareRed", "ML700_6rndFlareYellow", "ML700_6rnd_SmokeRed", "ML700_6rnd_SmokeGreen", "ML700_6rnd_SmokeBlue"};
+		magazines[] = {"TIOW_Krieg_LauncherFrag_mag", "DK143_Krieg_GL_Krak_Mag", "DK143_Krieg_GL_Smoke_Mag", "DK143_Krieg_GL_Flare_Mag", "DK143_Krieg_GL_Buck_Mag", "DK143_Krieg_GL_Flame_Mag", "UGL_FlareGreen_F", "UGL_FlareRed_F", "UGL_FlareYellow_F", "3Rnd_SmokeRed_Grenade_shell", "3Rnd_SmokeGreen_Grenade_shell", "3Rnd_SmokeBlue_Grenade_shell"};
 	};
 /*
 
