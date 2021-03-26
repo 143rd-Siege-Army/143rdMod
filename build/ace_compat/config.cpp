@@ -417,6 +417,11 @@ class CfgMagazines
 		mass = 30; 
 	};
 
+	class DK_PlasmaGun_Flask: CA_Magazine
+	{
+		mass = 15;
+	};
+	
 	class TIOW_IG_GL_Frag_mag: CA_Magazine {};
 	class TIOW_IG_GL_Krak_mag: TIOW_IG_GL_Frag_mag {};
 	class TIOW_IG_GL_Smoke_mag: TIOW_IG_GL_Frag_mag {};
