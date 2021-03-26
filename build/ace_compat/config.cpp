@@ -17,6 +17,7 @@ class CfgPatches
 
 class CfgAmmo
 {
+	class CA_Magazine;
 	class RocketBase;
 	class BulletBase;
 	class ShotgunBase;
@@ -230,6 +231,22 @@ class CfgAmmo
 		hit = 512;
 		indirectHit = 12;
 		indirectHitRange = 2;
+	};
+
+	class HandGrenade: CA_Magazine;
+	class SmokeShell: HandGrenade;
+	class SmokeShellArty: SmokeShell
+	{
+		simulation="shotSmoke";
+		effectsSmoke="SmokeMissileSmokeEffect";
+		model="\A3\weapons_f\ammo\shell_smoke";
+	};
+
+	class ShotDeployCore;
+	class ShotDeployBase: ShotDeployCore;
+	class Smoke_82mm_AMOS_White: ShotDeployBase
+	{
+		submunitionAmmo="SmokeShellArty";
 	};
 };
 
