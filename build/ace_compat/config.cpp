@@ -215,7 +215,7 @@ class CfgAmmo
 		hit = 400;
 		indirectHit = 3;
 		indirectHitRange = 1;
-		submunitionAmmo = "DK143_MLMelta_Penetrato";
+		submunitionAmmo = "DK143_MLMelta_Penetrator";
 		CraterEffects = "ATMissileCrater";
 		explosionEffects = "TIOW_Meltagun_flameExplosion";
 		submunitionDirectionType = "SubmunitionModelDirection";
