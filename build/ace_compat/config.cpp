@@ -233,8 +233,8 @@ class CfgAmmo
 		indirectHitRange = 2;
 	};
 
-	class HandGrenade: CA_Magazine;
-	class SmokeShell: HandGrenade;
+	class HandGrenade: CA_Magazine {};
+	class SmokeShell: HandGrenade {};
 	class SmokeShellArty: SmokeShell
 	{
 		simulation="shotSmoke";
@@ -243,7 +243,7 @@ class CfgAmmo
 	};
 
 	class ShotDeployCore;
-	class ShotDeployBase: ShotDeployCore;
+	class ShotDeployBase: ShotDeployCore {};
 	class Smoke_82mm_AMOS_White: ShotDeployBase
 	{
 		submunitionAmmo="SmokeShellArty";
