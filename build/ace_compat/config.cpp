@@ -233,21 +233,23 @@ class CfgAmmo
 		indirectHitRange = 2;
 	};
 
-	class HandGrenade: CA_Magazine {};
-	class SmokeShell: HandGrenade {};
-	class SmokeShellArty: SmokeShell
-	{
-		simulation="shotSmoke";
-		effectsSmoke="SmokeMissileSmokeEffect";
-		model="\A3\weapons_f\ammo\shell_smoke";
-	};
+	// First attempt at making mortar smoke bigger: did not work :)
 
-	class ShotDeployCore;
-	class ShotDeployBase: ShotDeployCore {};
-	class Smoke_82mm_AMOS_White: ShotDeployBase
-	{
-		submunitionAmmo="SmokeShellArty";
-	};
+	// class HandGrenade: CA_Magazine {};
+	// class SmokeShell: HandGrenade {};
+	// class SmokeShellArty: SmokeShell
+	// {
+	// 	simulation="shotSmoke";
+	// 	effectsSmoke="SmokeMissileFast";
+	// 	model="\A3\weapons_f\ammo\shell_smoke";
+	// };
+
+	// class ShotDeployCore;
+	// class ShotDeployBase: ShotDeployCore {};
+	// class Smoke_82mm_AMOS_White: ShotDeployBase
+	// {
+	// 	submunitionAmmo="SmokeShellArty";
+	// };
 };
 
 class CfgCloudlets
