@@ -77,7 +77,7 @@ class CfgAmmo
 	class Type14_LasBolt: BulletBase
 	{
 		hit = 22;
-		caliber = 10;
+		caliber = 5;
 	};
 	class Lucius22c_Pellets: ShotgunBase
 	{
@@ -331,7 +331,7 @@ class CfgMagazines
 	class ML700_Stubber_drum: 200Rnd_556x45_Box_F {};
 	class Type14_mag: CA_Magazine
 	{
-		mass = 175;
+		mass = 125;
 	};
 	class M36KantRifle_mag: CA_Magazine {};
 	class DK143_KantRifleHP_Mag: M36KantRifle_mag
