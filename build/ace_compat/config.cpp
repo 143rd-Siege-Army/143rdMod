@@ -606,7 +606,7 @@ class CfgVehicles
 	// Invisible vox caster
 	class DK143_Voxcaster_Invisible: TIOW_IG_Vox_Caster
 	{
-		author = "Cpt. Stinkyrowanbutt";
+		author = "Rowan";
 		displayName = "[Krieg] Voxcaster (Invisible)";
 		model = "\A3\Weapons_F\empty.p3d";
 		hiddenSelections[] = 
@@ -2885,6 +2885,32 @@ class CfgWeapons
 	{
 		magazines[] = {"Lucius98_mag", "DK143_HotShot_Lucius_Mag"};
 	};
+	class Lucius98LasgunBlackS: Lucius98Lasgun{};
+
+	// ADD MARKSMAN VARIANTS OF THE LUCIUS RIFLE <ROWAN>
+	class Lucius98Marksman: Lucius98LasgunBlackS
+	{
+		author = "Rowan";
+		displayName = "[DK143]Lucius Pattern No. 98 - Marksman";
+
+		// ADD THE TIOW TYPE 14 OPTICS TO THE LUCIUS RIFLE.  NEW P3D REQUIRED SINCE IT SHOOTS HIGH AND LEFT. <ROWAN>
+		modelOptics = "\DKoK_Weapons\Type14_Optic.p3d";				
+        opticsPPEffects[] = {"OpticsCHAbera1","OpticsBlur1"};
+        opticsZoomMin = 0.0625;
+        opticsZoomMax = 0.0625;
+        opticsZoomInit = 0.0625;
+	}
+	class LuciusMarcoLoco: Lucius98LasgunBlackS
+	{
+		author = "Rowan";
+		displayName = "[DK143]Lucius Pattern No. 98 'El Marco Loco'";
+
+		// THIS IS A MEME, THERE IS NO OPTIC P3D BOUND.  IT LITERALLY ZOOMS IN ON THE IRON SIGHTS. <ROWAN>
+        opticsPPEffects[] = {"OpticsCHAbera1","OpticsBlur1"};
+        opticsZoomMin = 0.0625;
+        opticsZoomMax = 0.0625;
+        opticsZoomInit = 0.0625;
+	}
 
 	class ML700_LMG_Stubber_Black: ML700_LMG_Stubber_base_F
 	{
@@ -2903,6 +2929,7 @@ class CfgWeapons
 	{
 		magazines[] = {"TIOW_Krieg_LauncherFrag_mag", "DK143_Krieg_GL_Krak_Mag", "DK143_Krieg_GL_Smoke_Mag", "DK143_Krieg_GL_Flare_Mag", "DK143_Krieg_GL_Buck_Mag", "DK143_Krieg_GL_Flame_Mag", "UGL_FlareGreen_F", "UGL_FlareRed_F", "UGL_FlareYellow_F", "3Rnd_SmokeRed_Grenade_shell", "3Rnd_SmokeGreen_Grenade_shell", "3Rnd_SmokeBlue_Grenade_shell"};
 	};
+
 /*
 
 Helmets
@@ -4103,7 +4130,7 @@ Helmets
 	};
 	class DK143_Flak_Weave: DK143_ArmorBase
 	{
-		author = "Siggyreed";
+		author = "Siggyfreed";
 		displayName = "[DK143] Flak Weave";
 		scope = 2;
 		scopeCurator = 2;
