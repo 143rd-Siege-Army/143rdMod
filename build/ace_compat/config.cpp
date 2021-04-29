@@ -591,23 +591,41 @@ class CfgVehicles
 
 	// Backpacks
 
-	// DK AT Backpack
+	// ALL PACKS REDEFINED TO MATCH CARRYALL LOAD <ROWAN>
+	class DKoK_BackPack: B_AssaultPack_Base
+	{
+		maximumLoad = 320;
+	};
 	class DKoK_AT_BackPack: B_AssaultPack_Base
 	{
 		maximumLoad = 320;
 	};
-
-	// Vox Caster Storage
+	class DKoK_Eng_BackPack: B_AssaultPack_Base
+	{
+		maximumLoad = 320;
+	};
+	class DKoK_HeavyStubberBackPack: B_AssaultPack_Base
+	{
+		maximumLoad = 320;
+	};
 	class TIOW_IG_Vox_Caster: Bag_Base
 	{
-		maximumLoad = 120;
+		maximumLoad = 320;
+	};
+	class TIOW_CadBackpack: B_AssaultPack_Base
+	{
+		maximumLoad = 320;
+	};
+	class TIOW_CadBackpack_Winter: B_AssaultPack_Base
+	{
+		maximumLoad = 320;
 	};
 
 	// Invisible vox caster
 	class DK143_Voxcaster_Invisible: TIOW_IG_Vox_Caster
 	{
 		author = "Rowan";
-		displayName = "[Krieg] Voxcaster (Invisible)";
+		displayName = "[DK143] Voxcaster (Invisible)";
 		model = "\A3\Weapons_F\empty.p3d";
 		hiddenSelections[] = 
 		{
