@@ -15,6 +15,37 @@ class CfgPatches
 	};
 };
 
+class CfgMovesBasic // Needed for Krieg GL reload speed adjustment <ERIC>
+{
+	class Default;
+	class ManActions
+	{
+		GestureReloadTIOW_KriegLauncher="GestureReloadTIOW_KriegLauncher";
+	};
+	class Actions
+	{
+		class NoActions: ManActions
+		{
+			GestureReloadTIOW_KriegLauncher[]=
+			{
+				"GestureReloadTIOW_KriegLauncher",
+				"Gesture"
+			};
+		};
+	};
+};
+
+class CfgGesturesMale
+{
+	class States
+	{
+		class GestureReloadTIOW_KriegLauncher: Default
+		{
+			speed = 0.4;
+		};
+	};
+};
+
 class CfgAmmo
 {
 	class CA_Magazine;
@@ -304,38 +335,42 @@ class CfgMagazines
 	class TIOW_IG_GL_Flame_mag: TIOW_IG_GL_Frag_mag {};
 	class DK143_Krieg_GL_Krak_Mag: TIOW_IG_GL_Krak_mag
 	{
-		displayName = "[DK143] Krieg GL Krak Magazine";
+		displayName = "[DK143] Krieg GL Krak Grenade";
 		descriptionShort = "GL (Krak)";
-		mass = 1;
+		mass = 2.5;
 		count = 1;
 	};
 	class DK143_Krieg_GL_Smoke_Mag: TIOW_IG_GL_Smoke_mag
 	{
-		displayName = "[DK143] Krieg GL Smoke Magazine";
+		displayName = "[DK143] Krieg GL Smoke Grenade";
 		descriptionShort = "GL (Smoke)";
-		mass = 1;
+		mass = 2.5;
 		count = 1;
 	};
 	class DK143_Krieg_GL_Flare_Mag: TIOW_IG_GL_Flare_mag
 	{
-		displayName = "[DK143] Krieg GL Flare Magazine";
+		displayName = "[DK143] Krieg GL Flare Grenade";
 		descriptionShort = "GL (Flare)";
-		mass = 1;
+		mass = 2.5;
 		count = 1;
 	};
 	class DK143_Krieg_GL_Buck_Mag: TIOW_IG_GL_Buck_mag
 	{
-		displayName = "[DK143] Krieg GL Buck Magazine";
+		displayName = "[DK143] Krieg GL Buck Grenade";
 		descriptionShort = "GL (Buck)";
-		mass = 1;
+		mass = 2.5;
 		count = 1;
 	};
 	class DK143_Krieg_GL_Flame_Mag: TIOW_IG_GL_Flame_mag
 	{
-		displayName = "[DK143] Krieg GL Flame Magazine";
+		displayName = "[DK143] Krieg GL Flame Grenade";
 		descriptionShort = "GL (Flame)";
-		mass = 1;
+		mass = 2.5;
 		count = 1;
+	};
+	class TIOW_Krieg_LauncherFrag_mag: CA_Magazine
+	{
+		mass = 2.5;
 	};
 
 	class RPG32_F;
@@ -542,7 +577,8 @@ class CfgVehicles
 	};
 };
 
-class Mode_FullAuto; //Required to adjust T14 firemode inheritance
+class Mode_SemiAuto; //Required for GL firemode inheritance <ERIC>
+class Mode_FullAuto; //Required to adjust T14 firemode inheritance <ERIC>
 class CfgWeapons
 {
     class HeadgearItem;
@@ -579,6 +615,7 @@ class CfgWeapons
 		{
 			reloadTime = 0.20;
 		};
+		magazines[] = {"TIOW_Krieg_LauncherFrag_mag", "DK143_Krieg_GL_Krak_Mag", "DK143_Krieg_GL_Smoke_Mag", "DK143_Krieg_GL_Flare_Mag", "DK143_Krieg_GL_Buck_Mag", "DK143_Krieg_GL_Flame_Mag", "UGL_FlareGreen_F", "UGL_FlareRed_F", "UGL_FlareYellow_F", "3Rnd_SmokeRed_Grenade_shell", "3Rnd_SmokeGreen_Grenade_shell", "3Rnd_SmokeBlue_Grenade_shell"};
 	};
 
 	class launch_RPG7_F;
@@ -613,7 +650,8 @@ class CfgWeapons
         opticsZoomMin = 0.0625;
         opticsZoomMax = 0.0625;
         opticsZoomInit = 0.0625;
-	}
+	};
+
 	class LuciusMarcoLoco: Lucius98LasgunBlackS
 	{
 		author = "Rowan";
@@ -624,7 +662,7 @@ class CfgWeapons
         opticsZoomMin = 0.0625;
         opticsZoomMax = 0.0625;
         opticsZoomInit = 0.0625;
-	}
+	};
 
 	class ML700_LMG_Stubber_Black: ML700_LMG_Stubber_base_F
 	{
@@ -638,12 +676,6 @@ class CfgWeapons
 	{
 		magazines[] = {"TIOW_50Rnd_Stubber_mag","TIOW_50Rnd_Stubber_mag_Tracer","TIOW_50Rnd_Stubber_amput","TIOW_50Rnd_Stubber_manstop","TIOW_50Rnd_Stubber_expander", "DK143_150Rnd_Hvy_Stubber_Expander_Mag", "DK143_150Rnd_Hvy_Stubber_Manstop_Mag", "DK143_150Rnd_Hvy_Stubber_Amput_Mag", "DK143_150Rnd_Hvy_Stubber_Tracer_Mag", "DK143_150Rnd_Hvy_Stubber_Mag"};
 	};
-
-	class TIOW_KriegLauncher: Rifle_Base_F
-	{
-		magazines[] = {"TIOW_Krieg_LauncherFrag_mag", "DK143_Krieg_GL_Krak_Mag", "DK143_Krieg_GL_Smoke_Mag", "DK143_Krieg_GL_Flare_Mag", "DK143_Krieg_GL_Buck_Mag", "DK143_Krieg_GL_Flame_Mag", "UGL_FlareGreen_F", "UGL_FlareRed_F", "UGL_FlareYellow_F", "3Rnd_SmokeRed_Grenade_shell", "3Rnd_SmokeGreen_Grenade_shell", "3Rnd_SmokeBlue_Grenade_shell"};
-	};
-
 
 /*
 
