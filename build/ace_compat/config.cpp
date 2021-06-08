@@ -2917,7 +2917,7 @@ class CfgWeapons
         opticsZoomMin = 0.0625;
         opticsZoomMax = 0.0625;
         opticsZoomInit = 0.0625;
-	}
+	};
 	class LuciusMarcoLoco: Lucius98LasgunBlackS
 	{
 		author = "Rowan";
@@ -2928,7 +2928,7 @@ class CfgWeapons
         opticsZoomMin = 0.0625;
         opticsZoomMax = 0.0625;
         opticsZoomInit = 0.0625;
-	}
+	};
 
 	class ML700_LMG_Stubber_Black: ML700_LMG_Stubber_base_F
 	{
