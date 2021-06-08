@@ -15,37 +15,6 @@ class CfgPatches
 	};
 };
 
-class CfgMovesBasic // Needed for Krieg GL reload speed adjustment <ERIC>
-{
-	class Default;
-	class ManActions
-	{
-		GestureReloadTIOW_KriegLauncher="GestureReloadTIOW_KriegLauncher";
-	};
-	class Actions
-	{
-		class NoActions: ManActions
-		{
-			GestureReloadTIOW_KriegLauncher[]=
-			{
-				"GestureReloadTIOW_KriegLauncher",
-				"Gesture"
-			};
-		};
-	};
-};
-
-class CfgGesturesMale
-{
-	class States
-	{
-		class GestureReloadTIOW_KriegLauncher: Default
-		{
-			speed = 0.4;
-		};
-	};
-};
-
 class CfgAmmo
 {
 	class CA_Magazine;
@@ -525,6 +494,7 @@ class CfgVehicles
 		{
 			"\A3\Weapons_F\empty.p3d",""
 		};
+		maximumLoad = 320;
 	};
 
 	// Storage adjustments
