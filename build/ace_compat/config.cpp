@@ -449,38 +449,42 @@ class CfgMagazines
 	class TIOW_IG_GL_Flame_mag: TIOW_IG_GL_Frag_mag {};
 	class DK143_Krieg_GL_Krak_Mag: TIOW_IG_GL_Krak_mag
 	{
-		displayName = "[DK143] Krieg GL Krak Magazine";
+		displayName = "[DK143] Krieg GL Krak Grenade";
 		descriptionShort = "GL (Krak)";
-		mass = 2;
+		mass = 2.5;
 		count = 1;
 	};
 	class DK143_Krieg_GL_Smoke_Mag: TIOW_IG_GL_Smoke_mag
 	{
-		displayName = "[DK143] Krieg GL Smoke Magazine";
+		displayName = "[DK143] Krieg GL Smoke Grenade";
 		descriptionShort = "GL (Smoke)";
-		mass = 2;
+		mass = 2.5;
 		count = 1;
 	};
 	class DK143_Krieg_GL_Flare_Mag: TIOW_IG_GL_Flare_mag
 	{
-		displayName = "[DK143] Krieg GL Flare Magazine";
+		displayName = "[DK143] Krieg GL Flare Grenade";
 		descriptionShort = "GL (Flare)";
-		mass = 2;
+		mass = 2.5;
 		count = 1;
 	};
 	class DK143_Krieg_GL_Buck_Mag: TIOW_IG_GL_Buck_mag
 	{
-		displayName = "[DK143] Krieg GL Buck Magazine";
+		displayName = "[DK143] Krieg GL Buck Grenade";
 		descriptionShort = "GL (Buck)";
-		mass = 2;
+		mass = 2.5;
 		count = 1;
 	};
 	class DK143_Krieg_GL_Flame_Mag: TIOW_IG_GL_Flame_mag
 	{
-		displayName = "[DK143] Krieg GL Flame Magazine";
+		displayName = "[DK143] Krieg GL Flame Grenade";
 		descriptionShort = "GL (Flame)";
-		mass = 2;
+		mass = 2.5;
 		count = 1;
+	};
+	class TIOW_Krieg_LauncherFrag_mag: CA_Magazine
+	{
+		mass = 2.5;
 	};
 
 	class RPG32_F;
