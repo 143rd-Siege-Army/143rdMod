@@ -2915,18 +2915,19 @@ class CfgWeapons
 	class Lucius98LasgunBlackS: Lucius98Lasgun{};
 
 	// ADD MARKSMAN VARIANTS OF THE LUCIUS RIFLE <ROWAN>
-	class Lucius98Marksman: Lucius98LasgunBlackS
-	{
-		author = "Rowan";
-		displayName = "[DK143]Lucius Pattern No. 98 - Marksman";
+	// Currently non-functional. Omitted from release <ERIC>
+	// class Lucius98Marksman: Lucius98LasgunBlackS
+	// {
+	// 	author = "Rowan";
+	// 	displayName = "[DK143]Lucius Pattern No. 98 - Marksman";
 
-		// ADD THE TIOW TYPE 14 OPTICS TO THE LUCIUS RIFLE.  NEW P3D REQUIRED SINCE IT SHOOTS HIGH AND LEFT. <ROWAN>
-		modelOptics = "\DKoK_Weapons\Type14_Optic.p3d";				
-        opticsPPEffects[] = {"OpticsCHAbera1","OpticsBlur1"};
-        opticsZoomMin = 0.0625;
-        opticsZoomMax = 0.0625;
-        opticsZoomInit = 0.0625;
-	};
+	// 	// ADD THE TIOW TYPE 14 OPTICS TO THE LUCIUS RIFLE.  NEW P3D REQUIRED SINCE IT SHOOTS HIGH AND LEFT. <ROWAN>
+	// 	modelOptics = "\143rdMod\build\Models\TIOW\Type14_Optic.p3d";				
+    //     opticsPPEffects[] = {"OpticsCHAbera1","OpticsBlur1"};
+    //     opticsZoomMin = 0.0625;
+    //     opticsZoomMax = 0.0625;
+    //     opticsZoomInit = 0.0625;
+	// };
 	class LuciusMarcoLoco: Lucius98LasgunBlackS
 	{
 		author = "Rowan";
