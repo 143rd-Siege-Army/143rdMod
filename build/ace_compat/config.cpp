@@ -516,6 +516,11 @@ class CfgMagazines
 		type = "2*	256";
 		mass = 30;
 	};
+
+	class ShootaMag: CA_Magazine // reduce tracer counts from every shot to every 5 shots. should combat some server lag <ERIC>
+	{
+		tracersEvery = 5;
+	};
 };
 
 class CfgVehicles
