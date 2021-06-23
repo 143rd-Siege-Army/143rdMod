@@ -36,7 +36,7 @@ class CfgVehicles
 		side=1;
 		hiddenSelectionsTextures[]=
 		{
-			"@DK143_Mod (ARCHIVE)\Addons\drop_troop_retextures\textures\ChimeraInsignia143rd_ca.paa",
+			"143rdMod\build\drop_troop_retextures\textures\ChimeraInsignia143rd_ca.paa",
 			"WHtracked\LRMIV\Data\LR_Krieg1491st_co.paa"
 		};
 		maximumLoad = 100000;
@@ -64,7 +64,7 @@ class CfgVehicles
 		side=1;
 		hiddenSelectionsTextures[]=
 		{
-			"@DK143_Mod (ARCHIVE)\Addons\drop_troop_retextures\textures\ChimeraInsignia143rd_ca.paa",
+			"143rdMod\build\drop_troop_retextures\textures\ChimeraInsignia143rd_ca.paa",
 			"WHtracked\LRMIV\Data\LR_Krieg1491st_co.paa"
 		};
 		maximumLoad = 100000;
@@ -120,7 +120,7 @@ class CfgVehicles
 		side=1;
 		hiddenSelectionsTextures[]=
 		{
-			"@DK143_Mod (ARCHIVE)\Addons\drop_troop_retextures\textures\ChimeraInsignia143rd_ca.paa",
+			"143rdMod\build\drop_troop_retextures\textures\ChimeraInsignia143rd_ca.paa",
 			"WHtracked\LRMIV\Data\LR_Krieg1491st_co.paa"
 		};
 		maximumLoad = 100000;
@@ -148,7 +148,7 @@ class CfgVehicles
 		side=1;
 		hiddenSelectionsTextures[]=
 		{
-			"@DK143_Mod (ARCHIVE)\Addons\drop_troop_retextures\textures\ChimeraInsignia143rd_ca.paa",
+			"143rdMod\build\drop_troop_retextures\textures\ChimeraInsignia143rd_ca.paa",
 			"WHtracked\LRMIV\Data\LR_Krieg1491st_co.paa"
 		};
 		maximumLoad = 100000;
@@ -176,7 +176,7 @@ class CfgVehicles
 		side=1;
 		hiddenSelectionsTextures[]=
 		{
-			"@DK143_Mod (ARCHIVE)\Addons\drop_troop_retextures\textures\ChimeraInsignia143rd_ca.paa",
+			"143rdMod\build\drop_troop_retextures\textures\ChimeraInsignia143rd_ca.paa",
 			"WHtracked\LRMIV\Data\LR_Krieg1491st_co.paa"
 		};
 		maximumLoad = 100000;
@@ -204,7 +204,7 @@ class CfgVehicles
 		side=1;
 		hiddenSelectionsTextures[]=
 		{
-			"@DK143_Mod (ARCHIVE)\Addons\drop_troop_retextures\textures\ChimeraInsignia143rd_ca.paa",
+			"143rdMod\build\drop_troop_retextures\textures\ChimeraInsignia143rd_ca.paa",
 			"WHtracked\LRMIV\Data\LR_Krieg1491st_co.paa"
 		};
 		maximumLoad = 100000;
@@ -232,7 +232,7 @@ class CfgVehicles
 		side=1;
 		hiddenSelectionsTextures[]=
 		{
-			"@DK143_Mod (ARCHIVE)\Addons\drop_troop_retextures\textures\ChimeraInsignia143rd_ca.paa",
+			"143rdMod\build\drop_troop_retextures\textures\ChimeraInsignia143rd_ca.paa",
 			"WHtracked\LRMIV\Data\LR_Krieg1491st_co.paa"
 		};
 		maximumLoad = 100000;

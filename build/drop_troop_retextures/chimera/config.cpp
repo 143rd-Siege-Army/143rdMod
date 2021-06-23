@@ -119,7 +119,7 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"APCs\data\Textures\Chimera1491st_co.paa",
-			"@DK143_Mod (ARCHIVE)\Addons\drop_troop_retextures\textures\ChimeraInsignia143rdmed_ca.paa",
+			"143rdMod\build\drop_troop_retextures\textures\ChimeraInsignia143rdmed_ca.paa",
 			"APCs\data\Textures\Chimera_Track_co.paa"
 		};
 		maximumLoad = 100000;
@@ -261,7 +261,7 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"APCs\data\Textures\Chimera1491st_co.paa",
-			"@DK143_Mod (ARCHIVE)\Addons\drop_troop_retextures\textures\ChimeraInsignia143rd_ca.paa",
+			"143rdMod\build\drop_troop_retextures\textures\ChimeraInsignia143rd_ca.paa",
 			"APCs\data\Textures\TIOW_Expansion_Chassis_1491_co.paa"
 		};
 		maximumLoad = 100000;
@@ -309,7 +309,7 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"APCs\data\Textures\Chimera1491st_co.paa",
-			"@DK143_Mod (ARCHIVE)\Addons\drop_troop_retextures\textures\ChimeraInsignia143rd_ca.paa",
+			"143rdMod\build\drop_troop_retextures\textures\ChimeraInsignia143rd_ca.paa",
 			"apcs\data\textures\tiow_hydra1491_co.paa"
 		};
 		maximumLoad = 100000;
@@ -357,7 +357,7 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"APCs\data\Textures\Chimera1491st_co.paa",
-			"@DK143_Mod (ARCHIVE)\Addons\drop_troop_retextures\textures\ChimeraInsignia143rd_ca.paa",
+			"143rdMod\build\drop_troop_retextures\textures\ChimeraInsignia143rd_ca.paa",
 			"apcs\data\textures\TIOW_Hydra1491_co.paa"
 		};
 		maximumLoad = 100000;
