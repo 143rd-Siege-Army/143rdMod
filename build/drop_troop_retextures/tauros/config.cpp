@@ -159,7 +159,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"@DK143_Mod (ARCHIVE)\Addons\drop_troop_retextures\textures\ic_tauros_medic_co.paa",
+			"143rdMod\build\drop_troop_retextures\textures\ic_tauros_medic_co.paa",
 			"IC_Tauros\data\dashboard_co.paa"
 		};
 		maximumLoad = 100000;
@@ -282,7 +282,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"@DK143_Mod (ARCHIVE)\Addons\drop_troop_retextures\textures\ic_tauros_medic_co.paa",
+			"143rdMod\build\drop_troop_retextures\textures\ic_tauros_medic_co.paa",
 			"IC_Tauros\data\dashboard_co.paa"
 		};
 		maximumLoad = 100000;
