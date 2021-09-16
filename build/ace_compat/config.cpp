@@ -60,7 +60,7 @@ class CfgAmmo
 		hit = 16;
 		caliber = 2;
 	};
-	class DK143_Medium_ManStopper: B_762x51_Ball
+		class DK143_Medium_ManStopper: B_762x51_Ball
 	{
 		hit = 10;
 		caliber = 1.7;
@@ -292,6 +292,7 @@ class CfgMagazines
 		displayNameShort = "Stubber Expander Drum Magazine";
 		ammo = "DK143_Medium_Expanders";
 		count = 100;
+		tracersEvery = 5;
 	};
 	class DK143_Amputators_Drum: ML700_Stubber_Drum
 	{
@@ -299,6 +300,7 @@ class CfgMagazines
 		displayNameShort = "Stubber Amputators Drum Magazine";
 		ammo = "DK143_Medium_Amputators";
 		count = 100;
+		tracersEvery = 5;
 	};
 	class DK143_ManStopper_Drum: ML700_Stubber_Drum
 	{
@@ -306,6 +308,55 @@ class CfgMagazines
 		displayNameShort = "Stubber ManStopper Drum Magazine";
 		ammo = "DK143_Medium_ManStopper";
 		count = 100;
+		tracersEvery = 5;
+	};
+		class DK143_Expander_Drum_150: ML700_Stubber_Drum
+	{
+		displayName = "[DK143] 150rnd Stubber Expander Drum";
+		displayNameShort = "Stubber Expander Drum Magazine";
+		ammo = "DK143_Medium_Expanders";
+		count = 150;
+		tracersEvery = 5;
+	};
+	class DK143_Amputators_Drum_150: ML700_Stubber_Drum
+	{
+		displayName = "[DK143] 150rnd Stubber Amputators Drum";
+		displayNameShort = "Stubber Amputators Drum Magazine";
+		ammo = "DK143_Medium_Amputators";
+		count = 150;
+		tracersEvery = 5;
+	};
+	class DK143_ManStopper_Drum_150: ML700_Stubber_Drum
+	{
+		displayName = "[DK143] 150rnd Stubber ManStopper Drum";
+		displayNameShort = "Stubber ManStopper Drum Magazine";
+		ammo = "DK143_Medium_ManStopper";
+		count = 150;
+		tracersEvery = 5;
+	};
+		class DK143_Expander_Drum_200: ML700_Stubber_Drum
+	{
+		displayName = "[DK143] 200rnd Stubber Expander Drum";
+		displayNameShort = "Stubber Expander Drum Magazine";
+		ammo = "DK143_Medium_Expanders";
+		count = 200;
+		tracersEvery = 5;
+	};
+	class DK143_Amputators_Drum_200: ML700_Stubber_Drum
+	{
+		displayName = "[DK143] 200rnd Stubber Amputators Drum";
+		displayNameShort = "Stubber Amputators Drum Magazine";
+		ammo = "DK143_Medium_Amputators";
+		count = 200;
+		tracersEvery = 5;
+	};
+	class DK143_ManStopper_Drum_200: ML700_Stubber_Drum
+	{
+		displayName = "[DK143] 200rnd Stubber ManStopper Drum";
+		displayNameShort = "Stubber ManStopper Drum Magazine";
+		ammo = "DK143_Medium_ManStopper";
+		count = 200;
+		tracersEvery = 5;
 	};
 
 	class TIOW_50Rnd_Stubber_mag: CA_Magazine
@@ -335,6 +386,7 @@ class CfgMagazines
 		descriptionShort = "150 Round Tracer Magazine";
 		count = 150;
 		mass = 30;
+		tracersEvery = 5;
 	};
 	class DK143_150Rnd_Hvy_Stubber_Tracer_Mag: TIOW_50Rnd_Stubber_mag_Tracer
 	{
@@ -342,6 +394,7 @@ class CfgMagazines
 		descriptionShort = "150 Round Amputator Magazine";
 		count = 150;
 		mass = 30;
+		tracersEvery = 5;
 	};
 	class DK143_150Rnd_Hvy_Stubber_Amput_Mag: TIOW_50Rnd_Stubber_amput
 	{
@@ -349,13 +402,15 @@ class CfgMagazines
 		descriptionShort = "150 Round Amputator Magazine";
 		count = 150;
 		mass = 30;
+		tracersEvery = 5;
 	};
 	class DK143_150Rnd_Hvy_Stubber_Manstop_Mag: TIOW_50Rnd_Stubber_manstop
 	{
 		displayName = "[DK143] 150 Round Heavy Stubber Magazine, ManStoppers";
 		descriptionShort = "150 Round ManStoppers Magazine";
 		count = 150;
-		mass = 30; 
+		mass = 30;
+		tracersEvery = 5; 
 	};
 	class DK143_150Rnd_Hvy_Stubber_Expander_Mag: TIOW_50Rnd_Stubber_expander
 	{
@@ -363,6 +418,7 @@ class CfgMagazines
 		descriptionShort = "150 Round Expanders Magazine";
 		count = 150;
 		mass = 30; 
+		tracersEvery = 5;
 	};
 
 	class DK_PlasmaGun_Flask: CA_Magazine
@@ -979,11 +1035,11 @@ class CfgWeapons
 
 	class ML700_LMG_Stubber_Black: ML700_LMG_Stubber_base_F
 	{
-		magazines[] = {"ML700_Stubber_Drum","ML700_Stubber_Drum_Green","ML700_Stubber_Drum_Red","ML700_Stubber_Drum_Yellow", "DK143_Expander_Drum", "DK143_Amputators_Drum", "DK143_ManStopper_Drum"};
+		magazines[] = {"ML700_Stubber_Drum","ML700_Stubber_Drum_Green","ML700_Stubber_Drum_Red","ML700_Stubber_Drum_Yellow", "DK143_Expander_Drum", "DK143_Amputators_Drum", "DK143_ManStopper_Drum", "DK143_Expander_Drum_150", "DK143_Amputators_Drum_150", "DK143_ManStopper_Drum_150", "DK143_Expander_Drum_200", "DK143_Amputators_Drum_200", "DK143_ManStopper_Drum_200"};
 	};
 	class ML700_LMG_Stubber_Green: ML700_LMG_Stubber_Black
 	{
-		magazines[] = {"ML700_Stubber_Drum","ML700_Stubber_Drum_Green","ML700_Stubber_Drum_Red","ML700_Stubber_Drum_Yellow", "DK143_Expander_Drum", "DK143_Amputators_Drum", "DK143_ManStopper_Drum"};
+		magazines[] = {"ML700_Stubber_Drum","ML700_Stubber_Drum_Green","ML700_Stubber_Drum_Red","ML700_Stubber_Drum_Yellow", "DK143_Expander_Drum", "DK143_Amputators_Drum", "DK143_ManStopper_Drum", "DK143_Expander_Drum_150", "DK143_Amputators_Drum_150", "DK143_ManStopper_Drum_150", "DK143_Expander_Drum_200", "DK143_Amputators_Drum_200", "DK143_ManStopper_Drum_200"};
 	};
 	class KriegHeavyStubber: Rifle_Base_F 
 	{
