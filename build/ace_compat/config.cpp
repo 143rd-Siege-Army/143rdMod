@@ -989,8 +989,8 @@ class CfgWeapons
 	
 	// Implement TIOW Bolt Pistols as primary weapon using a super shitty hack method that will probably not work. These inheritance classes will be removed when I can compile this garbage on my home pc <ERIC>
 	class Pistol_Base_F;
-	class TIOW_Bolt_Pistol: Pistol_Base_F {};
-	class DK143_Bolt_Pistol: TIOW_Bolt_Pistol
+	class TIOW_Bolt_Pistol2: Pistol_Base_F {};
+	class DK143_Bolt_Pistol: TIOW_Bolt_Pistol2
 	{
 		Author = "Siggyfreed";
 		DisplayName = "[DK143] Primary Bolt Pistol";
@@ -998,6 +998,7 @@ class CfgWeapons
 		editorSubcategory = "EdSubcat_AssaultRifles";
 		vehicleClass = "WeaponsPrimary";
 		scope = 2;
+		type = 1;
 	};
 
 	class launch_RPG7_F;
