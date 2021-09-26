@@ -27,7 +27,6 @@ class CfgEditorSubcategories
 };
 
 class CfgVehicles {
-{
 	class All{};
 	class Static: All{};
 	class Building: Static{};
@@ -124,7 +123,8 @@ class CfgVehicles {
 					count = 10;
 				};
 		};
-	}
+	};
+
 	class 143_CustomAmmobox_2 : 143_DKOK_Ammobox
 	{
 		displayName = "Death Korps Launcher Ammo Box";
@@ -160,7 +160,7 @@ class CfgVehicles {
 					count = 3;
 				};
 		};
-	}
+	};
 	class 143_CustomAmmobox_3 : 143_DKOK_Ammobox
 	{
 		displayName = "Death Korps Melta Ammo Box";
@@ -181,7 +181,7 @@ class CfgVehicles {
 					count = 25;
 				};
 		};
-	}
+	};
 	class 143_CustomAmmobox_4 : 143_DKOK_Ammobox
 	{
 		displayName = "Death Korps Grenade Ammo Box";
@@ -247,7 +247,7 @@ class CfgVehicles {
 					count = 15;
 				};
 		};
-	}
+	};
 	class 143_CustomAmmobox_5 : 143_DKOK_Ammobox
 	{
 		displayName = "Death Korps Kinetic Ammo Box";
@@ -368,10 +368,8 @@ class CfgVehicles {
 					magazine = "VNG_150Rnd_Stubber_amput";
 					count = 30;
 				};
-				
-
 		};
-	}
+	};
 	class 143_CustomAmmobox_6 : 143_DKOK_Ammobox
 	{
 		displayName = "Death Korps Type 14 Ammo Box";
@@ -392,7 +390,7 @@ class CfgVehicles {
 					count = 10;
 				};
 		};
-	}
+	};
 	class 143_CustomAmmobox_7 : 143_DKOK_Ammobox
 	{
 		displayName = "Death Korps Sniper Ammo Box";
@@ -463,7 +461,7 @@ class CfgVehicles {
 					count = 30;
 				};
 		};
-	}
+	};
 	class 143_CustomAmmobox_8 : 143_DKOK_Ammobox
 	{
 		displayName = "Death Korps Medicae Box";
@@ -574,7 +572,7 @@ class CfgVehicles {
 					count = 75;
 				};
 		};
-	}
+	};
 	class 143_CustomAmmobox_9 : 143_DKOK_Ammobox
 	{
 		displayName = "Death Korps Engineering Box";
@@ -618,7 +616,7 @@ class CfgVehicles {
 					count = 10;
 				};
 		};
-	}
+	};
 	class 143_CustomAmmobox_10 : 143_DKOK_Ammobox
 	{
 		displayName = "Death Korps Equipment Box";
@@ -713,7 +711,7 @@ class CfgVehicles {
 					count = 50;
 				};
 		};
-	}
+	};
 	class 143_CustomAmmobox_11 : 143_DKOK_Ammobox
 	{
 		displayName = "Death Korps Flamer Ammo Box";
@@ -734,7 +732,7 @@ class CfgVehicles {
 					count = 25;
 				};
 		};
-	}
+	};
 	class 143_CustomAmmobox_12 : 143_DKOK_Ammobox
 	{
 		displayName = "Death Korps Bolter Ammo Box";
@@ -805,7 +803,7 @@ class CfgVehicles {
 					count = 10;
 				};
 		};
-	}
+	};
 	class 143_CustomAmmobox_13 : 143_DKOK_Ammobox
 	{
 		displayName = "Death Korps Mine Box";
@@ -830,7 +828,7 @@ class CfgVehicles {
 					magazine = "APERSMineDispenser_Mag";
 					count = 5;
 				};
-		}
+		};
 		class TransportItems
 		{ // this class controls what magazines can be found in the box
 				
@@ -840,7 +838,7 @@ class CfgVehicles {
 					count = 5;
 				};
 		};
-	}
+	};
 	class 143_CustomAmmobox_14 : 143_DKOK_Ammobox
 	{
 		displayName = "Death Korps Explosive Box";
@@ -865,7 +863,7 @@ class CfgVehicles {
 					magazine = "SatchelCharge_Remote_Mag";
 					count = 5;
 				};
-		}
+		};
 		class TransportItems
 		{ // this class controls what magazines can be found in the box
 				
@@ -875,7 +873,7 @@ class CfgVehicles {
 					count = 5;
 				};
 		};
-	}
+	};
 	class 143_CustomAmmobox_15 : 143_DKOK_Ammobox
 	{
 		displayName = "Death Korps Gear Box";
@@ -885,7 +883,7 @@ class CfgVehicles {
 		};
 		class TransportMagazines
 		{
-		}
+		};
 		class TransportItems
 		{ // this class controls what magazines can be found in the box
 				class DKoK_GM_Helm_1489th
@@ -994,5 +992,5 @@ class CfgVehicles {
 					count = 5;
 				};
 		};
-	}
+	};
 };
