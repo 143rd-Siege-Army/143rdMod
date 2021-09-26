@@ -2,7 +2,7 @@ class CfgPatches
 {
 	class DK143_Logistics
 	{
-		units[] = {"143_DKOK_Ammobox"};
+		units[] = {"143_DKOK_Ammobox","143_CustomAmmobox_1","143_CustomAmmobox_2","143_CustomAmmobox_3","143_CustomAmmobox_4","143_CustomAmmobox_5","143_CustomAmmobox_6","143_CustomAmmobox_7","143_CustomAmmobox_8","143_CustomAmmobox_9","143_CustomAmmobox_10","143_CustomAmmobox_11","143_CustomAmmobox_12","143_CustomAmmobox_13","143_CustomAmmobox_14","143_CustomAmmobox_15"};
 		weapons[] = {};
 		requiredVersion = 0.1;
 		requiredaddons[] = {"DkoKFoot"};
@@ -26,7 +26,7 @@ class CfgEditorSubcategories
 	};
 };
 
-class CfgVehicles 
+class CfgVehicles {
 {
 	class All{};
 	class Static: All{};
@@ -40,6 +40,7 @@ class CfgVehicles
 	class 143_DKOK_Ammobox : TIOW_IG_WeaponBox1_DKOK 
 	{
 			displayName = "Death Korps Ammo Box";
+			scope = 2; scopeCurator = 2;
 			descriptionShort = "Ammobox";
 			editorCategory = "143rd_Objects";
 			editorSubcategory = "143rd_Storage";
@@ -86,6 +87,7 @@ class CfgVehicles
 	class 143_CustomAmmobox_1 : 143_DKOK_Ammobox
 	{
 		displayName = "Death Korps Plasma Ammo Box";
+		scope = 2; scopeCurator = 2;
 		class TransportWeapons
 		{ // this class controls what weapons can be found in the box
 			    class DK_PlasmaGun
@@ -122,10 +124,11 @@ class CfgVehicles
 					count = 10;
 				};
 		};
-	};
+	}
 	class 143_CustomAmmobox_2 : 143_DKOK_Ammobox
 	{
 		displayName = "Death Korps Launcher Ammo Box";
+		scope = 2; scopeCurator = 2;
 		class TransportWeapons
 		{ // this class controls what weapons can be found in the box
 			    class MissileLauncherDKOKBlack
@@ -157,10 +160,11 @@ class CfgVehicles
 					count = 3;
 				};
 		};
-	};
+	}
 	class 143_CustomAmmobox_3 : 143_DKOK_Ammobox
 	{
 		displayName = "Death Korps Melta Ammo Box";
+		scope = 2; scopeCurator = 2;
 		class TransportWeapons
 		{ // this class controls what weapons can be found in the box
 			    class TIOW_MeltaGun_01
@@ -177,10 +181,11 @@ class CfgVehicles
 					count = 25;
 				};
 		};
-	};
+	}
 	class 143_CustomAmmobox_4 : 143_DKOK_Ammobox
 	{
 		displayName = "Death Korps Grenade Ammo Box";
+		scope = 2; scopeCurator = 2;
 		class TransportWeapons
 		{ // this class controls what weapons can be found in the box
 			    class TIOW_KriegLauncher
@@ -242,26 +247,28 @@ class CfgVehicles
 					count = 15;
 				};
 		};
-	};
+	}
 	class 143_CustomAmmobox_5 : 143_DKOK_Ammobox
 	{
 		displayName = "Death Korps Kinetic Ammo Box";
+		scope = 2; scopeCurator = 2;
 		class TransportWeapons
 		{ // this class controls what weapons can be found in the box
 			    class Lucius22c
 				{
 					weapon = "Lucius22c";
-					count = 10;
+					count = 5;
 				};
+				
 				class ML700_LMG_Stubber_Black
 				{
 					weapon = "ML700_LMG_Stubber_Black";
-					count = 10;
+					count = 5;
 				};
 				class KriegHeavyStubberDK
 				{
 					weapon = "KriegHeavyStubberDK";
-					count = 10;
+					count = 5;
 				};
 		};
 		class TransportMagazines
@@ -341,11 +348,34 @@ class CfgVehicles
 					magazine = "VNG_150Rnd_Stubber_amput";
 					count = 30;
 				};
+				class ML700_Stubber_Drum
+				{
+					magazine = "VNG_150Rnd_Stubber_amput";
+					count = 30;
+				};
+				class ML700_Stubber_Drum_Green
+				{
+					magazine = "VNG_150Rnd_Stubber_amput";
+					count = 30;
+				};
+				class ML700_Stubber_Drum_Red
+				{
+					magazine = "VNG_150Rnd_Stubber_amput";
+					count = 30;
+				};
+				class ML700_Stubber_Drum_Yellow
+				{
+					magazine = "VNG_150Rnd_Stubber_amput";
+					count = 30;
+				};
+				
+
 		};
-	};
+	}
 	class 143_CustomAmmobox_6 : 143_DKOK_Ammobox
 	{
 		displayName = "Death Korps Type 14 Ammo Box";
+		scope = 2; scopeCurator = 2;
 		class TransportWeapons
 		{ // this class controls what weapons can be found in the box
 			    class Type14HeavyBlack
@@ -362,10 +392,11 @@ class CfgVehicles
 					count = 10;
 				};
 		};
-	};
+	}
 	class 143_CustomAmmobox_7 : 143_DKOK_Ammobox
 	{
 		displayName = "Death Korps Sniper Ammo Box";
+		scope = 2; scopeCurator = 2;
 		class TransportWeapons
 		{ // this class controls what weapons can be found in the box
 			    class TIOW_LongLas_776
@@ -376,6 +407,11 @@ class CfgVehicles
 				class ML700_Longlas_Aquila_Skull_Rifle_Black
 				{
 					weapon = "ML700_Longlas_Aquila_Skull_Rifle_Black";
+					count = 5;
+				};
+				class srifle_GM6_F
+				{
+					weapon = "srifle_GM6_F";
 					count = 5;
 				};
 		};
@@ -401,11 +437,37 @@ class CfgVehicles
 					magazine = "ML700_Longlas_Heavy_Rifle_B_Battery";
 					count = 15;
 				};
+				class A5Rnd_127x108_APDS_Mag
+				{
+					magazine = "5Rnd_127x108_APDS_Mag";
+					count = 30;
+				};
+				class A5Rnd_127x108_Mag
+				{
+					magazine = "5Rnd_127x108_Mag";
+					count = 30;
+				};
+				class ACE_5Rnd_127x99_Mag
+				{
+					magazine = "ACE_5Rnd_127x99_Mag";
+					count = 30;
+				};
+				class ACE_5Rnd_127x99_AMAX_Mag
+				{
+					magazine = "ACE_5Rnd_127x99_AMAX_Mag";
+					count = 30;
+				};
+				class ACE_5Rnd_127x99_API_Mag
+				{
+					magazine = "ACE_5Rnd_127x99_API_Mag";
+					count = 30;
+				};
 		};
-	};
+	}
 	class 143_CustomAmmobox_8 : 143_DKOK_Ammobox
 	{
 		displayName = "Death Korps Medicae Box";
+		scope = 2; scopeCurator = 2;
 		class TransportWeapons
 		{
 		};
@@ -415,6 +477,7 @@ class CfgVehicles
 		};
 		class TransportItems
 		{ // this class controls what magazines can be found in the box
+	
 				class ACE_bloodIV
 				{
 					name = "ACE_bloodIV";
@@ -511,10 +574,11 @@ class CfgVehicles
 					count = 75;
 				};
 		};
-	};
+	}
 	class 143_CustomAmmobox_9 : 143_DKOK_Ammobox
 	{
 		displayName = "Death Korps Engineering Box";
+		scope = 2; scopeCurator = 2;
 		class TransportWeapons
 		{ // this class controls what weapons can be found in the box
 			    class DKOK_Mole_Launcher_1
@@ -554,10 +618,11 @@ class CfgVehicles
 					count = 10;
 				};
 		};
-	};
+	}
 	class 143_CustomAmmobox_10 : 143_DKOK_Ammobox
 	{
 		displayName = "Death Korps Equipment Box";
+		scope = 2; scopeCurator = 2;
 		class TransportWeapons
 		{
 		};
@@ -648,10 +713,11 @@ class CfgVehicles
 					count = 50;
 				};
 		};
-	};
+	}
 	class 143_CustomAmmobox_11 : 143_DKOK_Ammobox
 	{
 		displayName = "Death Korps Flamer Ammo Box";
+		scope = 2; scopeCurator = 2;
 		class TransportWeapons
 		{ // this class controls what weapons can be found in the box
 			    class TIOW_Krieg_Flamer
@@ -668,10 +734,11 @@ class CfgVehicles
 					count = 25;
 				};
 		};
-	};
+	}
 	class 143_CustomAmmobox_12 : 143_DKOK_Ammobox
 	{
 		displayName = "Death Korps Bolter Ammo Box";
+		scope = 2; scopeCurator = 2;
 		class TransportWeapons
 		{ // this class controls what weapons can be found in the box
 			    class TIOW_Guard_Bolter_2
@@ -738,5 +805,194 @@ class CfgVehicles
 					count = 10;
 				};
 		};
-	};
+	}
+	class 143_CustomAmmobox_13 : 143_DKOK_Ammobox
+	{
+		displayName = "Death Korps Mine Box";
+		scope = 2; scopeCurator = 2;
+		class TransportWeapons
+		{
+		};
+		class TransportMagazines
+		{
+				class AT
+				{
+					magazine = "ATMine_Range_Mag";
+					count = 5;
+				};
+				class AP
+				{
+					magazine = "APERSMine_Range_Mag";
+					count = 5;
+				};
+				class APERS
+				{
+					magazine = "APERSMineDispenser_Mag";
+					count = 5;
+				};
+		}
+		class TransportItems
+		{ // this class controls what magazines can be found in the box
+				
+				class FiringDevice1
+				{
+					name = "ACE_M26_Clacker";
+					count = 5;
+				};
+		};
+	}
+	class 143_CustomAmmobox_14 : 143_DKOK_Ammobox
+	{
+		displayName = "Death Korps Explosive Box";
+		scope = 2; scopeCurator = 2;
+		class TransportWeapons
+		{
+		};
+		class TransportMagazines
+		{
+				class DemoBlock
+				{
+					magazine = "DemoCharge_Remote_Mag";
+					count = 5;
+				};
+				class MeltaCharge
+				{
+					magazine = "TIOW_melta_bomb_placeable_Mag";
+					count = 1;
+				};
+				class Satchel
+				{
+					magazine = "SatchelCharge_Remote_Mag";
+					count = 5;
+				};
+		}
+		class TransportItems
+		{ // this class controls what magazines can be found in the box
+				
+				class FiringDevice2
+				{
+					name = "ACE_M26_Clacker";
+					count = 5;
+				};
+		};
+	}
+	class 143_CustomAmmobox_15 : 143_DKOK_Ammobox
+	{
+		displayName = "Death Korps Gear Box";
+		scope = 2; scopeCurator = 2;
+		class TransportWeapons
+		{
+		};
+		class TransportMagazines
+		{
+		}
+		class TransportItems
+		{ // this class controls what magazines can be found in the box
+				class DKoK_GM_Helm_1489th
+				{
+					name = "DKoK_GM_Helm_1489th";
+					count = 5;
+				};
+				class DKoK_GM_Helm_1491st
+				{
+					name = "DKoK_GM_Helm_1491st";
+					count = 5;
+				};
+				class DKoK_GM_Uniform_1489th
+				{
+					name = "DKoK_GM_Uniform_1489th";
+					count = 5;
+				};
+				class DKoK_GM_Uniform_1491st
+				{
+					name = "DKoK_GM_Uniform_1491st";
+					count = 5;
+				};
+				class DKoK_Gren_Uniform_1491st
+				{
+					name = "DKoK_Gren_Uniform_1491st";
+					count = 5;
+				};
+				class DKoK_Eng_Uniform_1491st
+				{
+					name = "DKoK_Eng_Uniform_1491st";
+					count = 5;
+				};
+				class DKoK_Off_Uniform_1491st
+				{
+					name = "DKoK_Off_Uniform_1491st";
+					count = 5;
+				};
+				class kc_coat
+				{
+					name = "kc_coat";
+					count = 5;
+				};
+				class DKoK_QM_Uniform_1491st
+				{
+					name = "DKoK_QM_Uniform_1491st";
+					count = 5;
+				};
+				class DKoK_Eng_Armor_1491st
+				{
+					name = "DKoK_Eng_Armor_1491st";
+					count = 5;
+				};
+				class DKoK_Gren_Armor_1491st
+				{
+					name = "DKoK_Gren_Armor_1491st";
+					count = 5;
+				};
+				class DK143_Flak_Weave
+				{
+					name = "DK143_Flak_Weave";
+					count = 5;
+				};
+				class VNG_Captain_Armor
+				{
+					name = "VNG_Captain_Armor";
+					count = 5;
+				};
+				class DKoK_AT_BackPack
+				{
+					name = "DKoK_AT_BackPack";
+					count = 5;
+				};
+				class DKoK_BackPack
+				{
+					name = "DKoK_BackPack";
+					count = 5;
+				};
+				class DKoK_Eng_BackPack
+				{
+					name = "DKoK_Eng_BackPack";
+					count = 5;
+				};
+				class DKoK_HeavyStubberBackPack
+				{
+					name = "DKoK_HeavyStubberBackPack";
+					count = 5;
+				};
+				class DKoK_PlasmaBackPack
+				{
+					name = "DKoK_PlasmaBackPack";
+					count = 5;
+				};
+				class TIOW_Vox_Caster_Black
+				{
+					name = "TIOW_Vox_Caster_Black";
+					count = 5;
+				};
+				class TIOW_IG_Vox_Caster
+				{
+					name = "TIOW_IG_Vox_Caster";
+					count = 5;
+				};
+				class DK143_Voxcaster_Invisible
+				{
+					name = "DK143_Voxcaster_Invisible";
+					count = 5;
+				};
+		};
+	}
 };
