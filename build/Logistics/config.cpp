@@ -986,11 +986,11 @@ class CfgVehicles {
 					name = "TIOW_IG_Vox_Caster";
 					count = 5;
 				};
-				class DK143_Voxcaster_Invisible
-				{
-					name = "DK143_Voxcaster_Invisible";
-					count = 5;
-				};
+				// class DK143_Voxcaster_Invisible. COMMENTED OUT TO REMOVE BAD VEHICLE ERROR <SIGGY>
+				// {
+				// 	name = "DK143_Voxcaster_Invisible";
+				// 	count = 5;
+				// };
 		};
 	};
 };
