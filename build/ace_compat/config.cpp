@@ -615,21 +615,21 @@ class CfgVehicles
 		maximumLoad = 320;
 	};
 
-	// Invisible vox caster
-	class DK143_Voxcaster_Invisible: TIOW_IG_Vox_Caster
-	{
-		author = "Rowan";
-		displayName = "[DK143] Voxcaster (Invisible)";
-		model = "\A3\Weapons_F\empty.p3d";
-		hiddenSelections[] = 
-		{
-			"camo","camo1"
-		};
-		hiddenSelectionsTextures[] = 
-		{
-			"\A3\Weapons_F\empty.p3d",""
-		};
-	};
+	// Invisible vox caster. BEING COMMENTED OUT DUE TO BAD VEHICLE TYPE ERROR, NEED TO RESEARCH THE FIX <SIGGY>
+	// class DK143_Voxcaster_Invisible: TIOW_IG_Vox_Caster
+	// {
+	// 	author = "Rowan";
+	// 	displayName = "[DK143] Voxcaster (Invisible)";
+	// 	model = "\A3\Weapons_F\empty.p3d"; 
+	// 	hiddenSelections[] = 
+	// 	{
+	// 		"camo","camo1"
+	// 	};
+	// 	hiddenSelectionsTextures[] = 
+	// 	{
+	// 		"\A3\Weapons_F\empty.p3d",""
+	// 	};
+	// };
 
 	/*
 
