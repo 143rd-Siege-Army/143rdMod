@@ -487,7 +487,7 @@ class CfgMagazines
 	{
 		author = "Siggyfreed";
 		scope = 2;
-		displayName = "Smoke Missile";
+		displayName = "[DK143] Smoke Missile";
 		displaynameShort = "Smoke";
 		descriptionShort = "";
 		model = "\A3\Weapons_F_Exp\Launchers\RPG7\rocket_rpg7_item.p3d";
@@ -501,7 +501,7 @@ class CfgMagazines
 	{
 		author = "Siggyfreed";
 		scope = 2;
-		displayName = "Melta Missile";
+		displayName = "[DK143] Melta Missile";
 		displaynameShort = "Melta";
 		descriptionShort = "";
 		model = "\A3\Weapons_F_Exp\Launchers\RPG7\rocket_rpg7_item.p3d";
@@ -1040,7 +1040,7 @@ class CfgWeapons
 	class launch_RPG7_F;
 	class MissileLauncherDKOK: launch_RPG7_F
 	{
-		magazines[] = {"MLAT_Mag", "MLHE_Mag", "DK143_MLMelta_Mag", "DK143_MLSmoke_Mag"};
+		magazines[] += {"DK143_MLMelta_Mag", "DK143_MLSmoke_Mag"}; // this shit ain't working, no idea why... <ERIC>
 	};
 
 	class TIOW_LongLas_Base: arifle_MX_Base_F
