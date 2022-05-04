@@ -24,6 +24,7 @@ class CfgAmmo
 	class B_127x99_Ball;
 	class B_12Gauge_Pellets;
 	class B_762x51_Ball;
+	class B_127x108_Ball;
 
 	class SH_120mm_HE;
 	class TIOW_LongLas_LasBolt: BulletBase {};
@@ -165,6 +166,13 @@ class CfgAmmo
 		indirectHitRange = 2;
 	};
 
+	class DK143_127x108_Krieg: B_127x108_Ball // custom ammunition that should offer higher penetration values used in the lynx SR <ERIC>
+	{
+		hit = 120;
+		caliber = 6;
+		typicalSpeed = 1200;
+	};
+
 	// First attempt at making mortar smoke bigger: did not work :)
 
 	// class HandGrenade: CA_Magazine {};
@@ -224,6 +232,7 @@ class CfgCloudlets
 		positionVar[] = {4,8,4};
 	};
 };
+
 class smokeMissileSmokeEffect // Borrowed with love from Dolf and the Vanguard Mod!
 {
 	class LightExpSmall
@@ -261,6 +270,7 @@ class CfgMagazines
 	class 200Rnd_556x45_Box_F;
 	class Lucius98_mag: CA_Magazine {};
 	class ML700_Stubber_drum: 200Rnd_556x45_Box_F {};
+	class 5Rnd_127x108_Mag;
 	class Type14_mag: CA_Magazine
 	{
 		mass = 125;
@@ -502,9 +512,27 @@ class CfgMagazines
 		mass = 30;
 	};
 
+	class DK143_LynxAPDS_Mag: 5Rnd_127x108_Mag // experimental higher penetration lynx round for 40k vehicles <ERIC>
+	{
+		author = "Siggyfreed";
+		scope = 2;
+		displayName = "[DK143] Lynx APDS Boosted";
+		descriptionShort = "40K Lynx";
+		ammo = "DK143_127x108_Krieg";
+		count = 5;
+	};
+
 	class ShootaMag: CA_Magazine // reduce tracer counts from every shot to every 5 shots. should combat some server lag <ERIC>
 	{
 		tracersEvery = 5;
+	};
+};
+
+class CfgMagazineWells
+{
+	class DK143_Lynx_MagWell
+	{
+		ADDON[] = {"DK143_LynxAPDS_Mag"};
 	};
 };
 
@@ -960,7 +988,8 @@ class CfgVehicles
 class Mode_FullAuto; //Required to adjust T14 firemode inheritance
 class CfgWeapons
 {
-    class HeadgearItem;
+    class Weapon_Base_F;
+	class HeadgearItem;
     class VestItem;
     class UniformItem;
     class ItemCore;
@@ -974,6 +1003,7 @@ class CfgWeapons
 		class WeaponSlotsInfo;
 		class GunParticles;
 	};
+	class Rifle_Long_Base_F;
 	class arifle_MX_Base_F: Rifle_Base_F {};
 	class LMG_Mk200_F;
 	class ML700_MachineGun_Base: LMG_Mk200_F {};
@@ -986,7 +1016,13 @@ class CfgWeapons
 			reloadTime = 0.125;
 		};
 	};
-	
+
+	class GM6_base_F: Rifle_Long_Base_F {};
+	class srifle_GM6_F: GM6_base_F
+	{
+		magazineWell[] += {"DK143_Lynx_MagWell"};
+	};
+
 	// Implement TIOW Bolt Pistols as primary weapon using a super shitty hack method that will probably not work. These inheritance classes will be removed when I can compile this garbage on my home pc <ERIC>
 	class Pistol_Base_F;
 	class TIOW_Bolt_Pistol2: Pistol_Base_F {};
